@@ -152,6 +152,20 @@ Largest skill here by a wide margin (3.7 MB, mostly font and icon catalogs). Run
 |-------|-------------|
 | [engineering-to-proposal](skills/engineering-to-proposal/) | Turn delivered engineering work into proposal evidence: harvest past-performance material from a finished project, build a technical volume from a real architecture, and crosswalk delivered requirements into compliance-matrix rows. Every claim traces to an artefact or is marked unsupported. |
 
+### Systems engineering management
+
+The technical-management layer above the design skills: what could stop the programme, how each requirement gets proven, what state the system is in, and whether a gate should pass.
+
+| Skill | Description |
+|-------|-------------|
+| [verification-validation](skills/verification-validation/) | Plan and run V&V: the four methods (inspection, analysis, demonstration, test), a VCRM mapping every requirement to its method, level, event and evidence, test campaign sequencing, and honest judgement of whether evidence actually closes a requirement. Consumes `requirements-dev` output; feeds `technical-reviews`. |
+| [risk-management](skills/risk-management/) | A programmatic risk register: if–then–because risk statements, 1–5 likelihood and consequence on published scales, inherent versus residual scoring, the four handling strategies, triggers, and burn-down. Distinct from `fmea-analysis`, which analyses design failure modes rather than programme exposure. |
+| [technical-reviews](skills/technical-reviews/) | Plan, run and close SRR, SFR, PDR, CDR, TRR and FCA/PCA gates: entry and exit criteria per gate, the artefact package each depends on, written RIDs before the meeting, four honest outcomes, and action-item closure. Establishes the baselines that `configuration-management` then holds. |
+| [interface-control](skills/interface-control/) | Govern the boundary between two things that must work together: ICD authoring across all eight layers from transport to lifecycle, the assumptions each side makes about the other, two-party signature, and interface change control. `system-dev` models interfaces; this is the agreement about them. |
+| [measures-of-effectiveness](skills/measures-of-effectiveness/) | Define and track MOEs, MOPs, KPPs and TPMs: threshold and objective for every measure, planned profiles with tolerance bands, honest source labelling (measured, analysed, estimated), and the three failure patterns that make a tracking chart worse than none. |
+| [configuration-management](skills/configuration-management/) | Control what the system is: configuration items, the functional, allocated and product baselines, change control with a real impact assessment (including which verification a change invalidates), deviations versus waivers, FCA/PCA audits, and status accounting. |
+| [trl-assessment](skills/trl-assessment/) | Assess technology readiness on TRL 1–9 against demonstrated evidence rather than confidence, identify critical technology elements, and plan maturation level by level with fallbacks and decision points. Covers MRL and IRL where a programme requires them. |
+
 ## Attribution
 
 Most skills here are vendored unmodified from their upstream repositories, each redistributed under the MIT License (a copy is included in every skill directory). Skills written for this repository are listed under [Original skills](#original-skills) and carry no third-party licence.
@@ -191,6 +205,13 @@ Written for this repository, not vendored:
 - [threat-modeling](skills/threat-modeling/) — STRIDE over a data-flow model, traced to NIST 800-53 control families.
 - [engineering-to-proposal](skills/engineering-to-proposal/) — delivered engineering work into past-performance and technical-volume evidence.
 - [which-skill](skills/which-skill/) — router across the whole collection.
+- [verification-validation](skills/verification-validation/) — V&V planning, VCRM, and evidence closure.
+- [risk-management](skills/risk-management/) — programmatic risk register, 5×5 scoring, burn-down.
+- [technical-reviews](skills/technical-reviews/) — SRR/PDR/CDR/TRR gates with entry and exit criteria.
+- [interface-control](skills/interface-control/) — ICD authoring and interface change control.
+- [measures-of-effectiveness](skills/measures-of-effectiveness/) — MOE/MOP/KPP definition and TPM tracking.
+- [configuration-management](skills/configuration-management/) — baselines, change control, and audits.
+- [trl-assessment](skills/trl-assessment/) — technology readiness assessment and maturation planning.
 - [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
 
 ### nextlevelbuilder/ui-ux-pro-max-skill
