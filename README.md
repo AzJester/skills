@@ -172,6 +172,29 @@ The technical-management layer above the design skills: what could stop the prog
 |-------|-------------|
 | [ieee-paper](skills/ieee-paper/) | Write or format a paper to IEEE requirements: conference versus journal templates (which differ), section numbering, the figure-caption-below/table-caption-above rule, equations, and IEEE numbered-bracket references with patterns for every source type. Treats the venue's own downloaded template as authoritative rather than hardcoding values that drift between revisions. |
 
+### Defense cyber & accreditation
+
+| Skill | Description |
+|-------|-------------|
+| [rmf-ato](skills/rmf-ato/) | Run the Risk Management Framework and assemble an authorization package: categorisation against FIPS 199 / CNSSI 1253, control selection and tailoring with defensible reasons, the SSP written during implementation rather than after, assessment preparation, the AO decision, and continuous monitoring. Consumes `threat-modeling` findings as control rationale. |
+| [zero-trust-architecture](skills/zero-trust-architecture/) | Design and argue a zero trust architecture across the seven DoD pillars, from the protect surface and transaction flows outward, with per-pillar target-versus-advanced maturity and the visibility that lets enforcement be demonstrated rather than asserted. |
+| [stig-and-hardening](skills/stig-and-hardening/) | Apply STIGs, SRGs and CIS benchmarks, verify by SCAP scan rather than by assertion, tailor with reasons that survive an assessor reading them cold, and stop configuration drift. Feeds `rmf-ato` as control evidence. |
+| [cmmc-readiness](skills/cmmc-readiness/) | Your own company's compliance rather than a delivered system's: DFARS 7012/7019/7020/7021, CUI discovery and scoping, 800-171 assessment against the 800-171A objectives, honest SPRS scoring, and C3PAO assessment preparation. |
+| [supply-chain-security](skills/supply-chain-security/) | SBOM generation and consumption, the SSDF practice groups and attestation, artifact provenance and signing, and a vulnerability response runbook built around one measure: how long it takes to answer "are we affected". |
+
+### Test, evaluation & digital engineering
+
+| Skill | Description |
+|-------|-------------|
+| [test-and-evaluation](skills/test-and-evaluation/) | DoD T&E: developmental versus operational test, TEMP structure, the evaluation framework from critical operational issues down to data elements, the six cybersecurity T&E phases, and VV&A for models and simulation. Sits above `verification-validation`, which proves requirements rather than fieldability. |
+| [digital-engineering](skills/digital-engineering/) | Digital engineering as DoD means it: an authoritative source of truth that is enforced rather than declared, SysML modelled to answer questions rather than for completeness, the three digital thread links worth building first, model governance and curation, and when a digital twin earns its cost. Extends `system-dev`. |
+
+### Networks
+
+| Skill | Description |
+|-------|-------------|
+| [network-architecture](skills/network-architecture/) | Network solutions for defense programs: mission flows before topology, designing for the disconnected case first, layered transport diversity with explicit failover behaviour, segmentation that matches the zero trust boundaries, DoDIN connection lead times, and JADC2 framing that turns on data and decision timelines rather than diagrams. |
+
 ## Attribution
 
 Most skills here are vendored unmodified from their upstream repositories, each redistributed under the MIT License (a copy is included in every skill directory). Skills written for this repository are listed under [Original skills](#original-skills) and carry no third-party licence.
@@ -219,6 +242,14 @@ Written for this repository, not vendored:
 - [configuration-management](skills/configuration-management/) — baselines, change control, and audits.
 - [trl-assessment](skills/trl-assessment/) — technology readiness assessment and maturation planning.
 - [ieee-paper](skills/ieee-paper/) — papers in IEEE conference or journal format.
+- [rmf-ato](skills/rmf-ato/) — RMF process and authorization package assembly.
+- [zero-trust-architecture](skills/zero-trust-architecture/) — DoD zero trust across the seven pillars.
+- [stig-and-hardening](skills/stig-and-hardening/) — benchmark application, tailoring, and drift control.
+- [cmmc-readiness](skills/cmmc-readiness/) — CUI scoping, 800-171 assessment, SPRS scoring.
+- [supply-chain-security](skills/supply-chain-security/) — SBOM, SSDF, provenance, vulnerability response.
+- [test-and-evaluation](skills/test-and-evaluation/) — DT&E, OT&E, TEMP, cyber T&E, and VV&A.
+- [digital-engineering](skills/digital-engineering/) — authoritative source of truth, MBSE, digital thread.
+- [network-architecture](skills/network-architecture/) — mission flows, DIL operation, transport diversity.
 - [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
 
 ### nextlevelbuilder/ui-ux-pro-max-skill
