@@ -1,6 +1,6 @@
 ---
 name: export-control-and-markings
-description: Handle export-controlled and controlled unclassified information correctly. Use when marking a document or deliverable, applying a distribution statement, determining whether something is ITAR or EAR controlled, deciding whether a disclosure to a foreign person or a cloud service is an export, preparing material for release, or answering what marking a technical report needs. A guardrail on how information is handled, not legal advice.
+description: Handle export-controlled and controlled unclassified information correctly. Use when marking a document or deliverable, applying a distribution statement, determining whether something is ITAR or EAR controlled, deciding whether a disclosure to a foreign person or a cloud service is an export, preparing material for release, or answering what marking a technical report needs. A guardrail on how information is handled, not legal advice. `industrial-security` covers facility clearances, personnel clearances and classified handling.
 ---
 
 # Export control and markings
