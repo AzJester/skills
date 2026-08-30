@@ -115,9 +115,9 @@ def defs(st, W, H):
     d.append('<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" '
              'markerHeight="7" orient="auto-start-reverse">'
              '<path d="M0 0L10 5L0 10z" fill="%s"/></marker>' % st["edge"])
-    d.append('<filter id="shadow" x="-30%%" y="-30%%" width="180%%" height="200%%">'
+    d.append('<filter id="shadow" x="-30%" y="-30%" width="180%" height="200%">'
              '<feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.28"/></filter>')
-    d.append('<filter id="glow" x="-60%%" y="-60%%" width="240%%" height="240%%">'
+    d.append('<filter id="glow" x="-60%" y="-60%" width="240%" height="240%">'
              '<feGaussianBlur stdDeviation="5" result="b"/><feMerge>'
              '<feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/>'
              '</feMerge></filter>')

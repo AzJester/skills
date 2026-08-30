@@ -38,7 +38,7 @@ The failure this exists to prevent is the recovery plan that is really a hope: s
 | **Re-plan within the baseline** | Re-sequence remaining work; move budget between packages | The total is still achievable | Low; no customer approval usually needed |
 | **Descope** | Remove or defer scope, with the customer | Priorities can be re-ordered and something is genuinely less needed | Contract modification; a conversation you must have early |
 | **Re-baseline** | Establish a new performance measurement baseline | The original is no longer a useful measurement tool | Customer agreement; loses variance history |
-| **Over-target baseline** | Formally baseline above the contract value | Recovery within contract value is not possible and the work must continue | Formal, customer-approved, highly visible |
+| **Over-target baseline** | Formally baseline above the contract budget base — negotiated cost plus authorized unpriced work, excluding fee | Recovery within the contract budget base is not possible and the work must continue | Formal, customer-approved, highly visible |
 | **Restructure** | Change the technical approach, team, or supplier | The current approach cannot get there | Disruption, ramp cost, lost work |
 | **Terminate** | Stop | The programme cannot deliver value for what remains | Real, and sometimes the right answer |
 
@@ -46,7 +46,7 @@ Three things worth stating plainly:
 
 **Re-baselining is not a recovery.** It changes the measuring stick. Done without addressing cause, the new baseline deteriorates the same way and you have spent your credibility for nothing.
 
-**An over-target baseline is a formal, visible act**, not a quiet adjustment. Its purpose is to restore a usable measurement baseline when the contract value is unachievable and the work must still be managed. Using it to make variances disappear is both ineffective and noticed.
+**An over-target baseline is a formal, visible act**, not a quiet adjustment. Its purpose is to restore a usable measurement baseline when the contract budget base is unachievable and the work must still be managed. Using it to make variances disappear is both ineffective and noticed.
 
 **Descope is the most underused option and usually the most effective.** Customers frequently prefer the important 80% on time to everything late — but only if asked early enough that it is still a choice. Asked late, it reads as a failure announcement. `solution-shaping` covers the descope ladder that should already exist from the pursuit.
 

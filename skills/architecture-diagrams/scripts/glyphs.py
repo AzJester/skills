@@ -131,13 +131,15 @@ def generic(c):
 GLYPHS = {
     "server": server, "compute": server, "vm": server, "ec2": server,
     "database": database, "db": database, "rds": database, "sql": database,
-    "cache": cache, "redis": cache, "memory": cache,
+    "aurora": database, "dynamodb": database,
+    "cache": cache, "redis": cache, "memory": cache, "elasticache": cache,
     "queue": queue, "sqs": queue, "kafka": queue, "topic": queue, "sns": queue,
+    "eventbridge": queue,
     "storage": storage, "s3": storage, "bucket": storage, "blob": storage,
     "cdn": cdn, "cloudfront": cdn, "dns": cdn, "route53": cdn, "internet": cdn,
     "lb": lb, "loadbalancer": lb, "alb": lb, "elb": lb,
     "api": api, "apigateway": api, "rest": api,
-    "function": function, "lambda": function, "serverless": function,
+    "function": function, "lambda": function, "serverless": function, "step": function,
     "container": container, "ecs": container, "eks": container, "kubernetes": container,
     "docker": container, "pod": container,
     "user": user, "client": user, "actor": user, "users": user,
@@ -148,7 +150,7 @@ GLYPHS = {
     "network": network, "vpc": network, "mesh": network, "router": network,
     "ml": ml, "ai": ml, "model": ml, "sagemaker": ml,
     "search": search, "elasticsearch": search, "opensearch": search,
-    "secret": secret, "vault": secret, "kms": secret, "auth": secret,
+    "secret": secret, "vault": secret, "kms": secret, "auth": secret, "cognito": secret,
     "gateway": gateway, "onprem": gateway, "datacenter": gateway,
     "generic": generic,
 }
@@ -158,4 +160,4 @@ def get(name):
     if not name:
         return None
     key = str(name).split(":")[-1].strip().lower().replace("-", "").replace("_", "")
-    return GLYPHS.get(key)
+    return GLYPHS.get(key, GLYPHS["generic"])

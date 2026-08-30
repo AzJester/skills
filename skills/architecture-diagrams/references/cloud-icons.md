@@ -30,9 +30,12 @@ the full list of names lives in the draw.io AWS 2019/2021 shape library under
 ## Azure and GCP
 
 Use `azure:` or `gcp:` prefixes for readability in the spec. Both currently resolve to
-generic glyphs in every output including `.drawio`. To add native Azure shapes, follow the
-`AWS_RES` pattern with `shape=mxgraph.azure2.*`; for GCP use `shape=mxgraph.gcp2.*`. The
-node-plus-overlay emitter in `render_drawio` needs no other change.
+generic glyphs in every output including `.drawio`. For GCP, follow the `AWS_RES` pattern
+with the `shape=mxgraph.gcp2.*` stencils. Azure is different: draw.io's Azure2 set is
+image-based, not a stencil namespace, so native Azure shapes need an image style —
+`image;aspect=fixed;image=img/lib/azure2/<category>/<Icon>.svg` — or the legacy
+`mxgraph.azure.*` stencils. The node-plus-overlay emitter in `render_drawio` needs no other
+change.
 
 ## Generic glyphs
 
@@ -42,14 +45,14 @@ resolve to the same drawing.
 | Key | Aliases |
 |---|---|
 | `server` | compute, vm, ec2 |
-| `database` | db, rds, sql |
-| `cache` | redis, memory |
-| `queue` | sqs, sns, kafka, topic |
+| `database` | db, rds, sql, aurora, dynamodb |
+| `cache` | redis, memory, elasticache |
+| `queue` | sqs, sns, kafka, topic, eventbridge |
 | `storage` | s3, bucket, blob |
 | `cdn` | cloudfront, dns, route53, internet |
 | `lb` | loadbalancer, alb, elb |
 | `api` | apigateway, rest |
-| `function` | lambda, serverless |
+| `function` | lambda, serverless, step |
 | `container` | ecs, eks, kubernetes, docker, pod |
 | `user` | client, actor, users |
 | `browser` | web, ui, frontend |
@@ -59,7 +62,7 @@ resolve to the same drawing.
 | `network` | vpc, mesh, router |
 | `ml` | ai, model, sagemaker |
 | `search` | elasticsearch, opensearch |
-| `secret` | vault, kms, auth |
+| `secret` | vault, kms, auth, cognito |
 | `gateway` | onprem, datacenter |
 | `generic` | fallback for anything unmatched |
 

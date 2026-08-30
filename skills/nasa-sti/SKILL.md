@@ -15,8 +15,8 @@ Which type you are writing changes the expected content and the review it receiv
 
 | Type | Is |
 | --- | --- |
-| **TP** — Technical Publication | Completed research with lasting reference value; the most substantial type, peer reviewed |
-| **TM** — Technical Memorandum | Preliminary or specialised results, working papers, extensive data compilations |
+| **TP** — Technical Publication | Completed research with lasting reference value, including extensive data compilations of continuing reference value; the most substantial type, peer reviewed |
+| **TM** — Technical Memorandum | Preliminary or specialised findings, working papers, quick-release reports — not extensive analysis |
 | **CR** — Contractor Report | Work performed under a NASA contract or grant — the type most contractors produce |
 | **CP** — Conference Publication | Proceedings of NASA-sponsored meetings |
 | **SP** — Special Publication | Reference works, handbooks, historical and mission accounts |

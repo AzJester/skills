@@ -40,7 +40,11 @@ The count that surprises people. One user-visible unit of work is rarely one mod
 Cost per unit = Σ (tokens_in × rate_in) + (tokens_out × rate_out)
               + (retry_rate × retry_cost)
               + embedding + vector + surrounding compute
-              ÷ (1 − cache_hit_rate)ish, where caching applies
+
+Caching, where it applies, discounts the cacheable slice of the input cost only:
+  cacheable_input_cost × [(1 − hit_rate) + hit_rate × rate_cache_read / rate_in]
+  ≈ × (1 − hit_rate) when cache reads are much cheaper than base input.
+Output tokens, retries, embeddings and surrounding compute are unaffected.
 ```
 
 Then scale it:

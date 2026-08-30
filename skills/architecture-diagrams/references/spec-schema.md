@@ -35,7 +35,7 @@ for subnet ranges, availability zones, trust boundaries, or ownership. Optional 
 | Field | Notes |
 |---|---|
 | `id` | Required, unique, referenced by edges. Short lowercase. |
-| `label` | Required. Keep under 30 characters or the font shrinks and then clips at 34. |
+| `label` | Required. Keep under 25 characters — the font shrinks above 24, again above 30, and clips at 34. |
 | `sub` | Second line, muted. Capacity, version, protocol, SLA. Under 32 characters. |
 | `icon` | `aws:*`, `azure:*`, `gcp:*`, or a generic key. See cloud-icons.md. |
 | `badge` | Short pill top-right. Use for the one fact that matters most. |

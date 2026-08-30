@@ -22,7 +22,7 @@ The **Source** column names where the artefact comes from in this collection.
 - A nominal verification method is assigned to every requirement — `verification-validation`
 - No requirement depends on technology at an unacceptable maturity, or the dependency is a scored risk
 - Requirements achievable within cost and schedule, with the argument recorded
-- **Functional baseline established**
+- Requirements agreed and held stable, ready to baseline at SFR
 
 ---
 
@@ -39,7 +39,7 @@ The **Source** column names where the artefact comes from in this collection.
 - Every requirement allocated to at least one function
 - Every function traces up to at least one requirement
 - Interface boundaries identified and owners named
-- Functional baseline updated
+- **Functional baseline established and placed under configuration control** — `configuration-management`
 
 ---
 

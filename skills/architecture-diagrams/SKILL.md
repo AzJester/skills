@@ -44,6 +44,11 @@ The script validates the spec first. It refuses duplicate node IDs and warns abo
 edges and unconnected nodes. Fix warnings rather than shipping past them, since an
 unconnected node usually means a missing edge in the spec.
 
+PNG export needs the third-party `cairosvg` package (`pip install cairosvg`). Without it the
+script prints `PNG export skipped` to stderr and still exits zero, producing only the
+`.drawio`, SVG and HTML outputs — install it before rendering, or inspect the SVG or HTML in
+the next step instead.
+
 **5. Look at the PNG before delivering it.** Open it with the view tool. Check for overlapping
 edge labels, text clipped inside nodes, and connectors crossing through boxes. Common fixes:
 shorten labels, move a node to a different tier, set `max_per_row`, or give one node an

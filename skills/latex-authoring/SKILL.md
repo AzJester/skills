@@ -89,7 +89,8 @@ Use a consistent label convention — `sec:`, `fig:`, `tab:`, `eq:` — so a lab
 | `Undefined references` | Compile again; references need two passes |
 | `LaTeX Warning: Citation undefined` | Run BibTeX/biber, then LaTeX twice more |
 | `Overfull \hbox` | Content wider than the column — usually a long URL, a wide table, or unbreakable code |
-| `Float(s) lost` | Too many unplaced floats; place some earlier or relax the placement |
+| `Float(s) lost` | A float inside a minipage, parbox, footnote or marginpar was discarded — move it into the main text flow |
+| `Too many unprocessed floats` | Too many unplaced floats; place some earlier, relax the placement, or `\clearpage` |
 | Output does not match the template | A package is overriding the class. Remove packages until it does |
 
 **The compile sequence** for a document with citations: LaTeX, then BibTeX or biber, then LaTeX twice. Skipping it leaves undefined references, and the first run's warnings mislead. Most editors automate this; when debugging, do it by hand.

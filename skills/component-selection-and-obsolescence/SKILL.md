@@ -75,7 +75,7 @@ The practices that carry most of the weight:
 
 - **Assign an owner.** Obsolescence management with no owner does not happen; it surfaces as an emergency instead.
 - **Prioritise by criticality, not by part count.** Concentrate effort on parts that are single-sourced, hard to replace, or expensive to requalify.
-- **Cost it into the estimate.** Monitoring, alternates qualification, lifetime buys and storage are real costs — and among those `cost-estimating-and-boe` names as commonly omitted.
+- **Cost it into the estimate.** Monitoring, alternates qualification, lifetime buys and storage are real costs that estimates routinely omit — put them in, per `cost-estimating-and-boe`.
 - **Feed the product roadmap.** A technology refresh planned every few years is far cheaper than a series of unplanned redesigns, and it can be aligned with capability improvements rather than forced by a notice — see `technology-roadmapping` and `product-management`.
 
 ## Common failures

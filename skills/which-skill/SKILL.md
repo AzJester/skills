@@ -19,57 +19,57 @@ Read `README.md` for the current list before answering — it is maintained alon
 | --- | --- | --- |
 | Decide whether an idea is worth building | Systems engineering | `concept-dev` for the lifecycle; `grilling` to stress-test |
 | Turn an idea into requirements | Systems engineering | `requirements-dev`, `system-dev` for INCOSE rigour |
-| Build a system model | Systems engineering / Digital engineering | `mbse-sysml` for SysML practice; `digital-engineering` for the strategy around it |
+| Build a system model | Test, evaluation & digital engineering | `mbse-sysml` for SysML practice; `digital-engineering` for the strategy around it |
 | Choose between options | Systems engineering | `trade-study-analysis` (DAU 9-step) |
 | Sharpen thinking before committing | Productivity | `grilling` (model-invocable), `grill-me` (user-only), `grill-with-docs` (also writes ADRs) |
 | Turn a conversation into work items | Engineering workflow | `to-spec` then `to-tickets`; `wayfinder` when it exceeds one session |
 | Build the thing | Engineering workflow | `implement` drives `tdd`; `prototype` when the question is still open |
 | Review code | Engineering workflow | `code-review` |
-| Fix something broken | Engineering workflow / Incident | `diagnosing-bugs` if it can wait; `incident-response` if users are affected now |
-| Find out why something failed | RCCA | `rcca-master` routes the eight; use after the incident is closed, not during |
-| Secure a design | Security | `threat-modeling` |
+| Fix something broken | Engineering workflow / Operations & security | `diagnosing-bugs` if it can wait; `incident-response` if users are affected now |
+| Find out why something failed | Root cause & quality analysis (RCCA) | `rcca-master` routes the eight; use after the incident is closed, not during |
+| Secure a design | Operations & security | `threat-modeling` |
 | Draw a picture of a system | Architecture diagrams | `diagram-picker` if unsure what to draw; `architecture-diagrams` to render |
 | Design or fix an interface | UI & UX | `ui-ux-pro-max`; `vercel-react-best-practices` for React performance |
-| Write documentation | Documentation | `documentation-architect` |
-| Write prose or an article | Productivity | `writing-fragments` → `writing-shape` → `writing-beats` |
+| Write documentation | Documentation, research & tooling | `documentation-architect` |
+| Write prose or an article | In progress (beta) | `writing-fragments` → `writing-shape` → `writing-beats` |
 | Present analysis to people | Analytics communication | `data-storytelling` |
 | Turn delivered work into proposal material | Proposal bridge | `engineering-to-proposal` |
-| Work an opportunity before the RFP | Programme & business | `capture-management`; `teaming-and-subcontracts` for the team |
-| Respond to an RFP | Technical writing | `solution-shaping` decides the offer, `proposal-writing` writes it |
-| Estimate what something costs | Programme & business | `cost-estimating-and-boe`; `ai-cost-modeling` for AI workloads |
-| Plan and schedule the work | Programme & business | `wbs-and-scheduling` builds what `earned-value-management` reads |
-| Stand up a programme after award | Programme & business | `program-startup` |
-| Run agile under a government contract | Programme & business | `agile-on-a-government-contract` — the contract layer, not the team's practice |
-| Rescue a programme in trouble | Programme & business | `program-recovery`; `earned-value-management` diagnoses it first |
-| Capture what a programme learned | Programme & business | `lessons-learned` — push it into the template, not a repository |
-| Staff several programmes at once | Working across units | `resource-and-capacity-management` |
-| Plan capability across business units | Programme & business | `technology-roadmapping`; `trl-assessment` for maturity |
-| Design a cloud solution | Solution domains | `cloud-architecture`; `rmf-ato` for the authorization |
-| Develop a physical product | Hardware | `hardware-product-development` for the lifecycle |
-| Run a product, not a contract | Hardware | `product-management`; the contract skills assume a customer SOW |
-| Meet an open architecture requirement | Hardware | `mosa-and-open-standards` |
-| Make it survive the environment | Hardware | `ruggedization-and-environmental-qual` — 810 is a tailoring framework |
-| Fit a size, weight and power envelope | Hardware | `swap-and-thermal-budgeting` |
-| Pass the EMC chamber | Hardware | `emi-emc-and-tempest` — start in the first weeks, not at DVT |
-| Keep parts available for twenty years | Hardware | `component-selection-and-obsolescence` |
-| Get it built repeatably | Hardware | `manufacturing-and-npi` |
-| Write the software on the device | Hardware | `embedded-firmware-and-secure-boot`; `devsecops-pipeline` builds it |
-| Build a delivery pipeline | Solution domains | `devsecops-pipeline` |
-| Replace a system already running | Solution domains | `modernization-and-migration` |
-| Make data trustworthy enough to use | Solution domains | `data-strategy-and-governance` — before the AI skills |
-| Run AI on a device, not in a cloud | Solution domains | `edge-ai-deployment` |
-| Build a system that takes actions | Solution domains | `agentic-system-design`; a pipeline is usually better |
-| Prove something with a customer | Solution domains | `technical-pilot` — transition plan before the pilot |
-| Negotiate anything | Working across units | `negotiation` |
-| Read the business unit's numbers | Working across units | `business-unit-finance` |
-| Design for availability and support | Solution domains | `reliability-and-sustainment` |
-| Manage hazards to accepted risk | Solution domains | `system-safety`; FTA and FMEA are its techniques |
-| Design around the operator | Solution domains | `human-systems-integration` |
-| Run a session that must decide | Working across units | `technical-workshop-facilitation` |
-| Get a delivered system used | Working across units | `organizational-change` |
-| Run or certify a quality system | Working across units | `quality-management-system` |
-| Handle classified work | Defense | `industrial-security`; `export-control-and-markings` for markings |
-| Meet federal accessibility rules | Defense | `section-508-conformance`; `ui-ux-pro-max` to build it |
+| Work an opportunity before the RFP | Program & contract | `capture-management`; `teaming-and-subcontracts` for the team |
+| Respond to an RFP | Executive & professional practice / Technical writing | `solution-shaping` decides the offer, `proposal-writing` writes it |
+| Estimate what something costs | Program & contract / Artificial intelligence | `cost-estimating-and-boe`; `ai-cost-modeling` for AI workloads |
+| Plan and schedule the work | Program & contract | `wbs-and-scheduling` builds what `earned-value-management` reads |
+| Stand up a programme after award | Program & contract | `program-startup` |
+| Run agile under a government contract | Program & contract | `agile-on-a-government-contract` — the contract layer, not the team's practice |
+| Rescue a programme in trouble | Program & contract | `program-recovery`; `earned-value-management` diagnoses it first |
+| Capture what a programme learned | Program & contract | `lessons-learned` — push it into the template, not a repository |
+| Staff several programmes at once | Executive & professional practice | `resource-and-capacity-management` |
+| Plan capability across business units | Executive & professional practice | `technology-roadmapping`; `trl-assessment` for maturity |
+| Design a cloud solution | Networks | `cloud-architecture`; `rmf-ato` for the authorization |
+| Develop a physical product | Hardware product development | `hardware-product-development` for the lifecycle |
+| Run a product, not a contract | Hardware product development | `product-management`; the contract skills assume a customer SOW |
+| Meet an open architecture requirement | Hardware product development | `mosa-and-open-standards` |
+| Make it survive the environment | Hardware product development | `ruggedization-and-environmental-qual` — 810 is a tailoring framework |
+| Fit a size, weight and power envelope | Hardware product development | `swap-and-thermal-budgeting` |
+| Pass the EMC chamber | Hardware product development | `emi-emc-and-tempest` — start in the first weeks, not at DVT |
+| Keep parts available for twenty years | Hardware product development | `component-selection-and-obsolescence` |
+| Get it built repeatably | Hardware product development | `manufacturing-and-npi` |
+| Write the software on the device | Hardware product development | `embedded-firmware-and-secure-boot`; `devsecops-pipeline` builds it |
+| Build a delivery pipeline | Networks | `devsecops-pipeline` |
+| Replace a system already running | Networks | `modernization-and-migration` |
+| Make data trustworthy enough to use | Artificial intelligence | `data-strategy-and-governance` — before the AI skills |
+| Run AI on a device, not in a cloud | Artificial intelligence | `edge-ai-deployment` |
+| Build a system that takes actions | Artificial intelligence | `agentic-system-design`; a pipeline is usually better |
+| Prove something with a customer | Test, evaluation & digital engineering | `technical-pilot` — transition plan before the pilot |
+| Negotiate anything | Executive & professional practice | `negotiation` |
+| Read the business unit's numbers | Executive & professional practice | `business-unit-finance` |
+| Design for availability and support | Test, evaluation & digital engineering | `reliability-and-sustainment` |
+| Manage hazards to accepted risk | Test, evaluation & digital engineering | `system-safety`; FTA and FMEA are its techniques |
+| Design around the operator | Test, evaluation & digital engineering | `human-systems-integration` |
+| Run a session that must decide | Executive & professional practice | `technical-workshop-facilitation` |
+| Get a delivered system used | Executive & professional practice | `organizational-change` |
+| Run or certify a quality system | Executive & professional practice | `quality-management-system` |
+| Handle classified work | Defense cyber & accreditation | `industrial-security`; `export-control-and-markings` for markings |
+| Meet federal accessibility rules | UI & UX | `section-508-conformance`; `ui-ux-pro-max` to build it |
 | Chase research or prototyping money | Technical writing | `white-paper-and-baa` for BAA, CSO, SBIR and STTR |
 | Define the work in a contract | Technical writing | `sow-and-pws`; `contract-vehicles-and-clauses` for what it commits you to |
 | Edit someone else's document | Technical writing | `technical-editing` — agree the level of edit first |
@@ -77,8 +77,8 @@ Read `README.md` for the current list before answering — it is maintained alon
 | Report what a test found | Technical writing | `test-report` |
 | Brief leadership | Technical writing | `briefing-deck`; `executive-decision-memo` when a deck is wrong |
 | Protect an idea before publishing | Technical writing | `invention-disclosure` — before submission, not after |
-| Build or test a skill | Documentation & tooling | `plugin-creator`, `skill-tester`, `writing-for-agents` |
-| Hand off to another session | Productivity | `handoff` writes a document; `claude-handoff` spawns an agent |
+| Build or test a skill | Documentation, research & tooling | `plugin-creator`, `skill-tester`, `writing-for-agents` |
+| Hand off to another session | Productivity / In progress (beta) | `handoff` writes a document; `claude-handoff` spawns an agent |
 
 ## Distinctions worth stating
 

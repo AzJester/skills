@@ -27,7 +27,7 @@ A baseline is an agreed reference point. Its purpose is not the snapshot — it 
 
 | Baseline | Established at | Fixes |
 | --- | --- | --- |
-| **Functional** | SRR | What the system must do — the requirements |
+| **Functional** | SFR | What the system must do — the requirements |
 | **Allocated** | PDR | How requirements are allocated to items, and the interfaces between them |
 | **Product** | CDR | The detailed design, as built and as documented |
 

@@ -11,7 +11,7 @@ A benchmark is a set of configuration settings someone else decided are safe def
 
 - **STIGs** — DISA Security Technical Implementation Guides. Product-specific, DoD-authoritative, tied to 800-53 controls. Where a STIG exists for your product, it is the expected baseline.
 - **SRGs** — Security Requirements Guides. Technology-class rather than product-specific. Where no STIG exists for a product, the applicable SRG is what you tailor against, and you say so.
-- **CIS Benchmarks** — community consensus, often broader product coverage, two levels of severity. Useful where no STIG or SRG fits, with the gap stated.
+- **CIS Benchmarks** — community consensus, often broader product coverage, two hardening profiles (Level 1 baseline with minimal operational impact, Level 2 defence-in-depth that may cost functionality). Useful where no STIG or SRG fits, with the gap stated.
 - **Vendor guidance** — sometimes conflicts with the STIG. When it does, that conflict is a documented decision, not something to resolve silently.
 
 ## Severity
