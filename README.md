@@ -8,7 +8,7 @@ Each skill lives in its own directory under `skills/`, with a `SKILL.md` entry p
 
 ## Skills
 
-Vendored from two upstream collections. See [Attribution](#attribution) for provenance and licensing.
+Vendored from several upstream collections, plus skills written for this repository. See [Attribution](#attribution) for provenance and licensing.
 
 ### Systems engineering
 
@@ -166,12 +166,6 @@ The technical-management layer above the design skills: what could stop the prog
 | [configuration-management](skills/configuration-management/) | Control what the system is: configuration items, the functional, allocated and product baselines, change control with a real impact assessment (including which verification a change invalidates), deviations versus waivers, FCA/PCA audits, and status accounting. |
 | [trl-assessment](skills/trl-assessment/) | Assess technology readiness on TRL 1–9 against demonstrated evidence rather than confidence, identify critical technology elements, and plan maturation level by level with fallbacks and decision points. Covers MRL and IRL where a programme requires them. |
 
-### Technical publishing
-
-| Skill | Description |
-|-------|-------------|
-| [ieee-paper](skills/ieee-paper/) | Write or format a paper to IEEE requirements: conference versus journal templates (which differ), section numbering, the figure-caption-below/table-caption-above rule, equations, and IEEE numbered-bracket references with patterns for every source type. Treats the venue's own downloaded template as authoritative rather than hardcoding values that drift between revisions. |
-
 ### Defense cyber & accreditation
 
 | Skill | Description |
@@ -188,6 +182,7 @@ The technical-management layer above the design skills: what could stop the prog
 |-------|-------------|
 | [test-and-evaluation](skills/test-and-evaluation/) | DoD T&E: developmental versus operational test, TEMP structure, the evaluation framework from critical operational issues down to data elements, the six cybersecurity T&E phases, and VV&A for models and simulation. Sits above `verification-validation`, which proves requirements rather than fieldability. |
 | [digital-engineering](skills/digital-engineering/) | Digital engineering as DoD means it: an authoritative source of truth that is enforced rather than declared, SysML modelled to answer questions rather than for completeness, the three digital thread links worth building first, model governance and curation, and when a digital twin earns its cost. Extends `system-dev`. |
+| [mbse-sysml](skills/mbse-sysml/) | The MBSE modelling practice itself: writing down the questions the model must answer before opening a tool, the four pillars with effort put where it is usually missing (behaviour and parametrics rather than more structure), allocation queries that find orphans in both directions, depth that follows responsibility boundaries, and the SysML v1 versus v2 decision. `digital-engineering` covers the strategy; this covers the model. |
 
 ### Networks
 
@@ -228,6 +223,7 @@ The technical-management layer above the design skills: what could stop the prog
 
 | Skill | Description |
 |-------|-------------|
+| [ieee-paper](skills/ieee-paper/) | Write or format a paper to IEEE requirements: conference versus journal templates (which differ), section numbering, the figure-caption-below/table-caption-above rule, equations, and IEEE numbered-bracket references with patterns for every source type. Treats the venue's own downloaded template as authoritative rather than hardcoding values that drift between revisions. |
 | [dod-technical-report](skills/dod-technical-report/) | DoD technical reports for DTIC and contract delivery: the three determinations made before writing, report structure, and the SF 298 block by block — with the abstract and subject terms that decide whether the report is ever retrieved again. |
 | [nasa-sti](skills/nasa-sti/) | NASA STI reports: the series types and which one a contractor produces, the self-contained Summary, subject categories, availability determination, and the review path. Export control is not softened by the sponsor being civil. |
 | [acm-paper](skills/acm-paper/) | ACM venues via the `acmart` class: format options set by the venue, required CCS concepts and rights commands, and the difference that produces real rework — ACM orders references alphabetically where IEEE orders by first appearance. |
@@ -289,6 +285,7 @@ Written for this repository, not vendored:
 - [supply-chain-security](skills/supply-chain-security/) — SBOM, SSDF, provenance, vulnerability response.
 - [test-and-evaluation](skills/test-and-evaluation/) — DT&E, OT&E, TEMP, cyber T&E, and VV&A.
 - [digital-engineering](skills/digital-engineering/) — authoritative source of truth, MBSE, digital thread.
+- [mbse-sysml](skills/mbse-sysml/) — SysML modelling practice: four pillars, allocation, parametrics, v1 versus v2.
 - [network-architecture](skills/network-architecture/) — mission flows, DIL operation, transport diversity.
 - [ai-governance](skills/ai-governance/) — NIST AI RMF, impact determination, oversight design.
 - [ai-evaluation](skills/ai-evaluation/) — eval harness, acceptance criteria, regression, failure taxonomy.

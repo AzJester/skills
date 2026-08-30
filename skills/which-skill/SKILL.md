@@ -19,6 +19,7 @@ Read `README.md` for the current list before answering — it is maintained alon
 | --- | --- | --- |
 | Decide whether an idea is worth building | Systems engineering | `concept-dev` for the lifecycle; `grilling` to stress-test |
 | Turn an idea into requirements | Systems engineering | `requirements-dev`, `system-dev` for INCOSE rigour |
+| Build a system model | Systems engineering / Digital engineering | `mbse-sysml` for SysML practice; `digital-engineering` for the strategy around it |
 | Choose between options | Systems engineering | `trade-study-analysis` (DAU 9-step) |
 | Sharpen thinking before committing | Productivity | `grilling` (model-invocable), `grill-me` (user-only), `grill-with-docs` (also writes ADRs) |
 | Turn a conversation into work items | Engineering workflow | `to-spec` then `to-tickets`; `wayfinder` when it exceeds one session |
@@ -45,6 +46,8 @@ These are the overlaps people actually get wrong.
 **Bug versus incident.** `diagnosing-bugs` assumes you have time to build a reproduction. `incident-response` assumes you do not. The test is whether users are affected right now.
 
 **The diagram skills.** `diagram-picker` interviews you and picks; `architecture-diagrams` renders a spec into draw.io, SVG, PNG and HTML across 36 styles; `omm-scan` extracts architecture from a codebase into `.omm/` docs and needs the `omm` CLI installed. Different jobs despite the shared noun.
+
+**The three modelling skills.** `mbse-sysml` is the modelling practice — which diagram answers which question, how deep to decompose, parametrics for budgets. `digital-engineering` is the strategy around it — what is authoritative, what the digital thread links, whether a twin earns its cost. `system-dev` is this repository's own Design Registry implementation, with typed slots and commands. Reaching for `system-dev` when the question is which SysML diagram to draw is the usual mistake.
 
 **Requirements versus spec.** `requirements-dev` produces formal, verifiable, traceable requirements for a system. `to-spec` produces a spec for a piece of software work and publishes it to a tracker. The first is INCOSE; the second is a ticket.
 
