@@ -81,4 +81,4 @@ You will be asked, and reviewing well improves your own writing more than most t
 
 ## Where this connects
 
-`ieee-paper` and the other format skills handle the manuscript itself. `applied-statistics` for the analysis and for reviewing others'. `export-control-and-markings` for release review before submission. `storm-research` on your account for the literature work that precedes writing.
+`ieee-paper` and the other format skills handle the manuscript itself. `applied-statistics` for the analysis and for reviewing others'. `export-control-and-markings` for release review before submission. `invention-disclosure` before submission if the work may be patentable — publishing first can forfeit foreign patent rights outright. `storm-research` on your account for the literature work that precedes writing.

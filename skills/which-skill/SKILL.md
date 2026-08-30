@@ -34,6 +34,14 @@ Read `README.md` for the current list before answering — it is maintained alon
 | Write prose or an article | Productivity | `writing-fragments` → `writing-shape` → `writing-beats` |
 | Present analysis to people | Analytics communication | `data-storytelling` |
 | Turn delivered work into proposal material | Proposal bridge | `engineering-to-proposal` |
+| Respond to an RFP | Technical writing | `solution-shaping` decides the offer, `proposal-writing` writes it |
+| Chase research or prototyping money | Technical writing | `white-paper-and-baa` for BAA, CSO, SBIR and STTR |
+| Define the work in a contract | Technical writing | `sow-and-pws`; `contract-vehicles-and-clauses` for what it commits you to |
+| Edit someone else's document | Technical writing | `technical-editing` — agree the level of edit first |
+| Write instructions someone follows | Technical writing | `procedural-documentation` |
+| Report what a test found | Technical writing | `test-report` |
+| Brief leadership | Technical writing | `briefing-deck`; `executive-decision-memo` when a deck is wrong |
+| Protect an idea before publishing | Technical writing | `invention-disclosure` — before submission, not after |
 | Build or test a skill | Documentation & tooling | `plugin-creator`, `skill-tester`, `writing-for-agents` |
 | Hand off to another session | Productivity | `handoff` writes a document; `claude-handoff` spawns an agent |
 
@@ -50,6 +58,10 @@ These are the overlaps people actually get wrong.
 **The three modelling skills.** `mbse-sysml` is the modelling practice — which diagram answers which question, how deep to decompose, parametrics for budgets. `digital-engineering` is the strategy around it — what is authoritative, what the digital thread links, whether a twin earns its cost. `system-dev` is this repository's own Design Registry implementation, with typed slots and commands. Reaching for `system-dev` when the question is which SysML diagram to draw is the usual mistake.
 
 **Requirements versus spec.** `requirements-dev` produces formal, verifiable, traceable requirements for a system. `to-spec` produces a spec for a piece of software work and publishes it to a tracker. The first is INCOSE; the second is a ticket.
+
+**The proposal chain.** Three skills in sequence, and using the wrong one wastes the work. `solution-shaping` decides what to offer and stops before writing. `engineering-to-proposal` harvests evidence from delivered work. `proposal-writing` builds the response around Section M. For a BAA, CSO or SBIR the chain is different — `white-paper-and-baa`, because a white paper sells an idea where a proposal demonstrates compliance.
+
+**Writing versus formatting.** The technical writing skills cover documents you produce — proposals, procedures, test reports, work statements, briefings. The technical publishing skills (`ieee-paper`, `acm-paper`, `apa-7`, `chicago-turabian`, `dod-technical-report`, `nasa-sti`, `latex-authoring`) cover formatting for a venue that has published requirements. `technical-editing` applies to all of them.
 
 **The grilling trio.** `grilling` is model-invocable and can be reached automatically; `grill-me` and `grill-with-docs` are user-invoked only, and the latter writes ADRs and glossary entries as it goes. Pick by whether you want documentation to fall out of the session.
 
