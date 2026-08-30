@@ -1,0 +1,65 @@
+{
+  "title": "Three-Tier Web Application",
+  "subtitle": "Public entry through CloudFront and WAF, stateless app tier on ECS, multi-AZ data tier",
+  "style": "aws-reinvent",
+  "max_per_row": 4,
+  "tiers": [
+    {
+      "label": "Edge",
+      "note": "public",
+      "nodes": [
+        {"id": "users", "label": "End Users", "sub": "web and mobile", "icon": "user"},
+        {"id": "dns", "label": "Amazon Route 53", "sub": "hosted zone", "icon": "aws:route53"},
+        {"id": "cdn", "label": "Amazon CloudFront", "sub": "global edge cache", "icon": "aws:cloudfront"},
+        {"id": "waf", "label": "AWS WAF", "sub": "managed rule groups", "icon": "aws:waf"}
+      ]
+    },
+    {
+      "label": "Presentation Tier",
+      "note": "public subnets",
+      "nodes": [
+        {"id": "alb", "label": "Application Load Balancer", "sub": "TLS termination", "icon": "aws:alb", "badge": "AZ-a/b"},
+        {"id": "spa", "label": "Static Assets", "sub": "S3 origin", "icon": "aws:s3"}
+      ]
+    },
+    {
+      "label": "Application Tier",
+      "note": "private subnets",
+      "nodes": [
+        {"id": "api", "label": "API Gateway", "sub": "REST, throttled", "icon": "aws:apigateway"},
+        {"id": "svc", "label": "ECS Fargate Services", "sub": "autoscaled 4-24 tasks", "icon": "aws:ecs"},
+        {"id": "fn", "label": "Lambda Workers", "sub": "async processing", "icon": "aws:lambda"},
+        {"id": "queue", "label": "Amazon SQS", "sub": "decoupling buffer", "icon": "aws:sqs"}
+      ]
+    },
+    {
+      "label": "Data Tier",
+      "note": "isolated subnets",
+      "nodes": [
+        {"id": "db", "label": "Aurora PostgreSQL", "sub": "primary + standby", "icon": "aws:rds", "badge": "Multi-AZ"},
+        {"id": "cache", "label": "ElastiCache Redis", "sub": "session and hot keys", "icon": "aws:elasticache"},
+        {"id": "obj", "label": "Amazon S3", "sub": "documents and backups", "icon": "aws:s3"}
+      ]
+    }
+  ],
+  "edges": [
+    {"from": "users", "to": "dns", "label": "resolve"},
+    {"from": "dns", "to": "cdn"},
+    {"from": "cdn", "to": "waf", "label": "inspect"},
+    {"from": "waf", "to": "alb", "label": "HTTPS 443"},
+    {"from": "cdn", "to": "spa", "label": "cache miss", "kind": "dashed"},
+    {"from": "alb", "to": "api"},
+    {"from": "api", "to": "svc", "label": "invoke"},
+    {"from": "svc", "to": "queue", "label": "publish", "kind": "flow"},
+    {"from": "queue", "to": "fn", "label": "consume", "kind": "flow"},
+    {"from": "svc", "to": "db", "label": "read/write"},
+    {"from": "svc", "to": "cache", "label": "session"},
+    {"from": "fn", "to": "obj", "label": "archive", "kind": "dashed"}
+  ],
+  "legend": [
+    {"label": "Compute", "color": "#FF9900"},
+    {"label": "Data", "color": "#3B48CC"},
+    {"label": "Networking", "color": "#8C4FFF"},
+    {"label": "Security", "color": "#DD344C"}
+  ]
+}
