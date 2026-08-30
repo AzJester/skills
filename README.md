@@ -108,17 +108,18 @@ Upstream ships these as beta: they are excluded from the upstream plugin, and th
 
 ### Architecture diagrams
 
-Unlike the other skills here, these three are a front end for the [`omm`](https://github.com/oh-my-mermaid/oh-my-mermaid) CLI rather than self-contained instructions. They shell out to it and will offer to `npm install -g oh-my-mermaid` if it is missing.
-
 | Skill | Description |
 |-------|-------------|
+| [architecture-diagram-creator](skills/architecture-diagram-creator/) | Produce a single self-contained HTML architecture overview: business context, data flow, processing pipeline, layered system architecture, functional and non-functional features, and deployment, all drawn as inline SVG. Ships a page template, a rendered gallery of reusable SVG blocks, and a fully worked example. |
 | [omm-scan](skills/omm-scan/) | Scan a codebase and generate `.omm/` architecture docs by perspective-driven recursive analysis: pick the perspectives that fit the project (overall architecture, request lifecycle, data flow, dependency map, storage, and others), then drill into each diagram element until it bottoms out at a leaf. |
 | [omm-view](skills/omm-view/) | Start the local web viewer to explore the generated `.omm/` diagrams in a browser, auto-refreshing as the files change. |
 | [omm-push](skills/omm-push/) | Push `.omm/` architecture docs to the oh-my-mermaid hosted service, handling the login, link, and push steps. Sends your architecture docs to a third-party service (`ohmymermaid.com`) and needs an account; the free tier is capped at one project. |
 
+The three `omm-*` skills are a front end for the [`omm`](https://github.com/oh-my-mermaid/oh-my-mermaid) CLI rather than self-contained instructions. They shell out to it and will offer to `npm install -g oh-my-mermaid` if it is missing. `architecture-diagram-creator` has no such dependency.
+
 ## Attribution
 
-All skills here are vendored unmodified from their upstream repositories, each redistributed under the MIT License (a copy is included in every skill directory).
+Most skills here are vendored unmodified from their upstream repositories, each redistributed under the MIT License (a copy is included in every skill directory). Skills written for this repository are listed under [Original skills](#original-skills) and carry no third-party licence.
 
 ### ddunnock/claude-plugins
 
@@ -140,8 +141,14 @@ Several of these skills expect repo-level configuration written by `setup-matt-p
 
 ### oh-my-mermaid/oh-my-mermaid
 
-The [Architecture diagrams](#architecture-diagrams) skills come from [oh-my-mermaid/oh-my-mermaid](https://github.com/oh-my-mermaid/oh-my-mermaid) at commit [`38ccdb6`](https://github.com/oh-my-mermaid/oh-my-mermaid/tree/38ccdb69298adec949177c92c88d6e3ddfb5bab7/skills), MIT licensed, Copyright (c) 2025 oh-my-mermaid.
+The three `omm-*` skills under [Architecture diagrams](#architecture-diagrams) come from [oh-my-mermaid/oh-my-mermaid](https://github.com/oh-my-mermaid/oh-my-mermaid) at commit [`38ccdb6`](https://github.com/oh-my-mermaid/oh-my-mermaid/tree/38ccdb69298adec949177c92c88d6e3ddfb5bab7/skills), MIT licensed, Copyright (c) 2025 oh-my-mermaid.
 
 All three of upstream's skills are included, byte-identical to upstream. Omitted: the `omm` CLI itself (`src/`, `package.json`, `tsconfig.json`, build config), which ships from npm as [`oh-my-mermaid`](https://www.npmjs.com/package/oh-my-mermaid), plus upstream's own `.omm/` architecture docs, `docs/`, `PLAN.md`, `CLAUDE.md`, `.github/`, and the root `.claude-plugin/` manifests.
 
 These skills do not work on their own: install the CLI with `npm install -g oh-my-mermaid` first. `omm-push` additionally talks to the hosted service at `ohmymermaid.com` and requires an account there.
+
+### Original skills
+
+Written for this repository, not vendored:
+
+- [architecture-diagram-creator](skills/architecture-diagram-creator/) — architecture overview pages as self-contained HTML.
