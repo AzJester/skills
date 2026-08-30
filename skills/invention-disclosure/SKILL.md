@@ -18,7 +18,7 @@ Two things make this urgent rather than administrative in a contractor setting: 
 
 What counts as a public disclosure is broader than people expect and includes, depending on the facts: a published paper, a conference talk, a poster, a public demonstration, a non-confidential proposal or white paper, a data sheet, a public repository, and a sale or offer for sale.
 
-**The practical rule: talk to counsel before it goes out, not after.** This applies to the whole publishing side of this repository — `ieee-paper`, `acm-paper`, `dod-technical-report`, `nasa-sti`, `manuscript-submission`, `white-paper-and-baa` — and to demonstrations and proposal submissions. A provisional application filed the week before submission is routine and cheap relative to what it protects; the reverse order cannot be repaired.
+**The practical rule: talk to counsel before it goes out, not after.** This applies to the whole publishing side of this repository — `ieee-publishing`, `acm-paper`, `dod-technical-report`, `nasa-sti`, `manuscript-submission`, `white-paper-and-baa` — and to demonstrations and proposal submissions. A provisional application filed the week before submission is routine and cheap relative to what it protects; the reverse order cannot be repaired.
 
 **Additional constraints in a defense context**, both of which require counsel:
 

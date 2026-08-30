@@ -110,7 +110,7 @@ These are the overlaps people actually get wrong.
 
 **The three planning skills.** `wbs-and-scheduling` builds the WBS and the schedule. `cost-estimating-and-boe` prices them. `earned-value-management` measures performance against the resulting baseline. They run in that order and each depends on the one before.
 
-**Writing versus formatting.** The technical writing skills cover documents you produce — proposals, procedures, test reports, work statements, briefings. The technical publishing skills (`ieee-paper`, `acm-paper`, `apa-7`, `chicago-turabian`, `dod-technical-report`, `nasa-sti`, `latex-authoring`) cover formatting for a venue that has published requirements. `technical-editing` applies to all of them.
+**Writing versus formatting.** The technical writing skills cover documents you produce — proposals, procedures, test reports, work statements, briefings. The technical publishing skills (`ieee-publishing`, `acm-paper`, `apa-7`, `chicago-turabian`, `dod-technical-report`, `nasa-sti`, `latex-authoring`) cover formatting for a venue that has published requirements. `technical-editing` applies to all of them.
 
 **The grilling trio.** `grilling` is model-invocable and can be reached automatically; `grill-me` and `grill-with-docs` are user-invoked only, and the latter writes ADRs and glossary entries as it goes. Pick by whether you want documentation to fall out of the session.
 

@@ -74,7 +74,7 @@ The failure is rarely a deliberate decision. It is a default action taken withou
 
 **Before using a tool or service** with controlled data — a cloud IDE, an AI service, a diagramming tool, a translation service — ask whether the data may go there. Pasting controlled technical data into an external service is a transmission, and this is now among the most common ways it happens.
 
-**Before publishing or presenting**, obtain the release review. `ieee-paper`, `dod-technical-report` and `manuscript-submission` all produce material that leaves the organisation, and the review precedes submission, not publication.
+**Before publishing or presenting**, obtain the release review. `ieee-publishing`, `dod-technical-report` and `manuscript-submission` all produce material that leaves the organisation, and the review precedes submission, not publication.
 
 **Before a meeting with foreign nationals**, know what may be discussed. This includes colleagues and partners, and it includes the whiteboard.
 

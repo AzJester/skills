@@ -106,4 +106,4 @@ That last row in the table is the one to internalise. When output disagrees with
 
 ## Where this connects
 
-`ieee-paper`, `acm-paper`, `apa-7`, `chicago-turabian`, `dod-technical-report` and `nasa-sti` decide what the document must look like. This is how to build it without fighting the class that already knows.
+`ieee-publishing`, `acm-paper`, `apa-7`, `chicago-turabian`, `dod-technical-report` and `nasa-sti` decide what the document must look like. This is how to build it without fighting the class that already knows.

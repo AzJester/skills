@@ -68,4 +68,4 @@ The NASA Technical Reports Server is the catalogue and the public face. Practica
 
 ## Where this connects
 
-`dod-technical-report` for the shared report discipline and SF 298 practice. `export-control-and-markings` for the control determination, which is not softened by the sponsor being civil. `ieee-paper` or `acm-paper` where the same work is also going to a conference or journal, which is common and requires the release review to cover both.
+`dod-technical-report` for the shared report discipline and SF 298 practice. `export-control-and-markings` for the control determination, which is not softened by the sponsor being civil. `ieee-publishing` or `acm-paper` where the same work is also going to a conference or journal, which is common and requires the release review to cover both.

@@ -87,7 +87,7 @@ Mechanical, best done last, and best done with a checklist because the eye stops
 - [ ] Units consistent and stated; significant figures not implying false precision
 - [ ] Numbers, dates and ranges in one format
 - [ ] Figure and table numbering sequential; every one cited in the text
-- [ ] Captions follow the format the venue requires — see `ieee-paper`, `acm-paper`, `apa-7`
+- [ ] Captions follow the format the venue requires — see `ieee-publishing`, `acm-paper`, `apa-7`
 - [ ] Cross-references resolve to what they claim
 - [ ] References complete and in one style
 - [ ] Headings parallel in grammatical form

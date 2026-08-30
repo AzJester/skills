@@ -281,7 +281,7 @@ Developing a physical product — tactical edge compute, networking and sensor p
 
 | Skill | Description |
 |-------|-------------|
-| [ieee-paper](skills/ieee-paper/) | Write or format a paper to IEEE requirements: conference versus journal templates (which differ), section numbering, the figure-caption-below/table-caption-above rule, equations, and IEEE numbered-bracket references with patterns for every source type. Treats the venue's own downloaded template as authoritative rather than hardcoding values that drift between revisions. |
+| [ieee-publishing](skills/ieee-publishing/) | Write, format, validate and submit IEEE papers with formatting enforced by the IEEEtran document class and verified by a script rather than remembered: the venue established before drafting, a scaffolder for conference, journal, Access, Letters, Magazine and double-blind variants, and a validator over LaTeX, Word and PDF covering caption placement, float and mention order, cross-references, bibliography and font embedding. No manuscript is handed back until validation passes. |
 | [dod-technical-report](skills/dod-technical-report/) | DoD technical reports for DTIC and contract delivery: the three determinations made before writing, report structure, and the SF 298 block by block — with the abstract and subject terms that decide whether the report is ever retrieved again. |
 | [nasa-sti](skills/nasa-sti/) | NASA STI reports: the series types and which one a contractor produces, the self-contained Summary, subject categories, availability determination, and the review path. Export control is not softened by the sponsor being civil. |
 | [acm-paper](skills/acm-paper/) | ACM venues via the `acmart` class: format options set by the venue, required CCS concepts and rights commands, and the difference that produces real rework — ACM orders references alphabetically where IEEE orders by first appearance. |
@@ -335,7 +335,6 @@ Written for this repository, not vendored:
 - [measures-of-effectiveness](skills/measures-of-effectiveness/) — MOE/MOP/KPP definition and TPM tracking.
 - [configuration-management](skills/configuration-management/) — baselines, change control, and audits.
 - [trl-assessment](skills/trl-assessment/) — technology readiness assessment and maturation planning.
-- [ieee-paper](skills/ieee-paper/) — papers in IEEE conference or journal format.
 - [rmf-ato](skills/rmf-ato/) — RMF process and authorization package assembly.
 - [zero-trust-architecture](skills/zero-trust-architecture/) — DoD zero trust across the seven pillars.
 - [stig-and-hardening](skills/stig-and-hardening/) — benchmark application, tailoring, and drift control.
@@ -410,6 +409,14 @@ Written for this repository, not vendored:
 - [technical-pilot](skills/technical-pilot/) — POCs with criteria, lead times and a transition plan.
 - [business-unit-finance](skills/business-unit-finance/) — bookings and backlog, indirect rates, where margin goes.
 - [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
+
+### ieee-publishing
+
+[ieee-publishing](skills/ieee-publishing/) was supplied as a complete skill bundle by the repository owner. It carries no upstream licence or authorship of its own.
+
+It vendors two files that do: `assets/IEEEtran.cls` (V1.8b, 2015/08/26) and `assets/IEEEtran.bst`, the official IEEE LaTeX class and BibTeX style by Michael Shell and earlier contributors. Both are distributed under the [LaTeX Project Public License](http://www.latex-project.org/) version 1.3, which permits free use, distribution and modification provided contribution notices are retained and modified files are clearly marked. Both files are vendored **unmodified**, with their original copyright and licence headers intact.
+
+This skill replaced an earlier `ieee-paper` skill, which described IEEE formatting values in prose. The replacement enforces them through the class file and a validation script instead, which removes the need to hardcode measurements that drift between template revisions.
 
 ### nextlevelbuilder/ui-ux-pro-max-skill
 

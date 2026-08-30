@@ -1,6 +1,6 @@
 ---
 name: manuscript-submission
-description: Get a paper through peer review. Use when choosing a venue, preparing a submission, writing a cover letter, responding to reviewers, handling a rejection, deciding whether to appeal, or reviewing someone else's manuscript. Covers the review cycle; formatting is handled by ieee-paper and the other format skills.
+description: Get a paper through peer review. Use when choosing a venue, preparing a submission, writing a cover letter, responding to reviewers, handling a rejection, deciding whether to appeal, or reviewing someone else's manuscript. Covers the review cycle; formatting is handled by `ieee-publishing` and the other format skills.
 ---
 
 # Manuscript submission
@@ -81,4 +81,4 @@ You will be asked, and reviewing well improves your own writing more than most t
 
 ## Where this connects
 
-`ieee-paper` and the other format skills handle the manuscript itself. `applied-statistics` for the analysis and for reviewing others'. `export-control-and-markings` for release review before submission. `invention-disclosure` before submission if the work may be patentable — publishing first can forfeit foreign patent rights outright. `storm-research` on your account for the literature work that precedes writing.
+`ieee-publishing` and the other format skills handle the manuscript itself. `applied-statistics` for the analysis and for reviewing others'. `export-control-and-markings` for release review before submission. `invention-disclosure` before submission if the work may be patentable — publishing first can forfeit foreign patent rights outright. `storm-research` on your account for the literature work that precedes writing.
