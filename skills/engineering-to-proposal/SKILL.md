@@ -49,7 +49,7 @@ The move is from **structure** to **rationale**. The architecture says what the 
 3. Tie components to the solicitation's requirements. A component with no requirement behind it is either scope you are giving away free or a paragraph to cut.
 4. Name the risks honestly and their mitigations. A volume with no risks reads as a volume that has not thought about the work.
 
-Hand the drafted narrative to `executive-summary-builder` for the front matter and `mck-pyramid-checker` for structural review. This skill supplies substance; those shape it.
+Hand the drafted narrative to your account's `executive-summary-builder` for the front matter and `mck-pyramid-checker` for structural review, where those account skills are installed. This skill supplies substance; those shape it.
 
 ### Job 3: Delivered requirements to compliance matrix
 

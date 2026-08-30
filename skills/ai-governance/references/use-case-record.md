@@ -37,8 +37,7 @@ Asymmetry here drives threshold selection. A system tuned to a balanced metric w
 
 | | |
 | --- | --- |
-| Rights-impacting? | Yes / No — reasoning |
-| Safety-impacting? | Yes / No — reasoning |
+| High-impact AI? | Yes / No — reasoning (does the output serve as a principal basis for decisions with legal, material, binding or significant effect? Note any rights or safety dimensions in the reasoning) |
 | Determination made by / date | |
 | Obligations triggered | |
 

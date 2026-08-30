@@ -91,7 +91,7 @@ Note against APA, since the two look similar and are not: the year follows the a
 
 - **Title case for all titles** — books, articles, chapters. This differs from both APA and IEEE, which use sentence case for article titles.
 - Book and journal titles in italics; article and chapter titles in quotation marks.
-- Page ranges condensed per Chicago's rules — `120–45`, not `120–145`, with exceptions in the teens and for numbers ending in zero.
+- Page ranges condensed per Chicago's rules — `120–45`, not `120–145`. Exceptions: numbers under 100 and multiples of 100 keep all digits (`96–117`, `100–104`); for x01–x09 use only the changed part (`101–8`); otherwise use two digits, more where needed.
 - Notes numbered consecutively through a chapter or article.
 - Bibliography alphabetical by author surname, hanging indent.
 - Three or more authors: in notes, first author plus `et al.`; in the bibliography, all listed up to six, and for seven or more the first three plus `et al.` (Chicago 18th. Under the 17th and Turabian 9, notes use `et al.` only at four or more authors, and the bibliography lists up to ten.)

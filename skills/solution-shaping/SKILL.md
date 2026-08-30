@@ -36,7 +36,7 @@ Two things fall out. **Where you have no evidence, that is a gap to close before
 
 ## Step 3: Find real discriminators
 
-A discriminator is something the customer values, that you can substantiate, that competitors cannot readily match. All three conditions, or it is a feature.
+A discriminator is something the customer values, that you can substantiate, that competitors cannot readily match, and that addresses their actual problem. All four conditions, or it is a feature.
 
 Test every candidate:
 
@@ -75,7 +75,7 @@ Take the shaped solution through a review that is allowed to fail it — `techni
 
 - Does it solve the problem the customer actually has, or the one the requirement describes?
 - Does every evaluation factor have an approach and evidence?
-- Are the discriminators real by all three tests?
+- Are the discriminators real by all four tests?
 - Is it affordable within the price-to-win, and what gets cut if not?
 - Is the risk honest, and is the mitigation credible? A solution with no risks reads as one nobody stress-tested.
 - Could a competent competitor say the same thing? If yes, it is not shaped yet.

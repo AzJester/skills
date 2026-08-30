@@ -137,7 +137,7 @@ Boardroom-ready, numbered and captioned.
 - Type: a serif for the exhibit title, sans for everything inside the diagram.
 - Source line in small gray type bottom-left.
 
-Good for anything going to executives. Note this repo has an `mcbranding` skill carrying a fuller version of this system — use it if the deck is going out under that identity.
+Good for anything going to executives. Where your account has the `mcbranding` skill installed, it carries a fuller version of this system — use it if the deck is going out under that identity.
 
 ---
 

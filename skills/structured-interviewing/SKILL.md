@@ -32,7 +32,7 @@ Write it before the questions, and certainly before meeting anyone.
 
 ## Step 3: Write questions that produce evidence
 
-**Behavioural** — past behaviour, the best available predictor: *"Tell me about a time you disagreed with a technical decision your team had already made. What did you do?"*
+**Behavioural** — past behaviour, a strong predictor of future behaviour: *"Tell me about a time you disagreed with a technical decision your team had already made. What did you do?"*
 
 Probe for specifics. A candidate describing what they *would* do is giving you a theory; press for what they *did*. "What was your specific contribution?" separates the person from the team.
 

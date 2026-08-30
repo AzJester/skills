@@ -78,7 +78,7 @@ The standards allow limited exceptions — including for certain national securi
 Two things to understand about them:
 
 - **The agency determines whether an exception applies, not the contractor.** You propose and document; they decide.
-- **Undue burden means significant difficulty or expense assessed against the agency's overall resources**, not against your programme's budget. It is a high bar, it must be documented in writing, and where it is claimed the agency still has an obligation to provide alternative access.
+- **Undue burden means significant difficulty or expense assessed against the agency resources available to the program or component the ICT serves**, not against your programme's budget. It is a high bar, it must be documented in writing, and where it is claimed the agency still has an obligation to provide alternative access.
 
 **Do not use exceptions as a plan.** A programme intending to claim undue burden rather than build accessibly is making a bet on someone else's determination, usually late.
 

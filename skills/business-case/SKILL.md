@@ -7,7 +7,7 @@ description: Build the case for an investment decision. Use when justifying a sp
 
 A business case answers whether a course of action is worth its cost. It is a different instrument from a trade study, and the two get conflated.
 
-`trade-study-analysis` and `decision-tree-ev` choose **between** options on defined criteria. A business case argues **for** one against the alternative of not doing it — which is always an option and is the one most cases forget to include.
+`trade-study-analysis` and your account's `decision-tree-ev` choose **between** options on defined criteria. A business case argues **for** one against the alternative of not doing it — which is always an option and is the one most cases forget to include.
 
 ## Step 1: Frame the decision honestly
 

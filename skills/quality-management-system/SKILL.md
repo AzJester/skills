@@ -40,7 +40,7 @@ Where a QMS either earns its keep or becomes paperwork.
 
 **Nonconformance is a fact, recorded without blame.** An organisation where raising one is uncomfortable has fewer records and the same number of problems.
 
-**Corrective action addresses cause, not symptom.** This is where the RCCA family belongs — `rcca-master` routes across the eight methods, and a corrective action that does not name a cause is a repair with a form attached.
+**Corrective action addresses cause, not symptom.** This is where the RCCA family belongs — `rcca-master` runs 8D and routes the analysis methods, and a corrective action that does not name a cause is a repair with a form attached.
 
 Three tests for a corrective action worth the effort:
 

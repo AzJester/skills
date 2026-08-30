@@ -24,7 +24,7 @@ Every number comes from the installation. Get them before designing:
 | **Mounting** | Orientation, interface, and whether the mount is a thermal path |
 | **Environment** | Maximum ambient, altitude, and solar loading — from `ruggedization-and-environmental-qual` |
 
-**The volume you are given is smaller than the volume you can use.** Connector mating depth, cable bend radius, service access and keep-outs for the mount consume a real fraction of the envelope, and they are usually discovered after the boards are laid out.
+**The volume you can use is smaller than the volume you are given.** Connector mating depth, cable bend radius, service access and keep-outs for the mount consume a real fraction of the envelope, and they are usually discovered after the boards are laid out.
 
 **Ask what else shares the power and cooling.** On a vehicle or aircraft, your box is one load among many, and the available allocation may be well below the platform's total capacity.
 

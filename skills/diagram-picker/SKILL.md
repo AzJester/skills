@@ -46,7 +46,7 @@ Make **one** `AskUserQuestion` call with all three questions. Three separate cal
 | Hand-drawn | Rough strokes, uneven boxes. Reads as provisional on purpose. |
 | Surprise me | Render the same diagram in three contrasting styles and show them together. |
 
-Full style definitions, including six more styles beyond the four offered, are in `references/styles.md`. Read it once the style is chosen. If the user picks "Other" and names something not in the catalog, follow their description directly.
+Full style definitions — ten in all, including seven beyond the three concrete options offered above — are in `references/styles.md`. Read it once the style is chosen. If the user picks "Other" and names something not in the catalog, follow their description directly.
 
 ### Do not ask what you already know
 

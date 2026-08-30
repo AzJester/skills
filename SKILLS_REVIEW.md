@@ -14,7 +14,7 @@ A correctness and accuracy review of the 85 author-written skills in this reposi
 | Findings refuted on verification | 0 |
 | Skills with no findings | 65 |
 
-**Status:** all 16 confirmed errors below are fixed on this branch. The findings are kept as written, as the record of what was wrong and why. The 18 low-severity notes remain open.
+**Status:** all 16 confirmed errors and all 18 low-severity notes below are fixed on this branch. The findings are kept as written, as the record of what was wrong and why.
 
 ---
 
@@ -93,7 +93,7 @@ The router tells readers to narrow to a README section and read its table, but s
 
 ## Minor issues (low severity)
 
-Logged by the reviewers but not independently re-verified, so spot-check before editing. All were quoted verbatim from the files.
+Logged by the reviewers without the independent verification pass the items above got. Each was checked in place against the file and the underlying fact when the fix was applied. All were quoted verbatim from the files.
 
 | Skill | Issue |
 | --- | --- |
@@ -146,4 +146,11 @@ All 16 confirmed errors are fixed on this branch, with the corrections validated
 - diagram-picker states the explicit style-key mapping, and every which-skill "Look under" label now matches a real README section heading (checked programmatically against the skill links in each section).
 - architecture-diagrams: `glyphs.py` gained the six missing AWS aliases and a real generic fallback, SKILL.md documents the cairosvg dependency, the example spec's Application Tier is reordered, and the Azure2 guidance now describes image styles. The full pipeline was re-run on the fixed example and the PNG inspected: every node has a glyph and no edge passes under a node.
 
-The low-severity list is mostly single-line edits, left for a later pass since those findings were not independently re-verified.
+The low-severity list is fixed too, each item verified in place first. Notes on the less obvious ones:
+
+- The DCMA checklist now carries 14 items, with CPLI and BEI as separate checks with their 0.95 thresholds.
+- solution-shaping settled on four discriminator tests everywhere, matching its own table and the worksheet.
+- The OTB threshold is now the contract budget base in both the table and the prose.
+- References to `decision-tree-ev`, `executive-summary-builder`, `mck-pyramid-checker` and `mcbranding` are now framed as account skills, matching how executive-decision-memo already handled it.
+- The ai-governance impact-determination template now asks the single high-impact question, with rights and safety dimensions folded into the reasoning.
+- In architecture-diagrams, the shadow/glow filter regions now emit valid percentages, the eight dead `fx` tokens (ticks, mon, pixel, folds, burst, squiggle, gradient, flow) are removed from the style definitions along with the docstring's pointer to a nonexistent registry, and the label-shrink guidance matches the code's 24-character threshold. The four shipped sample SVGs and the gallery carried the old filter bug and the old node order, so they were regenerated from the fixed code, and all 36 styles were rendered once as a regression check with zero errors.

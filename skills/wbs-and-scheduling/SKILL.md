@@ -75,7 +75,8 @@ Health checks worth running before trusting any schedule — the DCMA 14-point a
 - [ ] **Resources** — assigned where the schedule is resource-driven
 - [ ] **Missed tasks** — slipping against baseline
 - [ ] **Critical path test** — insert a large delay on a critical activity; the finish date must move by the same amount. If it does not, the network is broken
-- [ ] **Baseline execution and completion indices** — whether work is being finished as planned
+- [ ] **Critical path length index (CPLI)** — critical path length plus total float, over critical path length; below 0.95 the finish date is not credible
+- [ ] **Baseline execution index (BEI)** — tasks completed against tasks planned to be complete; below 0.95 work is not being finished as planned
 
 The critical path test is the one to run first. A schedule that fails it is not a model of anything, and every number derived from it is decoration.
 

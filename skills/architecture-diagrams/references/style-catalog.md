@@ -76,7 +76,7 @@ honest, which suits a warts-and-all current-state diagram.
 
 **minecraft** — pixel bevels on stone and grass. **lego** — studded bricks, primary colours.
 **pipboy** — green phosphor CRT with scanlines and vignette, surprisingly readable.
-**origami** — folded paper creases, dashed fold lines, quiet and elegant.
+**origami** — paper tones, sharp corners, dashed fold-line connectors, quiet and elegant.
 
 ## Anime and cute
 
