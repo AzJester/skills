@@ -110,6 +110,7 @@ Upstream ships these as beta: they are excluded from the upstream plugin, and th
 
 | Skill | Description |
 |-------|-------------|
+| [diagram-picker](skills/diagram-picker/) | Ask what a diagram must show, what it is for, and what visual style to render it in, then pick the diagram type and draw it. Separates content, fidelity, and style into three independent choices, and carries a catalog of ten concrete visual styles. Hands off whole-system structure diagrams to `architecture-diagram-creator`. |
 | [architecture-diagram-creator](skills/architecture-diagram-creator/) | Produce a single self-contained HTML architecture overview: business context, data flow, processing pipeline, layered system architecture, functional and non-functional features, and deployment, all drawn as inline SVG. Ships a page template, a rendered gallery of reusable SVG blocks, and a fully worked example. |
 | [omm-scan](skills/omm-scan/) | Scan a codebase and generate `.omm/` architecture docs by perspective-driven recursive analysis: pick the perspectives that fit the project (overall architecture, request lifecycle, data flow, dependency map, storage, and others), then drill into each diagram element until it bottoms out at a leaf. |
 | [omm-view](skills/omm-view/) | Start the local web viewer to explore the generated `.omm/` diagrams in a browser, auto-refreshing as the files change. |
@@ -152,3 +153,4 @@ These skills do not work on their own: install the CLI with `npm install -g oh-m
 Written for this repository, not vendored:
 
 - [architecture-diagram-creator](skills/architecture-diagram-creator/) — architecture overview pages as self-contained HTML.
+- [diagram-picker](skills/diagram-picker/) — three-question interview (content, fidelity, style) before drawing a diagram.
