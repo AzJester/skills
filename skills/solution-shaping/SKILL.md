@@ -82,7 +82,7 @@ Take the shaped solution through a review that is allowed to fail it — `techni
 
 ## Where this connects
 
-`engineering-to-proposal` harvests the evidence this needs. `trade-study-analysis` decides between technical options within the shape. `risk-management` carries the pursuit and delivery risks. `executive-decision-memo` gets the bid decision made. The capture-side skills on your account handle the customer relationship; this handles the solution.
+`engineering-to-proposal` harvests the evidence this needs. `trade-study-analysis` decides between technical options within the shape. `risk-management` carries the pursuit and delivery risks. `executive-decision-memo` gets the bid decision made. `capture-management` handles the pursuit and the customer relationship; this handles the solution.
 
 ## Reference
 

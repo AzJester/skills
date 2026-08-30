@@ -44,7 +44,7 @@ Research on completed programs is consistent: **CPI stabilises early and rarely 
 
 EVM measures against a performance measurement baseline, and a bad baseline makes every number meaningless.
 
-- **Scope decomposed to work packages** via a WBS, each with a discrete deliverable, a budget, a schedule, and one owner.
+- **Scope decomposed to work packages** via a WBS, each with a discrete deliverable, a budget, a schedule, and one owner. `wbs-and-scheduling` builds this and the IMS the critical path comes from.
 - **Measurement method chosen per package**, before work starts. This choice drives everything:
 
 | Method | Fits | Fails when |
