@@ -195,6 +195,23 @@ The technical-management layer above the design skills: what could stop the prog
 |-------|-------------|
 | [network-architecture](skills/network-architecture/) | Network solutions for defense programs: mission flows before topology, designing for the disconnected case first, layered transport diversity with explicit failover behaviour, segmentation that matches the zero trust boundaries, DoDIN connection lead times, and JADC2 framing that turns on data and decision timelines rather than diagrams. |
 
+### Artificial intelligence
+
+| Skill | Description |
+|-------|-------------|
+| [ai-governance](skills/ai-governance/) | Govern an AI system so its risk is managed and demonstrable: the NIST AI RMF functions, use-case mapping with an explicit operating envelope, impact determination, DoD Responsible AI principles, and human oversight designed so the reviewer can actually disagree. Consumes `ai-evaluation` as its Measure function. |
+| [ai-evaluation](skills/ai-evaluation/) | Prove an AI system is good enough to field: acceptance criteria set before measuring, evaluation sets representative of deployment rather than training, metrics matched to the decision, validated human review, per-case regression diffing, and a failure taxonomy that says which failures are caught downstream. AI TEVV sits inside `test-and-evaluation`. |
+| [ai-solution-architecture](skills/ai-solution-architecture/) | Choose and justify an AI architecture: prompting through retrieval, fine-tuning and agentic in ascending order of commitment, model selection as a trade, and the failure design — unavailability, malformed output, confidently wrong output, refusal, logging — that separates a system from a demo. |
+| [ai-cost-modeling](skills/ai-cost-modeling/) | What an AI solution costs at contract volume: cost per unit of work rather than per token, the consumers people miss (system prompts, retrieved context, retries, agentic step tails, conversation growth), the levers in order of effect, and the commercial shape under a given contract type. |
+
+### Program & contract
+
+| Skill | Description |
+|-------|-------------|
+| [earned-value-management](skills/earned-value-management/) | Read and run EVM: the three numbers and what the derived indices mean, why SPI misleads late in a program, EAC methods and the TCPI reality check, the measurement-method choices that decide whether the baseline is honest, and variance analysis that names causes rather than restating arithmetic. |
+| [contract-vehicles-and-clauses](skills/contract-vehicles-and-clauses/) | What a contract type and its clauses commit you to: who carries risk under each type, CLIN structure and funding, CDRLs as real scope, data rights and what determines them, the changes clause and constructive change, and flow-down. Engineering consequences, not legal advice. |
+| [export-control-and-markings](skills/export-control-and-markings/) | Handle export-controlled and CUI material correctly: ITAR versus EAR, deemed exports and why cloud and AI services are transmissions, the CUI marking system, distribution statements A through F, and a pre-release checklist. A guardrail, with a bias toward asking before disclosing. |
+
 ## Attribution
 
 Most skills here are vendored unmodified from their upstream repositories, each redistributed under the MIT License (a copy is included in every skill directory). Skills written for this repository are listed under [Original skills](#original-skills) and carry no third-party licence.
@@ -250,6 +267,13 @@ Written for this repository, not vendored:
 - [test-and-evaluation](skills/test-and-evaluation/) — DT&E, OT&E, TEMP, cyber T&E, and VV&A.
 - [digital-engineering](skills/digital-engineering/) — authoritative source of truth, MBSE, digital thread.
 - [network-architecture](skills/network-architecture/) — mission flows, DIL operation, transport diversity.
+- [ai-governance](skills/ai-governance/) — NIST AI RMF, impact determination, oversight design.
+- [ai-evaluation](skills/ai-evaluation/) — eval harness, acceptance criteria, regression, failure taxonomy.
+- [ai-solution-architecture](skills/ai-solution-architecture/) — approach selection and failure design.
+- [ai-cost-modeling](skills/ai-cost-modeling/) — unit economics of an AI solution at volume.
+- [earned-value-management](skills/earned-value-management/) — CPI, SPI, EAC, and variance analysis.
+- [contract-vehicles-and-clauses](skills/contract-vehicles-and-clauses/) — contract types, CLINs, data rights.
+- [export-control-and-markings](skills/export-control-and-markings/) — ITAR/EAR, CUI, distribution statements.
 - [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
 
 ### nextlevelbuilder/ui-ux-pro-max-skill
