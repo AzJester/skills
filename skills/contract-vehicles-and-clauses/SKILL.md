@@ -1,6 +1,6 @@
 ---
 name: contract-vehicles-and-clauses
-description: Understand what a contract type and its clauses commit you to. Use when assessing which party carries risk under a contract type, structuring or reading CLINs, identifying the FAR and DFARS clauses that change engineering obligations, understanding data rights and IP consequences, or judging how a contract vehicle shapes a solution and its price. Covers the engineering and delivery consequences, not contract negotiation or legal advice. `sow-and-pws` covers writing the work description itself.
+description: Understand what a contract type and its clauses commit you to. Use when assessing which party carries risk under a contract type, structuring or reading CLINs, identifying the FAR and DFARS clauses that change engineering obligations, understanding data rights and IP consequences, or judging how a contract vehicle shapes a solution and its price. Covers the engineering and delivery consequences, not contract negotiation or legal advice. `sow-and-pws` covers writing the work description itself. `negotiation` covers negotiating them.
 ---
 
 # Contract vehicles and clauses

@@ -1,6 +1,6 @@
 ---
 name: trl-assessment
-description: Assess technology readiness on the TRL 1-9 scale and plan the maturation to a target level. Use when asked for a TRL, when a solicitation or gate requires a technology readiness assessment, when judging whether a technology is mature enough to enter a phase, when identifying critical technology elements, or when building a technology maturation plan. Covers TRL, and the related MRL and IRL where those are required. `technology-roadmapping` sequences maturation across a portfolio.
+description: Assess technology readiness on the TRL 1-9 scale and plan the maturation to a target level. Use when asked for a TRL, when a solicitation or gate requires a technology readiness assessment, when judging whether a technology is mature enough to enter a phase, when identifying critical technology elements, or when building a technology maturation plan. Covers TRL, and the related MRL and IRL where those are required. `technology-roadmapping` sequences maturation across a portfolio. `technical-pilot` runs the pilots that produce maturity evidence.
 ---
 
 # TRL assessment

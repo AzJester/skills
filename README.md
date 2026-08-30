@@ -219,6 +219,7 @@ Developing a physical product — tactical edge compute, networking and sensor p
 | [system-safety](skills/system-safety/) | Run a system safety programme: hazard identification from several directions, severity and probability assessed before and after mitigation, the order of precedence with procedure named as the weakest rung, residual risk accepted by a named authority rather than by engineering judgement, and software assessed by control authority rather than a failure rate. Uses `fault-tree-analysis` and `fmea-analysis` as techniques. |
 | [reliability-and-sustainment](skills/reliability-and-sustainment/) | Design for and prove RAM and supportability: availability as the requirement that matters, prediction for comparison and growth for achievement, maintainability designed early or not at all, the integrated product support elements, level of repair analysis, and comparing options on life-cycle rather than acquisition cost. |
 | [human-systems-integration](skills/human-systems-integration/) | Design the system around the people who operate and maintain it: the HSI domains and the trades between them, deliberate function allocation including the takeover, measurable human performance requirements instead of "user friendly", task and workload analysis, and manning that follows from analysis rather than from the legacy figure. |
+| [technical-pilot](skills/technical-pilot/) | Running a pilot that leads somewhere rather than succeeding and dying: the decision it informs and who makes it, measurable criteria agreed before launch, and the transition plan — funding, vehicle, accreditation, operational owner — established before the pilot starts. Data and network access are what actually kill pilots, so every lead-time item begins at kickoff. |
 
 ### Networks
 
@@ -238,6 +239,8 @@ Developing a physical product — tactical edge compute, networking and sensor p
 | [ai-solution-architecture](skills/ai-solution-architecture/) | Choose and justify an AI architecture: prompting through retrieval, fine-tuning and agentic in ascending order of commitment, model selection as a trade, and the failure design — unavailability, malformed output, confidently wrong output, refusal, logging — that separates a system from a demo. |
 | [ai-cost-modeling](skills/ai-cost-modeling/) | What an AI solution costs at contract volume: cost per unit of work rather than per token, the consumers people miss (system prompts, retrieved context, retries, agentic step tails, conversation growth), the levers in order of effect, and the commercial shape under a given contract type. |
 | [data-strategy-and-governance](skills/data-strategy-and-governance/) | Make data usable and trustworthy: start from decisions rather than an inventory, named owners per domain, quality thresholds set per use, lineage captured from pipelines rather than written in a document, retention driven by obligation, and governance fast enough that shadow copies do not appear. Sits upstream of `ai-evaluation` and `ai-governance`. |
+| [edge-ai-deployment](skills/edge-ai-deployment/) | Inference on constrained, disconnected or classified hardware — the case `ai-solution-architecture` and `ai-cost-modeling` both name as a different problem and neither covers. On-device versus reachback decided by data gravity as much as latency, model selection against memory bandwidth and a thermal budget rather than a cloud bill, compression measured on your own evaluation set per class, evaluating a device you cannot collect telemetry from, and model updates signed and delivered like firmware. |
+| [agentic-system-design](skills/agentic-system-design/) | Designing a system whose output is a trajectory rather than an answer: establishing that you need an agent rather than a pipeline, the tool surface as both capability boundary and attack surface, one loop until it demonstrably fails, stop conditions and budgets, and evaluating outcome, path and each call. The error arithmetic — 95% per step over twenty steps is 36% — explains most disappointing agentic systems. |
 
 ### Program & contract
 
@@ -271,6 +274,8 @@ Developing a physical product — tactical edge compute, networking and sensor p
 | [technical-workshop-facilitation](skills/technical-workshop-facilitation/) | Run a technical session that reaches a decision: one purpose per session, the decision rule stated at the start, separating divergence from convergence, and naming which of the four kinds of disagreement is actually in the room — the interest-based one being what derails cross-unit sessions and cannot be settled technically. |
 | [organizational-change](skills/organizational-change/) | Get a delivered system actually used: what each affected group loses rather than gains, involvement while the design can still change, a pilot whose findings are acted on before expanding, the productivity dip named in advance, and measuring adoption and outcome rather than deployment. |
 | [resource-and-capacity-management](skills/resource-and-capacity-management/) | Match the people you have to the work you have committed to: capacity as available skilled people rather than headcount, the pipeline weighted by honest pWin, why planning at full utilisation makes everything late, protecting the constrained few who sit on every critical path, hiring worked backwards from need dates through clearance lead time, and modelling what happens if you win everything you are bidding. |
+| [negotiation](skills/negotiation/) | Preparing for and running a negotiation, which `contract-vehicles-and-clauses` explicitly scopes out: interests rather than positions, both walk-aways decided in advance, bundling issues so there is something to trade, never conceding without getting, and negotiating with someone you will work alongside for years — where a deal the other side cannot perform is not a win. |
+| [business-unit-finance](skills/business-unit-finance/) | The numbers a business unit is run on: bookings, backlog, revenue and cash as four different things, indirect rates as a competitiveness lever engineering rarely knows about, where programme margin actually goes, B&P and IRAD as investment budgets with rules, and reading a programme's financial health while intervention is still cheap. Not accounting advice. |
 
 ### Technical publishing
 
@@ -399,6 +404,11 @@ Written for this repository, not vendored:
 - [program-recovery](skills/program-recovery/) — baseline versus execution diagnosis, re-baselining, get-well plans.
 - [lessons-learned](skills/lessons-learned/) — capture at gates, write it actionable, push it into the template.
 - [resource-and-capacity-management](skills/resource-and-capacity-management/) — capacity, utilisation, the matrix, hiring lead time.
+- [edge-ai-deployment](skills/edge-ai-deployment/) — on-device inference, compression, disconnected evaluation and update.
+- [agentic-system-design](skills/agentic-system-design/) — tool surface, stop conditions, trajectory evaluation.
+- [negotiation](skills/negotiation/) — interests, walk-aways, trading, and long relationships.
+- [technical-pilot](skills/technical-pilot/) — POCs with criteria, lead times and a transition plan.
+- [business-unit-finance](skills/business-unit-finance/) — bookings and backlog, indirect rates, where margin goes.
 - [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
 
 ### nextlevelbuilder/ui-ux-pro-max-skill
