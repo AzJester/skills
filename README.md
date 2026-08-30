@@ -166,6 +166,12 @@ The technical-management layer above the design skills: what could stop the prog
 | [configuration-management](skills/configuration-management/) | Control what the system is: configuration items, the functional, allocated and product baselines, change control with a real impact assessment (including which verification a change invalidates), deviations versus waivers, FCA/PCA audits, and status accounting. |
 | [trl-assessment](skills/trl-assessment/) | Assess technology readiness on TRL 1–9 against demonstrated evidence rather than confidence, identify critical technology elements, and plan maturation level by level with fallbacks and decision points. Covers MRL and IRL where a programme requires them. |
 
+### Technical publishing
+
+| Skill | Description |
+|-------|-------------|
+| [ieee-paper](skills/ieee-paper/) | Write or format a paper to IEEE requirements: conference versus journal templates (which differ), section numbering, the figure-caption-below/table-caption-above rule, equations, and IEEE numbered-bracket references with patterns for every source type. Treats the venue's own downloaded template as authoritative rather than hardcoding values that drift between revisions. |
+
 ## Attribution
 
 Most skills here are vendored unmodified from their upstream repositories, each redistributed under the MIT License (a copy is included in every skill directory). Skills written for this repository are listed under [Original skills](#original-skills) and carry no third-party licence.
@@ -212,6 +218,7 @@ Written for this repository, not vendored:
 - [measures-of-effectiveness](skills/measures-of-effectiveness/) — MOE/MOP/KPP definition and TPM tracking.
 - [configuration-management](skills/configuration-management/) — baselines, change control, and audits.
 - [trl-assessment](skills/trl-assessment/) — technology readiness assessment and maturation planning.
+- [ieee-paper](skills/ieee-paper/) — papers in IEEE conference or journal format.
 - [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
 
 ### nextlevelbuilder/ui-ux-pro-max-skill
