@@ -1,6 +1,6 @@
 ---
 name: technology-roadmapping
-description: Decide what capability to build, when, and for whom across a portfolio. Use when building a technology or capability roadmap, allocating internal research and development investment, deciding what to build once and share across business units, sequencing technology maturation against programme need dates, setting kill criteria for an investment, or reconciling roadmaps that several units maintain separately.
+description: Decide what capability to build, when, and for whom across a portfolio. Use when building a technology or capability roadmap, allocating internal research and development investment, deciding what to build once and share across business units, sequencing technology maturation against programme need dates, setting kill criteria for an investment, or reconciling roadmaps that several units maintain separately. `product-management` runs a single product's roadmap, which feeds this.
 ---
 
 # Technology roadmapping

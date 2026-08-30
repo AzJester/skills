@@ -1,6 +1,6 @@
 ---
 name: supply-chain-security
-description: Secure and evidence the software and component supply chain. Use when producing or consuming an SBOM, applying the Secure Software Development Framework, establishing component provenance, signing or verifying artifacts, responding to a vulnerability in a dependency, completing a secure software development attestation, or assessing supplier risk.
+description: Secure and evidence the software and component supply chain. Use when producing or consuming an SBOM, applying the Secure Software Development Framework, establishing component provenance, signing or verifying artifacts, responding to a vulnerability in a dependency, completing a secure software development attestation, or assessing supplier risk. `component-selection-and-obsolescence` covers the physical parts supply chain.
 ---
 
 # Supply chain security
