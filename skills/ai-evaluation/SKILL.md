@@ -1,6 +1,6 @@
 ---
 name: ai-evaluation
-description: Prove an AI system is good enough to field. Use when designing an evaluation harness, choosing metrics for a model or agent, building a task-specific benchmark, setting acceptance criteria under uncertainty, running regression evals against a model or prompt change, designing human review protocols, or doing AI TEVV for a defense program.
+description: Prove an AI system is good enough to field. Use when designing an evaluation harness, choosing metrics for a model or agent, building a task-specific benchmark, setting acceptance criteria under uncertainty, running regression evals against a model or prompt change, designing human review protocols, or doing AI TEVV for a defense program. Evaluation sets depend on `data-strategy-and-governance` for provenance and quality.
 ---
 
 # AI evaluation

@@ -1,6 +1,6 @@
 ---
 name: ai-governance
-description: Govern an AI system so its risk is managed and demonstrable. Use when applying the NIST AI Risk Management Framework, meeting federal AI use policy, building an AI use case inventory, determining whether a use is high-impact or rights-impacting, writing a model card or system card, designing human oversight, or answering a customer's questions about AI assurance and responsible AI.
+description: Govern an AI system so its risk is managed and demonstrable. Use when applying the NIST AI Risk Management Framework, meeting federal AI use policy, building an AI use case inventory, determining whether a use is high-impact or rights-impacting, writing a model card or system card, designing human oversight, or answering a customer's questions about AI assurance and responsible AI. Assumes data whose provenance and quality are known — `data-strategy-and-governance` establishes that.
 ---
 
 # AI governance
