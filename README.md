@@ -110,6 +110,7 @@ Upstream ships these as beta: they are excluded from the upstream plugin, and th
 
 | Skill | Description |
 |-------|-------------|
+| [architecture-diagrams](skills/architecture-diagrams/) | Render an architecture from a JSON spec to a draw.io `.drawio` file plus matching SVG, PNG, and standalone HTML, in any of 36 visual styles (corporate, AWS re:Invent, blueprint, TRON, ukiyo-e, LEGO, surrealist, and more). Automatic layout, AWS/Azure/GCP service icons, and a comparison gallery when several styles are rendered at once. Python 3 stdlib only; `cairosvg` optional, for PNG. |
 | [diagram-picker](skills/diagram-picker/) | Ask what a diagram must show, what it is for, and what visual style to render it in, then pick the diagram type and draw it. Separates content, fidelity, and style into three independent choices, and carries a catalog of ten concrete visual styles. Hands off whole-system structure diagrams to `architecture-diagram-creator`. |
 | [architecture-diagram-creator](skills/architecture-diagram-creator/) | Produce a single self-contained HTML architecture overview: business context, data flow, processing pipeline, layered system architecture, functional and non-functional features, and deployment, all drawn as inline SVG. Ships a page template, a rendered gallery of reusable SVG blocks, and a fully worked example. |
 | [omm-scan](skills/omm-scan/) | Scan a codebase and generate `.omm/` architecture docs by perspective-driven recursive analysis: pick the perspectives that fit the project (overall architecture, request lifecycle, data flow, dependency map, storage, and others), then drill into each diagram element until it bottoms out at a leaf. |
@@ -117,6 +118,14 @@ Upstream ships these as beta: they are excluded from the upstream plugin, and th
 | [omm-push](skills/omm-push/) | Push `.omm/` architecture docs to the oh-my-mermaid hosted service, handling the login, link, and push steps. Sends your architecture docs to a third-party service (`ohmymermaid.com`) and needs an account; the free tier is capped at one project. |
 
 The three `omm-*` skills are a front end for the [`omm`](https://github.com/oh-my-mermaid/oh-my-mermaid) CLI rather than self-contained instructions. They shell out to it and will offer to `npm install -g oh-my-mermaid` if it is missing. `architecture-diagram-creator` has no such dependency.
+
+### UI & UX
+
+| Skill | Description |
+|-------|-------------|
+| [ui-ux-pro-max](skills/ui-ux-pro-max/) | Searchable offline UI/UX database with a Python CLI: 88 styles, 192 product palettes and reasoning profiles, 74 font pairings, 1,934 Google Fonts, 119 UX guidelines, 105 icons, 17 motion presets, 25 chart types, and 22 technology stacks. Generates a whole design system from one query, with optional variance/motion/density dials, and persists it as a master document plus per-page overrides. |
+
+Largest skill here by a wide margin (3.7 MB, mostly font and icon catalogs). Runs on the Python 3 standard library with no external packages and makes no network calls.
 
 ## Attribution
 
@@ -154,3 +163,14 @@ Written for this repository, not vendored:
 
 - [architecture-diagram-creator](skills/architecture-diagram-creator/) — architecture overview pages as self-contained HTML.
 - [diagram-picker](skills/diagram-picker/) — three-question interview (content, fidelity, style) before drawing a diagram.
+- [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
+
+### nextlevelbuilder/ui-ux-pro-max-skill
+
+[ui-ux-pro-max](skills/ui-ux-pro-max/) comes from [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) at commit [`8bd29e7`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/tree/8bd29e775453ebcae52b6e6514fbf134df0c5770/.claude/skills/ui-ux-pro-max) (v2.13.0), MIT licensed, Copyright (c) 2024 Next Level Builder.
+
+Vendored byte-identical to upstream apart from the added `LICENSE` and a stripped `__pycache__`. Upstream ships seven skills (`banner-design`, `brand`, `design`, `design-system`, `slides`, `ui-styling`, and this one) plus an npm CLI installer; only `ui-ux-pro-max` is taken here, since it is self-contained and the others overlap skills this repo already has.
+
+Verified at vendoring time: every advertised catalogue count matches the data exactly; upstream's own suite passes 153 tests and 7,936 subtests; and all 1,344 text-on-surface pairs across the 192 palettes clear the WCAG AA 4.5:1 contrast ratio the skill itself makes its top rule, the tightest at 4.60:1.
+
+Note that upstream's `skill.json` and `.claude-plugin/plugin.json` are stale at this commit, advertising "84 styles" and "98 UX guidelines" where the data holds 88 and 119. `SKILL.md` states the correct figures, and the table above follows the data rather than the manifests.
