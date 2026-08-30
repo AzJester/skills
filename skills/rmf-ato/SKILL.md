@@ -11,9 +11,18 @@ The failure mode is treating RMF as a documentation exercise run at the end. Con
 
 ## Where this sits
 
-`threat-modeling` finds design weaknesses and maps them to control families. This skill runs the process those controls belong to and produces the package. Use them in that order: threat model during design, RMF from categorization onward, with the threat model's findings entering as control selection rationale rather than as a separate document.
+`threat-modeling` finds design weaknesses and maps them to control families. This skill runs the process those controls belong to and produces the package. Use them in that order: threat model during design, RMF from preparation onward, with the threat model's findings entering as control selection rationale rather than as a separate document.
 
-## Step 1: Categorize
+## Step 1: Prepare
+
+SP 800-37 Rev 2 added this step because everything the later steps argue about is cheaper settled first.
+
+- **Name the authorizing official and the risk tolerance they work to.** A package written for an unknown AO is written for nobody.
+- **Draw the authorization boundary.** What is in, what is inherited, what is out of scope — agreed now, not discovered as a dispute at assessment.
+- **Identify common control providers** and confirm they accept the inheritance you plan to claim.
+- **Assess organizational and system-level risk** so categorization and tailoring have something to stand on.
+
+## Step 2: Categorize
 
 Categorization drives everything downstream, and getting it wrong is expensive in both directions.
 
@@ -27,7 +36,7 @@ Two disciplines:
 
 Record the rationale per objective. An assessor will ask why, and "the previous system was moderate" is not an answer.
 
-## Step 2: Select and tailor
+## Step 3: Select and tailor
 
 Start from the baseline the categorization implies, then tailor deliberately. Tailoring is a documented engineering judgement, not a deletion.
 
@@ -41,7 +50,7 @@ For each control the baseline gives you, one of:
 
 Overlays apply on top of the baseline — privacy, classified, space, cross-domain. Determine which apply early; discovering an overlay after control implementation is a rework cycle.
 
-## Step 3: Implement, and write the SSP as you go
+## Step 4: Implement, and write the SSP as you go
 
 The system security plan describes how each control is satisfied **in this system**, not what the control says. A control description copied from the catalogue tells the assessor nothing and reads as a system nobody has examined.
 
@@ -49,7 +58,7 @@ Each control implementation statement answers: what mechanism satisfies this, wh
 
 Hardening evidence comes from `stig-and-hardening`; architecture and boundary from `system-dev` and `network-architecture`; supply chain evidence from `supply-chain-security`.
 
-## Step 4: Assess
+## Step 5: Assess
 
 The security control assessor tests a sample against the assessment procedures and writes the SAR. Prepare by assessing yourself first, honestly, against the same procedures.
 
@@ -60,7 +69,7 @@ What determines how the assessment goes:
 - **Inherited controls have real agreements.** The provider must acknowledge providing them.
 - **Self-identified findings are already on the POA&M.** A finding you brought forward costs credibility once; one the assessor finds costs it repeatedly.
 
-## Step 5: Authorize
+## Step 6: Authorize
 
 The package goes to the AO: SSP, SAR, POA&M, and a risk assessment summarising residual risk in terms the AO can decide on.
 
@@ -68,7 +77,7 @@ Outcomes are ATO, ATO with conditions, IATT (test only, time-boxed, not operatio
 
 **Continuous ATO** replaces a periodic re-authorization with ongoing evidence — automated control monitoring, a pipeline with security gates, and an agreed set of signals the AO accepts as continuous. It is not a lighter path; it front-loads the work into automation and requires the AO to agree the evidence stream in advance. Pursue it where deployment tempo justifies the build, not to avoid a package.
 
-## Step 6: Monitor
+## Step 7: Monitor
 
 Authorization is a state that decays. Configuration drifts, threats change, dependencies age, and the POA&M ages with them.
 

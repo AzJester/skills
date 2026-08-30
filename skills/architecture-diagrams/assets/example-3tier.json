@@ -28,8 +28,8 @@
       "nodes": [
         {"id": "api", "label": "API Gateway", "sub": "REST, throttled", "icon": "aws:apigateway"},
         {"id": "svc", "label": "ECS Fargate Services", "sub": "autoscaled 4-24 tasks", "icon": "aws:ecs"},
-        {"id": "fn", "label": "Lambda Workers", "sub": "async processing", "icon": "aws:lambda"},
-        {"id": "queue", "label": "Amazon SQS", "sub": "decoupling buffer", "icon": "aws:sqs"}
+        {"id": "queue", "label": "Amazon SQS", "sub": "decoupling buffer", "icon": "aws:sqs"},
+        {"id": "fn", "label": "Lambda Workers", "sub": "async processing", "icon": "aws:lambda"}
       ]
     },
     {

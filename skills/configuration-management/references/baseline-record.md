@@ -4,7 +4,7 @@
 
 | Baseline | Established | Gate | Approved by | Contents (CI list reference) | Superseded by |
 | --- | --- | --- | --- | --- | --- |
-| Functional | | SRR | | | |
+| Functional | | SFR | | | |
 | Allocated | | PDR | | | |
 | Product | | CDR | | | |
 

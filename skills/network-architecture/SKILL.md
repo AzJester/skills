@@ -20,7 +20,7 @@ Sizing from flows produces a defensible bandwidth number. Sizing from a link spe
 
 ## Step 2: Design for the disconnected case first
 
-In tactical and expeditionary contexts, DIL — denied, disrupted, intermittent, limited — is the normal condition, not the exception. A design that works well connected and fails disconnected has solved the easy half.
+In tactical and expeditionary contexts, DIL — disconnected, intermittent, limited-bandwidth — is the normal condition, not the exception. A design that works well connected and fails disconnected has solved the easy half.
 
 Decide explicitly, per capability:
 

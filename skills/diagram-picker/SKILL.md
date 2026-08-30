@@ -93,6 +93,6 @@ For "Surprise me", draw the same diagram three times in three styles that differ
 
 ## Handing off
 
-When the answers come back **Structure** with purpose **Documentation** or **Design review**, and the subject is a whole system rather than one component, this wants the full treatment: stop and invoke `architecture-diagrams`, passing the answers along. That skill renders a JSON spec to draw.io, SVG, PNG and standalone HTML across 36 styles, so the style answer maps straight onto its `--styles` flag and the editable `.drawio` becomes the source of truth.
+When the answers come back **Structure** with purpose **Documentation** or **Design review**, and the subject is a whole system rather than one component, this wants the full treatment: stop and invoke `architecture-diagrams`, passing the answers along. That skill renders a JSON spec to draw.io, SVG, PNG and standalone HTML across 36 styles, and the editable `.drawio` becomes the source of truth. Translate the style answer to its `--styles` keys: Technical clean → `corporate` or `minimal-flat` (`corporate` is also the default when the flag is omitted), Hand-drawn → `chalkboard`, Blueprint → `blueprint`; for "Surprise me", pick three valid keys from its catalog.
 
 Everything else, draw here.

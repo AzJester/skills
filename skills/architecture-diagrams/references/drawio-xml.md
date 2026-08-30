@@ -115,8 +115,9 @@ Cloud icons come from bundled shape libraries referenced in the style string:
 shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;aspect=fixed;
 ```
 
-Prefixes: `mxgraph.aws4.*`, `mxgraph.azure2.*`, `mxgraph.gcp2.*`, `mxgraph.kubernetes.*`,
-`mxgraph.cisco19.*`, `mxgraph.veeam2.*`. Resource icons are fixed-aspect and look wrong when
+Prefixes: `mxgraph.aws4.*`, `mxgraph.gcp2.*`, `mxgraph.kubernetes.*`, `mxgraph.cisco19.*`,
+`mxgraph.veeam2.*`. Azure2 icons are image styles (`image=img/lib/azure2/...`), not
+stencils; the legacy Azure stencil set is `mxgraph.azure.*`. Resource icons are fixed-aspect and look wrong when
 stretched, so give them a square geometry (52x52 works) and put the text on a separate box
 cell underneath or beside them.
 

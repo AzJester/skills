@@ -36,7 +36,7 @@ Choose methods from the profile, not from a list. The ones that dominate for tac
 | High and low temperature | Operating and storage extremes | Component derating, thermal path — see `swap-and-thermal-budgeting` |
 | Temperature shock | Rapid transitions | Solder joint and mechanical stress, condensation |
 | Humidity | Cyclic exposure | Sealing, conformal coating, condensation on power-up |
-| Altitude | Low pressure | Convection cooling degrades with air density; sealed enclosures avoid this |
+| Altitude | Low pressure | All air cooling degrades with air density, external chassis convection included — mitigate with a conduction path to the mount, not sealing (see `swap-and-thermal-budgeting`) |
 | Vibration | Random and sinusoidal, per platform | Board stiffening, component staking, connector retention, fastener locking |
 | Shock | Functional, transit, crash safety | Mounting, isolators, internal mass control |
 | Sand and dust | Blowing exposure | Filtration versus sealing, connector protection |

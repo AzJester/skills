@@ -30,9 +30,12 @@ the full list of names lives in the draw.io AWS 2019/2021 shape library under
 ## Azure and GCP
 
 Use `azure:` or `gcp:` prefixes for readability in the spec. Both currently resolve to
-generic glyphs in every output including `.drawio`. To add native Azure shapes, follow the
-`AWS_RES` pattern with `shape=mxgraph.azure2.*`; for GCP use `shape=mxgraph.gcp2.*`. The
-node-plus-overlay emitter in `render_drawio` needs no other change.
+generic glyphs in every output including `.drawio`. For GCP, follow the `AWS_RES` pattern
+with the `shape=mxgraph.gcp2.*` stencils. Azure is different: draw.io's Azure2 set is
+image-based, not a stencil namespace, so native Azure shapes need an image style —
+`image;aspect=fixed;image=img/lib/azure2/<category>/<Icon>.svg` — or the legacy
+`mxgraph.azure.*` stencils. The node-plus-overlay emitter in `render_drawio` needs no other
+change.
 
 ## Generic glyphs
 

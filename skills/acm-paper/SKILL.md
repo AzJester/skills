@@ -19,7 +19,7 @@ Common formats:
 | `acmsmall` | Most journals — single column |
 | `acmlarge`, `acmtog` | Certain journals with their own trim |
 | `manuscript` | Single column, for review or preprints |
-| `sigplan`, `sigchi` | SIG-specific variants where a community requires one |
+| `sigplan` | SIG-specific variant where a community requires one. (`sigchi` was retired from acmart in 2020 — SIGCHI venues use `sigconf`) |
 
 **The venue tells you which.** Do not choose by preference — the call for papers or the journal's instructions specify it, and it affects length limits, which are counted in that format's pages.
 

@@ -13,8 +13,8 @@ The failure mode is universal and worth naming up front. A review becomes a pres
 
 | Gate | Question it answers | Baseline established |
 | --- | --- | --- |
-| **SRR** — System Requirements Review | Are the requirements the right ones, and are they achievable? | Functional |
-| **SFR** — System Functional Review | Does the functional decomposition satisfy those requirements? | Functional (refined) |
+| **SRR** — System Requirements Review | Are the requirements the right ones, and are they achievable? | — |
+| **SFR** — System Functional Review | Does the functional decomposition satisfy those requirements? | Functional |
 | **PDR** — Preliminary Design Review | Is the design approach sound enough to detail? | Allocated |
 | **CDR** — Critical Design Review | Is the detailed design complete enough to build? | Product |
 | **TRR** — Test Readiness Review | Are we ready to run the verification programme? | — |

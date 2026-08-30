@@ -14,6 +14,8 @@ A correctness and accuracy review of the 85 author-written skills in this reposi
 | Findings refuted on verification | 0 |
 | Skills with no findings | 65 |
 
+**Status:** all 16 confirmed errors below are fixed on this branch. The findings are kept as written, as the record of what was wrong and why. The 18 low-severity notes remain open.
+
 ---
 
 ## The one high-severity error
@@ -132,10 +134,16 @@ The clean half of the review matters as much as the findings. Things checked har
 
 One judgment call was left unreported: human-systems-integration lists 8 HSI domains where DoDI 5000.95 has 7, but the skill explicitly says the list varies by service and framework and claims no count, so it was not treated as a defect.
 
-## Suggested fix order
+## Fixes applied
 
-1. ai-cost-modeling's caching term (someone will make a bad call with that formula).
-2. The SRR/SFR functional baseline placement in technical-reviews and configuration-management together, since they cite each other's world.
-3. rmf-ato's missing Prepare step.
-4. The architecture-diagrams and diagram-picker set, ideally as one pass over both skills since the routing, glyph and style-name defects interlock.
-5. Everything else as convenient. The low-severity list is mostly single-line edits.
+All 16 confirmed errors are fixed on this branch, with the corrections validated before committing:
+
+- The rewritten ai-cost-modeling caching term applies multiplicatively to the cacheable input slice only.
+- Functional baseline moved to SFR in technical-reviews (gates table and gate-criteria exit rows) and configuration-management (baseline table and record) together, keeping the two skills consistent.
+- rmf-ato now runs seven steps with Prepare first.
+- DIL keeps its three-term expansion (disconnected, intermittent, limited-bandwidth), matching the README's "DIL operation".
+- The acm-paper table marks `sigchi` retired, nasa-sti routes data compilations to TP, chicago-turabian states the CMOS 18 rule with the 17th/Turabian 9 variant noted, latex-authoring splits the two float errors into separate rows, and the ruggedization altitude row now matches swap-and-thermal-budgeting.
+- diagram-picker states the explicit style-key mapping, and every which-skill "Look under" label now matches a real README section heading (checked programmatically against the skill links in each section).
+- architecture-diagrams: `glyphs.py` gained the six missing AWS aliases and a real generic fallback, SKILL.md documents the cairosvg dependency, the example spec's Application Tier is reordered, and the Azure2 guidance now describes image styles. The full pipeline was re-run on the fixed example and the PNG inspected: every node has a glyph and no edge passes under a node.
+
+The low-severity list is mostly single-line edits, left for a later pass since those findings were not independently re-verified.
