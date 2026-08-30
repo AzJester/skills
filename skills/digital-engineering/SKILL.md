@@ -13,7 +13,7 @@ Everything else follows. If documents remain authoritative and the model is a pi
 
 `system-dev` maintains a Design Registry of typed, versioned slots with traceability — that is already model-based engineering in its own idiom. This skill covers what sits around any such model: what makes it authoritative, how the thread reaches other lifecycle phases, and how the model is governed so it stays true.
 
-Use `system-dev` (or a SysML tool) to hold the model. Use this to decide what the model is *for* and who may change it.
+Use `system-dev` (or a SysML tool) to hold the model. Use this to decide what the model is *for* and who may change it. Use `mbse-sysml` for the modelling practice itself — which diagram answers which question, how deep to decompose, and how to build the parametrics.
 
 ## Step 1: Establish the authoritative source of truth
 
@@ -47,6 +47,8 @@ Decide first what decisions the model must support — requirements allocation, 
 Parametrics is the pillar most often skipped and the one that most distinguishes a model from a drawing. A model that carries mass, power or timing budgets as constraints can tell you when an allocation breaks; one that carries only structure cannot.
 
 SysML v2 changes the language substantially — textual notation, a proper API, better interoperability. Whether a programme is on v1 or v2 changes tooling and training assumptions, so establish it early rather than discovering it at integration.
+
+The pillars in depth, with the v1/v2 decision laid out, are in `mbse-sysml`.
 
 ## Step 3: Wire the thread
 
