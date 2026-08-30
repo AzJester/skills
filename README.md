@@ -133,6 +133,12 @@ Largest skill here by a wide margin (3.7 MB, mostly font and icon catalogs). Run
 |-------|-------------|
 | [vercel-react-best-practices](skills/vercel-react-best-practices/) | 70 React and Next.js performance rules from Vercel Engineering, across eight categories ordered by impact: eliminating waterfalls and bundle size (critical), server-side and client-side data fetching, re-render and rendering performance, JavaScript micro-optimizations, and advanced patterns. Each rule is its own file with an incorrect example, a correct example, and the reasoning; `AGENTS.md` is the same content compiled into one document. |
 
+### Analytics communication
+
+| Skill | Description |
+|-------|-------------|
+| [data-storytelling](skills/data-storytelling/) | Turn analysis into a narrative that lands: setup/conflict/resolution structure, a six-beat arc from hook to call-to-action, and the three pillars (data as evidence, narrative as meaning, visuals as clarity). `references/details.md` carries worked story frameworks end to end. |
+
 ## Attribution
 
 Most skills here are vendored unmodified from their upstream repositories, each redistributed under the MIT License (a copy is included in every skill directory). Skills written for this repository are listed under [Original skills](#original-skills) and carry no third-party licence.
@@ -192,3 +198,9 @@ The upstream directory is `react-best-practices` while the skill's frontmatter n
 Verified at vendoring time: 70 rule files, 70 rules listed in `SKILL.md`, every listed rule backed by a file and no orphan files. Note that the skill's `metadata.json` understates the catalogue as "40+ rules" where `SKILL.md` and the files both say 70; the table above follows the files.
 
 Upstream also ships `composition-patterns`, `deploy-to-vercel`, `react-native-skills`, `react-view-transitions`, `vercel-cli-with-tokens`, `vercel-optimize`, `web-design-guidelines`, and `writing-guidelines`, none of which are taken here.
+
+### wshobson/agents
+
+[data-storytelling](skills/data-storytelling/) comes from [wshobson/agents](https://github.com/wshobson/agents) at commit [`38e19c2`](https://github.com/wshobson/agents/tree/38e19c20d2b154510b0e624a2e3e186b19b5c527/plugins/business-analytics/skills/data-storytelling), MIT licensed, Copyright (c) 2024 Seth Hobson. Vendored byte-identical apart from the added `LICENSE`.
+
+Upstream organises 181 skills under 91 plugins; this one sits in the `business-analytics` plugin alongside `kpi-dashboard-design`, which is not taken here. The nesting is flattened to this repo's one-directory-per-skill layout, and the directory name already matched the skill's frontmatter name.
