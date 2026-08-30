@@ -1,0 +1,221 @@
+# Project Status
+
+## Purpose
+
+Track overall project implementation progress, phase completion, and next actions. This file is AUTOMATICALLY updated by `/speckit.implement` after each execution.
+
+---
+
+## Current State
+
+| Metric | Value |
+|--------|-------|
+| Project | [PROJECT_NAME] |
+| Spec Source | [SPEC_FILE_REFERENCE] |
+| Current Phase | Phase [N]: [Phase Name] |
+| Total Tasks | [TOTAL] |
+| Completed | [COMPLETED] |
+| In Progress | [IN_PROGRESS] |
+| Blocked | [BLOCKED] |
+| Pending | [PENDING] |
+| Progress | [PERCENTAGE]% |
+| Last Updated | [ISO_TIMESTAMP] |
+
+---
+
+## Execution Metrics
+
+| Metric | Value |
+|--------|-------|
+| Sessions Completed | [COUNT] |
+| Tasks Completed | [COMPLETED_COUNT] |
+| Avg Tasks per Session | [AVG_PER_SESSION] |
+| Current Streak | [STREAK] tasks |
+
+### Per-Phase Breakdown
+
+| Phase | Tasks | Completed | Sessions | Avg per Session |
+|-------|-------|-----------|----------|-----------------|
+| Phase 1: [Name] | [N] | [M] | [S] | [AVG] |
+| Phase 2: [Name] | [N] | [M] | [S] | [AVG] |
+| Phase 3: [Name] | [N] | [M] | [S] | [AVG] |
+
+### Velocity Trend
+
+| Period | Tasks Completed | Trend |
+|--------|-----------------|-------|
+| Last Session | [N] | — |
+| Last 3 Sessions | [AVG] | [↑/→/↓] |
+| All Time | [AVG] | — |
+
+---
+
+## Session Continuity
+
+Track session state to enable seamless resume across Claude sessions.
+
+| Field | Value |
+|-------|-------|
+| Last Session | [ISO_TIMESTAMP] |
+| Session Duration | [DURATION] |
+| Stopped At | [DESCRIPTION] |
+| Stop Reason | [clean/interrupted/error] |
+| Resume Command | `[COMMAND]` |
+
+### Resume Context
+
+When resuming, Claude should:
+1. Read this file first
+2. Check "Stopped At" for context
+3. Run the Resume Command
+4. Continue from where the session ended
+
+### Session History (Last 5)
+
+| Date | Duration | Tasks | Stopped At | Reason |
+|------|----------|-------|------------|--------|
+| [DATE] | [DUR] | [N] | [DESCRIPTION] | [REASON] |
+
+### Quick Resume
+
+```bash
+# Resume from last session
+/implement --continue
+
+# Or run the specific resume command:
+[RESUME_COMMAND]
+```
+
+---
+
+## Phase Progress
+
+| Phase | Status | Total Tasks | Completed | Remaining | Notes |
+|-------|--------|-------------|-----------|-----------|-------|
+| Phase 1: [Name] | PENDING | [N] | 0 | [N] | |
+| Phase 2: [Name] | PENDING | [N] | 0 | [N] | |
+| Phase 3: [Name] | PENDING | [N] | 0 | [N] | |
+
+### Phase Status Legend
+
+| Status | Meaning |
+|--------|---------|
+| PENDING | Not started |
+| IN PROGRESS | Currently being worked on |
+| ✓ COMPLETE | All tasks completed and verified |
+| ⚠ BLOCKED | Waiting on dependency or resolution |
+
+---
+
+## Acceptance Criteria Summary
+
+| Metric | Value |
+|--------|-------|
+| Total Criteria | [N] |
+| Verified | [M] |
+| Failed | [F] |
+| Pending | [P] |
+| Pass Rate | [PERCENTAGE]% |
+
+### Failed/Pending Criteria
+
+| Task | Criterion | Status | Notes |
+|------|-----------|--------|-------|
+| [TASK-XXX] | [Criterion description] | FAILED | [Reason] |
+
+---
+
+## Recent Activity
+
+| Date | Session | Tasks | Action | Outcome |
+|------|---------|-------|--------|---------|
+| [ISO_DATE] | [SESSION_ID] | [TASK_RANGE] | [ACTION] | [OUTCOME] |
+
+### Activity Log Details
+
+<!--
+Activity entries are appended automatically by /speckit.implement.
+Format: Date | Session ID | Tasks worked | Action taken | Outcome
+-->
+
+---
+
+## Blockers & Issues
+
+| ID | Task | Issue | Impact | Resolution | Status |
+|----|------|-------|--------|------------|--------|
+| BLK-001 | [TASK-XXX] | [Description] | [Impact] | [Resolution needed] | OPEN |
+
+### Blocker Status Legend
+
+| Status | Meaning |
+|--------|---------|
+| OPEN | Not resolved |
+| IN PROGRESS | Being addressed |
+| RESOLVED | Fixed |
+| DEFERRED | Postponed |
+
+---
+
+## Dependencies
+
+| Dependency | Type | Status | Notes |
+|------------|------|--------|-------|
+| [External API] | External | Available | |
+| [TASK-XXX] | Internal | Completed | |
+
+---
+
+## Next Actions
+
+Priority actions to continue progress:
+
+- [ ] [Immediate next action with specific command]
+- [ ] [Following action]
+- [ ] [Future action]
+
+### Recommended Commands
+
+Based on current state, recommended next steps:
+
+```bash
+# If current phase incomplete:
+/speckit.implement "Phase [N]"
+
+# If specific tasks failed:
+/speckit.implement TASK-XXX
+
+# If phase complete, proceed to next:
+/speckit.implement "Phase [N+1]"
+
+# For consistency check:
+/speckit.analyze
+
+# To review tasks:
+cat speckit/*-tasks.md
+```
+
+---
+
+## Milestones
+
+| Milestone | Target Date | Status | Completion Date |
+|-----------|-------------|--------|-----------------|
+| Phase 1 Complete | [DATE] | PENDING | |
+| MVP Ready | [DATE] | PENDING | |
+| Full Implementation | [DATE] | PENDING | |
+
+---
+
+## Notes
+
+<!--
+Add any relevant notes about implementation decisions,
+deferred items, or context for future sessions.
+-->
+
+---
+
+*Generated by SpecKit Generator*
+*Template Version: 1.0*
+*Last Updated: [ISO_TIMESTAMP]*

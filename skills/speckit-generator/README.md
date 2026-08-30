@@ -1,0 +1,632 @@
+# SpecKit Generator
+
+Project-focused specification and task management system for Claude Code with git checkpoint safety, mandatory approval gates, implementation hooks, and specialized analysis agents.
+
+## Overview
+
+SpecKit Generator transforms specifications into executed implementations through a structured workflow. The plugin provides one bootstrap command (`/speckit.init`) that installs 8 project-local commands. Each command produces artifacts that require user review before proceeding, ensuring quality and alignment at every step.
+
+```
+/speckit.init → /plan → /tasks → /design → /implement
+                   ↑        ↑        ↑          ↓
+               /analyze  /clarify /analyze   /revert
+                                     ↓
+                                  /lint
+```
+
+### Key Architecture
+
+- **Bootstrap Command**: `/speckit.init` is the only plugin-level command
+- **Project Commands**: 8 commands installed to `.claude/commands/` for project use (plan, tasks, design, analyze, clarify, implement, revert, lint)
+- **Analysis Agents**: 6 specialized agents for deep analysis (reducing context pollution)
+- **Anti-Pattern Detection**: 50 patterns across 5 tech stacks with severity levels and remediation
+
+### Key Features
+
+- **Git Checkpoint Safety**: Automatic checkpoints before implementation enable safe rollback
+- **Memory-Driven Compliance**: Constitution and tech-specific memory files guide all execution
+- **Mandatory Gates**: Each command requires explicit user approval before proceeding
+- **Intelligent Failure Analysis**: Revert command analyzes failures and recommends fixes
+- **Idempotent Operations**: All commands safe to run repeatedly
+- **Execution Orchestration**: Deviation rules, checkpoint taxonomy, and authentication gates
+- **4-Level Verification**: Exists → Substantive → Wired → Functional (spans two agents)
+- **Session Continuity**: Resume sessions with preserved context and progress metrics
+
+## Installation
+
+### As a Claude Code Plugin
+
+1. Clone or copy this directory to your Claude Code plugins location
+2. Enable the plugin in Claude Code settings
+3. Commands will be available as `/speckit.*`
+
+### As a Skill
+
+The skill is automatically available when the skill files are in the skills directory.
+
+## Commands
+
+### Plugin Commands
+
+| Command | Purpose | When to Use |
+|---------|---------|-------------|
+| `/speckit.init` | Establish .claude/ foundation with git, install project commands | New projects or incomplete setup |
+
+### Project Commands (Installed by /speckit.init)
+
+| Command | Purpose | When to Use |
+|---------|---------|-------------|
+| `/plan` | Create plans from specifications | After specs exist in speckit/ |
+| `/tasks` | Generate tasks from plans | After plans are approved |
+| `/design` | Generate detailed task designs | Before implementing complex tasks |
+| `/analyze` | Audit project consistency | Anytime for health check |
+| `/clarify` | SEAMS-enhanced ambiguity resolution | When specs have open questions |
+| `/implement` | Execute tasks with git checkpoint | When ready to implement |
+| `/revert` | Revert to checkpoint with analysis | When implementation fails |
+| `/lint` | Scan code for anti-patterns | Before code review or after implementation |
+
+## Analysis Agents
+
+SpecKit includes 6 specialized agents that handle deep analysis tasks, keeping the main conversation context clean.
+
+| Agent | Purpose | Used By |
+|-------|---------|---------|
+| `compliance-checker` | Validate code against directive rules (constitution, tech-specific) | /analyze, /implement |
+| `ambiguity-scanner` | SEAMS-based detection across 13 categories | /clarify |
+| `coverage-mapper` | Map requirements → phases → tasks, identify gaps | /analyze, /tasks, /implement |
+| `smart-validator` | Validate acceptance criteria against SMART framework | /tasks |
+| `adr-validator` | Validate ADRs have required fields for their level | /plan |
+| `antipattern-detector` | Scan code for anti-patterns across 5 tech stacks | /lint, code review |
+
+### Invoking Agents
+
+Agents are invoked via the Task tool:
+
+```
+subagent_type: "speckit-generator:compliance-checker"
+prompt: "Check compliance of src/auth/*.ts against constitution.md"
+```
+
+## Quick Start
+
+### 1. Initialize a Project
+
+```bash
+/speckit.init
+```
+
+This will:
+- Validate git is available (required for checkpoints)
+- Detect your tech stack
+- Create the `.claude/` directory structure
+- Install all 8 project commands (plan, tasks, design, analyze, clarify, implement, revert, lint)
+- Install appropriate memory files
+- Set up `.gitignore` for speckit
+
+### 2. Add Your Specification
+
+Place your specification document in `speckit/`:
+
+```
+speckit/spec.md
+```
+
+### 3. Generate a Plan
+
+```bash
+/plan
+```
+
+Review the generated plan and approve before proceeding.
+
+### 4. Generate Tasks
+
+```bash
+/tasks
+```
+
+Review the generated tasks with their acceptance criteria.
+
+### 5. Design Complex Tasks (Optional)
+
+```bash
+/design "Task-001"
+```
+
+For complex tasks, generate detailed designs before implementing.
+
+### 6. Implement
+
+```bash
+/implement "Phase 1"
+```
+
+This will:
+- Create a git checkpoint (revertable)
+- Execute tasks in the specified phase
+- Update task statuses with verification evidence
+- Update project-status.md with progress
+
+### 7. If Something Goes Wrong
+
+```bash
+/revert
+```
+
+This will:
+- Revert to the last checkpoint
+- Analyze what went wrong
+- Recommend spec/plan/task updates
+
+## Directory Structure
+
+After initialization, your project will have:
+
+```
+.claude/
+├── commands/              # Project-specific commands (all 8 installed)
+│   ├── plan.md            # Create implementation plans
+│   ├── tasks.md           # Generate tasks from plans
+│   ├── design.md          # Generate detailed task designs
+│   ├── analyze.md         # Read-only project audit
+│   ├── clarify.md         # Resolve spec ambiguities
+│   ├── implement.md       # Task execution with hooks
+│   ├── revert.md          # Checkpoint revert with analysis
+│   └── lint.md            # Anti-pattern detection
+├── memory/                # Constitution + tech-specific guidelines
+│   ├── constitution.md    # Core principles
+│   ├── MANIFEST.md        # Memory file index
+│   └── project-status.md  # Implementation progress tracking
+├── templates/             # Output templates
+└── scripts/               # Project scripts
+
+speckit/                   # Specification artifacts (at project root)
+├── spec.md                # Your specification
+├── plan.md                # Generated plan
+├── *-tasks.md             # Generated tasks
+├── plans/                 # Domain-specific plans (if complex)
+└── designs/               # Detailed task designs
+```
+
+## Memory Files
+
+SpecKit uses memory files to provide consistent guidelines across all commands.
+
+### Universal (Always Included)
+
+| File | Purpose |
+|------|---------|
+| `constitution.md` | Core principles and mandatory constraints |
+| `documentation.md` | Documentation standards |
+| `git-cicd.md` | Git workflow and CI/CD practices |
+| `security.md` | Security requirements |
+| `testing.md` | Testing strategies |
+
+### Tech-Specific (Auto-Detected)
+
+| File | Detected By |
+|------|-------------|
+| `typescript.md` | tsconfig.json, .ts files |
+| `react-nextjs.md` | next.config.js, React imports |
+| `tailwind-shadcn.md` | tailwind.config.js |
+| `python.md` | setup.py, pyproject.toml, .py files |
+| `rust.md` | Cargo.toml, .rs files |
+
+## Anti-Pattern Detection
+
+SpecKit includes comprehensive anti-pattern detection across 5 tech stacks with 50 patterns total.
+
+### Pattern Categories
+
+| Tech Stack | Patterns | Examples |
+|------------|----------|----------|
+| TypeScript | AP-TS-01 to AP-TS-10 | `any` abuse, type assertion, stringly-typed |
+| Python | AP-PY-01 to AP-PY-10 | Mutable defaults, bare except, wildcard imports |
+| Rust | AP-RS-01 to AP-RS-10 | `.unwrap()` in library, blocking in async |
+| React/Next.js | AP-RN-01 to AP-RN-10 | Missing deps, prop drilling, index as key |
+| Tailwind/shadcn | AP-TW-01 to AP-TW-10 | Hardcoded colors, missing dark mode |
+
+### Severity Levels
+
+| Level | Description | Action |
+|-------|-------------|--------|
+| CRITICAL | Security vulnerability | Block merge |
+| HIGH | Significant bug risk | Require fix |
+| MEDIUM | Code smell | Recommend fix |
+| LOW | Style issue | Suggest fix |
+
+### Using /lint
+
+```bash
+# Scan all code
+/lint
+
+# Scan specific path with HIGH+ severity
+/lint src/ --severity=HIGH
+
+# Get detailed remediation guidance
+/lint src/api/ --fix
+```
+
+### Memory File Integration
+
+Each tech-specific memory file includes a compact anti-patterns section (~10-15 lines per pattern). Dedicated files in `assets/memory/antipatterns/` provide:
+
+- Detection patterns (regex/AST)
+- Detailed remediation steps
+- When exceptions are acceptable
+- Tool configuration (ESLint, Clippy, Ruff)
+
+## Git Checkpoint System
+
+### How It Works
+
+1. **Before `/implement`**: A checkpoint tag is created
+   ```
+   speckit-checkpoint-20240115_143500
+   ```
+
+2. **During implementation**: Normal git operations continue
+
+3. **If something goes wrong**: Use `/revert` to return to checkpoint
+
+### Checkpoint Commands
+
+```bash
+# List all checkpoints
+/revert --list
+
+# Revert to most recent
+/revert
+
+# Revert to specific checkpoint
+/revert speckit-checkpoint-20240115_143500
+
+# Preview without reverting
+/revert --dry-run
+```
+
+## Hooks
+
+SpecKit enforces workflow integrity through hooks.
+
+### Pre-Implementation Hooks
+
+| Hook | Purpose |
+|------|---------|
+| Load project-status.md | Understand current state |
+| Validate argument | Show status if missing/invalid |
+| Verify tasks actionable | Filter completed, check dependencies |
+| Present execution plan | Get user confirmation |
+| Create git checkpoint | Enable safe rollback |
+
+### Post-Implementation Hooks
+
+| Hook | Purpose |
+|------|---------|
+| Update tasks.md | Status and acceptance criteria with evidence |
+| Update project-status.md | Progress metrics and activity log |
+| Output summary | Completed tasks, next steps, revert option |
+
+## Failure Analysis
+
+When you revert, SpecKit analyzes what went wrong:
+
+| Category | Indicators | Recommendation |
+|----------|------------|----------------|
+| SPEC_GAP | Requirements unclear | `/speckit.clarify` |
+| APPROACH_WRONG | Architecture mismatch | `/speckit.plan --revise` |
+| DEPENDENCY_ISSUE | External problems | Update dependencies |
+| TEST_MISMATCH | Tests don't match | Update test fixtures |
+| SCOPE_CREEP | Too much at once | Decompose tasks |
+| KNOWLEDGE_GAP | Unfamiliar technology | Research first |
+
+## Plan Command (PLANS-Enhanced)
+
+The `/plan` command uses the PLANS taxonomy for systematic implementation planning with ADR-style architecture decisions. It invokes the **adr-validator** agent to ensure ADR completeness.
+
+### PLANS Taxonomy
+
+| Category | Focus | Detection Target |
+|----------|-------|------------------|
+| **P**hases | Implementation phases, milestones | Missing phases, unclear objectives |
+| **L**inkages | Inter-phase dependencies | Circular deps, undefined prerequisites |
+| **A**rchitecture | ADR-based decisions | Undocumented choices, missing rationale |
+| **N**otes | Task generation guidance | Vague notes, unclear scope indicators |
+| **S**cope | Requirement coverage mapping | Orphan requirements, coverage gaps |
+
+### ADR Template Levels
+
+| Level | When to Use | Required Fields |
+|-------|-------------|-----------------|
+| Lightweight | Simple decisions, single-option obvious | Status, Context, Decision, Consequences |
+| Standard | Multiple valid options | All except Confirmation |
+| Full | Critical/security decisions | All fields |
+
+### 7-Point Validation
+
+1. Requirements mapping complete
+2. Coverage status documented per PLANS category
+3. ADRs have all required fields for their level
+4. Phase sequencing valid (no circular deps)
+5. Traceability established (REQ → Phase → ADR)
+6. Task generation notes present for each phase
+7. Markdown structure valid
+
+## Tasks Command (SMART-Enhanced)
+
+The `/tasks` command uses SMART validation for verifiable acceptance criteria. It invokes **coverage-mapper** and **smart-validator** agents for thorough validation.
+
+### SMART Acceptance Criteria
+
+| Element | Requirement | Fail Condition |
+|---------|-------------|----------------|
+| **S**pecific | Clear, concrete action | "properly", "correctly", "fully" |
+| **M**easurable | Objective verification | No command/metric/file check |
+| **A**chievable | Single task scope | Requires other tasks first |
+| **R**elevant | Ties to task purpose | No trace to plan/requirement |
+| **T**ime-bound | Immediate verification | Requires external delays |
+
+### Criterion Format
+
+```markdown
+- [ ] File `src/lib/auth.ts` exports `authenticate` function
+      Verification: `grep -q "export.*authenticate" src/lib/auth.ts`
+      SMART: S✓ M✓ A✓ R✓ T✓
+```
+
+### SMART Strictness Levels
+
+| Level | Behavior | When to Use |
+|-------|----------|-------------|
+| Strict | Block until criterion rewritten | Critical tasks, security-related |
+| Standard | Flag for review, allow with warning | Default for most tasks |
+| Relaxed | Log finding only | Exploratory/research tasks |
+
+### 8-Point Validation
+
+1. SMART criteria validated for all acceptance criteria
+2. Plan traceability established (TASK → PHASE → ADR)
+3. Constitution references valid
+4. Memory file references valid
+5. No circular dependencies
+6. Status-criteria consistency (COMPLETED ⟹ all [x])
+7. ID uniqueness verified
+8. Phase grouping correct
+
+## Clarify Command (SEAMS-Enhanced)
+
+The `/clarify` command uses the SEAMS framework (Structure, Execution, Assumptions, Mismatches, Stakeholders) for systematic ambiguity detection. It invokes the **ambiguity-scanner** agent to identify and prioritize specification gaps.
+
+### Key Features
+
+- **Sequential Questioning**: One question at a time, never reveals the queue
+- **Table-Based Options**: Multiple choice with prominent recommendations
+- **Atomic Saves**: Spec updated immediately after each answer
+- **Impact × Uncertainty Prioritization**: Questions ranked by `Priority = Impact × Uncertainty`
+- **Four-Status Coverage**: Resolved (✓), Clear (○), Deferred (◐), Outstanding (⚠)
+- **Post-Write Validation**: 6-point checklist after each integration
+
+### 13-Category Taxonomy
+
+| Category | Group | Focus |
+|----------|-------|-------|
+| SCOPE | Functional | Feature boundaries, in/out scope |
+| BEHAVIOR | Functional | User actions, state transitions |
+| SEQUENCE | Functional | Order of operations |
+| AUTHORITY | Functional | Decision makers, permissions |
+| DATA | Data/Integration | Entities, formats, validation |
+| INTERFACE | Data/Integration | API contracts, protocols |
+| CONSTRAINT | Data/Integration | Limits, bounds |
+| TEMPORAL | Data/Integration | Timing, duration |
+| ERROR | Quality/Ops | Error handling, failure modes |
+| RECOVERY | Quality/Ops | Degradation, retry, fallback |
+| ASSUMPTION | Quality/Ops | Implicit beliefs |
+| STAKEHOLDER | Quality/Ops | Operator, security, user views |
+| TRACEABILITY | Quality/Ops | Requirements ↔ design coverage |
+
+### Session Constraints
+
+- **5 questions max** per interactive session
+- **10 questions max** total across all sessions for a spec
+- **Answer format**: Option letter OR ≤5 words
+
+### Autonomous Mode (Ralph Loop)
+
+If the `ralph-loop` plugin is installed, `/clarify --ralph` enables autonomous clarification until all CRITICAL/HIGH ambiguities are resolved.
+
+## Workflow Best Practices
+
+### Do
+
+- Run `/analyze` before approving plans
+- Run `/clarify` when specs have [TBD] items
+- Review each command's output before proceeding
+- Use git commits between major phases
+- Check project-status.md for current state
+
+### Don't
+
+- Chain commands without reviewing output
+- Skip the analyze step before implementation
+- Ignore failed acceptance criteria
+- Force push after checkpoint (breaks revert)
+- Delete checkpoint tags manually
+
+## Configuration
+
+### Plugin Configuration
+
+The plugin is configured via `.claude-plugin/plugin.json`:
+
+```json
+{
+  "name": "speckit-generator",
+  "version": "1.5.0",
+  "hooks": "../hooks/hooks.json",
+  "commands": [...]
+}
+```
+
+### Project Configuration
+
+Project-specific settings are in `.claude/memory/`:
+
+- `constitution.md` - Customize core principles
+- Tech-specific files - Adjust guidelines per technology
+
+## Troubleshooting
+
+### "Git not found"
+
+Install git before running `/speckit.init`:
+```bash
+# macOS
+brew install git
+
+# Ubuntu/Debian
+sudo apt install git
+
+# Windows
+# Download from https://git-scm.com/
+```
+
+### "No checkpoints found"
+
+Checkpoints are created by `/speckit.implement`. If none exist:
+1. You haven't run implement yet, or
+2. Checkpoint tags were deleted
+
+### "Project not initialized"
+
+Run `/speckit.init` first to create the `.claude/` structure.
+
+### Tasks not updating
+
+Ensure you're running the full implement workflow. Post-implementation hooks only run when the command completes normally.
+
+## Version History
+
+### v2.1.0 (Current)
+- **New**: Execution orchestration patterns from get-shit-done plugin
+  - **Continuation format**: Standardized "Next Up" presentation after command completion
+  - **Deviation rules**: 4-rule system for handling unexpected work (auto-fix bugs, add missing functionality, fix blockers, ASK for architectural changes)
+  - **Checkpoint taxonomy**: 3-tier system (human-verify 90%, decision 9%, human-action 1%)
+  - **Authentication gates**: Dynamic checkpoint creation when CLI returns auth errors
+  - **Subagent segmentation**: Route plan segments to optimal execution contexts
+- **New**: 4-level verification framework spanning two agents
+  - Levels 1-2 (antipattern-detector): Exists, Substantive (stub detection)
+  - Levels 3-4 (compliance-checker): Wired, Functional (wiring verification)
+- **New**: Session continuity in project-status.md for resumable sessions
+- **New**: Performance metrics tracking (velocity, per-phase breakdown)
+- **Enhanced**: Cross-references between antipattern-detector and compliance-checker agents
+- **Refactored**: Continuation format extracted to shared reference file (DRY)
+
+### v2.0.1
+- **Changed**: `/lint` is now a project-local command (was `/speckit.lint` plugin command)
+- `/lint` template is copied and customized per project by `/speckit.init`
+- 8 project commands now installed (was 7)
+
+### v2.0.0
+- **New**: Anti-pattern detection system with 50 patterns across 5 tech stacks
+- **New**: `/speckit.lint` command for code quality scanning
+- **New**: `antipattern-detector` agent for deep pattern analysis
+- Anti-pattern sections added to all tech-specific memory files
+- Dedicated anti-pattern reference files in `assets/memory/antipatterns/`
+- Severity levels (CRITICAL, HIGH, MEDIUM, LOW) with remediation guidance
+- Pattern codes (AP-TS, AP-PY, AP-RS, AP-RN, AP-TW) for tracking
+
+### v1.9.0
+- **New**: Added `/design` command for generating detailed task designs
+- `/design` invokes tech-specific designer agents (python-designer, typescript-designer, react-designer, rust-designer)
+- Updated workflow: `/plan → /tasks → /design → /implement`
+- 7 project commands now installed by `/speckit.init`
+
+### v1.8.0
+- **Breaking Change**: Specification artifacts now output to `speckit/` directory at project root instead of `.claude/resources/`
+- This avoids Claude Code's Edit tool restrictions on `.claude/` paths
+- New directory structure: `speckit/spec.md`, `speckit/plan.md`, `speckit/*-tasks.md`, `speckit/plans/`, `speckit/designs/`
+- Updated all command templates, agents, and workflow references
+- `/speckit.init` now creates `speckit/` directory alongside `.claude/`
+
+### v1.7.0
+- **Restructured**: Non-init commands moved to `references/example-commands/` for clarity
+- **New**: 5 specialized analysis agents to reduce context pollution:
+  - `compliance-checker` - Validates artifacts against directive rules
+  - `ambiguity-scanner` - SEAMS-based ambiguity detection (13 categories)
+  - `coverage-mapper` - Maps requirements → phases → tasks
+  - `smart-validator` - Validates SMART acceptance criteria
+  - `adr-validator` - Validates ADR completeness
+- **Updated**: Command templates now invoke agents via Task tool
+- **Clarified**: Plugin-level vs project-level command distinction
+
+### v1.6.1
+- **Bug Fix**: Memory file customizations are now preserved during re-initialization
+- Added `.manifest.json` tracking for detecting user customizations
+- Customization detection: compares current file hash against original template hash
+- New CLI option: `--force` to explicitly overwrite customized files
+- Improved output: shows "Preserved (user customized)" for protected files
+
+### v1.6.0
+- Enhanced `/speckit.plan` with PLANS taxonomy (Phases, Linkages, Architecture, Notes, Scope)
+- Added ADR-style architecture decisions using MADR template format
+- ADR template levels: Lightweight, Standard, Full based on complexity
+- 7-point validation checklist for plan generation
+- Enhanced `/speckit.tasks` with SMART acceptance criteria validation
+- SMART strictness levels: Strict, Standard, Relaxed
+- 8-point validation checklist for task generation
+- Session-memory MCP integration via hooks (records plan/task events, creates checkpoints)
+- INIT customization for plan.md and tasks.md templates
+- Ralph Loop autonomous mode integration for plan and tasks commands
+
+### v1.5.0
+- Enhanced `/speckit.clarify` with SEAMS framework (Structure, Execution, Assumptions, Mismatches, Stakeholders)
+- Added 13-category taxonomy for comprehensive ambiguity detection
+- Sequential questioning loop with table-based options and recommendations
+- Atomic saves after each answer with post-write validation
+- Impact × Uncertainty prioritization formula
+- Four-status coverage model (Resolved/Deferred/Clear/Outstanding)
+- Ralph Loop autonomous mode integration for clarify command
+- Tech-stack aware directive loading via INIT customization
+
+### v1.4.0
+- `/speckit.init` now installs all commands as project-local `/plan`, `/tasks`, `/analyze`, `/clarify`, `/implement`, `/revert`
+- Added `handoffs` YAML frontmatter to all command templates for command flow navigation
+- Added `$ARGUMENTS` user input support to all command templates
+
+### v1.3.0
+- Added `/speckit.revert` command with intelligent failure analysis
+- Added git checkpoint system to `/speckit.implement`
+- Added git validation to `/speckit.init`
+- Added `.gitignore` setup
+- Added 3 new hook scripts for git operations
+
+### v1.2.0
+- Added pre-implementation hooks
+- Added project-status.md tracking
+- Added project-level command templates
+
+### v1.1.0
+- Added post-implementation hooks
+- Added acceptance criteria verification
+
+### v1.0.0
+- Initial release with 6 commands
+- Memory file system
+- Gate enforcement
+
+## License
+
+MIT License - See LICENSE file for details.
+
+## Contributing
+
+Contributions welcome! Please ensure:
+1. All commands follow the gate pattern
+2. Hooks are properly documented
+3. Memory files are idempotent
+4. Tests pass before submitting
+
+## Support
+
+For issues and feature requests, please open an issue in the repository.
