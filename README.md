@@ -127,6 +127,12 @@ The three `omm-*` skills are a front end for the [`omm`](https://github.com/oh-m
 
 Largest skill here by a wide margin (3.7 MB, mostly font and icon catalogs). Runs on the Python 3 standard library with no external packages and makes no network calls.
 
+### Framework performance
+
+| Skill | Description |
+|-------|-------------|
+| [vercel-react-best-practices](skills/vercel-react-best-practices/) | 70 React and Next.js performance rules from Vercel Engineering, across eight categories ordered by impact: eliminating waterfalls and bundle size (critical), server-side and client-side data fetching, re-render and rendering performance, JavaScript micro-optimizations, and advanced patterns. Each rule is its own file with an incorrect example, a correct example, and the reasoning; `AGENTS.md` is the same content compiled into one document. |
+
 ## Attribution
 
 Most skills here are vendored unmodified from their upstream repositories, each redistributed under the MIT License (a copy is included in every skill directory). Skills written for this repository are listed under [Original skills](#original-skills) and carry no third-party licence.
@@ -174,3 +180,15 @@ Vendored byte-identical to upstream apart from the added `LICENSE` and a strippe
 Verified at vendoring time: every advertised catalogue count matches the data exactly; upstream's own suite passes 153 tests and 7,936 subtests; and all 1,344 text-on-surface pairs across the 192 palettes clear the WCAG AA 4.5:1 contrast ratio the skill itself makes its top rule, the tightest at 4.60:1.
 
 Note that upstream's `skill.json` and `.claude-plugin/plugin.json` are stale at this commit, advertising "84 styles" and "98 UX guidelines" where the data holds 88 and 119. `SKILL.md` states the correct figures, and the table above follows the data rather than the manifests.
+
+### vercel-labs/agent-skills
+
+[vercel-react-best-practices](skills/vercel-react-best-practices/) comes from [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) at commit [`063bee9`](https://github.com/vercel-labs/agent-skills/tree/063bee94c3f4df8453406c830b0a7df0f2860278/skills/react-best-practices), vendored byte-identical.
+
+Upstream declares MIT in its [README](https://github.com/vercel-labs/agent-skills#license) and in the skill's own frontmatter (`license: MIT`), but the repository ships no `LICENSE` file, so unlike every other vendored skill here this directory carries no licence copy. There was nothing to copy, and writing one would mean inventing a copyright line upstream never stated.
+
+The upstream directory is `react-best-practices` while the skill's frontmatter name is `vercel-react-best-practices`. The directory here follows the frontmatter, keeping this repo's invariant that a skill's directory name matches the name it is invoked by.
+
+Verified at vendoring time: 70 rule files, 70 rules listed in `SKILL.md`, every listed rule backed by a file and no orphan files. Note that the skill's `metadata.json` understates the catalogue as "40+ rules" where `SKILL.md` and the files both say 70; the table above follows the files.
+
+Upstream also ships `composition-patterns`, `deploy-to-vercel`, `react-native-skills`, `react-view-transitions`, `vercel-cli-with-tokens`, `vercel-optimize`, `web-design-guidelines`, and `writing-guidelines`, none of which are taken here.
