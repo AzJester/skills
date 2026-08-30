@@ -1,6 +1,6 @@
 ---
 name: interface-control
-description: Define and govern the boundary between two things that must work together. Use when writing or reviewing an interface control document (ICD) or interface requirements specification (IRS), defining an interface between subsystems, teams, or organisations, resolving a disagreement about who owns which side, or controlling a change to an interface that another party depends on. Covers the agreement and its change control, not the internal design either side.
+description: Define and govern the boundary between two things that must work together. Use when writing or reviewing an interface control document (ICD) or interface requirements specification (IRS), defining an interface between subsystems, teams, or organisations, resolving a disagreement about who owns which side, or controlling a change to an interface that another party depends on. Covers the agreement and its change control, not the internal design either side. `mosa-and-open-standards` decides which interfaces are designated key and open.
 ---
 
 # Interface control

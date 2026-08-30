@@ -182,6 +182,22 @@ The documents you produce and review, as distinct from the publishing formats be
 | [briefing-deck](skills/briefing-deck/) | Briefings that work when presented: BLUF because senior audiences interrupt, slide titles written as assertions so a forwarded deck still argues, backup that carries the proof, the five questions a decision brief must already answer, and rehearsing to two-thirds of the scheduled slot. |
 | [invention-disclosure](skills/invention-disclosure/) | Protect an idea before publishing it: the disclosure record written while the work is fresh, inventorship as a legal determination rather than a courtesy list, patent versus trade secret, subject-invention reporting on federal contracts, and the timing trap — publishing first can forfeit foreign patent rights outright. Not legal advice. |
 
+### Hardware product development
+
+Developing a physical product — tactical edge compute, networking and sensor payload hardware — as distinct from running a contract, which the programme skills cover.
+
+| Skill | Description |
+|-------|-------------|
+| [hardware-product-development](skills/hardware-product-development/) | The realisation lifecycle and what each build proves, from breadboard through EVT, DVT and PVT. Everything follows from getting very few iterations: front-load learning into the cheap part of the programme, budget board spins rather than hiding them, design boards that can be debugged, and freeze in stages with mechanical first. |
+| [mosa-and-open-standards](skills/mosa-and-open-standards/) | A modular open systems approach that survives examination: module boundaries placed where change and second sources are real, the OpenVPX, SOSA, CMOSS, FACE and VICTORY ecosystem, key interfaces with real ICDs and data rights behind them, and a claim written so it can be checked. The enabling environment is where most MOSA efforts fail, and it is a contracting problem rather than an architectural one. |
+| [ruggedization-and-environmental-qual](skills/ruggedization-and-environmental-qual/) | MIL-STD-810 as a tailoring framework rather than a pass/fail specification — there is no such thing as "810 certified". The life cycle environmental profile built before any method is selected, transport and storage included, design for vibration and condensation and ingress, and a campaign that pre-qualifies on an engineering unit. |
+| [emi-emc-and-tempest](skills/emi-emc-and-tempest/) | Where tactical hardware programmes actually fail, and they fail at the end: requirement selection by platform, the design decisions taken in the first weeks that set a result measured in the last, pigtail shield terminations and split reference planes as the classic causes, pre-compliance testing as the highest-return activity, and emanations security scoped at an unclassified level. |
+| [swap-and-thermal-budgeting](skills/swap-and-thermal-budgeting/) | Fitting the envelope: worst-case power against real platform electrical characteristics including inrush and hold-up, the junction-to-ambient thermal path traced stage by stage, altitude degrading convection as the argument for conduction cooling, and compute traded against thermal headroom explicitly. Cooling is the binding constraint more often than power. |
+| [component-selection-and-obsolescence](skills/component-selection-and-obsolescence/) | Commercial silicon lives three to five years and the platform twenty to thirty, so obsolescence is a design activity: life cycle position assessed at selection, alternates pre-identified, continuous monitoring with an engineering owner, the six responses and their real costs, and counterfeit avoidance as a system rather than a habit. |
+| [manufacturing-and-npi](skills/manufacturing-and-npi/) | Prototype to repeatable production: DFM, DFA and DFT run with the fabricator before layout is final, contract manufacturer qualification including change notification so a substitution cannot invalidate qualification silently, the production test stack, a pilot build watched without helping, and yield as a design output the cost model depends on. |
+| [embedded-firmware-and-secure-boot](skills/embedded-firmware-and-secure-boot/) | The software on the box: what belongs in firmware and the twenty-year obligation that follows, a boot chain anchored in hardware with anti-rollback, update designed for the disconnected case with two images and automatic rollback, zeroization and tamper response with its false-trigger risk, and archiving the toolchain rather than just the source. |
+| [product-management](skills/product-management/) | Running a product rather than a programme: definition from demand across customers rather than one sponsor's SOW, unit cost targeted early and designed to, break-even volume stated, configuration preferred over variant proliferation, and a planned technology refresh rather than one forced by an end-of-life notice. |
+
 ### Defense cyber & accreditation
 
 | Skill | Description |
@@ -366,6 +382,15 @@ Written for this repository, not vendored:
 - [human-systems-integration](skills/human-systems-integration/) — HSI domains, function allocation, workload, manning.
 - [modernization-and-migration](skills/modernization-and-migration/) — legacy assessment, strangler migration, cutover.
 - [organizational-change](skills/organizational-change/) — adoption, resistance as information, measuring use.
+- [hardware-product-development](skills/hardware-product-development/) — build stages, board spins, long lead, staged freeze.
+- [mosa-and-open-standards](skills/mosa-and-open-standards/) — MOSA, key interfaces, OpenVPX/SOSA/CMOSS/FACE.
+- [ruggedization-and-environmental-qual](skills/ruggedization-and-environmental-qual/) — MIL-STD-810 tailoring, LCEP, qualification campaign.
+- [emi-emc-and-tempest](skills/emi-emc-and-tempest/) — MIL-STD-461, EMC design, pre-compliance, emanations security.
+- [swap-and-thermal-budgeting](skills/swap-and-thermal-budgeting/) — SWaP budgets, platform power, conduction cooling, altitude.
+- [component-selection-and-obsolescence](skills/component-selection-and-obsolescence/) — DMSMS, lifetime buys, counterfeit avoidance.
+- [manufacturing-and-npi](skills/manufacturing-and-npi/) — DFM/DFA/DFT, CM qualification, production test, yield.
+- [embedded-firmware-and-secure-boot](skills/embedded-firmware-and-secure-boot/) — boot chain, disconnected update, zeroization.
+- [product-management](skills/product-management/) — product versus programme, unit economics, configuration strategy.
 - [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
 
 ### nextlevelbuilder/ui-ux-pro-max-skill

@@ -41,6 +41,15 @@ Read `README.md` for the current list before answering — it is maintained alon
 | Stand up a programme after award | Programme & business | `program-startup` |
 | Plan capability across business units | Programme & business | `technology-roadmapping`; `trl-assessment` for maturity |
 | Design a cloud solution | Solution domains | `cloud-architecture`; `rmf-ato` for the authorization |
+| Develop a physical product | Hardware | `hardware-product-development` for the lifecycle |
+| Run a product, not a contract | Hardware | `product-management`; the contract skills assume a customer SOW |
+| Meet an open architecture requirement | Hardware | `mosa-and-open-standards` |
+| Make it survive the environment | Hardware | `ruggedization-and-environmental-qual` — 810 is a tailoring framework |
+| Fit a size, weight and power envelope | Hardware | `swap-and-thermal-budgeting` |
+| Pass the EMC chamber | Hardware | `emi-emc-and-tempest` — start in the first weeks, not at DVT |
+| Keep parts available for twenty years | Hardware | `component-selection-and-obsolescence` |
+| Get it built repeatably | Hardware | `manufacturing-and-npi` |
+| Write the software on the device | Hardware | `embedded-firmware-and-secure-boot`; `devsecops-pipeline` builds it |
 | Build a delivery pipeline | Solution domains | `devsecops-pipeline` |
 | Replace a system already running | Solution domains | `modernization-and-migration` |
 | Make data trustworthy enough to use | Solution domains | `data-strategy-and-governance` — before the AI skills |
@@ -79,6 +88,10 @@ These are the overlaps people actually get wrong.
 **The proposal chain.** Three skills in sequence, and using the wrong one wastes the work. `solution-shaping` decides what to offer and stops before writing. `engineering-to-proposal` harvests evidence from delivered work. `proposal-writing` builds the response around Section M. For a BAA, CSO or SBIR the chain is different — `white-paper-and-baa`, because a white paper sells an idea where a proposal demonstrates compliance.
 
 **The pursuit chain, end to end.** `capture-management` runs the pursuit before the RFP and decides bid or no-bid. `solution-shaping` decides what to offer. `engineering-to-proposal` harvests the evidence. `cost-estimating-and-boe` prices it. `proposal-writing` writes it. `program-startup` stands it up after award. Reaching for `proposal-writing` when the RFP has not dropped yet means the pursuit is already a year behind.
+
+**Product versus programme.** The contract skills — `requirements-dev`, `sow-and-pws`, `program-startup`, `earned-value-management` — assume a customer who specified the work and is funding it. `product-management` inverts that: you decide, you fund it, you recover across units. Running a product like a programme produces something built to one customer's specification and sold once.
+
+**Surviving versus fitting.** `ruggedization-and-environmental-qual` is about surviving the environment — shock, vibration, temperature, ingress. `swap-and-thermal-budgeting` is about fitting the envelope — size, weight, power, cooling. Thermal appears in both: thermal *design* is a budgeting problem and lives in SWaP; thermal *testing* is a qualification method and lives in ruggedization.
 
 **The three planning skills.** `wbs-and-scheduling` builds the WBS and the schedule. `cost-estimating-and-boe` prices them. `earned-value-management` measures performance against the resulting baseline. They run in that order and each depends on the one before.
 

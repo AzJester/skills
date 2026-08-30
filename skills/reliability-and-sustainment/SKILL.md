@@ -1,6 +1,6 @@
 ---
 name: reliability-and-sustainment
-description: Design for and prove reliability, maintainability and supportability. Use when setting or allocating RAM requirements, predicting or growing reliability, planning maintenance and levels of repair, sizing spares, working the integrated product support elements, estimating operating and support cost, or answering whether a system will actually be available when it is needed. Covers the discipline; fmea-analysis and fault-tree-analysis are techniques used inside it.
+description: Design for and prove reliability, maintainability and supportability. Use when setting or allocating RAM requirements, predicting or growing reliability, planning maintenance and levels of repair, sizing spares, working the integrated product support elements, estimating operating and support cost, or answering whether a system will actually be available when it is needed. Covers the discipline; fmea-analysis and fault-tree-analysis are techniques used inside it. For hardware products, `hardware-product-development` covers the realisation lifecycle this feeds.
 ---
 
 # Reliability and sustainment
