@@ -1,6 +1,6 @@
 ---
 name: ai-cost-modeling
-description: Model what an AI solution costs to run at volume. Use when pricing an AI capability, estimating inference cost per transaction, projecting cost as usage scales, comparing architectures on cost, finding where margin goes, or answering what this costs at contract volume rather than in a demo. Covers unit economics and its drivers, not procurement of the underlying service.
+description: Model what an AI solution costs to run at volume. Use when pricing an AI capability, estimating inference cost per transaction, projecting cost as usage scales, comparing architectures on cost, finding where margin goes, or answering what this costs at contract volume rather than in a demo. Covers unit economics and its drivers, not procurement of the underlying service. `edge-ai-deployment` covers the on-premise and air-gapped case, which is a different model rather than a different rate.
 ---
 
 # AI cost modeling

@@ -57,6 +57,11 @@ Read `README.md` for the current list before answering — it is maintained alon
 | Build a delivery pipeline | Solution domains | `devsecops-pipeline` |
 | Replace a system already running | Solution domains | `modernization-and-migration` |
 | Make data trustworthy enough to use | Solution domains | `data-strategy-and-governance` — before the AI skills |
+| Run AI on a device, not in a cloud | Solution domains | `edge-ai-deployment` |
+| Build a system that takes actions | Solution domains | `agentic-system-design`; a pipeline is usually better |
+| Prove something with a customer | Solution domains | `technical-pilot` — transition plan before the pilot |
+| Negotiate anything | Working across units | `negotiation` |
+| Read the business unit's numbers | Working across units | `business-unit-finance` |
 | Design for availability and support | Solution domains | `reliability-and-sustainment` |
 | Manage hazards to accepted risk | Solution domains | `system-safety`; FTA and FMEA are its techniques |
 | Design around the operator | Solution domains | `human-systems-integration` |
@@ -92,6 +97,8 @@ These are the overlaps people actually get wrong.
 **The proposal chain.** Three skills in sequence, and using the wrong one wastes the work. `solution-shaping` decides what to offer and stops before writing. `engineering-to-proposal` harvests evidence from delivered work. `proposal-writing` builds the response around Section M. For a BAA, CSO or SBIR the chain is different — `white-paper-and-baa`, because a white paper sells an idea where a proposal demonstrates compliance.
 
 **The pursuit chain, end to end.** `capture-management` runs the pursuit before the RFP and decides bid or no-bid. `solution-shaping` decides what to offer. `engineering-to-proposal` harvests the evidence. `cost-estimating-and-boe` prices it. `proposal-writing` writes it. `program-startup` stands it up after award. Reaching for `proposal-writing` when the RFP has not dropped yet means the pursuit is already a year behind.
+
+**The AI skills, in order of use.** `data-strategy-and-governance` comes first — the rest assume data whose provenance is known. `ai-solution-architecture` picks the approach; `agentic-system-design` designs it if the answer was agentic; `edge-ai-deployment` if it runs on constrained or disconnected hardware. `ai-evaluation` proves it works, `ai-governance` governs it, `ai-cost-modeling` prices it, and `technical-pilot` puts it in front of a customer.
 
 **There is no general project management skill, deliberately.** Scope, schedule, cost, quality, risk, procurement, stakeholders and governance are each covered by a specific skill — `sow-and-pws`, `wbs-and-scheduling`, `cost-estimating-and-boe`, `earned-value-management`, `quality-management-system`, `risk-management`, `teaming-and-subcontracts`, `organizational-change`, `technical-reviews`. A generic overview would be redundant against all of them and worse than any.
 

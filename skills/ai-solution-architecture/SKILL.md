@@ -1,6 +1,6 @@
 ---
 name: ai-solution-architecture
-description: Choose and justify the architecture of an AI solution. Use when deciding between prompting, retrieval, fine-tuning and agentic approaches, making a build-buy-partner call, selecting a model against cost, latency and accuracy constraints, designing guardrails and fallbacks, or writing the technical approach for an AI capability. Covers the architectural decision and its consequences, not the API mechanics of any one provider.
+description: Choose and justify the architecture of an AI solution. Use when deciding between prompting, retrieval, fine-tuning and agentic approaches, making a build-buy-partner call, selecting a model against cost, latency and accuracy constraints, designing guardrails and fallbacks, or writing the technical approach for an AI capability. Covers the architectural decision and its consequences, not the API mechanics of any one provider. `agentic-system-design` designs the agentic case; `edge-ai-deployment` covers constrained or disconnected deployment.
 ---
 
 # AI solution architecture
