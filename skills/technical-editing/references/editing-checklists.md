@@ -64,7 +64,7 @@ That last question decides everything. A structural finding two days before a su
 | Requirements or specification | Ambiguity, compound obligations, untestable wording | `requirements-dev` |
 | Proposal section | Compliance, Section M language, evidence behind claims | `proposal-writing` |
 | Technical report | Structure, front matter, distribution statement | `dod-technical-report`, `nasa-sti` |
-| Paper | Venue format, citation style, figure and table conventions | `ieee-paper`, `acm-paper`, `apa-7`, `chicago-turabian` |
+| Paper | Venue format, citation style, figure and table conventions | `ieee-publishing`, `acm-paper`, `apa-7`, `chicago-turabian` |
 | Procedure | One action per step, warnings placed before the hazard | `procedural-documentation` |
 | Test report | Conclusions traceable to data, limitations stated | `test-report` |
 | Executive memo | The ask in the first line, options with a recommendation | `executive-decision-memo` |

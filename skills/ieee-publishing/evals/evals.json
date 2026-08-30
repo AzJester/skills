@@ -1,0 +1,89 @@
+{
+  "skill_name": "ieee-publishing",
+  "notes": "Adversarial by design. Each case targets a defect class the skill exists to prevent. Grade on validate_ieee.py exit status and specific check IDs, not on how the prose reads.",
+  "evals": [
+    {
+      "id": 1,
+      "name": "spanning-table-and-subfigure-grid",
+      "prompt": "Write me a 6-page IEEE conference paper on adaptive threat classification for airborne electronic warfare. It needs a table comparing four approaches that spans both columns, and a figure with four sub-panels showing spectrograms before and after suppression.",
+      "expected_output": "Builds cleanly. Uses table* and figure*. Table caption above in Title Case with no terminal period; figure caption below ending with a period; sub-panels listed (a) through (d) in order. validate_ieee.py exits 0.",
+      "assertions": [
+        "Spanning table uses the table* environment, not resizebox or a shrunken font",
+        "Table caption appears above the tabular and carries no terminal period",
+        "Figure caption appears below the graphic and ends with a period",
+        "Sub-figure parts are listed in the caption in order (a), (b), (c), (d)",
+        "validate_ieee.py reports zero errors"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "misnumbered-word-draft",
+      "prompt": "Here's my draft. The reviewers said the formatting was inconsistent. Fix it but don't rewrite my content.",
+      "expected_output": "Runs the validator first, reports the defect list, fixes in place. Author's prose is preserved. Does not regenerate the document.",
+      "assertions": [
+        "Validator was run before any edit was made",
+        "The defect list was shown to the user",
+        "Body prose is substantively unchanged from the input",
+        "Caption placement defects are corrected",
+        "Mention-order defects are corrected, and the fix approach was stated"
+      ],
+      "files": ["fixtures/misnumbered.docx"]
+    },
+    {
+      "id": 3,
+      "name": "mixed-reference-types",
+      "prompt": "Build the reference list for this paper. Sources: two IEEE Transactions articles, an arXiv preprint, IEEE 802.11-2020, a DoD instruction, a GitHub dataset, and a conference paper with nine authors.",
+      "expected_output": "IEEEtran bibliography style. Nine-author entry collapses to et al. En dashes in page ranges. DOIs present where they exist. Preprint cited as a preprint. Raises the distribution-statement question on the DoD document.",
+      "assertions": [
+        "bibliographystyle is IEEEtran, not plain or alpha",
+        "The nine-author entry uses et al. rather than listing all nine",
+        "Page ranges use -- rather than a hyphen",
+        "The DoD document prompts a distribution-statement check rather than being silently cited",
+        "validate_ieee.py reports no refs.* errors"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "overlength-cut",
+      "prompt": "This is 8 pages and the limit is 6. Get it under the limit.",
+      "expected_output": "Cuts content. Does not shrink figures below legibility, alter margins, change line spacing, or reduce font size. States what was cut and why.",
+      "assertions": [
+        "No geometry, baselinestretch, or linespread override was introduced",
+        "Figure sizes were not reduced below column width as the primary mechanism",
+        "Content reductions are itemized for the user",
+        "Final page count is within the limit",
+        "validate_ieee.py reports zero errors including layout.* checks"
+      ],
+      "files": ["fixtures/overlength.tex"]
+    },
+    {
+      "id": 5,
+      "name": "ai-disclosure-specificity",
+      "prompt": "Draft the method and results sections for this paper, then get it submission-ready for a conference.",
+      "expected_output": "Acknowledgments disclose AI use, naming the system and the specific sections drafted, not a generic sentence. Flags that the event's own AI policy should be checked.",
+      "assertions": [
+        "An AI disclosure is present in the acknowledgments",
+        "The disclosure names the specific sections that were drafted",
+        "The disclosure names the AI system",
+        "The user is told to check the event's own AI policy",
+        "validate_ieee.py --ai-drafted reports zero errors"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "name": "reordered-sections-break-float-order",
+      "prompt": "I moved the results section ahead of the method section. Does anything else need to change?",
+      "expected_output": "Detects the resulting float mention-order violation, explains the two fixes (reorder narrative vs renumber floats), and does not renumber silently.",
+      "assertions": [
+        "The float.mention.order violation was detected",
+        "Both remediation options were presented",
+        "Floats were not renumbered without telling the user",
+        "Cross-references still resolve after the fix"
+      ],
+      "files": ["fixtures/reordered.tex"]
+    }
+  ]
+}
