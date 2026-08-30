@@ -1,6 +1,6 @@
 ---
 name: earned-value-management
-description: Read and run earned value management on a program. Use when interpreting CPI, SPI, CV, SV or EAC, building or reviewing a performance measurement baseline, writing or reading a variance analysis, working an IPMR or CPR, judging whether a program is where its schedule claims, or explaining cost and schedule performance to someone who will act on it.
+description: Read and run earned value management on a program. Use when interpreting CPI, SPI, CV, SV or EAC, building or reviewing a performance measurement baseline, writing or reading a variance analysis, working an IPMR or CPR, judging whether a program is where its schedule claims, or explaining cost and schedule performance to someone who will act on it. `program-recovery` acts on what this measures.
 ---
 
 # Earned value management

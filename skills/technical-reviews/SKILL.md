@@ -1,6 +1,6 @@
 ---
 name: technical-reviews
-description: Plan, run, and close a systems engineering technical review gate. Use when preparing for or conducting an SRR, SFR, PDR, CDR, TRR, or FCA/PCA, when setting entry and exit criteria, when assembling the artefact package a gate requires, when writing or dispositioning review action items and RIDs, or when judging whether a programme is genuinely ready to pass a gate.
+description: Plan, run, and close a systems engineering technical review gate. Use when preparing for or conducting an SRR, SFR, PDR, CDR, TRR, or FCA/PCA, when setting entry and exit criteria, when assembling the artefact package a gate requires, when writing or dispositioning review action items and RIDs, or when judging whether a programme is genuinely ready to pass a gate. `lessons-learned` captures what each gate taught.
 ---
 
 # Technical reviews

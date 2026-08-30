@@ -251,6 +251,9 @@ Developing a physical product — tactical edge compute, networking and sensor p
 | [capture-management](skills/capture-management/) | Run the pursuit before the RFP arrives: qualification with evidence rather than optimism, customer and competitive intelligence, legitimate requirement shaping and where the OCI line sits, black hat done as a real bid rather than a logo slide, price-to-win as a decision rather than a target to hit, and the handoff into the proposal chain. |
 | [teaming-and-subcontracts](skills/teaming-and-subcontracts/) | Decide who does the work and on what terms: prime versus sub, make-or-buy including the integration cost people omit, work share defined by WBS element rather than percentage, small business obligations, organisational conflicts of interest checked at qualification, deliberate clause flow-down, and managing a supplier after award. |
 | [program-startup](skills/program-startup/) | Stand up a programme after award: reading the contract you actually won rather than the proposal, the CDRL calendar in week one, clearance lead times as the usual critical path, the three baselines, documenting what government-furnished property actually arrived, and setting the customer working pattern while it is still being set. |
+| [agile-on-a-government-contract](skills/agile-on-a-government-contract/) | Iterative delivery inside a contract written for waterfall: making the contract permit iteration by contracting capabilities rather than enumerated requirements, mapping sprints to control accounts so EVM and agile coexist, earning value on accepted work rather than effort, a government product owner who can actually decide, contract obligations inside the definition of done, and a release cadence the authorization can keep up with. |
+| [program-recovery](skills/program-recovery/) | Turn around a programme in trouble: the diagnosis that decides everything — was the baseline ever achievable, or is this an execution problem — since the two need opposite responses. The six options and what each costs, a get-well plan that names what actually changes, telling the customer while descope is still a choice, and knowing when a programme cannot be recovered. Acts on what `earned-value-management` measures. |
+| [lessons-learned](skills/lessons-learned/) | Capture what a programme learned so the next one benefits: designed against the six reasons it normally fails, captured at gates rather than at close-out, written with four parts so it is actionable, and pushed into the template or checklist where the work happens rather than filed in a repository nobody searches. The best system is one where the lesson changes the artifact and nobody has to remember it. |
 
 ### Executive & professional practice
 
@@ -267,6 +270,7 @@ Developing a physical product — tactical edge compute, networking and sensor p
 | [quality-management-system](skills/quality-management-system/) | A QMS people actually use: which standard and why, documenting what happens rather than an idealised process, governed tailoring, corrective action that names a cause and has its effectiveness verified, audits that find things before an external auditor does, and measuring escaped defects rather than certification status. |
 | [technical-workshop-facilitation](skills/technical-workshop-facilitation/) | Run a technical session that reaches a decision: one purpose per session, the decision rule stated at the start, separating divergence from convergence, and naming which of the four kinds of disagreement is actually in the room — the interest-based one being what derails cross-unit sessions and cannot be settled technically. |
 | [organizational-change](skills/organizational-change/) | Get a delivered system actually used: what each affected group loses rather than gains, involvement while the design can still change, a pilot whose findings are acted on before expanding, the productivity dip named in advance, and measuring adoption and outcome rather than deployment. |
+| [resource-and-capacity-management](skills/resource-and-capacity-management/) | Match the people you have to the work you have committed to: capacity as available skilled people rather than headcount, the pipeline weighted by honest pWin, why planning at full utilisation makes everything late, protecting the constrained few who sit on every critical path, hiring worked backwards from need dates through clearance lead time, and modelling what happens if you win everything you are bidding. |
 
 ### Technical publishing
 
@@ -391,6 +395,10 @@ Written for this repository, not vendored:
 - [manufacturing-and-npi](skills/manufacturing-and-npi/) — DFM/DFA/DFT, CM qualification, production test, yield.
 - [embedded-firmware-and-secure-boot](skills/embedded-firmware-and-secure-boot/) — boot chain, disconnected update, zeroization.
 - [product-management](skills/product-management/) — product versus programme, unit economics, configuration strategy.
+- [agile-on-a-government-contract](skills/agile-on-a-government-contract/) — agile under EVM, CDRLs and a baseline.
+- [program-recovery](skills/program-recovery/) — baseline versus execution diagnosis, re-baselining, get-well plans.
+- [lessons-learned](skills/lessons-learned/) — capture at gates, write it actionable, push it into the template.
+- [resource-and-capacity-management](skills/resource-and-capacity-management/) — capacity, utilisation, the matrix, hiring lead time.
 - [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
 
 ### nextlevelbuilder/ui-ux-pro-max-skill
