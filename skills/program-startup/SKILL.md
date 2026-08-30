@@ -1,6 +1,6 @@
 ---
 name: program-startup
-description: Stand up a programme after award. Use when planning transition-in or phase-in, working the first ninety days of a new contract, extracting requirements and deliverables from the awarded contract, staffing against clearance lead times, receiving government-furnished property or information, establishing the performance measurement baseline, preparing for an integrated baseline review, or taking over from an incumbent.
+description: Stand up a programme after award. Use when planning transition-in or phase-in, working the first ninety days of a new contract, extracting requirements and deliverables from the awarded contract, staffing against clearance lead times, receiving government-furnished property or information, establishing the performance measurement baseline, preparing for an integrated baseline review, or taking over from an incumbent. `resource-and-capacity-management` covers staffing across several programmes at once.
 ---
 
 # Programme startup

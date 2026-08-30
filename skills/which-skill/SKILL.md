@@ -39,6 +39,10 @@ Read `README.md` for the current list before answering — it is maintained alon
 | Estimate what something costs | Programme & business | `cost-estimating-and-boe`; `ai-cost-modeling` for AI workloads |
 | Plan and schedule the work | Programme & business | `wbs-and-scheduling` builds what `earned-value-management` reads |
 | Stand up a programme after award | Programme & business | `program-startup` |
+| Run agile under a government contract | Programme & business | `agile-on-a-government-contract` — the contract layer, not the team's practice |
+| Rescue a programme in trouble | Programme & business | `program-recovery`; `earned-value-management` diagnoses it first |
+| Capture what a programme learned | Programme & business | `lessons-learned` — push it into the template, not a repository |
+| Staff several programmes at once | Working across units | `resource-and-capacity-management` |
 | Plan capability across business units | Programme & business | `technology-roadmapping`; `trl-assessment` for maturity |
 | Design a cloud solution | Solution domains | `cloud-architecture`; `rmf-ato` for the authorization |
 | Develop a physical product | Hardware | `hardware-product-development` for the lifecycle |
@@ -88,6 +92,10 @@ These are the overlaps people actually get wrong.
 **The proposal chain.** Three skills in sequence, and using the wrong one wastes the work. `solution-shaping` decides what to offer and stops before writing. `engineering-to-proposal` harvests evidence from delivered work. `proposal-writing` builds the response around Section M. For a BAA, CSO or SBIR the chain is different — `white-paper-and-baa`, because a white paper sells an idea where a proposal demonstrates compliance.
 
 **The pursuit chain, end to end.** `capture-management` runs the pursuit before the RFP and decides bid or no-bid. `solution-shaping` decides what to offer. `engineering-to-proposal` harvests the evidence. `cost-estimating-and-boe` prices it. `proposal-writing` writes it. `program-startup` stands it up after award. Reaching for `proposal-writing` when the RFP has not dropped yet means the pursuit is already a year behind.
+
+**There is no general project management skill, deliberately.** Scope, schedule, cost, quality, risk, procurement, stakeholders and governance are each covered by a specific skill — `sow-and-pws`, `wbs-and-scheduling`, `cost-estimating-and-boe`, `earned-value-management`, `quality-management-system`, `risk-management`, `teaming-and-subcontracts`, `organizational-change`, `technical-reviews`. A generic overview would be redundant against all of them and worse than any.
+
+**Learning from what happened.** Three skills, different scope. `incident-response` runs a postmortem on a live operational incident. The RCCA family, routed by `rcca-master`, finds root cause on one failure. `lessons-learned` covers what a programme learned across its life, and its whole difficulty is retrieval rather than capture.
 
 **Product versus programme.** The contract skills — `requirements-dev`, `sow-and-pws`, `program-startup`, `earned-value-management` — assume a customer who specified the work and is funding it. `product-management` inverts that: you decide, you fund it, you recover across units. Running a product like a programme produces something built to one customer's specification and sold once.
 
