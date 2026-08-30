@@ -34,7 +34,24 @@ Read `README.md` for the current list before answering — it is maintained alon
 | Write prose or an article | Productivity | `writing-fragments` → `writing-shape` → `writing-beats` |
 | Present analysis to people | Analytics communication | `data-storytelling` |
 | Turn delivered work into proposal material | Proposal bridge | `engineering-to-proposal` |
+| Work an opportunity before the RFP | Programme & business | `capture-management`; `teaming-and-subcontracts` for the team |
 | Respond to an RFP | Technical writing | `solution-shaping` decides the offer, `proposal-writing` writes it |
+| Estimate what something costs | Programme & business | `cost-estimating-and-boe`; `ai-cost-modeling` for AI workloads |
+| Plan and schedule the work | Programme & business | `wbs-and-scheduling` builds what `earned-value-management` reads |
+| Stand up a programme after award | Programme & business | `program-startup` |
+| Plan capability across business units | Programme & business | `technology-roadmapping`; `trl-assessment` for maturity |
+| Design a cloud solution | Solution domains | `cloud-architecture`; `rmf-ato` for the authorization |
+| Build a delivery pipeline | Solution domains | `devsecops-pipeline` |
+| Replace a system already running | Solution domains | `modernization-and-migration` |
+| Make data trustworthy enough to use | Solution domains | `data-strategy-and-governance` — before the AI skills |
+| Design for availability and support | Solution domains | `reliability-and-sustainment` |
+| Manage hazards to accepted risk | Solution domains | `system-safety`; FTA and FMEA are its techniques |
+| Design around the operator | Solution domains | `human-systems-integration` |
+| Run a session that must decide | Working across units | `technical-workshop-facilitation` |
+| Get a delivered system used | Working across units | `organizational-change` |
+| Run or certify a quality system | Working across units | `quality-management-system` |
+| Handle classified work | Defense | `industrial-security`; `export-control-and-markings` for markings |
+| Meet federal accessibility rules | Defense | `section-508-conformance`; `ui-ux-pro-max` to build it |
 | Chase research or prototyping money | Technical writing | `white-paper-and-baa` for BAA, CSO, SBIR and STTR |
 | Define the work in a contract | Technical writing | `sow-and-pws`; `contract-vehicles-and-clauses` for what it commits you to |
 | Edit someone else's document | Technical writing | `technical-editing` — agree the level of edit first |
@@ -60,6 +77,10 @@ These are the overlaps people actually get wrong.
 **Requirements versus spec.** `requirements-dev` produces formal, verifiable, traceable requirements for a system. `to-spec` produces a spec for a piece of software work and publishes it to a tracker. The first is INCOSE; the second is a ticket.
 
 **The proposal chain.** Three skills in sequence, and using the wrong one wastes the work. `solution-shaping` decides what to offer and stops before writing. `engineering-to-proposal` harvests evidence from delivered work. `proposal-writing` builds the response around Section M. For a BAA, CSO or SBIR the chain is different — `white-paper-and-baa`, because a white paper sells an idea where a proposal demonstrates compliance.
+
+**The pursuit chain, end to end.** `capture-management` runs the pursuit before the RFP and decides bid or no-bid. `solution-shaping` decides what to offer. `engineering-to-proposal` harvests the evidence. `cost-estimating-and-boe` prices it. `proposal-writing` writes it. `program-startup` stands it up after award. Reaching for `proposal-writing` when the RFP has not dropped yet means the pursuit is already a year behind.
+
+**The three planning skills.** `wbs-and-scheduling` builds the WBS and the schedule. `cost-estimating-and-boe` prices them. `earned-value-management` measures performance against the resulting baseline. They run in that order and each depends on the one before.
 
 **Writing versus formatting.** The technical writing skills cover documents you produce — proposals, procedures, test reports, work statements, briefings. The technical publishing skills (`ieee-paper`, `acm-paper`, `apa-7`, `chicago-turabian`, `dod-technical-report`, `nasa-sti`, `latex-authoring`) cover formatting for a venue that has published requirements. `technical-editing` applies to all of them.
 

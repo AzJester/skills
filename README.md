@@ -126,6 +126,7 @@ The three `omm-*` skills are a front end for the [`omm`](https://github.com/oh-m
 | [ui-ux-pro-max](skills/ui-ux-pro-max/) | Searchable offline UI/UX database with a Python CLI: 88 styles, 192 product palettes and reasoning profiles, 74 font pairings, 1,934 Google Fonts, 119 UX guidelines, 105 icons, 17 motion presets, 25 chart types, and 22 technology stacks. Generates a whole design system from one query, with optional variance/motion/density dials, and persists it as a master document plus per-page overrides. |
 
 Largest skill here by a wide margin (3.7 MB, mostly font and icon catalogs). Runs on the Python 3 standard library with no external packages and makes no network calls.
+| [section-508-conformance](skills/section-508-conformance/) | Federal accessibility obligations: what Section 508 actually reaches beyond web applications, testing automated and manual and with assistive technology, writing a conformance report honestly ("supports" means everywhere), exceptions as an agency determination rather than a plan, and putting conformance in the work statement and the VCRM. |
 
 ### Framework performance
 
@@ -190,6 +191,7 @@ The documents you produce and review, as distinct from the publishing formats be
 | [stig-and-hardening](skills/stig-and-hardening/) | Apply STIGs, SRGs and CIS benchmarks, verify by SCAP scan rather than by assertion, tailor with reasons that survive an assessor reading them cold, and stop configuration drift. Feeds `rmf-ato` as control evidence. |
 | [cmmc-readiness](skills/cmmc-readiness/) | Your own company's compliance rather than a delivered system's: DFARS 7012/7019/7020/7021, CUI discovery and scoping, 800-171 assessment against the 800-171A objectives, honest SPRS scoring, and C3PAO assessment preparation. |
 | [supply-chain-security](skills/supply-chain-security/) | SBOM generation and consumption, the SSDF practice groups and attestation, artifact provenance and signing, and a vulnerability response runbook built around one measure: how long it takes to answer "are we affected". |
+| [industrial-security](skills/industrial-security/) | Classified work as a cleared contractor: facility clearance and what it does not authorise, personnel clearances as a schedule item rather than an administrative one, the DD 254 read during the pursuit, foreign ownership and influence, insider threat and reporting obligations, and what classified work costs an estimate and a schedule. |
 
 ### Test, evaluation & digital engineering
 
@@ -198,12 +200,18 @@ The documents you produce and review, as distinct from the publishing formats be
 | [test-and-evaluation](skills/test-and-evaluation/) | DoD T&E: developmental versus operational test, TEMP structure, the evaluation framework from critical operational issues down to data elements, the six cybersecurity T&E phases, and VV&A for models and simulation. Sits above `verification-validation`, which proves requirements rather than fieldability. |
 | [digital-engineering](skills/digital-engineering/) | Digital engineering as DoD means it: an authoritative source of truth that is enforced rather than declared, SysML modelled to answer questions rather than for completeness, the three digital thread links worth building first, model governance and curation, and when a digital twin earns its cost. Extends `system-dev`. |
 | [mbse-sysml](skills/mbse-sysml/) | The MBSE modelling practice itself: writing down the questions the model must answer before opening a tool, the four pillars with effort put where it is usually missing (behaviour and parametrics rather than more structure), allocation queries that find orphans in both directions, depth that follows responsibility boundaries, and the SysML v1 versus v2 decision. `digital-engineering` covers the strategy; this covers the model. |
+| [system-safety](skills/system-safety/) | Run a system safety programme: hazard identification from several directions, severity and probability assessed before and after mitigation, the order of precedence with procedure named as the weakest rung, residual risk accepted by a named authority rather than by engineering judgement, and software assessed by control authority rather than a failure rate. Uses `fault-tree-analysis` and `fmea-analysis` as techniques. |
+| [reliability-and-sustainment](skills/reliability-and-sustainment/) | Design for and prove RAM and supportability: availability as the requirement that matters, prediction for comparison and growth for achievement, maintainability designed early or not at all, the integrated product support elements, level of repair analysis, and comparing options on life-cycle rather than acquisition cost. |
+| [human-systems-integration](skills/human-systems-integration/) | Design the system around the people who operate and maintain it: the HSI domains and the trades between them, deliberate function allocation including the takeover, measurable human performance requirements instead of "user friendly", task and workload analysis, and manning that follows from analysis rather than from the legacy figure. |
 
 ### Networks
 
 | Skill | Description |
 |-------|-------------|
 | [network-architecture](skills/network-architecture/) | Network solutions for defense programs: mission flows before topology, designing for the disconnected case first, layered transport diversity with explicit failover behaviour, segmentation that matches the zero trust boundaries, DoDIN connection lead times, and JADC2 framing that turns on data and decision timelines rather than diagrams. |
+| [cloud-architecture](skills/cloud-architecture/) | Cloud for a government customer: the impact level decided before design because it determines the service catalogue, what is inherited from the provider and what is not, the six migration approaches with rehost named honestly, landing zone before workloads, connectivity as the real schedule risk, and cost modelled at production volume including egress. |
+| [devsecops-pipeline](skills/devsecops-pipeline/) | The pipeline that delivers continuously and safely: what a green pipeline asserts, gates ordered by feedback speed, SBOM and provenance generated at build time, mapping gates to controls so continuous authorization has an argument behind it, and keeping it fast enough that nobody routes around it. |
+| [modernization-and-migration](skills/modernization-and-migration/) | Replace or move a system that is already running: establishing ground truth before deciding, disposition chosen per component including retire and retain, strangling incrementally behind a seam rather than a big-bang rewrite, data as the part that fails cutovers, and planning rollback before cutover. |
 
 ### Artificial intelligence
 
@@ -213,6 +221,7 @@ The documents you produce and review, as distinct from the publishing formats be
 | [ai-evaluation](skills/ai-evaluation/) | Prove an AI system is good enough to field: acceptance criteria set before measuring, evaluation sets representative of deployment rather than training, metrics matched to the decision, validated human review, per-case regression diffing, and a failure taxonomy that says which failures are caught downstream. AI TEVV sits inside `test-and-evaluation`. |
 | [ai-solution-architecture](skills/ai-solution-architecture/) | Choose and justify an AI architecture: prompting through retrieval, fine-tuning and agentic in ascending order of commitment, model selection as a trade, and the failure design — unavailability, malformed output, confidently wrong output, refusal, logging — that separates a system from a demo. |
 | [ai-cost-modeling](skills/ai-cost-modeling/) | What an AI solution costs at contract volume: cost per unit of work rather than per token, the consumers people miss (system prompts, retrieved context, retries, agentic step tails, conversation growth), the levers in order of effect, and the commercial shape under a given contract type. |
+| [data-strategy-and-governance](skills/data-strategy-and-governance/) | Make data usable and trustworthy: start from decisions rather than an inventory, named owners per domain, quality thresholds set per use, lineage captured from pipelines rather than written in a document, retention driven by obligation, and governance fast enough that shadow copies do not appear. Sits upstream of `ai-evaluation` and `ai-governance`. |
 
 ### Program & contract
 
@@ -221,6 +230,11 @@ The documents you produce and review, as distinct from the publishing formats be
 | [earned-value-management](skills/earned-value-management/) | Read and run EVM: the three numbers and what the derived indices mean, why SPI misleads late in a program, EAC methods and the TCPI reality check, the measurement-method choices that decide whether the baseline is honest, and variance analysis that names causes rather than restating arithmetic. |
 | [contract-vehicles-and-clauses](skills/contract-vehicles-and-clauses/) | What a contract type and its clauses commit you to: who carries risk under each type, CLIN structure and funding, CDRLs as real scope, data rights and what determines them, the changes clause and constructive change, and flow-down. Engineering consequences, not legal advice. |
 | [export-control-and-markings](skills/export-control-and-markings/) | Handle export-controlled and CUI material correctly: ITAR versus EAR, deemed exports and why cloud and AI services are transmissions, the CUI marking system, distribution statements A through F, and a pre-release checklist. A guardrail, with a bias toward asking before disclosing. |
+| [cost-estimating-and-boe](skills/cost-estimating-and-boe/) | Estimate what work costs and write the basis that justifies it: the four estimating methods and when each is right, estimating against the WBS, labour category and rate mapping, a BOE traceable to sources a third party can inspect, cost realism versus price reasonableness, and management reserve sized from the risk register rather than as a flat percentage. |
+| [wbs-and-scheduling](skills/wbs-and-scheduling/) | Build the artefacts `earned-value-management` reads: product-oriented decomposition and the 100% rule, control accounts and work packages with discrete measurable output, schedules whose logic drives dates rather than the reverse, critical path and float, the schedule health checks including the critical path test, and schedule risk analysis reported by driver. |
+| [capture-management](skills/capture-management/) | Run the pursuit before the RFP arrives: qualification with evidence rather than optimism, customer and competitive intelligence, legitimate requirement shaping and where the OCI line sits, black hat done as a real bid rather than a logo slide, price-to-win as a decision rather than a target to hit, and the handoff into the proposal chain. |
+| [teaming-and-subcontracts](skills/teaming-and-subcontracts/) | Decide who does the work and on what terms: prime versus sub, make-or-buy including the integration cost people omit, work share defined by WBS element rather than percentage, small business obligations, organisational conflicts of interest checked at qualification, deliberate clause flow-down, and managing a supplier after award. |
+| [program-startup](skills/program-startup/) | Stand up a programme after award: reading the contract you actually won rather than the proposal, the CDRL calendar in week one, clearance lead times as the usual critical path, the three baselines, documenting what government-furnished property actually arrived, and setting the customer working pattern while it is still being set. |
 
 ### Executive & professional practice
 
@@ -233,6 +247,10 @@ The documents you produce and review, as distinct from the publishing formats be
 | [structured-interviewing](skills/structured-interviewing/) | Interviews that predict performance: attributes with described evidence, a scorecard written before anyone is seen, behavioural and work-sample questions, and independent scoring before debrief — the single highest-leverage rule in the process. |
 | [performance-feedback](skills/performance-feedback/) | Feedback that changes behaviour: behaviour, effect, and ask; one-to-ones that belong to the other person; reviews where nothing is a surprise; and performance conversations where the person leaves knowing they had one. |
 | [manuscript-submission](skills/manuscript-submission/) | Get a paper through peer review: venue choice before finishing, submission preparation, reading a decision properly, the response-to-reviewers document that is frequently done badly, handling rejection, and reviewing others' work. |
+| [technology-roadmapping](skills/technology-roadmapping/) | Decide what capability to build, when, and for whom across a portfolio: demand and need dates first rather than collecting what each unit already intended, finding duplication and the gaps nobody owns, horizons funded separately so the near term does not consume the pipeline, and kill criteria written before an investment starts. |
+| [quality-management-system](skills/quality-management-system/) | A QMS people actually use: which standard and why, documenting what happens rather than an idealised process, governed tailoring, corrective action that names a cause and has its effectiveness verified, audits that find things before an external auditor does, and measuring escaped defects rather than certification status. |
+| [technical-workshop-facilitation](skills/technical-workshop-facilitation/) | Run a technical session that reaches a decision: one purpose per session, the decision rule stated at the start, separating divergence from convergence, and naming which of the four kinds of disagreement is actually in the room — the interest-based one being what derails cross-unit sessions and cannot be settled technically. |
+| [organizational-change](skills/organizational-change/) | Get a delivered system actually used: what each affected group loses rather than gains, involvement while the design can still change, a pilot whose findings are acted on before expanding, the productivity dip named in advance, and measuring adoption and outcome rather than deployment. |
 
 ### Technical publishing
 
@@ -330,6 +348,24 @@ Written for this repository, not vendored:
 - [sow-and-pws](skills/sow-and-pws/) — SOO, PWS, SOW, performance standards, CDRLs and DIDs.
 - [briefing-deck](skills/briefing-deck/) — decision and information briefings, BLUF, backup.
 - [invention-disclosure](skills/invention-disclosure/) — disclosure records, inventorship, publish-before-file timing.
+- [cost-estimating-and-boe](skills/cost-estimating-and-boe/) — estimating methods, BOE, cost realism, management reserve.
+- [wbs-and-scheduling](skills/wbs-and-scheduling/) — product WBS, control accounts, IMS, critical path, schedule risk.
+- [capture-management](skills/capture-management/) — qualification, intelligence, black hat, price-to-win, bid decision.
+- [teaming-and-subcontracts](skills/teaming-and-subcontracts/) — prime or sub, make-or-buy, work share, OCI, flow-down.
+- [cloud-architecture](skills/cloud-architecture/) — impact levels, control inheritance, migration approach, cloud cost.
+- [devsecops-pipeline](skills/devsecops-pipeline/) — pipeline gates, SBOM and provenance, continuous authorization.
+- [reliability-and-sustainment](skills/reliability-and-sustainment/) — RAM requirements, reliability growth, product support, LCC.
+- [system-safety](skills/system-safety/) — hazard tracking, risk matrix, order of precedence, risk acceptance.
+- [data-strategy-and-governance](skills/data-strategy-and-governance/) — ownership, quality, lineage, retention, sharing.
+- [technology-roadmapping](skills/technology-roadmapping/) — capability demand, portfolio horizons, kill criteria.
+- [program-startup](skills/program-startup/) — transition-in, baselines, clearances, GFP, the first ninety days.
+- [quality-management-system](skills/quality-management-system/) — process assets, corrective action, audit, measures.
+- [technical-workshop-facilitation](skills/technical-workshop-facilitation/) — IPTs and decision workshops that converge.
+- [industrial-security](skills/industrial-security/) — facility and personnel clearances, DD 254, insider threat.
+- [section-508-conformance](skills/section-508-conformance/) — federal accessibility obligations and the conformance report.
+- [human-systems-integration](skills/human-systems-integration/) — HSI domains, function allocation, workload, manning.
+- [modernization-and-migration](skills/modernization-and-migration/) — legacy assessment, strangler migration, cutover.
+- [organizational-change](skills/organizational-change/) — adoption, resistance as information, measuring use.
 - [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
 
 ### nextlevelbuilder/ui-ux-pro-max-skill
