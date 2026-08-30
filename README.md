@@ -212,6 +212,29 @@ The technical-management layer above the design skills: what could stop the prog
 | [contract-vehicles-and-clauses](skills/contract-vehicles-and-clauses/) | What a contract type and its clauses commit you to: who carries risk under each type, CLIN structure and funding, CDRLs as real scope, data rights and what determines them, the changes clause and constructive change, and flow-down. Engineering consequences, not legal advice. |
 | [export-control-and-markings](skills/export-control-and-markings/) | Handle export-controlled and CUI material correctly: ITAR versus EAR, deemed exports and why cloud and AI services are transmissions, the CUI marking system, distribution statements A through F, and a pre-release checklist. A guardrail, with a bias toward asking before disclosing. |
 
+### Executive & professional practice
+
+| Skill | Description |
+|-------|-------------|
+| [solution-shaping](skills/solution-shaping/) | Shape the technical solution before the proposal exists: the customer's actual problem rather than the stated requirement, an evaluation-factor crosswalk, discriminators tested against four conditions, competitive position including transition risk, and a descope ladder agreed before the price forces one. |
+| [executive-decision-memo](skills/executive-decision-memo/) | The one-page memo that gets a decision from someone who will read it without you: the ask in the first line, why now, options with a recommendation, and what executives actually check — total cost, the do-nothing case, the real risk, and who disagrees. |
+| [business-case](skills/business-case/) | Argue for a course of action against doing nothing: complete costing including internal labour and opportunity cost, benefits separated into hard, soft and strategic rather than converted optimistically, payback and NPV with a stated discount rate, and sensitivity that names what would have to be true for this to be a bad decision. |
+| [applied-statistics](skills/applied-statistics/) | Statistics on real decisions: sizing the sample before collecting, choosing the test by question and data, reporting effect sizes with intervals rather than p-values alone, experiment design that isolates what you are testing, and the seven questions that find most defects in someone else's analysis. |
+| [structured-interviewing](skills/structured-interviewing/) | Interviews that predict performance: attributes with described evidence, a scorecard written before anyone is seen, behavioural and work-sample questions, and independent scoring before debrief — the single highest-leverage rule in the process. |
+| [performance-feedback](skills/performance-feedback/) | Feedback that changes behaviour: behaviour, effect, and ask; one-to-ones that belong to the other person; reviews where nothing is a surprise; and performance conversations where the person leaves knowing they had one. |
+| [manuscript-submission](skills/manuscript-submission/) | Get a paper through peer review: venue choice before finishing, submission preparation, reading a decision properly, the response-to-reviewers document that is frequently done badly, handling rejection, and reviewing others' work. |
+
+### Technical publishing
+
+| Skill | Description |
+|-------|-------------|
+| [dod-technical-report](skills/dod-technical-report/) | DoD technical reports for DTIC and contract delivery: the three determinations made before writing, report structure, and the SF 298 block by block — with the abstract and subject terms that decide whether the report is ever retrieved again. |
+| [nasa-sti](skills/nasa-sti/) | NASA STI reports: the series types and which one a contractor produces, the self-contained Summary, subject categories, availability determination, and the review path. Export control is not softened by the sponsor being civil. |
+| [acm-paper](skills/acm-paper/) | ACM venues via the `acmart` class: format options set by the venue, required CCS concepts and rights commands, and the difference that produces real rework — ACM orders references alphabetically where IEEE orders by first appearance. |
+| [apa-7](skills/apa-7/) | APA 7th edition: student versus professional papers, the five heading levels including the two that run into the paragraph, author–date citation with `et al.` from the first citation, sentence-case titles, and the statistics conventions reviewers in these fields notice. |
+| [chicago-turabian](skills/chicago-turabian/) | Chicago's two citation systems and how to choose: notes–bibliography for archives, government documents and policy writing; author–date where the date should be visible. Turabian as the student adaptation. |
+| [latex-authoring](skills/latex-authoring/) | Building any of the above in LaTeX: writing into a publisher's class rather than fighting it, BibTeX versus BibLaTeX and the brace-protection problem, float placement, the compile sequence, and the errors worth recognising on sight. |
+
 ## Attribution
 
 Most skills here are vendored unmodified from their upstream repositories, each redistributed under the MIT License (a copy is included in every skill directory). Skills written for this repository are listed under [Original skills](#original-skills) and carry no third-party licence.
@@ -274,6 +297,19 @@ Written for this repository, not vendored:
 - [earned-value-management](skills/earned-value-management/) — CPI, SPI, EAC, and variance analysis.
 - [contract-vehicles-and-clauses](skills/contract-vehicles-and-clauses/) — contract types, CLINs, data rights.
 - [export-control-and-markings](skills/export-control-and-markings/) — ITAR/EAR, CUI, distribution statements.
+- [solution-shaping](skills/solution-shaping/) — technical solution strategy before the proposal.
+- [executive-decision-memo](skills/executive-decision-memo/) — the one-pager that gets a decision.
+- [business-case](skills/business-case/) — ROI, payback, NPV, and sensitivity.
+- [applied-statistics](skills/applied-statistics/) — hypothesis testing, sample size, experiment design.
+- [structured-interviewing](skills/structured-interviewing/) — scorecards, evidence, independent scoring.
+- [performance-feedback](skills/performance-feedback/) — feedback, one-to-ones, reviews.
+- [manuscript-submission](skills/manuscript-submission/) — peer review and responding to reviewers.
+- [dod-technical-report](skills/dod-technical-report/) — DTIC reports and the SF 298.
+- [nasa-sti](skills/nasa-sti/) — NASA STI report series and NTRS submission.
+- [acm-paper](skills/acm-paper/) — ACM venues via the acmart class.
+- [apa-7](skills/apa-7/) — APA 7th edition.
+- [chicago-turabian](skills/chicago-turabian/) — Chicago's two citation systems.
+- [latex-authoring](skills/latex-authoring/) — LaTeX mechanics across every format above.
 - [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
 
 ### nextlevelbuilder/ui-ux-pro-max-skill
