@@ -93,6 +93,6 @@ For "Surprise me", draw the same diagram three times in three styles that differ
 
 ## Handing off
 
-When the answers come back **Structure** with purpose **Documentation** or **Design review**, and the subject is a whole system rather than one component, this wants the full treatment: stop and invoke `architecture-diagram-creator`, passing the answers along. That skill builds a complete six-section HTML architecture overview and already carries the SVG component library.
+When the answers come back **Structure** with purpose **Documentation** or **Design review**, and the subject is a whole system rather than one component, this wants the full treatment: stop and invoke `architecture-diagrams`, passing the answers along. That skill renders a JSON spec to draw.io, SVG, PNG and standalone HTML across 36 styles, so the style answer maps straight onto its `--styles` flag and the editable `.drawio` becomes the source of truth.
 
 Everything else, draw here.

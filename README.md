@@ -42,6 +42,7 @@ Test prompts for the RCCA toolkit: [skills/RCCA_TEST_PROMPTS.md](skills/RCCA_TES
 | [documentation-architect](skills/documentation-architect/) | Transform documentation using the Diátaxis framework. |
 | [speckit-generator](skills/speckit-generator/) | Specification and task management with PLANS taxonomy, ADR-style decisions, SMART acceptance criteria, anti-pattern detection, verification levels, and execution orchestration. |
 | [research-opportunity-investigator](skills/research-opportunity-investigator/) | Research and opportunity investigation for protocols. |
+| [which-skill](skills/which-skill/) | Router across the whole collection: picks the right skill by what stage of work you are in rather than by keyword, and spells out the overlaps people actually get wrong (incident versus root cause, bug versus incident, the diagram skills, requirements versus spec). |
 | [plugin-creator](skills/plugin-creator/) | Automatically generate Claude plugins from user prompts. |
 | [skill-tester](skills/skill-tester/) | Deep test, analyze, and audit Claude skills. |
 | [streaming-output](skills/streaming-output/) | Stream long-form content to markdown files with resume capability and context preservation. |
@@ -111,13 +112,12 @@ Upstream ships these as beta: they are excluded from the upstream plugin, and th
 | Skill | Description |
 |-------|-------------|
 | [architecture-diagrams](skills/architecture-diagrams/) | Render an architecture from a JSON spec to a draw.io `.drawio` file plus matching SVG, PNG, and standalone HTML, in any of 36 visual styles (corporate, AWS re:Invent, blueprint, TRON, ukiyo-e, LEGO, surrealist, and more). Automatic layout, AWS/Azure/GCP service icons, and a comparison gallery when several styles are rendered at once. Python 3 stdlib only; `cairosvg` optional, for PNG. |
-| [diagram-picker](skills/diagram-picker/) | Ask what a diagram must show, what it is for, and what visual style to render it in, then pick the diagram type and draw it. Separates content, fidelity, and style into three independent choices, and carries a catalog of ten concrete visual styles. Hands off whole-system structure diagrams to `architecture-diagram-creator`. |
-| [architecture-diagram-creator](skills/architecture-diagram-creator/) | Produce a single self-contained HTML architecture overview: business context, data flow, processing pipeline, layered system architecture, functional and non-functional features, and deployment, all drawn as inline SVG. Ships a page template, a rendered gallery of reusable SVG blocks, and a fully worked example. |
+| [diagram-picker](skills/diagram-picker/) | Ask what a diagram must show, what it is for, and what visual style to render it in, then pick the diagram type and draw it. Separates content, fidelity, and style into three independent choices, and carries a catalog of ten concrete visual styles. Hands off whole-system structure diagrams to `architecture-diagrams`. |
 | [omm-scan](skills/omm-scan/) | Scan a codebase and generate `.omm/` architecture docs by perspective-driven recursive analysis: pick the perspectives that fit the project (overall architecture, request lifecycle, data flow, dependency map, storage, and others), then drill into each diagram element until it bottoms out at a leaf. |
 | [omm-view](skills/omm-view/) | Start the local web viewer to explore the generated `.omm/` diagrams in a browser, auto-refreshing as the files change. |
 | [omm-push](skills/omm-push/) | Push `.omm/` architecture docs to the oh-my-mermaid hosted service, handling the login, link, and push steps. Sends your architecture docs to a third-party service (`ohmymermaid.com`) and needs an account; the free tier is capped at one project. |
 
-The three `omm-*` skills are a front end for the [`omm`](https://github.com/oh-my-mermaid/oh-my-mermaid) CLI rather than self-contained instructions. They shell out to it and will offer to `npm install -g oh-my-mermaid` if it is missing. `architecture-diagram-creator` has no such dependency.
+The three `omm-*` skills are a front end for the [`omm`](https://github.com/oh-my-mermaid/oh-my-mermaid) CLI rather than self-contained instructions. They shell out to it and will offer to `npm install -g oh-my-mermaid` if it is missing. `architecture-diagrams` and `diagram-picker` have no such dependency.
 
 ### UI & UX
 
@@ -138,6 +138,19 @@ Largest skill here by a wide margin (3.7 MB, mostly font and icon catalogs). Run
 | Skill | Description |
 |-------|-------------|
 | [data-storytelling](skills/data-storytelling/) | Turn analysis into a narrative that lands: setup/conflict/resolution structure, a six-beat arc from hook to call-to-action, and the three pillars (data as evidence, narrative as meaning, visuals as clarity). `references/details.md` carries worked story frameworks end to end. |
+
+### Operations & security
+
+| Skill | Description |
+|-------|-------------|
+| [incident-response](skills/incident-response/) | Run a live production incident and close it out: severity triage, stabilise before diagnosing, timeline reconstruction from timestamped artefacts, blameless postmortem, and turning the fix into a runbook. Hands off to the RCCA skills for root cause once the incident is closed, rather than during it. |
+| [threat-modeling](skills/threat-modeling/) | Find security weaknesses in a design before they are built: STRIDE applied per element over a data-flow model with explicit trust boundaries, then each mitigation traced out to a requirement and mapped to its NIST SP 800-53 control family. |
+
+### Proposal bridge
+
+| Skill | Description |
+|-------|-------------|
+| [engineering-to-proposal](skills/engineering-to-proposal/) | Turn delivered engineering work into proposal evidence: harvest past-performance material from a finished project, build a technical volume from a real architecture, and crosswalk delivered requirements into compliance-matrix rows. Every claim traces to an artefact or is marked unsupported. |
 
 ## Attribution
 
@@ -173,8 +186,11 @@ These skills do not work on their own: install the CLI with `npm install -g oh-m
 
 Written for this repository, not vendored:
 
-- [architecture-diagram-creator](skills/architecture-diagram-creator/) — architecture overview pages as self-contained HTML.
 - [diagram-picker](skills/diagram-picker/) — three-question interview (content, fidelity, style) before drawing a diagram.
+- [incident-response](skills/incident-response/) — live incident handling, postmortem, and runbook authoring.
+- [threat-modeling](skills/threat-modeling/) — STRIDE over a data-flow model, traced to NIST 800-53 control families.
+- [engineering-to-proposal](skills/engineering-to-proposal/) — delivered engineering work into past-performance and technical-volume evidence.
+- [which-skill](skills/which-skill/) — router across the whole collection.
 - [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
 
 ### nextlevelbuilder/ui-ux-pro-max-skill
