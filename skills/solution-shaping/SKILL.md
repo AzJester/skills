@@ -1,6 +1,6 @@
 ---
 name: solution-shaping
-description: Shape the technical solution for a pursuit before the proposal is written. Use when deciding what to offer against a customer's problem, identifying discriminators, testing a solution against evaluation criteria, positioning against an incumbent or a likely competitor, aligning technical approach with price-to-win, or preparing the solution for a capture or gate review. Sits before proposal writing, not inside it.
+description: Shape the technical solution for a pursuit before the proposal is written. Use when deciding what to offer against a customer's problem, identifying discriminators, testing a solution against evaluation criteria, positioning against an incumbent or a likely competitor, aligning technical approach with price-to-win, or preparing the solution for a capture or gate review. Sits before proposal writing, not inside it — `proposal-writing` covers that.
 ---
 
 # Solution shaping

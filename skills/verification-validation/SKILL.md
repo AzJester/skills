@@ -64,6 +64,8 @@ Evidence does **not** close a requirement when it was produced on a different co
 
 Where a requirement will not be met, the options are redesign, waiver, or deviation — and each is a decision with a named owner, not a status.
 
+The document that delivers these results to a customer is `test-report`.
+
 ## Step 5: Validate
 
 Verification finishes and validation begins, and the second one is easy to skip because the first produced a matrix full of green.

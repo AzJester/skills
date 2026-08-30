@@ -1,6 +1,6 @@
 ---
 name: executive-decision-memo
-description: Write a memo that gets a decision from a busy executive. Use when a decision needs making and a deck is the wrong instrument, when preparing a recommendation for leadership, when framing options for approval, when writing a read-ahead, or when a discussion has circled without resolving. Produces a one-page memo built around a specific ask, not a summary or a status update.
+description: Write a memo that gets a decision from a busy executive. Use when a decision needs making and a deck is the wrong instrument (`briefing-deck` covers when it is the right one), when preparing a recommendation for leadership, when framing options for approval, when writing a read-ahead, or when a discussion has circled without resolving. Produces a one-page memo built around a specific ask, not a summary or a status update.
 ---
 
 # Executive decision memo

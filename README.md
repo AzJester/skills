@@ -166,6 +166,21 @@ The technical-management layer above the design skills: what could stop the prog
 | [configuration-management](skills/configuration-management/) | Control what the system is: configuration items, the functional, allocated and product baselines, change control with a real impact assessment (including which verification a change invalidates), deviations versus waivers, FCA/PCA audits, and status accounting. |
 | [trl-assessment](skills/trl-assessment/) | Assess technology readiness on TRL 1–9 against demonstrated evidence rather than confidence, identify critical technology elements, and plan maturation level by level with fallbacks and decision points. Covers MRL and IRL where a programme requires them. |
 
+### Technical writing
+
+The documents you produce and review, as distinct from the publishing formats below, which cover how to format a paper for a venue.
+
+| Skill | Description |
+|-------|-------------|
+| [proposal-writing](skills/proposal-writing/) | Write the RFP response itself: Section M as the scoring rubric and Section L as the format it expects, a compliance matrix built before any prose, annotated outlines and storyboards, theme-proof-consequence sections, action captions that let a graphic carry its claim, and what each colour team review actually checks. Picks up where `solution-shaping` stops and consumes `engineering-to-proposal` evidence. |
+| [white-paper-and-baa](skills/white-paper-and-baa/) | White papers and research proposals for BAAs, CSOs, SBIR and STTR: a white paper earns an invitation rather than winning an award, the falsifiable claim that replaces "leverages AI/ML", naming your own hard part, and the SBIR phase traps — answering the topic as written, eligibility, and transition scored from Phase I. |
+| [technical-editing](skills/technical-editing/) | Edit someone else's technical writing: the four levels of edit and why inverting their order wastes the work, the substantive pass, where technical prose actually fails, plain language for a non-engineer reader, and review comments phrased to be accepted rather than defended against. |
+| [procedural-documentation](skills/procedural-documentation/) | Instructions someone follows while doing something: task analysis before writing, one action per step, warnings placed before the hazard rather than after it, observable results so a failed step cannot be carried forward, recovery paths and stop conditions, and validation by watching someone follow it. |
+| [test-report](skills/test-report/) | The document that delivers test results: as-tested configuration recorded so results can support a fielding decision, results organised by objective rather than chronology, deficiencies categorised by operational impact, and the limitations section that decides whether the report survives scrutiny. Sits after `test-and-evaluation` plans the event and `verification-validation` judges the evidence. |
+| [sow-and-pws](skills/sow-and-pws/) | Write the document that defines the work: SOO versus PWS versus SOW and who owns the risk of the method being wrong, performance standards with a measure and an AQL, why product requirements in a work statement make both documents unverifiable, and CDRLs and DIDs as real priced scope. |
+| [briefing-deck](skills/briefing-deck/) | Briefings that work when presented: BLUF because senior audiences interrupt, slide titles written as assertions so a forwarded deck still argues, backup that carries the proof, the five questions a decision brief must already answer, and rehearsing to two-thirds of the scheduled slot. |
+| [invention-disclosure](skills/invention-disclosure/) | Protect an idea before publishing it: the disclosure record written while the work is fresh, inventorship as a legal determination rather than a courtesy list, patent versus trade secret, subject-invention reporting on federal contracts, and the timing trap — publishing first can forfeit foreign patent rights outright. Not legal advice. |
+
 ### Defense cyber & accreditation
 
 | Skill | Description |
@@ -307,6 +322,14 @@ Written for this repository, not vendored:
 - [apa-7](skills/apa-7/) — APA 7th edition.
 - [chicago-turabian](skills/chicago-turabian/) — Chicago's two citation systems.
 - [latex-authoring](skills/latex-authoring/) — LaTeX mechanics across every format above.
+- [proposal-writing](skills/proposal-writing/) — RFP response: compliance matrix, storyboards, colour team reviews.
+- [white-paper-and-baa](skills/white-paper-and-baa/) — BAA, CSO, SBIR and STTR white papers and proposals.
+- [technical-editing](skills/technical-editing/) — levels of edit, plain language, review comments that land.
+- [procedural-documentation](skills/procedural-documentation/) — procedures, warnings, verification and recovery.
+- [test-report](skills/test-report/) — delivering test results with deficiencies and limitations.
+- [sow-and-pws](skills/sow-and-pws/) — SOO, PWS, SOW, performance standards, CDRLs and DIDs.
+- [briefing-deck](skills/briefing-deck/) — decision and information briefings, BLUF, backup.
+- [invention-disclosure](skills/invention-disclosure/) — disclosure records, inventorship, publish-before-file timing.
 - [architecture-diagrams](skills/architecture-diagrams/) — spec-driven draw.io/SVG/PNG/HTML renderer with 36 styles. Added from a bundle supplied by the repo owner; it carries no upstream licence or authorship of its own.
 
 ### nextlevelbuilder/ui-ux-pro-max-skill

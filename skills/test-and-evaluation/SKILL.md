@@ -71,6 +71,8 @@ The intended-use qualifier is the whole discipline. A model validated for one pu
 - **Deficiencies are reported by operational impact**, not by component. A category that stops the mission and one that annoys the operator are different findings.
 - **Negative results are results.** A test that finds nothing usually means the test was not stressing, and reporting it as success is how problems reach the field.
 
+Those are the reporting principles. `test-report` covers writing the report itself — structure, deficiency categorisation, and the limitations section.
+
 ## Reference
 
 - `references/temp-outline.md` — TEMP structure with what each section must actually contain.

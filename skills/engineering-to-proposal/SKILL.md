@@ -67,7 +67,7 @@ Where a threat model produced control mappings, they slot in here directly: the 
 
 ## What this skill does not do
 
-It does not write the proposal. It does not decide bid or no-bid. It does not judge whether the past performance is strong enough to lead with. Those belong to the capture and proposal skills, and they work better fed real material than asked to imagine it.
+It does not write the proposal. It does not decide bid or no-bid. It does not judge whether the past performance is strong enough to lead with. Those belong to `solution-shaping` and `proposal-writing`, and they work better fed real material than asked to imagine it.
 
 It also does not manufacture evidence. When the honest answer is that a claim has no artefact behind it, say so and let a human decide whether to make the claim anyway. That decision is theirs and it should be made knowingly.
 
