@@ -19,7 +19,7 @@ Establish:
 - **Why now** — what changed. A recompete, a failure, a new threat, expiring authority, a mandate.
 - **Who is affected**, including the people who will operate it and who rarely write the requirement.
 - **What they have tried**, and why it did not work. This is where discriminators come from.
-- **What they are afraid of.** Programmes are shaped by the customer's fear more than their ambition — of another failed integration, of an ATO that never lands, of a vendor who disappears.
+- **What they are afraid of.** Programs are shaped by the customer's fear more than their ambition — of another failed integration, of an ATO that never lands, of a vendor who disappears.
 
 `grilling` is useful here on your own understanding. A capture team that cannot articulate the customer's fear has not talked to enough people.
 
@@ -47,7 +47,7 @@ Test every candidate:
 | Can competitors claim it too? | Everyone says it — then it is a ticket to play, not a discriminator |
 | Does it address the problem? | It is impressive and irrelevant |
 
-Most claimed discriminators fail the third test. "Experienced team", "proven methodology", "commitment to quality" are claims every bidder makes. What survives is usually specific: a working system already operating in their environment, a cleared team already in place, a completed accreditation on a comparable system, a measured outcome on a comparable programme.
+Most claimed discriminators fail the third test. "Experienced team", "proven methodology", "commitment to quality" are claims every bidder makes. What survives is usually specific: a working system already operating in their environment, a cleared team already in place, a completed accreditation on a comparable system, a measured outcome on a comparable program.
 
 **Ghosting** — framing an evaluation factor so a competitor's known weakness becomes visible without naming them — is legitimate when the weakness is real and the framing is honest. It backfires when the weakness is imagined or when the customer likes the incumbent.
 
@@ -56,13 +56,13 @@ Most claimed discriminators fail the third test. "Experienced team", "proven met
 Assume the incumbent is the competitor unless there is none.
 
 - **What does the incumbent do well?** You will not win by claiming they do everything badly; the customer chose them and lives with them.
-- **What is genuinely broken?** Talk to people. Programme frustrations are usually known.
+- **What is genuinely broken?** Talk to people. Program frustrations are usually known.
 - **What does a change cost the customer?** Transition risk is the incumbent's strongest asset. A solution that does not address transition credibly loses to inertia.
 - **Where does a competitor's standard approach create a weakness** you can frame the evaluation around?
 
 ## Step 5: Align technical and price
 
-The most common shaping failure: a solution designed without a price target, priced late, found unaffordable, and cut in the last week by people optimising for cost rather than score.
+The most common shaping failure: a solution designed without a price target, priced late, found unaffordable, and cut in the last week by people optimizing for cost rather than score.
 
 - Establish the **price-to-win** range early, however uncertain.
 - **Cost the solution as you shape it**, not after. `ai-cost-modeling` for AI content, `earned-value-management` reasoning for effort.

@@ -22,7 +22,7 @@ What counts as a public disclosure is broader than people expect and includes, d
 
 **Additional constraints in a defense context**, both of which require counsel:
 
-- Filing abroad is restricted; a foreign filing licence is generally required before filing outside the United States, and it is normally granted with the US filing receipt.
+- Filing abroad is restricted; a foreign filing license is generally required before filing outside the United States, and it is normally granted with the US filing receipt.
 - An invention with national-security implications can be placed under a **secrecy order**, which bars publication and foreign filing. Where the subject matter is export-controlled, `export-control-and-markings` applies to the disclosure itself — including sending a description to foreign patent counsel.
 
 ## Step 1: Write the disclosure while it is fresh
@@ -39,7 +39,7 @@ The invention disclosure record is the input to a patentability decision and, la
 | Variations | Other ways to achieve the same effect | Drives claim breadth; the version you built is rarely the broadest |
 | Dates | Conception, first working implementation, any testing | Establishes the record |
 | Disclosures | Anything already published, presented, demonstrated, sold or offered — with dates | Determines whether a bar has already run |
-| Funding | Contract or programme that funded the work | Determines government rights and reporting obligations |
+| Funding | Contract or program that funded the work | Determines government rights and reporting obligations |
 | Commercial use | Where it would be used, by whom | Decides whether it is worth filing |
 
 **Be specific about the difference.** "Uses machine learning for signal classification" describes a field, not an invention. What is patentable is usually narrower and more particular than the inventor thinks — the specific mechanism, structure or sequence that makes it work.
@@ -84,7 +84,7 @@ The common shape, under the Bayh-Dole framework and its FAR and DFARS implementa
 
 - **The contractor may generally elect to retain title**, subject to conditions.
 - **Disclosure to the government is required within a set period** after the invention is reported to the people in the company responsible for patent matters, followed by a deadline to elect title and then a deadline to file.
-- **The government retains a nonexclusive, irrevocable, paid-up licence** to practise the invention worldwide on its behalf.
+- **The government retains a nonexclusive, irrevocable, paid-up license** to practice the invention worldwide on its behalf.
 - **March-in rights** exist in defined circumstances.
 - Reporting typically runs through the government's invention reporting system, and a final invention statement is normally required at contract close-out.
 

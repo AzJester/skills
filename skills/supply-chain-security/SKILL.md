@@ -7,7 +7,7 @@ description: Secure and evidence the software and component supply chain. Use wh
 
 Most software in a delivered system was written by someone else. Supply chain security is the discipline of knowing what those components are, where they came from, whether they can be trusted, and what happens when one of them turns out to be vulnerable.
 
-The question that organises it: **when a vulnerability is announced in a widely used library on a Friday afternoon, how long does it take to answer "are we affected, where, and how bad"?** Organisations that can answer in an hour built for it. Organisations that take three weeks are doing archaeology, and they discover during the exercise that they do not know what they shipped.
+The question that organizes it: **when a vulnerability is announced in a widely used library on a Friday afternoon, how long does it take to answer "are we affected, where, and how bad"?** Organizations that can answer in an hour built for it. Organizations that take three weeks are doing archaeology, and they discover during the exercise that they do not know what they shipped.
 
 ## Step 1: Know what is in it — SBOM
 
@@ -25,11 +25,11 @@ An SBOM nobody queries is a compliance artifact. The value is entirely in the qu
 
 ## Step 2: Develop securely — SSDF
 
-NIST SP 800-218, the Secure Software Development Framework, organises practice into four groups:
+NIST SP 800-218, the Secure Software Development Framework, organizes practice into four groups:
 
 | Group | Concern |
 | --- | --- |
-| **Prepare the organisation** | People, process and tooling ready — roles, training, security requirements defined |
+| **Prepare the organization** | People, process and tooling ready — roles, training, security requirements defined |
 | **Protect the software** | Protect code and artifacts from tampering; control access to repositories and the pipeline |
 | **Produce well-secured software** | Design review, secure coding, code review, testing, third-party component vetting |
 | **Respond to vulnerabilities** | Identify, assess, remediate, and disclose |
@@ -62,11 +62,11 @@ Pre-deciding steps 1 and 2 is the whole game. They are cheap to build and imposs
 
 ## Step 5: Suppliers
 
-Your supply chain includes organisations, not only libraries.
+Your supply chain includes organizations, not only libraries.
 
 Assess suppliers on: their own secure development practice, whether they provide SBOMs, their vulnerability disclosure and response commitments, flow-down of your contractual obligations, and their sub-tier visibility. Under DFARS 7020, flow-down is an obligation rather than a preference — see `cmmc-readiness`.
 
-Concentration risk is worth naming separately. A single supplier behind several critical components is a programme risk belonging in `risk-management`, whatever their security practices.
+Concentration risk is worth naming separately. A single supplier behind several critical components is a program risk belonging in `risk-management`, whatever their security practices.
 
 ## Reference
 

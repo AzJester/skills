@@ -7,7 +7,7 @@ description: Write a white paper or research proposal for a BAA, CSO, SBIR or ST
 
 The path most defense research and prototyping work actually starts on. A BAA, CSO or SBIR topic is not an RFP, and writing one like an RFP response is the most common way to lose before the technical content is ever read.
 
-**The core difference: an RFP response demonstrates compliance; a white paper sells an idea.** The RFP tells you the requirement and scores your conformance to it. A BAA states a broad interest and asks you to propose the problem *and* the solution. The reader is usually a technical programme manager with discretion, not a source-selection board with a rubric.
+**The core difference: an RFP response demonstrates compliance; a white paper sells an idea.** The RFP tells you the requirement and scores your conformance to it. A BAA states a broad interest and asks you to propose the problem *and* the solution. The reader is usually a technical program manager with discretion, not a source-selection board with a rubric.
 
 ## Step 1: Know which instrument you are answering
 
@@ -15,7 +15,7 @@ They are not interchangeable, and the differences change what you write.
 
 | Instrument | Shape | What wins |
 | --- | --- | --- |
-| **BAA** | Standing or annual announcement of broad research interest; usually two-step, white paper then invited full proposal | Scientific or technical merit, and fit to the sponsor's actual programme |
+| **BAA** | Standing or annual announcement of broad research interest; usually two-step, white paper then invited full proposal | Scientific or technical merit, and fit to the sponsor's actual program |
 | **CSO** | Solicits innovative commercial solutions; faster, more flexible award instruments | Maturity, commercial viability, and speed to demonstrable capability |
 | **SBIR / STTR** | Topic-driven, phased, small-business set-aside; STTR requires a research-institution partner | Answering the specific topic, feasibility in Phase I, transition path throughout |
 | **Unsolicited white paper** | You initiate, outside any announcement | A problem the sponsor already has and has not solved, plus a reason it is you |
@@ -33,7 +33,7 @@ That reframes every section. Enough detail to make the idea credible and disting
 
 Most white papers, whatever the announcement calls the sections, need these five things in this order:
 
-**1. The problem, in the sponsor's terms.** Not your capability. The operational or technical gap, stated so the programme manager recognises their own problem. If you cannot state the problem in the sponsor's language, you do not yet understand the opportunity well enough to bid it.
+**1. The problem, in the sponsor's terms.** Not your capability. The operational or technical gap, stated so the program manager recognizes their own problem. If you cannot state the problem in the sponsor's language, you do not yet understand the opportunity well enough to bid it.
 
 **2. The innovation, stated as a claim.** One or two sentences naming what is new. "We apply machine learning to sensor data" is not a claim — everyone says it. "We show that a 12-megabyte model running on the existing radio's DSP recovers 90% of the classification accuracy of the current cloud pipeline, with no reachback" is a claim: specific, falsifiable, and it says why this matters.
 

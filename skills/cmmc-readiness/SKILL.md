@@ -26,7 +26,7 @@ Flow-down under 7020 is the obligation primes underestimate. Your subcontractors
 
 Scoping is where CMMC costs are decided. An enclave that touches everything is expensive to assess and expensive to maintain; one drawn too tightly excludes something that actually handles CUI, which is worse.
 
-Categorise every asset:
+Categorize every asset:
 
 | Category | Definition | Assessment treatment |
 | --- | --- | --- |
@@ -74,9 +74,9 @@ CMMC constrains POA&Ms more tightly than RMF: certain practices cannot be on a P
 
 Depending on level and contract, self-assessment, a C3PAO third-party assessment, or government-led. What determines how it goes:
 
-- **Evidence is organised by practice** before the assessor arrives, not gathered during.
+- **Evidence is organized by practice** before the assessor arrives, not gathered during.
 - **The scope boundary is documented and defensible**, and the network diagram matches reality.
-- **Staff can describe what they do.** Assessors interview. A policy nobody in the organisation can describe is a policy that exists only on paper, and interviews find that quickly.
+- **Staff can describe what they do.** Assessors interview. A policy nobody in the organization can describe is a policy that exists only on paper, and interviews find that quickly.
 - **Flow-down is evidenced** — subcontractor agreements carry the clauses, and you know their status.
 
 ## Where this connects
@@ -88,4 +88,4 @@ Depending on level and contract, self-assessment, a C3PAO third-party assessment
 
 ## Reference
 
-- `references/scoping-worksheet.md` — asset categorisation, CUI discovery, and boundary defensibility.
+- `references/scoping-worksheet.md` — asset categorization, CUI discovery, and boundary defensibility.

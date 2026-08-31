@@ -28,7 +28,7 @@ For DoD-related work, add: is publication permitted, and has the release review 
 - **Position against related work honestly.** The reviewer is likely an author of some of it. Overstating your novelty relative to work they know is the fastest route to a hostile review.
 - **State limitations yourself.** A limitations section pre-empts the reviewer's strongest objection and reads as competence. Omitting it does not hide the limitation; it just lets a reviewer discover it.
 - **Cover letter** — short. What the paper contributes, why it fits this venue, and any procedural matters: conflicts, related submissions, prior conference version being extended.
-- **Anonymise properly** where review is blind. Author names, acknowledgements, self-citations phrased in first person, identifying repository URLs, and document metadata.
+- **Anonymise properly** where review is blind. Author names, acknowledgments, self-citations phrased in first person, identifying repository URLs, and document metadata.
 
 ## Step 3: Read the decision properly
 
@@ -74,9 +74,9 @@ You will be asked, and reviewing well improves your own writing more than most t
 - **Decline promptly** if you lack expertise or time. A late review holds up someone's career.
 - **Declare conflicts.**
 - **Review the paper submitted**, not the one you would have written.
-- **Be specific.** "The evaluation is weak" helps nobody. "The evaluation uses a single dataset from the same distribution as training, so the generalisation claim in Section 5 is not supported" does.
+- **Be specific.** "The evaluation is weak" helps nobody. "The evaluation uses a single dataset from the same distribution as training, so the generalization claim in Section 5 is not supported" does.
 - **Separate must-fix from would-improve.** Editors need to know which objections are load-bearing.
-- **Be courteous.** There is a person on the other end, often an early-career one, and anonymity is not licence.
+- **Be courteous.** There is a person on the other end, often an early-career one, and anonymity is not license.
 - **Check the statistics.** `applied-statistics` covers the questions that find most problems — sample size justification, multiple comparisons, effect sizes with intervals.
 
 ## Where this connects

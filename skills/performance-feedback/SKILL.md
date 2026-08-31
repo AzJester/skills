@@ -1,29 +1,29 @@
 ---
 name: performance-feedback
-description: Give feedback that changes behaviour, and run reviews and one-to-ones that are worth the time. Use when preparing difficult feedback, writing a performance review, structuring a recurring one-to-one, addressing a performance problem, or recognising work in a way that reinforces it. Covers the conversation and the written record, not compensation or employment process.
+description: Give feedback that changes behavior, and run reviews and one-to-ones that are worth the time. Use when preparing difficult feedback, writing a performance review, structuring a recurring one-to-one, addressing a performance problem, or recognizing work in a way that reinforces it. Covers the conversation and the written record, not compensation or employment process.
 ---
 
 # Performance feedback
 
-Feedback fails in two directions, and most organisations pick one and stick with it. Too soft and nothing changes because nobody realised anything was wrong. Too harsh and nothing changes because the person is defending themselves rather than listening.
+Feedback fails in two directions, and most organizations pick one and stick with it. Too soft and nothing changes because nobody realized anything was wrong. Too harsh and nothing changes because the person is defending themselves rather than listening.
 
-What works is specific, timely, and about behaviour and its effect — delivered by someone who has made clear they want the person to succeed.
+What works is specific, timely, and about behavior and its effect — delivered by someone who has made clear they want the person to succeed.
 
 ## The shape of a piece of feedback
 
 Three parts, in order:
 
-1. **The behaviour** — what was observed, specifically. Not a trait, not an inference.
+1. **The behavior** — what was observed, specifically. Not a trait, not an inference.
 2. **The effect** — what happened as a result. This is the part that carries the weight and the part most often left out.
 3. **The ask or the question** — what should be different, or what would help you understand it.
 
 > Weak: *"You need to communicate better."*
 >
-> Strong: *"In yesterday's review you presented the schedule slip in the last two minutes. The programme manager had already left, so the decision she needed to make did not get made and now waits two weeks. What led to it being at the end?"*
+> Strong: *"In yesterday's review you presented the schedule slip in the last two minutes. The program manager had already left, so the decision she needed to make did not get made and now waits two weeks. What led to it being at the end?"*
 
 The second is harder to dismiss and easier to act on, because it names something observable and its consequence.
 
-**Ask before concluding.** You are seeing behaviour, not reasons. The reason is frequently something you did not know — a constraint, an instruction from elsewhere, information you do not have. Feedback that assumes a reason and turns out to be wrong costs more credibility than saying nothing would have.
+**Ask before concluding.** You are seeing behavior, not reasons. The reason is frequently something you did not know — a constraint, an instruction from elsewhere, information you do not have. Feedback that assumes a reason and turns out to be wrong costs more credibility than saying nothing would have.
 
 ## Timing
 
@@ -31,7 +31,7 @@ Close to the event. Feedback three months later is about a fading memory and rea
 
 The exception: not in front of others, and not while either of you is angry. Delay past those, not past the week.
 
-**Positive feedback is more useful early and more often than most managers give it.** Specific recognition — the same three-part structure, with the effect named — reinforces the behaviour and makes the harder conversations possible, because it establishes that you notice work rather than only problems.
+**Positive feedback is more useful early and more often than most managers give it.** Specific recognition — the same three-part structure, with the effect named — reinforces the behavior and makes the harder conversations possible, because it establishes that you notice work rather than only problems.
 
 ## The one-to-one
 
@@ -43,7 +43,7 @@ A shape that works:
 - **Your items** — feedback, context, decisions they need.
 - **Something beyond this week.** Development, direction, what they want next. If this never comes up, the one-to-one is tactical only and the person will notice.
 
-Weekly or fortnightly, and protect it. Cancelling it repeatedly communicates a priority ordering more clearly than anything you say.
+Weekly or fortnightly, and protect it. Canceling it repeatedly communicates a priority ordering more clearly than anything you say.
 
 Keep a shared running note. It makes the review a summary of known things rather than a surprise, which is the property a good review process has.
 
@@ -68,7 +68,7 @@ When performance is genuinely below the bar, the kindest thing is clarity, early
 - **Ask what is in the way.** Sometimes the answer is something you control, or something you did not know about.
 - **Follow up on the date.** A stated deadline that passes unremarked teaches that the standard is negotiable.
 
-Involve HR at the point it becomes formal, and know your organisation's process before starting rather than during.
+Involve HR at the point it becomes formal, and know your organization's process before starting rather than during.
 
 ## Receiving feedback
 

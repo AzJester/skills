@@ -18,7 +18,7 @@ The sensitivity of the data determines the environment, the provider offerings a
 | **IL2** | Public or non-critical mission information | Widest choice of services and regions |
 | **IL4** | CUI | Restricted regions and services; provider must hold the authorization |
 | **IL5** | Higher-sensitivity CUI and national security systems | Narrower still; separation requirements tighten |
-| **IL6** | Classified up to Secret | Specialised environments, very limited service catalogue |
+| **IL6** | Classified up to Secret | Specialized environments, very limited service catalog |
 
 Two things follow immediately:
 
@@ -50,14 +50,14 @@ Feed all of this into `rmf-ato`, which runs the authorization, and `stig-and-har
 
 | Approach | Means | Right when | Real cost |
 | --- | --- | --- | --- |
-| **Rehost** | Lift and shift, largely unchanged | Deadline-driven, data centre exit | Cloud economics never arrive; you rent the same inefficiency |
+| **Rehost** | Lift and shift, largely unchanged | Deadline-driven, data center exit | Cloud economics never arrive; you rent the same inefficiency |
 | **Replatform** | Modest changes — managed database, container runtime | Some benefit wanted, appetite for change is limited | Moderate, and usually the best return |
 | **Refactor** | Rebuilt cloud-native | The workload is strategic and will keep changing | Highest, and frequently underestimated |
 | **Repurchase** | Replace with a SaaS product | The capability is not a discriminator | Data migration and process change |
 | **Retire** | Turn it off | Nobody could name a user | Only the discovery effort |
 | **Retain** | Leave it where it is | It works, moving it earns nothing | Nothing, and this is a legitimate answer |
 
-**Rehost is not failure, but be honest about what it buys.** Moving a workload unchanged relocates cost rather than reducing it, and frequently increases it. That can still be the right decision — a data centre closing is a real constraint — but it should be a decision, not a claim about modernisation. See `modernization-and-migration` for the legacy assessment that precedes this choice.
+**Rehost is not failure, but be honest about what it buys.** Moving a workload unchanged relocates cost rather than reducing it, and frequently increases it. That can still be the right decision — a data center closing is a real constraint — but it should be a decision, not a claim about modernisation. See `modernization-and-migration` for the legacy assessment that precedes this choice.
 
 **Retire and retain both get skipped** because neither produces a project. Both are often correct.
 
@@ -65,7 +65,7 @@ Feed all of this into `rmf-ato`, which runs the authorization, and `stig-and-har
 
 **Landing zone before workloads.** Account and subscription structure, identity, logging, network boundaries and guardrails established first. Retrofitting isolation onto an environment where twenty teams already deployed is the most expensive avoidable cloud work there is.
 
-**Separate by blast radius**, not by org chart. Production from non-production, sensitive from routine, one programme's data from another's — enforced by account or subscription boundaries rather than by naming conventions and good intentions.
+**Separate by blast radius**, not by org chart. Production from non-production, sensitive from routine, one program's data from another's — enforced by account or subscription boundaries rather than by naming conventions and good intentions.
 
 **Identity is the actual perimeter.** Federated to the customer's identity provider where possible, least privilege by role, no long-lived static credentials, and every human and machine identity attributable to something. This is the foundation `zero-trust-architecture` builds on.
 
@@ -91,7 +91,7 @@ Cloud cost is consumption, so the architecture is the cost model.
 - **Model at production volume**, not at pilot. The shape changes: storage accumulates, egress grows with users, and logging at production scale is frequently a top-three line item.
 - **Data gravity is a design constraint.** Move compute to data rather than data to compute, wherever the volumes are meaningful.
 - **Managed services trade cost for lock-in.** Both directions are defensible; what is not defensible is choosing without pricing the exit.
-- **Commitment discounts require a demand forecast** you actually believe, and a contract period that matches. On a programme whose funding is annual, a three-year commitment is a risk to name.
+- **Commitment discounts require a demand forecast** you actually believe, and a contract period that matches. On a program whose funding is annual, a three-year commitment is a risk to name.
 - **Idle non-production is the most common waste**, and it is the easiest to fix.
 
 For AI workloads specifically, `ai-cost-modeling` covers the consumers people miss.
@@ -106,7 +106,7 @@ For AI workloads specifically, `ai-cost-modeling` covers the consumers people mi
 | Workloads before landing zone | Expensive retrofit of isolation | Structure, identity, logging, guardrails first |
 | Rehost sold as modernisation | Costs rise, benefits do not arrive | Name the approach honestly |
 | Connectivity started after design | Months of schedule discovered late | Start approvals in parallel |
-| Cost modelled at pilot scale | Budget breached in the first quarter | Model at production, including egress and logging |
+| Cost modeled at pilot scale | Budget breached in the first quarter | Model at production, including egress and logging |
 | Environment maintained by hand | Drift, then re-assessment findings | Infrastructure as code |
 
 The honest one is the first. Almost every serious cloud rework in government starts with data that turned out to be more sensitive than the design assumed.

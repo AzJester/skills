@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Setup TS Deep Modules
 
-Make every package in this repo a **deep module**: a lot of behaviour behind a small interface. A package's public surface is its **entry points** (the files at the package root), and everything in its subfolders is hidden. This skill installs [dependency-cruiser](https://github.com/sverweij/dependency-cruiser) and the rules that make the entry points the only way in, then proves the rules bite.
+Make every package in this repo a **deep module**: a lot of behavior behind a small interface. A package's public surface is its **entry points** (the files at the package root), and everything in its subfolders is hidden. This skill installs [dependency-cruiser](https://github.com/sverweij/dependency-cruiser) and the rules that make the entry points the only way in, then proves the rules bite.
 
 For the vocabulary (deep module, interface, seam, depth), call the Skill tool with "codebase-design" and use its language throughout.
 
@@ -30,7 +30,7 @@ Four rules, all `error`:
 3. **Tests through the entry points**: files under `<pkg>/tests/` may import any package's entry points and their own `tests/` fixtures, but never any package's subfolder internals (not even their own). Integration tests across packages are fine; deep imports are not.
 4. **No cycles**: no dependency cycles.
 
-**Entry points, not a barrel.** Because the public surface is *every* root file, a package can expose several small entry points (`index.ts`, `client.ts`, `server.ts`) instead of funnelling everything through one giant `index.ts`. Barrel files that re-export a whole subtree are discouraged; keep entry points small and hide implementation in subfolders.
+**Entry points, not a barrel.** Because the public surface is *every* root file, a package can expose several small entry points (`index.ts`, `client.ts`, `server.ts`) instead of funneling everything through one giant `index.ts`. Barrel files that re-export a whole subtree are discouraged; keep entry points small and hide implementation in subfolders.
 
 Layering (which packages may depend on which) is a *different* concern and is left as a commented stub in the config for this repo to fill in.
 
@@ -74,7 +74,7 @@ Create a committed `<packages-root>/example/` as a copy-me template:
 
 Tell the user this is a starter template to copy or delete.
 
-**Done when:** the example package exists, exposes its behaviour through a root entry point, and hides `impl` in a subfolder.
+**Done when:** the example package exists, exposes its behavior through a root entry point, and hides `impl` in a subfolder.
 
 ### 6. Prove the rules bite
 

@@ -29,4 +29,4 @@ Open the next gate with this log, not with the new package. Report:
 - Actions overdue, with the reason and a new date
 - Actions deferred again — a second deferral is a signal, and a third means the item is not going to be done and should be dispositioned honestly instead
 
-A programme that carries the same action through three gates has a decision to make about it, not a date to reset.
+A program that carries the same action through three gates has a decision to make about it, not a date to reset.

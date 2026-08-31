@@ -7,7 +7,7 @@ The package supports one decision. Anything in it that does not help the AO deci
 | Artifact | Answers | Fails when |
 | --- | --- | --- |
 | **Categorization** | How bad is a loss of confidentiality, integrity, availability? | Impact levels asserted with no information-type analysis behind them |
-| **System security plan (SSP)** | How is each control satisfied in *this* system? | Control text restated from the catalogue instead of described as implemented |
+| **System security plan (SSP)** | How is each control satisfied in *this* system? | Control text restated from the catalog instead of described as implemented |
 | **Security assessment report (SAR)** | What did testing find? | Findings without severity, or severity without a basis |
 | **POA&M** | What is not fixed, who owns it, by when? | Items re-dated rather than closed |
 | **Risk assessment** | What residual risk is the AO accepting? | Written for engineers rather than for the decision-maker |
@@ -25,7 +25,7 @@ Each control gets a statement answering four questions. The pattern that survive
 > **Operator** — who runs and maintains it.
 > **Evidence** — what an assessor can look at.
 
-A statement that reads like the control catalogue tells the assessor the control was copied, not implemented.
+A statement that reads like the control catalog tells the assessor the control was copied, not implemented.
 
 ## Inheritance
 

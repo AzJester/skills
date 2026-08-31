@@ -17,11 +17,11 @@ DoD structures ZT into seven pillars. A solution that addresses two of them thor
 | --- | --- | --- |
 | **User** | Is this the right person, verified now? | Phishing-resistant MFA, privileged access management, continuous authentication |
 | **Device** | Is this device known, healthy, and compliant right now? | Device inventory, posture checking, compliance enforcement at access time |
-| **Application & workload** | Is this workload authorised and hardened? | Secure development, authorised software inventory, workload identity |
+| **Application & workload** | Is this workload authorized and hardened? | Secure development, authorized software inventory, workload identity |
 | **Data** | Is this data tagged, protected, and access-controlled by its own attributes? | Classification and tagging, encryption, rights management, DLP |
 | **Network & environment** | Is the network segmented so a breach does not spread? | Macro and micro segmentation, software-defined perimeter, encrypted transit |
 | **Automation & orchestration** | Do responses happen at machine speed? | SOAR, policy orchestration, automated remediation |
-| **Visibility & analytics** | Would we see it? | Centralised logging, analytics, user and entity behaviour analytics |
+| **Visibility & analytics** | Would we see it? | Centralized logging, analytics, user and entity behavior analytics |
 
 Two of these are consistently underdone and consistently asked about. **Data** is the pillar people defer because tagging is unglamorous and expensive, yet attribute-based access to data is where zero trust actually delivers. **Visibility** is the pillar without which none of the others can be shown to work — you cannot demonstrate a policy is enforced if nothing observes it.
 
@@ -29,7 +29,7 @@ Two of these are consistently underdone and consistently asked about. **Data** i
 
 Each pillar has activities at two levels. Target is the baseline expected; advanced is the mature state.
 
-The distinction matters commercially. Bidding advanced across all seven pillars for a programme that needs target is over-engineering the price; claiming target where the customer specified advanced is non-responsive. Read what the requirement actually asks for, per pillar, and price to it.
+The distinction matters commercially. Bidding advanced across all seven pillars for a program that needs target is over-engineering the price; claiming target where the customer specified advanced is non-responsive. Read what the requirement actually asks for, per pillar, and price to it.
 
 For each pillar in a solution, state: current maturity, the target level required, the gap, and what closes it. That table is usually the most useful page in a ZT section.
 

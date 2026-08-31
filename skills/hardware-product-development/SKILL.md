@@ -1,13 +1,13 @@
 ---
 name: hardware-product-development
-description: Develop a physical product through to production. Use when planning a hardware development programme, sequencing build stages from breadboard through EVT, DVT and PVT, deciding what each prototype build must prove, planning board spins and long-lead procurement, running hardware design reviews, or working out why a hardware schedule keeps slipping a spin at a time. Covers the hardware realisation lifecycle; manufacturing-and-npi covers the transition to production.
+description: Develop a physical product through to production. Use when planning a hardware development program, sequencing build stages from breadboard through EVT, DVT and PVT, deciding what each prototype build must prove, planning board spins and long-lead procurement, running hardware design reviews, or working out why a hardware schedule keeps slipping a spin at a time. Covers the hardware realization lifecycle; manufacturing-and-npi covers the transition to production.
 ---
 
 # Hardware product development
 
-Everything else in this repository about running a programme — `wbs-and-scheduling`, `program-startup`, `earned-value-management` — assumes work that can be replanned weekly. Hardware cannot. A board spin costs weeks and money, tooling costs more, and a mistake found at the wrong stage costs a quarter.
+Everything else in this repository about running a program — `wbs-and-scheduling`, `program-startup`, `earned-value-management` — assumes work that can be replanned weekly. Hardware cannot. A board spin costs weeks and money, tooling costs more, and a mistake found at the wrong stage costs a quarter.
 
-**The whole discipline follows from one fact: you get very few iterations.** Software teams learn by shipping and correcting. Hardware teams get three or four real builds before production, and each one has a fixed cost measured in weeks. Everything below is a way of front-loading learning into the cheap part of the programme.
+**The whole discipline follows from one fact: you get very few iterations.** Software teams learn by shipping and correcting. Hardware teams get three or four real builds before production, and each one has a fixed cost measured in weeks. Everything below is a way of front-loading learning into the cheap part of the program.
 
 The failure this exists to prevent is discovering a fundamental problem at the design validation build, where the design is frozen, the tooling is cut, and the only options are expensive.
 
@@ -98,4 +98,4 @@ Hardware development pulls in a wider set of disciplines than software, and most
 | Freeze as an event | Changes continue informally | Freeze in stages; classify every change after |
 | Requirements by category | Design to the wrong environment | Trace every environmental requirement to the platform |
 
-The honest one is the second. Environmental and EMC qualification are where hardware programmes actually fail, they fail at the end, and they fail because the margin needed to pass had to be designed in months earlier.
+The honest one is the second. Environmental and EMC qualification are where hardware programs actually fail, they fail at the end, and they fail because the margin needed to pass had to be designed in months earlier.

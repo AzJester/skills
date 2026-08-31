@@ -1,6 +1,6 @@
 # Pre-release checklist and marking patterns
 
-Run before any document, file, model, dataset or presentation leaves your control — including internally to someone whose authorisation you have not confirmed.
+Run before any document, file, model, dataset or presentation leaves your control — including internally to someone whose authorization you have not confirmed.
 
 ## Checklist
 
@@ -11,7 +11,7 @@ Run before any document, file, model, dataset or presentation leaves your contro
 - [ ] Does it contain contract-specific information the contract restricts?
 
 **Who is receiving it**
-- [ ] Are all recipients authorised for the content?
+- [ ] Are all recipients authorized for the content?
 - [ ] Are any recipients foreign persons? (Nationality, not location — a deemed export happens domestically.)
 - [ ] Does any recipient list, distribution group, or repository include people you have not enumerated?
 - [ ] Will it be stored or transmitted through a service not approved for this content?
@@ -77,7 +77,7 @@ by [applicable statute]. Violations may result in severe criminal penalties.
 | Legacy markings left in place | FOUO on an old document is not correct CUI marking today |
 | Controlled data in an unapproved tool | Convenience, and no habit of asking before use |
 | Access granted by group rather than by person | Nobody enumerated who is in the group |
-| Foreign national colleague included by default | Deemed export not recognised as an export |
+| Foreign national colleague included by default | Deemed export not recognized as an export |
 | Marking on the document, not on the file name or metadata | Content marked, container not |
 
 The pattern behind most of these is the same: a default action taken without a pause. The checklist exists to insert the pause.

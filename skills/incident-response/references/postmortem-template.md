@@ -23,7 +23,7 @@ State unknowns as unknown. An honest gap is more useful than a confident guess.
 
 ## Timeline
 
-Built from timestamped artefacts, not recollection. Cite the source of each entry.
+Built from timestamped artifacts, not recollection. Cite the source of each entry.
 
 | Time | Event | Source |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ Things that made it worse, slower to detect, or harder to fix. Not causes, but e
 
 ## What went well
 
-Which defences worked. Name them so nobody removes them later.
+Which defenses worked. Name them so nobody removes them later.
 
 ## What was luck
 

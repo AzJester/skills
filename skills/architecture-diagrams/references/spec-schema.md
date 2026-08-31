@@ -11,7 +11,7 @@ optional overrides you should reach for only after looking at a render.
 | `subtitle` | string | One line under the title. Good place for the architectural claim. |
 | `style` | string | Style key. Overridden by `--styles` on the command line. |
 | `max_per_row` | int | Nodes per row inside a tier before wrapping. Default 4. Drop to 3 for long labels. |
-| `tiers` | array | Ordered top to bottom. Each becomes a labelled band. |
+| `tiers` | array | Ordered top to bottom. Each becomes a labeled band. |
 | `edges` | array | Connections between nodes, by node id. |
 | `legend` | array | Optional `{label, color}` swatches along the bottom. |
 
@@ -21,7 +21,7 @@ optional overrides you should reach for only after looking at a render.
 {"label": "Application Tier", "note": "private subnets", "nodes": [ ... ]}
 ```
 
-`label` prints upper-case in the accent colour. `note` prints small and right-aligned, useful
+`label` prints upper-case in the accent color. `note` prints small and right-aligned, useful
 for subnet ranges, availability zones, trust boundaries, or ownership. Optional `x`, `y`, `w`,
 `h` override the computed band.
 
@@ -81,7 +81,7 @@ legend. Copy it and replace the contents.
 }
 ```
 
-## Modelling guidance
+## Modeling guidance
 
 Tiers should mean something: network zones, trust boundaries, layers, ownership, or physical
 location. A tier that just holds leftovers reads as clutter.

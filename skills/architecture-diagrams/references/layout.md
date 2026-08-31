@@ -5,7 +5,7 @@ handles placement; these are the decisions it cannot make for you.
 
 ## What the renderer does
 
-Nodes are 210x92 by default. Tiers stack top to bottom with a 64px gutter and are centred on
+Nodes are 210x92 by default. Tiers stack top to bottom with a 64px gutter and are centered on
 the widest tier. Nodes fill left to right and wrap at `max_per_row` (default 4). Horizontal
 spacing is 36px, widened to 96px when any same-tier edge carries a label. Cross-tier edges
 route as an elbow at the vertical midpoint, and parallel edges in the same band are staggered
@@ -20,8 +20,8 @@ diagram that reads downward needs no explanation of how to read it.
 **Cap a tier at six nodes.** Beyond that, set `max_per_row` to 3 or 4 and let it wrap, or
 split the tier. A row of eight boxes is a list, not a diagram.
 
-**Put the busiest node in the middle of its row.** Edges fan out from the centre with shorter
-runs and fewer crossings. If one service talks to everything below it, centre it.
+**Put the busiest node in the middle of its row.** Edges fan out from the center with shorter
+runs and fewer crossings. If one service talks to everything below it, center it.
 
 **Order nodes within a tier to match the tier below.** If the app tier is API, service,
 worker, and the data tier is cache, database, object store, arrange them so the arrows run
@@ -49,7 +49,7 @@ Look at the PNG first. Then, in rough order of preference:
 ## When to split into two diagrams
 
 One diagram should answer one question. If the user wants request flow and deployment
-topology and failover behaviour, that is three diagrams sharing a component list, not one
+topology and failover behavior, that is three diagrams sharing a component list, not one
 diagram with three legends. Splitting is almost always the right call once a single render
 runs past about twenty nodes.
 

@@ -17,15 +17,15 @@ That is why DoD separates it from contractor verification. `verification-validat
 | Conditions | Controlled, instrumented, often contractor facility | Realistic, operational environment, threat representative |
 | Operators | Engineers and test staff | **Typical users**, trained to the fielded standard |
 | Judged against | Requirements | Mission outcomes — MOEs and MOSs |
-| Run by | Programme, often with contractor | Independent operational test agency |
+| Run by | Program, often with contractor | Independent operational test agency |
 
 The independence of OT&E is the point, not bureaucracy. A test run by the people who built the system, with the people who built it operating it, measures something other than fieldability.
 
-**Effective, suitable, survivable** are three separate verdicts. Effective means it accomplishes the mission. Suitable means it can be operated, maintained, supported, and sustained by real units — reliability, maintainability, logistics, training, human factors. Survivable means it continues in the threat environment, including the cyber threat. Systems fail OT&E on suitability far more often than on effectiveness, and suitability is the half programmes under-plan.
+**Effective, suitable, survivable** are three separate verdicts. Effective means it accomplishes the mission. Suitable means it can be operated, maintained, supported, and sustained by real units — reliability, maintainability, logistics, training, human factors. Survivable means it continues in the threat environment, including the cyber threat. Systems fail OT&E on suitability far more often than on effectiveness, and suitability is the half programs under-plan.
 
 ## Step 1: The TEMP
 
-The Test and Evaluation Master Plan is the programme's T&E contract with itself and its oversight. It exists to be agreed early and referred to constantly, not written for a milestone.
+The Test and Evaluation Master Plan is the program's T&E contract with itself and its oversight. It exists to be agreed early and referred to constantly, not written for a milestone.
 
 Sections that carry the weight:
 
@@ -34,10 +34,10 @@ Sections that carry the weight:
 - **Evaluation framework** — the critical operational issues, the MOEs and MOSs beneath them, and the data needed to decide each. `measures-of-effectiveness` in this repo defines these; the TEMP commits to measuring them.
 - **DT&E and OT&E plans** — events, entrance criteria, resources, schedule.
 - **Cybersecurity T&E** — phased, not a single event. See below.
-- **Modelling and simulation** — what M&S substitutes for live test, and its accreditation.
+- **Modeling and simulation** — what M&S substitutes for live test, and its accreditation.
 - **Resource summary** — ranges, threat systems, instrumentation, articles, people. The section that most often makes a plan infeasible.
 
-Two failure patterns worth naming. A TEMP whose evaluation framework cannot be measured with the resources in the resource summary is a plan that will be renegotiated under pressure. And a TEMP written to pass a milestone review rather than to run a programme gets filed and ignored, after which the programme tests whatever is convenient.
+Two failure patterns worth naming. A TEMP whose evaluation framework cannot be measured with the resources in the resource summary is a plan that will be renegotiated under pressure. And a TEMP written to pass a milestone review rather than to run a program gets filed and ignored, after which the program tests whatever is convenient.
 
 ## Step 2: Cybersecurity T&E, in phases
 
@@ -45,8 +45,8 @@ Not one event at the end. The phases run alongside development, and the early on
 
 1. **Understand the requirements** — what the system must protect and against whom.
 2. **Characterize the attack surface** — what an adversary can reach. `threat-modeling` produces this.
-3. **Cooperative vulnerability identification** — testers work with the programme, full knowledge, finding what is there.
-4. **Adversarial cybersecurity DT&E** — a red team with limited knowledge, working against defences.
+3. **Cooperative vulnerability identification** — testers work with the program, full knowledge, finding what is there.
+4. **Adversarial cybersecurity DT&E** — a red team with limited knowledge, working against defenses.
 5. **Cooperative vulnerability and penetration assessment** — operational context, cooperative.
 6. **Adversarial assessment** — operational context, realistic threat, including the defenders as part of the system under test.
 
@@ -71,7 +71,7 @@ The intended-use qualifier is the whole discipline. A model validated for one pu
 - **Deficiencies are reported by operational impact**, not by component. A category that stops the mission and one that annoys the operator are different findings.
 - **Negative results are results.** A test that finds nothing usually means the test was not stressing, and reporting it as success is how problems reach the field.
 
-Those are the reporting principles. `test-report` covers writing the report itself — structure, deficiency categorisation, and the limitations section.
+Those are the reporting principles. `test-report` covers writing the report itself — structure, deficiency categorization, and the limitations section.
 
 ## Reference
 

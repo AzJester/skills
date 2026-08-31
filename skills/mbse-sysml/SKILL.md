@@ -1,6 +1,6 @@
 ---
 name: mbse-sysml
-description: Build a systems model in SysML. Use when creating or reviewing a SysML model, choosing which diagrams a system actually needs, decomposing a system into blocks, modelling behaviour with activities or state machines, allocating requirements to structure, building parametric constraints for budgets, or deciding between SysML v1 and v2. Covers the modelling practice itself, where digital-engineering covers the strategy around it.
+description: Build a systems model in SysML. Use when creating or reviewing a SysML model, choosing which diagrams a system actually needs, decomposing a system into blocks, modeling behavior with activities or state machines, allocating requirements to structure, building parametric constraints for budgets, or deciding between SysML v1 and v2. Covers the modeling practice itself, where digital-engineering covers the strategy around it.
 ---
 
 # MBSE and SysML
@@ -9,14 +9,14 @@ Model-based systems engineering replaces documents with a model as the primary e
 
 That gain only arrives if the model is built to answer questions. Most failed MBSE efforts produce a large, beautiful, structurally complete model that answers none, because completeness was the goal instead of a means.
 
-## Scope, against the neighbours
+## Scope, against the neighbors
 
 Three skills touch this, and mixing them wastes effort:
 
 | Skill | Covers |
 | --- | --- |
 | `digital-engineering` | The strategy — authoritative source of truth, the digital thread, model governance, digital twins |
-| **`mbse-sysml`** (this) | **The modelling practice — what to model, in which diagram, to what depth** |
+| **`mbse-sysml`** (this) | **The modeling practice — what to model, in which diagram, to what depth** |
 | `system-dev` | This repo's own Design Registry implementation, with typed slots and its commands |
 
 Use `digital-engineering` to decide the model is authoritative. Use this to build it well.
@@ -47,7 +47,7 @@ The distinction is the one newcomers stumble over: **BDD defines types, IBD show
 
 Ports carry the interface. Model them properly — a connection between two blocks with no ports and no item flows is a line, not an interface, and cannot be checked against anything. See `interface-control` for what the interface agreement then needs.
 
-### Behaviour — what it does
+### Behavior — what it does
 
 **Activity diagram** — flow of actions and the items passing between them. Best for processing chains and functional flows.
 
@@ -57,11 +57,11 @@ Ports carry the interface. Model them properly — a connection between two bloc
 
 **Use case** — actors and the goals they pursue. Useful early, at the boundary, and easy to overuse.
 
-**Behaviour is where models are usually thinnest.** Structure is easy and visible, so it gets built. Behaviour is where the design actually lives, and a model with fifty blocks and two state machines has documented an inventory rather than a system.
+**Behavior is where models are usually thinnest.** Structure is easy and visible, so it gets built. Behavior is where the design actually lives, and a model with fifty blocks and two state machines has documented an inventory rather than a system.
 
 ### Requirements — what it must do
 
-Requirement elements, with `satisfy`, `verify`, `derive` and `refine` relationships to structure and behaviour.
+Requirement elements, with `satisfy`, `verify`, `derive` and `refine` relationships to structure and behavior.
 
 Two disciplines that decide whether this pillar earns its keep:
 
@@ -81,7 +81,7 @@ If you build only one thing beyond structure, build the parametrics for whicheve
 
 Allocation is the connective tissue: requirements to structure, function to component, logical to physical.
 
-- **Every requirement allocated** to at least one structural or behavioural element.
+- **Every requirement allocated** to at least one structural or behavioral element.
 - **Every element traceable up** to something that needs it.
 - **Functional and physical decomposition kept distinct** where they differ. Collapsing them early looks tidy and forecloses design alternatives before they have been examined.
 - **Allocation checked automatically**, not by eye. Orphans in either direction are the highest-value model query and the reason to have a model at all.
@@ -110,14 +110,14 @@ A real decision with tooling and training consequences, best made early.
 
 That last row matters more than it appears. Text-based models can live in git, be reviewed in pull requests, and be diffed — which changes model governance from a manual discipline into the same workflow as code.
 
-**Choosing:** existing v1 models, mature tool investment and trained staff argue for staying. A new programme, an interoperability requirement, or a desire to version models like code argues for v2. Do not straddle — a programme running both without a defined boundary pays for both and gets the interchange problems of neither.
+**Choosing:** existing v1 models, mature tool investment and trained staff argue for staying. A new program, an interoperability requirement, or a desire to version models like code argues for v2. Do not straddle — a program running both without a defined boundary pays for both and gets the interchange problems of neither.
 
 ## Common failures
 
 | Failure | Symptom | Fix |
 | --- | --- | --- |
-| Modelling for completeness | Large model, no queries run against it | Return to the Step 1 questions; delete what serves none |
-| Structure only | Many blocks, almost no behaviour or parametrics | Build the state machines and the tightest budget |
+| Modeling for completeness | Large model, no queries run against it | Return to the Step 1 questions; delete what serves none |
+| Structure only | Many blocks, almost no behavior or parametrics | Build the state machines and the tightest budget |
 | Diagram thinking | People draw diagrams rather than build a model; the same block appears as three unrelated elements | One model, many views. A diagram is a view of it |
 | Duplicate requirements | Model and requirements tool disagree | One authoritative home, one-way automated sync |
 | Uniform depth | Effort spread evenly regardless of risk | Depth follows responsibility boundaries and risk |
@@ -128,4 +128,4 @@ The last row is the honest one. A model that informs no decision is not an asset
 
 ## Reference
 
-- `references/diagram-selection.md` — which diagram answers which question, and the modelling patterns worth knowing.
+- `references/diagram-selection.md` — which diagram answers which question, and the modeling patterns worth knowing.

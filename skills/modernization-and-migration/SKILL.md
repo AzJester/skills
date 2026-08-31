@@ -7,20 +7,20 @@ description: Replace or move a system that is already running. Use when assessin
 
 Replacing a system that works is harder than building one that does not exist yet, because the old one keeps running, keeps changing, and keeps being depended on in ways nobody wrote down.
 
-The failure this exists to prevent is the big-bang rewrite: a multi-year parallel build, no incremental value, and a cutover date that slips until the programme is cancelled with both systems still running. This pattern has an unusually consistent track record and it is chosen anyway, because it is the easiest one to plan.
+The failure this exists to prevent is the big-bang rewrite: a multi-year parallel build, no incremental value, and a cutover date that slips until the program is canceled with both systems still running. This pattern has an unusually consistent track record and it is chosen anyway, because it is the easiest one to plan.
 
 ## Step 1: Find out what the system actually does
 
 Before deciding anything, establish the ground truth. This takes longer than people expect and it is where most migration failures are actually caused.
 
-- **What does it do that anyone depends on?** Including the reports someone runs monthly, the extract another team consumes, and the behaviour a downstream system has come to rely on.
+- **What does it do that anyone depends on?** Including the reports someone runs monthly, the extract another team consumes, and the behavior a downstream system has come to rely on.
 - **Who are the real users, and what do they actually do with it?** Usually a broader set than the sponsor believes.
 - **What does it integrate with**, in both directions, including the interfaces nobody documented and the ones that are a scheduled file drop.
 - **What is the data**, where does it come from, and what is its quality? See `data-strategy-and-governance`. Migration surfaces every quality problem that the old system has been tolerating.
 - **What are the compliance and contractual obligations** attached to it — records retention, accreditation, data rights, audit trails?
 - **What does nobody understand any more?** Name it explicitly. There is always some, and pretending otherwise puts it on the critical path unannounced.
 
-**Behaviour beats documentation.** Where the documentation and the running system disagree, the system is right — users have built their work around what it actually does, including its bugs. Some of those bugs are now requirements.
+**Behavior beats documentation.** Where the documentation and the running system disagree, the system is right — users have built their work around what it actually does, including its bugs. Some of those bugs are now requirements.
 
 ## Step 2: Choose the disposition per component, not per system
 
@@ -37,7 +37,7 @@ Applying one strategy to a whole system is the first mistake. Assess component b
 
 **Retire and retain are the under-used answers**, because neither produces a project. A modernisation effort that begins by switching off three unused subsystems has already delivered value and reduced its own scope.
 
-**Refactor is the most expensive option and should require the most justification.** "The technology is old" is not sufficient. The question is whether the current form is actually blocking something the organisation needs to do. Where it is not, `cloud-architecture` on rehosting applies: relocate honestly rather than modernise ceremonially.
+**Refactor is the most expensive option and should require the most justification.** "The technology is old" is not sufficient. The question is whether the current form is actually blocking something the organization needs to do. Where it is not, `cloud-architecture` on rehosting applies: relocate honestly rather than modernize ceremonially.
 
 ## Step 3: Migrate incrementally
 
@@ -47,7 +47,7 @@ This requires a seam. Where the legacy system has no clean boundary, creating on
 
 **Sequence by risk and by learning, not by ease.** Doing the easy parts first feels productive and defers every hard question. Take one genuinely representative slice early — it is what tells you whether the approach works while changing course is still cheap.
 
-**Run both systems in parallel where you can afford it**, and compare outputs. Parallel running is the single most effective way to find behavioural differences, and the differences it finds are always more numerous than expected.
+**Run both systems in parallel where you can afford it**, and compare outputs. Parallel running is the single most effective way to find behavioral differences, and the differences it finds are always more numerous than expected.
 
 **Do not let the old system freeze.** A migration lasting a year cannot stop the legacy system from changing, because the business does not stop. Plan for keeping up with changes as ongoing work, or the target is permanently behind.
 

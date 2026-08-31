@@ -31,7 +31,7 @@ The cost of getting this wrong is one-way. Clear a *relevant* context and you lo
 - sending the work to a **colleague**,
 - or forking a side task you found **mid-phase** without derailing what you're doing.
 
-That list is the whole clause. What `/handoff` buys is **portability**: a file that travels. If nothing is travelling, you don't need it.
+That list is the whole clause. What `/handoff` buys is **portability**: a file that travels. If nothing is traveling, you don't need it.
 
 **4. Can the task be done AFK?** Is it scoped tightly enough to run with you away from the keyboard, no steering? Then send it to a **subagent** and leave this session untouched. Automated review is the standard case: the agent reads the diff and reports, and you aren't needed while it does.
 
@@ -50,6 +50,6 @@ Every move except **Continue** turns a **primary source** into a **secondary sou
 
 This is why question 1 comes first. You only pay the lossiness when staying costs more than it saves.
 
-## These are judgement calls
+## These are judgment calls
 
 The questions are not objective: each has taste in it, and the same boundary can go two ways on two days. The value is in asking them **in order**, at the boundary rather than in the middle of the work.

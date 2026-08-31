@@ -15,9 +15,9 @@ Two things make firmware on a tactical edge device different from ordinary softw
 
 ## Step 1: Decide what belongs in firmware
 
-The decision that most affects the programme, taken early:
+The decision that most affects the program, taken early:
 
-**Put anything that might need to change in firmware.** Hardware changes cost a board spin and can invalidate qualification — see `hardware-product-development`. Firmware changes cost a build. Where a behaviour is uncertain, implementing it in firmware buys you the option to be wrong.
+**Put anything that might need to change in firmware.** Hardware changes cost a board spin and can invalidate qualification — see `hardware-product-development`. Firmware changes cost a build. Where a behavior is uncertain, implementing it in firmware buys you the option to be wrong.
 
 **But firmware is not free.** It has to be developed, tested, qualified, signed, distributed and supported for the life of the product — which for defense hardware is far longer than the life of any toolchain, operating system or library you start with. A capability moved into firmware to save a board spin becomes a twenty-year maintenance obligation.
 
@@ -31,7 +31,7 @@ Each stage verifies the next before executing it, anchored in something that can
 - **Every stage verifies a signature before transferring control.** Break the chain anywhere and everything above it is unverified.
 - **Anti-rollback protection**, so an attacker cannot install an older signed image with a known vulnerability. Usually a monotonic counter in hardware. This is the control most often omitted, and reverting to a known-vulnerable signed image is a real attack.
 - **Decide verified versus measured boot.** Verified boot refuses to run unsigned code; measured boot records what ran and lets something else decide. They serve different purposes and are not alternatives — a device that must operate regardless may need to measure rather than refuse.
-- **Plan key management for the product's life.** Signing key custody, rotation, revocation, and what happens when a key is compromised on ten thousand fielded units. This is a programme decision with contractual and security dimensions, not a build-system detail.
+- **Plan key management for the product's life.** Signing key custody, rotation, revocation, and what happens when a key is compromised on ten thousand fielded units. This is a program decision with contractual and security dimensions, not a build-system detail.
 - **Decide what a verification failure does.** Refuse to boot, fall back to a known-good image, or boot degraded and report — and it is a mission decision, not an engineering preference. A sensor that refuses to boot is as unavailable as one that was destroyed.
 
 ## Step 3: Design update for the disconnected case
@@ -77,7 +77,7 @@ The obligation nobody prices at the start.
 | Single-image update | Power loss bricks the device | Two images, atomic switch, verify first |
 | No anti-rollback | Old signed vulnerable image reinstalled | Monotonic counter in hardware |
 | Root of trust in rewritable storage | Not actually a root of trust | Anchor in hardware |
-| Verification failure behaviour undecided | Device refuses to boot on a mission | Decide it as a mission question |
+| Verification failure behavior undecided | Device refuses to boot on a mission | Decide it as a mission question |
 | Debug interfaces left open | Device gives up its secrets | Close in production; verify it as a test step |
 | Toolchain not archived | Cannot rebuild in ten years | Pin and archive the build environment |
 | No firmware SBOM | Cannot assess a disclosed vulnerability | Generate at build time |

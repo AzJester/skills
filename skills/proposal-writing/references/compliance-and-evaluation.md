@@ -60,7 +60,7 @@ The window is a real instrument, not a formality:
 
 ## Orals
 
-Where the solicitation uses oral presentations, the evaluated artefact is the presentation and often the answers to questions, not a written volume. Two things change:
+Where the solicitation uses oral presentations, the evaluated artifact is the presentation and often the answers to questions, not a written volume. Two things change:
 
 - **Slides are usually not read afterwards.** They support the speaker and are frequently limited in count and content by Section L. See `briefing-deck` for how to build them.
 - **The Q&A is scored.** Rehearse against the hardest questions the evaluation factors invite, including the ones about weaknesses in your own approach.

@@ -18,7 +18,7 @@ Read `README.md` for the current list before answering — it is maintained alon
 | They are trying to… | Look under | Notable |
 | --- | --- | --- |
 | Decide whether an idea is worth building | Systems engineering | `concept-dev` for the lifecycle; `grilling` to stress-test |
-| Turn an idea into requirements | Systems engineering | `requirements-dev`, `system-dev` for INCOSE rigour |
+| Turn an idea into requirements | Systems engineering | `requirements-dev`, `system-dev` for INCOSE rigor |
 | Build a system model | Test, evaluation & digital engineering | `mbse-sysml` for SysML practice; `digital-engineering` for the strategy around it |
 | Choose between options | Systems engineering | `trade-study-analysis` (DAU 9-step) |
 | Sharpen thinking before committing | Productivity | `grilling` (model-invocable), `grill-me` (user-only), `grill-with-docs` (also writes ADRs) |
@@ -38,11 +38,11 @@ Read `README.md` for the current list before answering — it is maintained alon
 | Respond to an RFP | Executive & professional practice / Technical writing | `solution-shaping` decides the offer, `proposal-writing` writes it |
 | Estimate what something costs | Program & contract / Artificial intelligence | `cost-estimating-and-boe`; `ai-cost-modeling` for AI workloads |
 | Plan and schedule the work | Program & contract | `wbs-and-scheduling` builds what `earned-value-management` reads |
-| Stand up a programme after award | Program & contract | `program-startup` |
+| Stand up a program after award | Program & contract | `program-startup` |
 | Run agile under a government contract | Program & contract | `agile-on-a-government-contract` — the contract layer, not the team's practice |
-| Rescue a programme in trouble | Program & contract | `program-recovery`; `earned-value-management` diagnoses it first |
-| Capture what a programme learned | Program & contract | `lessons-learned` — push it into the template, not a repository |
-| Staff several programmes at once | Executive & professional practice | `resource-and-capacity-management` |
+| Rescue a program in trouble | Program & contract | `program-recovery`; `earned-value-management` diagnoses it first |
+| Capture what a program learned | Program & contract | `lessons-learned` — push it into the template, not a repository |
+| Staff several programs at once | Executive & professional practice | `resource-and-capacity-management` |
 | Plan capability across business units | Executive & professional practice | `technology-roadmapping`; `trl-assessment` for maturity |
 | Design a cloud solution | Networks | `cloud-architecture`; `rmf-ato` for the authorization |
 | Develop a physical product | Hardware product development | `hardware-product-development` for the lifecycle |
@@ -90,7 +90,7 @@ These are the overlaps people actually get wrong.
 
 **The diagram skills.** `diagram-picker` interviews you and picks; `architecture-diagrams` renders a spec into draw.io, SVG, PNG and HTML across 36 styles; `omm-scan` extracts architecture from a codebase into `.omm/` docs and needs the `omm` CLI installed. Different jobs despite the shared noun.
 
-**The three modelling skills.** `mbse-sysml` is the modelling practice — which diagram answers which question, how deep to decompose, parametrics for budgets. `digital-engineering` is the strategy around it — what is authoritative, what the digital thread links, whether a twin earns its cost. `system-dev` is this repository's own Design Registry implementation, with typed slots and commands. Reaching for `system-dev` when the question is which SysML diagram to draw is the usual mistake.
+**The three modeling skills.** `mbse-sysml` is the modeling practice — which diagram answers which question, how deep to decompose, parametrics for budgets. `digital-engineering` is the strategy around it — what is authoritative, what the digital thread links, whether a twin earns its cost. `system-dev` is this repository's own Design Registry implementation, with typed slots and commands. Reaching for `system-dev` when the question is which SysML diagram to draw is the usual mistake.
 
 **Requirements versus spec.** `requirements-dev` produces formal, verifiable, traceable requirements for a system. `to-spec` produces a spec for a piece of software work and publishes it to a tracker. The first is INCOSE; the second is a ticket.
 
@@ -102,9 +102,9 @@ These are the overlaps people actually get wrong.
 
 **There is no general project management skill, deliberately.** Scope, schedule, cost, quality, risk, procurement, stakeholders and governance are each covered by a specific skill — `sow-and-pws`, `wbs-and-scheduling`, `cost-estimating-and-boe`, `earned-value-management`, `quality-management-system`, `risk-management`, `teaming-and-subcontracts`, `organizational-change`, `technical-reviews`. A generic overview would be redundant against all of them and worse than any.
 
-**Learning from what happened.** Three skills, different scope. `incident-response` runs a postmortem on a live operational incident. The RCCA family, routed by `rcca-master`, finds root cause on one failure. `lessons-learned` covers what a programme learned across its life, and its whole difficulty is retrieval rather than capture.
+**Learning from what happened.** Three skills, different scope. `incident-response` runs a postmortem on a live operational incident. The RCCA family, routed by `rcca-master`, finds root cause on one failure. `lessons-learned` covers what a program learned across its life, and its whole difficulty is retrieval rather than capture.
 
-**Product versus programme.** The contract skills — `requirements-dev`, `sow-and-pws`, `program-startup`, `earned-value-management` — assume a customer who specified the work and is funding it. `product-management` inverts that: you decide, you fund it, you recover across units. Running a product like a programme produces something built to one customer's specification and sold once.
+**Product versus program.** The contract skills — `requirements-dev`, `sow-and-pws`, `program-startup`, `earned-value-management` — assume a customer who specified the work and is funding it. `product-management` inverts that: you decide, you fund it, you recover across units. Running a product like a program produces something built to one customer's specification and sold once.
 
 **Surviving versus fitting.** `ruggedization-and-environmental-qual` is about surviving the environment — shock, vibration, temperature, ingress. `swap-and-thermal-budgeting` is about fitting the envelope — size, weight, power, cooling. Thermal appears in both: thermal *design* is a budgeting problem and lives in SWaP; thermal *testing* is a qualification method and lives in ruggedization.
 

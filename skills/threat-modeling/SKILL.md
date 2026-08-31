@@ -35,7 +35,7 @@ Apply STRIDE to each element rather than to the system as a whole. System-level 
 | **R**epudiation | Non-repudiation | Can an actor deny having done it, and would we be able to prove otherwise? |
 | **I**nformation disclosure | Confidentiality | Can someone read what they should not? |
 | **D**enial of service | Availability | Can someone exhaust or block this? |
-| **E**levation of privilege | Authorisation | Can someone gain rights they were not granted? |
+| **E**levation of privilege | Authorization | Can someone gain rights they were not granted? |
 
 Not every threat applies to every element type. External entities can spoof and repudiate but you cannot tamper with them. Data stores rarely spoof. Use `references/stride-by-element.md` for the applicable matrix rather than forcing all six everywhere.
 
@@ -61,7 +61,7 @@ Each accepted finding gets one of four responses, stated explicitly:
 Then trace it. A mitigation that exists only in the threat model gets built by nobody:
 
 - Turn each mitigation into a requirement via `requirements-dev`, so it inherits verification and traceability rather than living in a separate document.
-- Where the system carries an authorisation boundary, map to the **NIST SP 800-53** control family it satisfies — AC (access control), AU (audit and accountability), IA (identification and authentication), SC (system and communications protection), SI (system and information integrity). `references/control-mapping.md` maps each STRIDE category to its usual families and to the questions an assessor will ask.
+- Where the system carries an authorization boundary, map to the **NIST SP 800-53** control family it satisfies — AC (access control), AU (audit and accountability), IA (identification and authentication), SC (system and communications protection), SI (system and information integrity). `references/control-mapping.md` maps each STRIDE category to its usual families and to the questions an assessor will ask.
 - Record the mapping both ways. An assessor asks "which control covers this?"; an engineer asks "why does this control exist?". One table answering both is worth more than two documents.
 
 ## Step 5: Did we do a good job?

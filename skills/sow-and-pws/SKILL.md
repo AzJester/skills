@@ -21,7 +21,7 @@ Three documents that are routinely confused, and the choice changes who owns the
 
 **The prescription test:** the more the document specifies *how*, the more the government owns the outcome of that method being wrong. A directive SOW that names the tools and the sequence has told the contractor what to do, and undercuts holding them accountable for whether it worked.
 
-Federal policy favours performance-based work statements where the outcome can be described and measured. That preference is real but it is not universal: where the method genuinely matters — safety, interoperability, a mandated process — prescribe it deliberately and accept that you now own it.
+Federal policy favors performance-based work statements where the outcome can be described and measured. That preference is real but it is not universal: where the method genuinely matters — safety, interoperability, a mandated process — prescribe it deliberately and accept that you now own it.
 
 **Specifications are a fourth thing, not a variant.** A specification says what the *product* must be; a SOW or PWS says what *work* must be done. Requirements on the delivered item belong in the specification (see `requirements-dev` for writing them well, and MIL-STD-961 where a defense specification format governs); tasks, meetings, reports and support belong in the work statement. Putting product requirements in the SOW is the most common structural error, and it makes both documents impossible to verify — the spec is incomplete and the SOW contains things no one performs.
 
@@ -67,7 +67,7 @@ Every performance requirement carries four parts:
 Deliverables are scope. Each one costs real effort and is frequently added without anyone pricing it.
 
 - **Every deliverable is a CDRL, and every CDRL cites a DID.** The DID defines the content and format; without one, "monthly report" means whatever the reviewer decides it means at review time.
-- **Tailor the DID, and record the tailoring.** DIDs routinely require content a given programme does not need. Tailoring is normal and expected; silent non-compliance is not.
+- **Tailor the DID, and record the tailoring.** DIDs routinely require content a given program does not need. Tailoring is normal and expected; silent non-compliance is not.
 - **State frequency, format, medium, distribution and approval.** Whether the government approves or merely receives a deliverable changes its cost substantially, and the difference between "submit" and "submit for approval" is often unnoticed until the first rejection.
 - **Count them before signing.** Forty CDRLs at monthly frequency is a full-time documentation effort, and it is routinely priced as though it were incidental.
 
@@ -105,4 +105,4 @@ Before it is issued or accepted, read it looking for money:
 | GFI assumed | Schedule claim | List government-furnished items with dates |
 | Mixed modal verbs | Requirements read as optional | "Shall" for binding, and nothing else |
 
-The honest one: every ambiguity in this document is eventually resolved, by a person, under schedule pressure, in favour of whoever wrote it more carefully. Write it as though that person is not you.
+The honest one: every ambiguity in this document is eventually resolved, by a person, under schedule pressure, in favor of whoever wrote it more carefully. Write it as though that person is not you.

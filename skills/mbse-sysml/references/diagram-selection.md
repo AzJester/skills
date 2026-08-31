@@ -1,8 +1,8 @@
-# Diagram selection and modelling patterns
+# Diagram selection and modeling patterns
 
 ## Choosing by the question
 
-Start from the question, not from the diagram type. Most over-modelling comes from working the other way.
+Start from the question, not from the diagram type. Most over-modeling comes from working the other way.
 
 | The question | Diagram | Note |
 | --- | --- | --- |
@@ -18,7 +18,7 @@ Start from the question, not from the diagram type. Most over-modelling comes fr
 
 ## Structure patterns
 
-**Blocks are types; parts are usages.** A block `Battery` defined once may appear as three parts in an IBD. Modelling three separate blocks for three batteries is the most common structural error, and it breaks every roll-up that depends on the type.
+**Blocks are types; parts are usages.** A block `Battery` defined once may appear as three parts in an IBD. Modeling three separate blocks for three batteries is the most common structural error, and it breaks every roll-up that depends on the type.
 
 **Ports carry interfaces.** A connector between two parts with no ports is a line. Proxy ports with interface blocks let the model say what actually crosses, which is what makes an interface checkable.
 
@@ -26,9 +26,9 @@ Start from the question, not from the diagram type. Most over-modelling comes fr
 
 **Keep logical and physical separate** where they differ. A logical function allocated to a physical component is a relationship worth recording; merging them discards the alternative allocations before anyone has evaluated them.
 
-## Behaviour patterns
+## Behavior patterns
 
-**Match the diagram to the question.** Activity for flow, sequence for interaction, state machine for modes. Modelling the same behaviour three ways produces three things to maintain and one to trust.
+**Match the diagram to the question.** Activity for flow, sequence for interaction, state machine for modes. Modeling the same behavior three ways produces three things to maintain and one to trust.
 
 **State machines need the error states.** A state machine with only nominal states models the easy half. Degraded, failed, recovering, and safe states are where the design decisions live.
 
@@ -44,7 +44,7 @@ The pillar with the highest return and the lowest adoption.
 
 **Roll up through composition.** Total mass binds to the sum of part masses, which bind to theirs. The model then tells you when an allocation breaks rather than a spreadsheet telling you three weeks later.
 
-**Bind, do not compute.** Constraints are relationships that must hold, not one-way calculations. Modelled properly, a constraint can be solved in either direction — what mass budget does this leave for the payload?
+**Bind, do not compute.** Constraints are relationships that must hold, not one-way calculations. Modeled properly, a constraint can be solved in either direction — what mass budget does this leave for the payload?
 
 **Carry margin explicitly.** Allocated, current best estimate, and margin as separate properties. A model showing only current values cannot say how much room is left, which is the question actually being asked at a review.
 
@@ -73,9 +73,9 @@ The queries worth automating, and the reason to model requirements at all:
 - [ ] Blocks are types; repeated things are parts, not duplicate blocks
 - [ ] Interfaces have ports and item flows, not bare connectors
 - [ ] Value properties carry units
-- [ ] Behaviour exists beyond structure — state machines for anything with modes
+- [ ] Behavior exists beyond structure — state machines for anything with modes
 - [ ] State machines include degraded and failure states
-- [ ] At least the tightest budget is modelled parametrically, with margin visible
+- [ ] At least the tightest budget is modeled parametrically, with margin visible
 - [ ] Every requirement is allocated; no element satisfies nothing
 - [ ] Depth follows responsibility boundaries rather than being uniform
 - [ ] Orphan queries run automatically rather than by review

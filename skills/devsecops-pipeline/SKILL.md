@@ -50,7 +50,7 @@ Three rules that decide whether this works:
 
 - **Generate an SBOM at build time**, from the build, in a standard format. An SBOM produced later by scanning a running system is a guess about what you shipped.
 - **Sign artifacts and record provenance** — what source revision, which builder, which inputs. This is what makes "what is running is what we built" checkable rather than assumed.
-- **Build from hardened, curated base images** where a programme provides them. It removes a large share of findings before the first scan.
+- **Build from hardened, curated base images** where a program provides them. It removes a large share of findings before the first scan.
 - **Pin dependencies and control the upstream.** An unpinned transitive dependency means the thing you tested is not necessarily the thing you shipped.
 - **Store artifacts immutably**, with retention that matches how long you may have to answer questions about a release.
 
@@ -70,15 +70,15 @@ This is the engineering problem underneath the security problem.
 - **Measure the time from commit to feedback**, and treat it as a first-class metric. Past roughly ten minutes for the pull request stage, developers start batching changes, and large batched changes are where defects hide.
 - **Parallelise the slow scanners**, and run the deep ones on a schedule rather than on every commit where that is defensible.
 - **Cache aggressively**, but never the security scan results in a way that lets a stale pass stand in for a real one.
-- **Keep the pipeline itself under version control and review.** Pipeline definitions are production code with production credentials — the most privileged code in many organisations and frequently the least reviewed.
+- **Keep the pipeline itself under version control and review.** Pipeline definitions are production code with production credentials — the most privileged code in many organizations and frequently the least reviewed.
 - **Protect the credentials the pipeline holds.** Short-lived, scoped, never in the repository. A compromised pipeline is a compromise of everything it can deploy to.
 
-## Step 6: The organisational half
+## Step 6: The organizational half
 
 Tooling is the easy part.
 
 - **Developers must be able to run the gates locally**, or they will discover failures only in CI and resent the pipeline rather than use it.
-- **Security findings need triage, not just volume.** A scanner producing four hundred findings with no prioritisation trains everyone to ignore it. Route real findings to `threat-modeling` and `risk-management`; suppress the noise deliberately and record why.
+- **Security findings need triage, not just volume.** A scanner producing four hundred findings with no prioritization trains everyone to ignore it. Route real findings to `threat-modeling` and `risk-management`; suppress the noise deliberately and record why.
 - **The pipeline is a product with users.** It needs an owner, a backlog and someone who cares whether it is fast.
 - **Bypasses are a signal, not a discipline problem.** When a team routes around a gate, the gate was too slow, too noisy, or in the wrong place. Fix the gate.
 
@@ -88,7 +88,7 @@ Tooling is the easy part.
 | --- | --- | --- |
 | Gates that can be bypassed | Assurance claimed but not enforced | Enforce in the pipeline, log every exception |
 | Slow pipeline | Batched changes, developer workarounds | Measure commit-to-feedback; parallelise |
-| Scanner noise | Findings universally ignored | Triage, prioritise, suppress deliberately |
+| Scanner noise | Findings universally ignored | Triage, prioritize, suppress deliberately |
 | SBOM generated after the fact | Describes a guess, not the build | Generate at build time from the build |
 | Evidence assembled by hand | Vanishes when someone is busy | Produce evidence as an artifact of running |
 | Undocumented thresholds | Quietly lowered over time | Document threshold, owner and exception path |

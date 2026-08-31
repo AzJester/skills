@@ -11,7 +11,7 @@ Use it in both directions: an engineer asks why a control exists, an assessor as
 | **Repudiation** | AU | AU-2 event logging, AU-3 content of audit records, AU-9 protection of audit information | What is logged, does it contain enough to attribute an action, and can the actor alter it? |
 | **Information disclosure** | SC, AC, MP | SC-28 protection at rest, SC-8 in transit, AC-4 information flow enforcement | Where is the data, who can reach it, and what protects it in each state? |
 | **Denial of service** | SC, CP | SC-5 denial-of-service protection, SC-6 resource availability, CP-10 system recovery | What limits consumption, and what is the recovery path when it is exceeded? |
-| **Elevation of privilege** | AC | AC-2 account management, AC-3 access enforcement, AC-6 least privilege | Where is authorisation decided, and is least privilege demonstrable rather than asserted? |
+| **Elevation of privilege** | AC | AC-2 account management, AC-3 access enforcement, AC-6 least privilege | Where is authorization decided, and is least privilege demonstrable rather than asserted? |
 
 ## Using this without overclaiming
 
@@ -19,7 +19,7 @@ A control family is a starting point for the conversation with your assessor, no
 
 **A mapping is not an implementation.** Naming AC-6 next to a finding does not mean least privilege exists. The mapping tells you which control the evidence will be filed under; the evidence still has to be produced.
 
-**Baselines differ.** Which controls are in scope depends on the categorisation of the system (FIPS 199 low, moderate, high) and on the overlays that apply to it. Do not assert that a control is in scope without the system's actual baseline in front of you. When the baseline is unknown, say the mapping is provisional and name that as an open question rather than guessing.
+**Baselines differ.** Which controls are in scope depends on the categorization of the system (FIPS 199 low, moderate, high) and on the overlays that apply to it. Do not assert that a control is in scope without the system's actual baseline in front of you. When the baseline is unknown, say the mapping is provisional and name that as an open question rather than guessing.
 
 ## Feeding this into the requirements chain
 

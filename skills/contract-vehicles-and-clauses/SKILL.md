@@ -7,7 +7,7 @@ description: Understand what a contract type and its clauses commit you to. Use 
 
 Engineering decisions are made inside a contract, and the contract decides who pays when the estimate is wrong. A technically excellent solution priced under the wrong contract type is a loss-making solution.
 
-This skill covers what a contract type and its clauses mean **for the work**. It is not legal advice, and the contracts organisation owns the actual terms — the point here is that engineering choices have contractual consequences and should be made knowing them.
+This skill covers what a contract type and its clauses mean **for the work**. It is not legal advice, and the contracts organization owns the actual terms — the point here is that engineering choices have contractual consequences and should be made knowing them.
 
 ## Contract types, and who carries the risk
 
@@ -18,7 +18,7 @@ This skill covers what a contract type and its clauses mean **for the work**. It
 | **CPFF** — cost plus fixed fee | Allowable cost, plus a fixed fee | **Government** | Genuine uncertainty; research and development |
 | **CPIF** — cost plus incentive fee | Cost, plus fee varying with performance | Shared | Uncertain, with measurable outcomes to incentivise |
 | **CPAF** — cost plus award fee | Cost, plus fee assessed subjectively | Government, with performance pressure | Where quality is judged rather than measured |
-| **T&M / LH** | Fixed labour rates against hours | Mostly government; contractor carries rate risk | Scope that cannot be estimated in advance |
+| **T&M / LH** | Fixed labor rates against hours | Mostly government; contractor carries rate risk | Scope that cannot be estimated in advance |
 
 Three consequences engineering actually feels:
 
@@ -71,4 +71,4 @@ The rights asserted depend substantially on **who funded the development**. Priv
 
 ## Reference
 
-Read the contract. This skill orients you toward what to look for; it does not substitute for the document or for your contracts organisation.
+Read the contract. This skill orients you toward what to look for; it does not substitute for the document or for your contracts organization.

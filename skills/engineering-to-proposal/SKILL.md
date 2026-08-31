@@ -1,6 +1,6 @@
 ---
 name: engineering-to-proposal
-description: Turn delivered engineering work into proposal evidence. Use when harvesting past-performance material from a finished project, writing a technical volume or technical approach section from a real architecture, converting delivered requirements into compliance-matrix rows, or answering "what have we actually done that proves this" during a capture or proposal. Bridges engineering artefacts to capture and proposal work rather than writing either from scratch.
+description: Turn delivered engineering work into proposal evidence. Use when harvesting past-performance material from a finished project, writing a technical volume or technical approach section from a real architecture, converting delivered requirements into compliance-matrix rows, or answering "what have we actually done that proves this" during a capture or proposal. Bridges engineering artifacts to capture and proposal work rather than writing either from scratch.
 ---
 
 # Engineering to proposal
@@ -11,13 +11,13 @@ The failure this exists to prevent is a technical volume written from memory. Me
 
 ## The rule that governs everything here
 
-**Every claim traces to an artefact.** A commit, a diagram, a test result, a postmortem, a delivered requirement, a CDRL, a signed acceptance. If a sentence in a proposal cannot be traced to something that exists, it is either removed or explicitly marked as a forward-looking commitment rather than past performance.
+**Every claim traces to an artifact.** A commit, a diagram, a test result, a postmortem, a delivered requirement, a CDRL, a signed acceptance. If a sentence in a proposal cannot be traced to something that exists, it is either removed or explicitly marked as a forward-looking commitment rather than past performance.
 
 This matters beyond good practice. Past-performance claims are representations. An unsupported one is a problem long after the proposal is submitted.
 
 ## Three jobs
 
-Ask which one is wanted before starting. They draw on different artefacts and produce different outputs.
+Ask which one is wanted before starting. They draw on different artifacts and produce different outputs.
 
 ### Job 1: Harvest past-performance evidence
 
@@ -34,7 +34,7 @@ Go looking for, in the repository and its records:
 | Git history, release cadence | Delivery tempo, team size, duration |
 | Threat model, control mappings | Security posture, compliance footing |
 
-Produce for each relevant item: what was done, the measurable outcome, the technologies, the period, and the artefact it traces to. Where a number is unavailable, record it as unavailable — a gap you can go and fill beats a number you invented.
+Produce for each relevant item: what was done, the measurable outcome, the technologies, the period, and the artifact it traces to. Where a number is unavailable, record it as unavailable — a gap you can go and fill beats a number you invented.
 
 Relevance is judged against the pursuit, not against how interesting the work was. Say plainly which harvested items do not fit the opportunity.
 
@@ -55,7 +55,7 @@ Hand the drafted narrative to your account's `executive-summary-builder` for the
 
 Where `requirements-dev` or `system-dev` hold a real requirements baseline, the crosswalk to a compliance matrix is mostly mechanical, and doing it by hand is where errors enter.
 
-For each solicitation requirement, produce: the requirement text and its section, whether you have delivered something that meets it, the artefact proving it, and the gap if there is one.
+For each solicitation requirement, produce: the requirement text and its section, whether you have delivered something that meets it, the artifact proving it, and the gap if there is one.
 
 Three outputs matter, and the third is the one usually skipped:
 
@@ -69,8 +69,8 @@ Where a threat model produced control mappings, they slot in here directly: the 
 
 It does not write the proposal. It does not decide bid or no-bid. It does not judge whether the past performance is strong enough to lead with. Those belong to `capture-management`, `solution-shaping` and `proposal-writing`, and they work better fed real material than asked to imagine it.
 
-It also does not manufacture evidence. When the honest answer is that a claim has no artefact behind it, say so and let a human decide whether to make the claim anyway. That decision is theirs and it should be made knowingly.
+It also does not manufacture evidence. When the honest answer is that a claim has no artifact behind it, say so and let a human decide whether to make the claim anyway. That decision is theirs and it should be made knowingly.
 
 ## Reference
 
-- `references/evidence-inventory.md` — the harvest worksheet, one row per claim, with its artefact and gap.
+- `references/evidence-inventory.md` — the harvest worksheet, one row per claim, with its artifact and gap.

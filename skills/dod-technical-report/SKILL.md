@@ -5,7 +5,7 @@ description: Write a DoD technical report for DTIC submission or contract delive
 
 # DoD technical report
 
-A DoD technical report differs from a journal paper in what it is for. A paper argues a contribution to a field. A report delivers findings to a customer who paid for them, gets catalogued, and is retrieved years later by someone who was not there.
+A DoD technical report differs from a journal paper in what it is for. A paper argues a contribution to a field. A report delivers findings to a customer who paid for them, gets cataloged, and is retrieved years later by someone who was not there.
 
 That third property drives most of the format. The front matter exists so a stranger can find the report, know whether they may read it, and know what is in it without reading it.
 
@@ -25,11 +25,11 @@ Conventional order. A DID may modify it, and where it does, the DID wins.
 
 **Front matter**
 
-1. **Cover** — title, authors, performing organisation, report number, date, distribution statement, and any export control warning.
-2. **SF 298 — Report Documentation Page.** Standard form, and the thing catalogues index on. Detailed below.
-3. **Notices** — disclaimers, sponsorship acknowledgement, and the standard statement that views are the author's and not necessarily the sponsor's, where required.
+1. **Cover** — title, authors, performing organization, report number, date, distribution statement, and any export control warning.
+2. **SF 298 — Report Documentation Page.** Standard form, and the thing catalogs index on. Detailed below.
+3. **Notices** — disclaimers, sponsorship acknowledgment, and the standard statement that views are the author's and not necessarily the sponsor's, where required.
 4. **Table of contents**, plus lists of figures and tables.
-5. **Preface or acknowledgements**, where used.
+5. **Preface or acknowledgments**, where used.
 
 **Body**
 
@@ -50,7 +50,7 @@ Conventional order. A DID may modify it, and where it does, the DID wins.
 
 ## The SF 298
 
-The Report Documentation Page is how the report is catalogued and found. Filling it carelessly means a report nobody retrieves.
+The Report Documentation Page is how the report is cataloged and found. Filling it carelessly means a report nobody retrieves.
 
 Key blocks and what they need:
 
@@ -60,9 +60,9 @@ Key blocks and what they need:
 | Report type | Final, interim, annual, technical | Omitted |
 | Dates covered | Period of the work | Left blank |
 | Title | Descriptive, no unexpanded abbreviations | Marketing-style title nobody searches |
-| Contract / grant / programme element / project / task / work unit numbers | From the contract | Wrong or partial; these are how funding is traced |
+| Contract / grant / program element / project / task / work unit numbers | From the contract | Wrong or partial; these are how funding is traced |
 | Author(s) | Full names | Initials only |
-| Performing organisation and report number | Yours | |
+| Performing organization and report number | Yours | |
 | Sponsoring agency and acronym | Who funded it | |
 | Distribution statement | The full statement | Abbreviated to a letter |
 | Supplementary notes | Prior versions, related reports | |
@@ -80,18 +80,18 @@ Two blocks decide whether the report is ever found again: **abstract** and **sub
 - **Findings and interpretation stay separate.** Results say what happened; discussion says what it means. Blending them is the most common structural weakness.
 - **Every recommendation traces to a finding.** A recommendation with no result behind it will be challenged, correctly.
 - **State limitations explicitly.** What the study did not cover, what the data could not support, where uncertainty remains. `applied-statistics` for claims resting on data.
-- **Define every acronym at first use**, and list them all. Reports are read by people outside the programme.
+- **Define every acronym at first use**, and list them all. Reports are read by people outside the program.
 - **Figures and tables are numbered and referenced**, each with a caption that stands alone. A reader skimming figures should still learn something.
 - **Classification and control markings on every page**, applied when written rather than before delivery.
 
 ## Submission to DTIC
 
-Reports are submitted for cataloguing and are then discoverable according to their distribution statement. Practical points:
+Reports are submitted for cataloging and are then discoverable according to their distribution statement. Practical points:
 
 - Submission requires the completed SF 298; an incomplete one delays or blocks acceptance.
 - The distribution statement determines who can retrieve it. Statement A becomes publicly available — confirm the release review actually happened.
 - Format requirements are specified by the current submission guidance; check it rather than assuming, since it changes.
-- Reports frequently need a report number from your organisation's assigning authority. Get it before finalising the cover.
+- Reports frequently need a report number from your organization's assigning authority. Get it before finalizing the cover.
 
 **This skill orients you; the authoritative sources are the DID, the contract, and DTIC's current submission guidance.** Where any of them conflicts with what is written here, they win.
 

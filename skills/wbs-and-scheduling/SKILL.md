@@ -1,25 +1,25 @@
 ---
 name: wbs-and-scheduling
-description: Build the work breakdown structure and the schedule a programme is managed against. Use when decomposing scope into a WBS, writing a WBS dictionary, setting up control accounts and work packages, building or reviewing an integrated master schedule, assessing schedule health and critical path, running a schedule risk analysis, or diagnosing why a schedule keeps slipping without anyone predicting it. Builds the artefacts earned-value-management reads.
+description: Build the work breakdown structure and the schedule a program is managed against. Use when decomposing scope into a WBS, writing a WBS dictionary, setting up control accounts and work packages, building or reviewing an integrated master schedule, assessing schedule health and critical path, running a schedule risk analysis, or diagnosing why a schedule keeps slipping without anyone predicting it. Builds the artifacts earned-value-management reads.
 ---
 
 # WBS and scheduling
 
-`earned-value-management` requires "scope decomposed to work packages via a WBS" and tells you to read "the critical path from the IMS". This builds both. Without them EVM has nothing to measure and a programme has no way to know it is late until it is.
+`earned-value-management` requires "scope decomposed to work packages via a WBS" and tells you to read "the critical path from the IMS". This builds both. Without them EVM has nothing to measure and a program has no way to know it is late until it is.
 
 The failure this exists to prevent is a schedule that is a list of dates rather than a model of the work. A list of dates cannot tell you what happens when something slips, which is the only question a schedule exists to answer.
 
-## Step 1: Decompose the product, not the organisation
+## Step 1: Decompose the product, not the organization
 
 **The WBS is product-oriented.** Its elements are deliverables and the work to produce them — hardware, software, data, services — not departments, not phases, not the org chart.
 
-This is the rule most often broken and it is broken for an understandable reason: organising by team is easier and matches how work is assigned. But an org-shaped WBS cannot answer "what did this deliverable cost", cannot survive a reorganisation, and produces control accounts that no single person can be accountable for.
+This is the rule most often broken and it is broken for an understandable reason: organizing by team is easier and matches how work is assigned. But an org-shaped WBS cannot answer "what did this deliverable cost", cannot survive a reorganisation, and produces control accounts that no single person can be accountable for.
 
 For defense materiel, MIL-STD-881 defines the upper-level structure by commodity type — aircraft, space, ground vehicle, and so on — and using it is normally a contractual requirement rather than a preference. Read the applicable appendix before inventing structure.
 
-**The 100% rule.** The children of any element sum to exactly that element — all of it, and nothing beyond it. Work that appears nowhere in the WBS is work nobody planned, budgeted or scheduled, and it is the standard mechanism by which programmes discover scope late.
+**The 100% rule.** The children of any element sum to exactly that element — all of it, and nothing beyond it. Work that appears nowhere in the WBS is work nobody planned, budgeted or scheduled, and it is the standard mechanism by which programs discover scope late.
 
-**Decompose to where a work package makes sense**, not uniformly. Depth follows risk and manageability, as with modelling depth in `mbse-sysml`. A uniformly deep WBS has spent planning effort where nothing depended on it.
+**Decompose to where a work package makes sense**, not uniformly. Depth follows risk and manageability, as with modeling depth in `mbse-sysml`. A uniformly deep WBS has spent planning effort where nothing depended on it.
 
 **Write the WBS dictionary.** One entry per element: what it includes, what it explicitly excludes, and its deliverable. The exclusions matter more than the inclusions, because that is where the argument happens later. A WBS without a dictionary is a set of labels that different people read differently.
 
@@ -27,7 +27,7 @@ For defense materiel, MIL-STD-881 defines the upper-level structure by commodity
 
 | Level | Is | Owned by |
 | --- | --- | --- |
-| **Control account** | Where a WBS element meets an organisational element — the point where cost, schedule and technical scope are managed together | One control account manager |
+| **Control account** | Where a WBS element meets an organizational element — the point where cost, schedule and technical scope are managed together | One control account manager |
 | **Work package** | Discrete, schedulable work within a control account, with a measurable output | The CAM, executed by the team |
 | **Planning package** | Far-term work not yet decomposed, budgeted but not detailed | The CAM, converted before it starts |
 
@@ -45,7 +45,7 @@ A schedule is a network of activities connected by logic. Everything useful come
 
 **Every activity has a predecessor and a successor**, except the true start and finish. An activity floating free of the network is invisible to the critical path and will slip without anyone noticing.
 
-**Use real logic, sparingly typed.** Finish-to-start is the default and should dominate. Start-to-start and finish-to-finish are legitimate but each one is a claim about how the work actually overlaps; finish-to-start with a lag is often a modelling shortcut hiding an activity nobody wanted to name.
+**Use real logic, sparingly typed.** Finish-to-start is the default and should dominate. Start-to-start and finish-to-finish are legitimate but each one is a claim about how the work actually overlaps; finish-to-start with a lag is often a modeling shortcut hiding an activity nobody wanted to name.
 
 **Hard constraints destroy a schedule's predictive value.** "Must finish on" dates override logic — the schedule then shows the date you typed rather than the date the work implies, and it stops warning you. Deadlines belong as milestones with float measured against them, not as constraints on the work.
 
@@ -57,14 +57,14 @@ A schedule is a network of activities connected by logic. Everything useful come
 
 **The critical path is the longest logic path**, and it determines the finish date. Everything else has float. Managing anything other than the critical path does not move the end date.
 
-**Total float versus free float.** Total float is how much an activity can slip before the programme finishes late; free float is how much before its own successor is affected. Confusing them produces surprised project managers.
+**Total float versus free float.** Total float is how much an activity can slip before the program finishes late; free float is how much before its own successor is affected. Confusing them produces surprised project managers.
 
 **Near-critical paths matter.** A path with five days of float is one bad week from being the critical path. Track the top several paths, not just the first.
 
-Health checks worth running before trusting any schedule — the DCMA 14-point assessment formalises these and is commonly required on defense programmes:
+Health checks worth running before trusting any schedule — the DCMA 14-point assessment formalizes these and is commonly required on defense programs:
 
 - [ ] **Missing logic** — activities without predecessors or successors
-- [ ] **Leads** (negative lags) — almost always a modelling error
+- [ ] **Leads** (negative lags) — almost always a modeling error
 - [ ] **Excessive lags** — usually an unnamed activity in disguise
 - [ ] **Relationship types** — finish-to-start should dominate
 - [ ] **Hard constraints** — minimal, justified, and never on work activities

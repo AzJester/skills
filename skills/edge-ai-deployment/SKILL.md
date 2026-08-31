@@ -33,7 +33,7 @@ The binding constraint is rarely raw compute.
 - **Memory and memory bandwidth usually bind first.** A model that fits in memory but streams weights faster than the bus allows runs at a fraction of its theoretical rate. Check the bandwidth, not just the capacity.
 - **Sustained throughput is the number, not peak.** A sealed enclosure throttles — see `swap-and-thermal-budgeting`. Specify inference rate at maximum ambient, sealed, in the mounting orientation, at altitude where it applies. Bench numbers in open air at room temperature are not a specification.
 - **Power is a budget you are spending from a platform allocation**, and every watt of inference is a watt of heat with a thermal path to design.
-- **The accelerator choice is a SWaP-C trade**, not a performance one. A GPU, an NPU and an FPGA differ in throughput, power, thermal behaviour, toolchain maturity and obsolescence horizon — and that last one matters, because `component-selection-and-obsolescence` applies to accelerators as much as to any part, and AI silicon turns over fast.
+- **The accelerator choice is a SWaP-C trade**, not a performance one. A GPU, an NPU and an FPGA differ in throughput, power, thermal behavior, toolchain maturity and obsolescence horizon — and that last one matters, because `component-selection-and-obsolescence` applies to accelerators as much as to any part, and AI silicon turns over fast.
 - **Smaller models frequently win the system trade.** A model at 70% of the accuracy at 25% of the power can be the better system once cooling mass, volume and sustained throughput are counted. `trade-study-analysis` is where that belongs, with SWaP as weighted criteria.
 
 ## Step 3: Compress deliberately, and measure what it costs
@@ -51,14 +51,14 @@ Compression is how a model reaches a constrained device. Each technique trades a
 
 **Report accuracy per class and per condition, not as an average.** An average that holds while the rare-but-critical class collapses is the standard compression failure and an average will not show it.
 
-**Re-run the safety and refusal behaviour too.** Compression can change more than accuracy.
+**Re-run the safety and refusal behavior too.** Compression can change more than accuracy.
 
 ## Step 4: Evaluate for a device you cannot watch
 
 The hardest structural difference. Cloud AI is evaluated continuously against production traffic; a disconnected device returns nothing.
 
 - **The pre-deployment evaluation has to carry the whole load.** It must cover the operational envelope, including the degraded inputs the device will actually see — sensor noise, weather, damage, adversarial conditions.
-- **Define the operating envelope explicitly and design the behaviour outside it.** `ai-governance` makes this point; on the edge it is sharper, because nothing will notice the model is out of its envelope and correct it. The device must know its own limits and say so.
+- **Define the operating envelope explicitly and design the behavior outside it.** `ai-governance` makes this point; on the edge it is sharper, because nothing will notice the model is out of its envelope and correct it. The device must know its own limits and say so.
 - **Design a data return path if one can exist at all.** Even opportunistic — a sample of inputs and outputs collected when a link appears, or physically retrieved during maintenance. Without it you have no drift detection, no failure analysis, and nothing to improve the next model with.
 - **Where no return path exists, say so and plan a refresh cadence** instead of pretending drift will be detected. That is a legitimate position; assuming it will be caught is not.
 - **Log inputs and outputs locally where storage and classification permit**, with the model version. After an incident, that record is the entire investigation.
@@ -67,7 +67,7 @@ The hardest structural difference. Cloud AI is evaluated continuously against pr
 
 A model on a fielded device is a signed artifact delivered through the same constrained path as everything else. `embedded-firmware-and-secure-boot` covers the mechanism; the model-specific parts:
 
-- **Sign and verify model artifacts**, with anti-rollback. An unverified model is arbitrary behaviour with a trusted label.
+- **Sign and verify model artifacts**, with anti-rollback. An unverified model is arbitrary behavior with a trusted label.
 - **Version the model and bind outputs to it.** Which model produced which output is an accreditation question and an after-action question, and it cannot be reconstructed later.
 - **Atomic swap with rollback**, exactly as for firmware. A half-written model is a device that behaves unpredictably rather than one that fails cleanly.
 - **Validate on-device after update**, against a small held-out set shipped with the model. Confirms the artifact arrived intact and runs correctly on that hardware before it is trusted.
@@ -79,7 +79,7 @@ There is no cloud safety layer, no moderation service, and no operator watching.
 
 - **Confidence and abstention are part of the design.** A model that must answer will answer wrongly rather than declining. On the edge, "I do not know" is frequently the most valuable output it can produce.
 - **The human oversight has to be genuinely exercisable**, by an operator with the information to disagree and the time to do it — see `human-systems-integration` and `ai-governance`. Oversight that requires context the operator does not have is accountability, not oversight.
-- **Where the AI sits in a safety path, `system-safety` applies**, and its point holds: an AI component's behaviour outside its evaluated envelope is not characterised by its test results, so prefer a hardware or human interlock over trusting the model.
+- **Where the AI sits in a safety path, `system-safety` applies**, and its point holds: an AI component's behavior outside its evaluated envelope is not characterized by its test results, so prefer a hardware or human interlock over trusting the model.
 - **The tool and action surface is a security boundary.** `threat-modeling` covers it; on a device that may be captured, so does `embedded-firmware-and-secure-boot` on zeroization.
 
 ## Common failures
@@ -91,8 +91,8 @@ There is no cloud safety layer, no moderation service, and no operator watching.
 | Compression measured on a benchmark | Rare critical classes collapse silently | Measure on your own eval set, per class |
 | No return path, no plan | Drift undetectable and unplanned | Opportunistic return, or an explicit refresh cadence |
 | Model version not bound to output | Incident cannot be investigated | Version every output |
-| Model updated like a config file | Unverified behaviour on a fielded device | Sign, verify, anti-rollback, atomic swap |
-| No abstention behaviour | Confidently wrong with nobody watching | Design confidence and refusal |
+| Model updated like a config file | Unverified behavior on a fielded device | Sign, verify, anti-rollback, atomic swap |
+| No abstention behavior | Confidently wrong with nobody watching | Design confidence and refusal |
 | Accelerator obsolescence ignored | Part gone before the platform is fielded | Apply `component-selection-and-obsolescence` |
 
 The honest one is the fourth. On a connected system, drift is a monitoring problem; on a disconnected one it is a design decision you make before shipping and live with for years.

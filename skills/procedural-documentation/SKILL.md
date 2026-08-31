@@ -51,7 +51,7 @@ Every procedure carries the same frame, whatever the local template calls it:
 
 **Location before action.** "On the rear panel, set the MODE switch to STANDBY." The performer must find the thing before being told what to do to it; the reverse order makes them re-read.
 
-**Name controls and indicators exactly as they are labelled**, including case and abbreviation. A procedure saying "power switch" for a control labelled `PWR` creates a moment of doubt at the exact wrong time.
+**Name controls and indicators exactly as they are labeled**, including case and abbreviation. A procedure saying "power switch" for a control labeled `PWR` creates a moment of doubt at the exact wrong time.
 
 **State the observable result** for any step whose success is not obvious. "Set the breaker to ON. The green READY lamp illuminates." Without it, the performer cannot tell a completed step from a failed one, and carries the failure forward.
 

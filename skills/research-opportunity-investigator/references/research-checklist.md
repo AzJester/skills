@@ -52,7 +52,7 @@ Comprehensive checklist for systematic research and opportunity investigation.
 
 ### Tier 1 - Primary Sources (MUST search)
 ```
-□ Official documentation site found and catalogued
+□ Official documentation site found and cataloged
 □ GitHub/GitLab repository identified
 □ Official announcements/blog posts searched
 □ API/Protocol specifications located (if applicable)
@@ -116,7 +116,7 @@ Comprehensive checklist for systematic research and opportunity investigation.
 □ Communication pattern identified (request-response/streaming/event-driven)
 □ Data format documented (JSON/Protocol Buffers/Other)
 □ Transport mechanism noted (HTTP/WebSocket/IPC/Other)
-□ Key endpoints/methods catalogued
+□ Key endpoints/methods cataloged
 ```
 
 ### Extension Points
@@ -178,7 +178,7 @@ Comprehensive checklist for systematic research and opportunity investigation.
 
 ### Existing RFCs
 ```
-□ All existing RFCs catalogued:
+□ All existing RFCs cataloged:
   □ RFC-001: Self-Documenting Annotations
   □ RFC-002: Documentation References
   □ RFC-003: Annotation Provenance
@@ -192,7 +192,7 @@ Comprehensive checklist for systematic research and opportunity investigation.
 
 ### Schema Inventory
 ```
-□ All schemas catalogued:
+□ All schemas cataloged:
   □ cache.schema.json
   □ config.schema.json
   □ vars.schema.json
@@ -337,7 +337,7 @@ Comprehensive checklist for systematic research and opportunity investigation.
 ```
 □ research-summary-[target]-[date].md created:
   □ Complete research findings
-  □ All sources catalogued
+  □ All sources cataloged
   □ Technical analysis complete
 □ gap-analysis-[target]-[date].md created:
   □ All gaps with IDs

@@ -34,7 +34,7 @@ Written before results exist. A plan produced after the numbers is a rationalisa
 | --- | --- | --- |
 | | | CI, n, and per-subgroup breakdown |
 
-For generation tasks, attach the rubric and its validation against human judgement. For LLM-as-judge, attach the agreement study and the date of the judge model version.
+For generation tasks, attach the rubric and its validation against human judgment. For LLM-as-judge, attach the agreement study and the date of the judge model version.
 
 ## Failure taxonomy
 

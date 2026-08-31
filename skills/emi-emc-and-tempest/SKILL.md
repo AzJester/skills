@@ -5,7 +5,7 @@ description: Design equipment to meet electromagnetic requirements and pass the 
 
 # EMI, EMC and emanations security
 
-**This is where tactical hardware programmes fail, and they fail at the end.** The design is frozen, the tooling is cut, chamber time is booked, and the unit fails radiated emissions by 12 dB. Every fix available at that point — shield cans, ferrites, a gasket change, a filtered connector — is worse and more expensive than the layout change that would have prevented it.
+**This is where tactical hardware programs fail, and they fail at the end.** The design is frozen, the tooling is cut, chamber time is booked, and the unit fails radiated emissions by 12 dB. Every fix available at that point — shield cans, ferrites, a gasket change, a filtered connector — is worse and more expensive than the layout change that would have prevented it.
 
 The reason is structural: EMC performance is set almost entirely by decisions taken in the first weeks (grounding topology, board stack-up, where cables enter the enclosure) and measured almost entirely in the last weeks. Nothing else in hardware development has that gap between when it is decided and when it is discovered.
 
@@ -52,20 +52,20 @@ Nearly all EMC performance is decided here, and none of it is expensive at this 
 
 ## Step 3: Test early, informally, and often
 
-**Pre-compliance testing is the highest-return activity in this discipline.** A bench setup with near-field probes and a spectrum analyser, used on the first real board, will not tell you whether you pass — but it will tell you where the energy is and whether you are 5 dB or 30 dB away. That distinction changes what you do next.
+**Pre-compliance testing is the highest-return activity in this discipline.** A bench setup with near-field probes and a spectrum analyzer, used on the first real board, will not tell you whether you pass — but it will tell you where the energy is and whether you are 5 dB or 30 dB away. That distinction changes what you do next.
 
 - **Near-field probing** locates sources on a board in minutes.
 - **A partial radiated scan** in a modest setup gives you a relative measure, and relative is enough to know if a change helped.
 - **Test at every build stage.** Engineering unit, EVT, DVT — see `hardware-product-development`. Each is an opportunity to find the problem while the design can still absorb the fix.
 - **Test the real configuration.** Cables, mounting, grounding and the actual enclosure dominate the result. A bare board on a bench is not predictive of the assembled unit.
 
-**Book formal chamber time early**, with margin for a re-test. Chamber capacity is a real constraint, and a programme that assumes a single pass has an unmanaged schedule risk.
+**Book formal chamber time early**, with margin for a re-test. Chamber capacity is a real constraint, and a program that assumes a single pass has an unmanaged schedule risk.
 
 ## Step 4: Diagnose failures methodically
 
 A failure is a finding, and the temptation is to start adding ferrites. Work it instead:
 
-1. **Characterise it.** Frequency, amplitude, margin to the limit, and whether it is broadband or narrowband. Narrowband at a clock harmonic and broadband from a switching supply are different problems.
+1. **Characterize it.** Frequency, amplitude, margin to the limit, and whether it is broadband or narrowband. Narrowband at a clock harmonic and broadband from a switching supply are different problems.
 2. **Locate the source.** Near-field probing, and selectively disabling subsystems.
 3. **Determine the coupling path.** Is it radiating from the board, from a cable, or leaking through an aperture? Wrapping a cable in foil or temporarily closing a seam is a crude test that answers this in minutes.
 4. **Fix at the source or the path**, in that order of preference. Source fixes are permanent; path fixes are add-ons with cost and reliability implications.
@@ -100,4 +100,4 @@ Where equipment processes classified information, unintentional emanations are a
 | Emanations question asked late | Architectural change required | Ask at concept; involve the authority early |
 | Single chamber booking | No room for a re-test | Book with margin; carry the risk |
 
-The honest one is the first, and it is a management problem rather than an engineering one. Pre-compliance testing produces no deliverable and no milestone, so it is the easiest thing to defer — and deferring it is what makes the last month of the programme expensive.
+The honest one is the first, and it is a management problem rather than an engineering one. Pre-compliance testing produces no deliverable and no milestone, so it is the easiest thing to defer — and deferring it is what makes the last month of the program expensive.

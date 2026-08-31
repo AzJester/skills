@@ -4,7 +4,7 @@ Two documents. The model card describes the model; the system card describes the
 
 ## Model card
 
-**Model details** — name, version, date, type and architecture, owner, licence, and what it was derived from if fine-tuned or adapted.
+**Model details** — name, version, date, type and architecture, owner, license, and what it was derived from if fine-tuned or adapted.
 
 **Intended use** — the uses it was built and evaluated for.
 
@@ -30,7 +30,7 @@ Everything above sits inside a deployed system, and the system is what gets fiel
 
 **Human oversight** — the design from the use case record: what the reviewer sees, how they disagree, whether override is tracked.
 
-**Guardrails** — input validation, output filtering, refusal behaviour, rate limits, and what happens when the model is unavailable.
+**Guardrails** — input validation, output filtering, refusal behavior, rate limits, and what happens when the model is unavailable.
 
 **Monitoring** — signals, thresholds, and who watches them.
 

@@ -38,7 +38,7 @@ The forecast, and the number leadership actually acts on.
 
 **TCPI** — the efficiency required on remaining work to still hit the target — is the reality check: `TCPI = (BAC − EV) ÷ (BAC − AC)`. When TCPI substantially exceeds the CPI achieved so far, the plan requires performance the program has never demonstrated. A TCPI of 1.3 against a running CPI of 0.85 is not a stretch goal; it is a forecast nobody should sign.
 
-Research on completed programs is consistent: **CPI stabilises early and rarely recovers.** By roughly 20% complete, the CPI is a good predictor of the final outcome. A program planning to recover a poor early CPI is planning against the evidence, and saying so early is more useful than saying it later.
+Research on completed programs is consistent: **CPI stabilizes early and rarely recovers.** By roughly 20% complete, the CPI is a good predictor of the final outcome. A program planning to recover a poor early CPI is planning against the evidence, and saying so early is more useful than saying it later.
 
 ## The baseline
 
@@ -69,7 +69,7 @@ A useful variance analysis states: what the variance is, **why** — the actual 
 
 Weak: *"CPI is 0.87 due to higher than planned costs."* That is the definition of CPI, not a cause.
 
-Strong: *"CPI 0.87. Integration testing required 340 hours against 180 planned, because the vendor SDK's batch interface was undocumented and had to be characterised by experiment. Remaining integration re-estimated at +160 hours; EAC increases $84K. Two engineers redirected from the reporting module, which moves its milestone three weeks — inside float. Prior action to add a vendor support contract has not yet reduced the rate."*
+Strong: *"CPI 0.87. Integration testing required 340 hours against 180 planned, because the vendor SDK's batch interface was undocumented and had to be characterized by experiment. Remaining integration re-estimated at +160 hours; EAC increases $84K. Two engineers redirected from the reporting module, which moves its milestone three weeks — inside float. Prior action to add a vendor support contract has not yet reduced the rate."*
 
 The second one gives a decision-maker something to act on.
 
@@ -86,7 +86,7 @@ Order of examination, and the questions each answer raises:
 
 ## Where this connects
 
-`risk-management` — a variance is often a realised risk, and if it was never on the register that is worth asking about. `technical-reviews` — gates should see cost and schedule performance, not only technical maturity. `engineering-to-proposal` — demonstrated CPI and SPI are past-performance evidence, and among the few quantitative kinds available.
+`risk-management` — a variance is often a realized risk, and if it was never on the register that is worth asking about. `technical-reviews` — gates should see cost and schedule performance, not only technical maturity. `engineering-to-proposal` — demonstrated CPI and SPI are past-performance evidence, and among the few quantitative kinds available.
 
 ## Reference
 

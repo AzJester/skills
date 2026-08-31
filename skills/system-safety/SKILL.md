@@ -1,19 +1,19 @@
 ---
 name: system-safety
-description: Run a system safety programme and manage hazards to an accepted risk. Use when identifying and tracking hazards, assessing safety risk on a severity and probability matrix, applying the mitigation order of precedence, determining who must accept a residual risk, writing a system safety programme plan or safety assessment report, or assessing software contribution to safety. Uses fault-tree-analysis and fmea-analysis as techniques inside a programme discipline.
+description: Run a system safety program and manage hazards to an accepted risk. Use when identifying and tracking hazards, assessing safety risk on a severity and probability matrix, applying the mitigation order of precedence, determining who must accept a residual risk, writing a system safety program plan or safety assessment report, or assessing software contribution to safety. Uses fault-tree-analysis and fmea-analysis as techniques inside a program discipline.
 ---
 
 # System safety
 
-`fault-tree-analysis` and `fmea-analysis` are analysis techniques. This is the programme that decides which hazards to analyse, what to do about them, and — the part most often mishandled — **who is allowed to accept the risk that remains**.
+`fault-tree-analysis` and `fmea-analysis` are analysis techniques. This is the program that decides which hazards to analyze, what to do about them, and — the part most often mishandled — **who is allowed to accept the risk that remains**.
 
-On DoD programmes a system safety process is normally a contractual requirement, and MIL-STD-882 is the usual reference. Read the version and tailoring the contract invokes; what follows is the substance and the judgement, not a substitute for the standard.
+On DoD programs a system safety process is normally a contractual requirement, and MIL-STD-882 is the usual reference. Read the version and tailoring the contract invokes; what follows is the substance and the judgment, not a substitute for the standard.
 
 The failure this exists to prevent is a hazard analysis performed, documented, and then not connected to any decision — hazards identified, residual risk never formally accepted by anyone with the authority to accept it.
 
 ## Step 1: Identify hazards, from more than one direction
 
-A hazard is a condition that could result in harm — to people, equipment, or the environment. Finding them is the part that most determines whether the programme is worth anything, and single-method searches miss consistently.
+A hazard is a condition that could result in harm — to people, equipment, or the environment. Finding them is the part that most determines whether the program is worth anything, and single-method searches miss consistently.
 
 Use several lenses:
 
@@ -24,7 +24,7 @@ Use several lenses:
 - **Interfaces and transitions.** Between subsystems, between operating modes, between human and machine. Hazards concentrate at boundaries — see `interface-control`.
 - **The human in the loop.** Not "operator error" as a cause, but the design conditions that make the error likely. See `human-systems-integration`.
 
-**Record every hazard in a tracking system from the moment it is identified**, with a unique identifier, and keep it open until it is formally closed. The hazard tracking log is the programme's memory and the artifact an authority will ask to see.
+**Record every hazard in a tracking system from the moment it is identified**, with a unique identifier, and keep it open until it is formally closed. The hazard tracking log is the program's memory and the artifact an authority will ask to see.
 
 ## Step 2: Assess severity and probability
 
@@ -68,15 +68,15 @@ The order is not advisory. Mitigations lower down the list are weaker, and a saf
 
 ## Step 4: Risk acceptance is an authority decision, not an engineering one
 
-This is the step that distinguishes a safety programme from a safety analysis.
+This is the step that distinguishes a safety program from a safety analysis.
 
-**Residual risk is accepted by a named authority, at a level set by the risk.** Higher risk requires higher authority — on defense programmes this is defined, escalating to senior acquisition executives for the most serious risks. The engineering team's job is to characterise the risk honestly and present it; it is not to decide that the residual risk is acceptable.
+**Residual risk is accepted by a named authority, at a level set by the risk.** Higher risk requires higher authority — on defense programs this is defined, escalating to senior acquisition executives for the most serious risks. The engineering team's job is to characterize the risk honestly and present it; it is not to decide that the residual risk is acceptable.
 
 Three things that go wrong here:
 
 **Risk is understated to keep the acceptance at a convenient level.** Adjusting a probability from occasional to remote without a design change to justify it moves the decision to a lower authority. This is the most serious failure mode in the discipline, and it is usually done gradually and with good intentions.
 
-**Acceptance is never actually obtained.** The analysis is complete, the report is delivered, and no authority ever signed. The programme then operates with unaccepted risk, which is a finding and, after a mishap, considerably worse.
+**Acceptance is never actually obtained.** The analysis is complete, the report is delivered, and no authority ever signed. The program then operates with unaccepted risk, which is a finding and, after a mishap, considerably worse.
 
 **Acceptance is treated as permanent.** It is valid for the configuration and usage assessed. A design change, a new operating environment or a new user population reopens it — which is why safety hazards belong in the impact assessment of `configuration-management` change control.
 
@@ -84,22 +84,22 @@ Three things that go wrong here:
 
 Software does not fail randomly, so probability categories built for hardware do not transfer.
 
-The usual approach is to assess software by **the degree of control it exerts over a hazard** and by the severity of what happens if it behaves incorrectly, and to assign a level of rigour — how much analysis, review, test and independence the software requires — rather than a failure rate.
+The usual approach is to assess software by **the degree of control it exerts over a hazard** and by the severity of what happens if it behaves incorrectly, and to assign a level of rigor — how much analysis, review, test and independence the software requires — rather than a failure rate.
 
-- **Autonomous control of a catastrophic hazard demands the highest rigour.** Software that can command the hazardous outcome without a human or hardware interlock in the path is the case that drives everything.
+- **Autonomous control of a catastrophic hazard demands the highest rigor.** Software that can command the hazardous outcome without a human or hardware interlock in the path is the case that drives everything.
 - **Independence matters more than volume.** Analysis done by the team that wrote the code finds less.
 - **Prefer hardware or human interlocks for catastrophic hazards** where the architecture allows it. A mitigation that does not depend on software correctness is stronger than one that does.
 
-The same reasoning applies to AI components, and more sharply — an AI system's behaviour on inputs outside its evaluated envelope is not characterised by its test results. Where an AI component sits in a safety path, define the operating envelope explicitly and design the behaviour outside it. See `ai-governance` and `ai-evaluation`.
+The same reasoning applies to AI components, and more sharply — an AI system's behavior on inputs outside its evaluated envelope is not characterized by its test results. Where an AI component sits in a safety path, define the operating envelope explicitly and design the behavior outside it. See `ai-governance` and `ai-evaluation`.
 
 ## Step 6: The artifacts, and keeping them alive
 
-- **System safety programme plan** — how the programme will be run, by whom, with what analyses and what schedule.
+- **System safety program plan** — how the program will be run, by whom, with what analyses and what schedule.
 - **Hazard tracking log** — every hazard, its status, its mitigations, its verification, its acceptance. Living, not a snapshot.
 - **Safety assessment report** — the case that residual risk is understood and accepted, at the point of a decision.
 - **Inputs to the technical reviews** — see `technical-reviews`. Safety status is gate criteria, not a parallel activity.
 
-**Integrate with programme risk rather than running a separate universe.** `risk-management` carries programme exposure; safety carries mishap risk. They use different scales for good reasons, but a safety hazard with programme consequences belongs visible in both.
+**Integrate with program risk rather than running a separate universe.** `risk-management` carries program exposure; safety carries mishap risk. They use different scales for good reasons, but a safety hazard with program consequences belongs visible in both.
 
 ## Common failures
 
@@ -111,7 +111,7 @@ The same reasoning applies to AI components, and more sharply — an AI system's
 | Single-method hazard identification | Whole classes of hazard missed | Several lenses, including lessons learned |
 | Mitigations unverified | Credited controls never tested | Verification method and event per mitigation |
 | Acceptance treated as permanent | Change invalidates it silently | Safety in the change impact assessment |
-| Software assessed by failure rate | A number with no meaning | Assess by control authority and assign rigour |
+| Software assessed by failure rate | A number with no meaning | Assess by control authority and assign rigor |
 | Hazard log as a snapshot | Stale within a month | Living tracking system, reviewed at gates |
 
 The honest one is the third. Understating a probability is the easiest thing in this discipline to do quietly, it moves the decision to someone with less authority, and it is exactly what an investigation reconstructs afterwards.

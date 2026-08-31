@@ -10,7 +10,7 @@ One row per element. The exercise is short and uncomfortable, which is why it is
 | System requirements | | | | |
 | Architecture and decomposition | | | | |
 | Interfaces | | | | |
-| Behaviour | | | | |
+| Behavior | | | | |
 | Verification methods and evidence | | | | |
 | Configuration and baselines | | | | |
 | Risk | | | | |

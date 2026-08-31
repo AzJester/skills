@@ -5,7 +5,7 @@ description: Prepare a report for the NASA STI Program. Use when writing a NASA 
 
 # NASA STI reports
 
-The NASA Scientific and Technical Information Program publishes and catalogues NASA-funded work. The mechanics resemble a DoD technical report — a documentation page, a distribution determination, a catalogue — with a different series structure and a different review path.
+The NASA Scientific and Technical Information Program publishes and catalogs NASA-funded work. The mechanics resemble a DoD technical report — a documentation page, a distribution determination, a catalog — with a different series structure and a different review path.
 
 If you already work in the DoD report format, `dod-technical-report` covers most of the shared discipline. This covers what differs.
 
@@ -16,7 +16,7 @@ Which type you are writing changes the expected content and the review it receiv
 | Type | Is |
 | --- | --- |
 | **TP** — Technical Publication | Completed research with lasting reference value, including extensive data compilations of continuing reference value; the most substantial type, peer reviewed |
-| **TM** — Technical Memorandum | Preliminary or specialised findings, working papers, quick-release reports — not extensive analysis |
+| **TM** — Technical Memorandum | Preliminary or specialized findings, working papers, quick-release reports — not extensive analysis |
 | **CR** — Contractor Report | Work performed under a NASA contract or grant — the type most contractors produce |
 | **CP** — Conference Publication | Proceedings of NASA-sponsored meetings |
 | **SP** — Special Publication | Reference works, handbooks, historical and mission accounts |
@@ -57,7 +57,7 @@ NASA STI documents go through a technical review and, where applicable, an expor
 
 ## Submission to NTRS
 
-The NASA Technical Reports Server is the catalogue and the public face. Practical points:
+The NASA Technical Reports Server is the catalog and the public face. Practical points:
 
 - The documentation page must be complete; an incomplete one delays acceptance.
 - Report numbers come from the assigning authority, not from you.

@@ -1,8 +1,8 @@
 # Gate entry and exit criteria
 
-Adapt to the programme. What must not be adapted away is that every gate has criteria capable of failing it.
+Adapt to the program. What must not be adapted away is that every gate has criteria capable of failing it.
 
-The **Source** column names where the artefact comes from in this collection.
+The **Source** column names where the artifact comes from in this collection.
 
 ---
 
@@ -80,7 +80,7 @@ The **Source** column names where the artefact comes from in this collection.
 **Exit**
 - Design is buildable as documented, with no open design decisions
 - All interfaces signed by both sides
-- Verification programme executable within schedule
+- Verification program executable within schedule
 - Remaining risks acceptable with named accepters
 - **Product baseline established**
 

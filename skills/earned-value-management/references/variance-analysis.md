@@ -24,7 +24,7 @@ The section that determines whether the report is worth writing.
 
 A cause explains something the arithmetic does not. Test it: could someone unfamiliar with the account act on this? "Costs exceeded plan" fails. "The environmental test article failed at 80% of qualification level, requiring redesign of the mounting bracket and a second test entry" passes.
 
-Categorise honestly — estimating error, scope growth, technical difficulty, resource availability, supplier performance, external dependency, rework. The category matters because it predicts recurrence: estimating error on one package suggests estimating error on similar ones.
+Categorize honestly — estimating error, scope growth, technical difficulty, resource availability, supplier performance, external dependency, rework. The category matters because it predicts recurrence: estimating error on one package suggests estimating error on similar ones.
 
 ## 3. Impact
 
@@ -51,7 +51,7 @@ Three periods of the same corrective action with no measurable effect means the 
 
 ## 6. Risk linkage
 
-Was this variance a risk on the register? If yes, update it — a realised risk becomes an issue. If no, ask why it was not foreseen, and whether similar exposure exists elsewhere unrecorded. See `risk-management`.
+Was this variance a risk on the register? If yes, update it — a realized risk becomes an issue. If no, ask why it was not foreseen, and whether similar exposure exists elsewhere unrecorded. See `risk-management`.
 
 ## Reviewer's checks
 

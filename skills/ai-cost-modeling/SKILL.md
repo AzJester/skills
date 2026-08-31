@@ -5,13 +5,13 @@ description: Model what an AI solution costs to run at volume. Use when pricing 
 
 # AI cost modeling
 
-AI solutions price badly because the demo is cheap and production is not, and the gap is not proportional. A system costing pennies in a pilot can cost six figures a month at contract volume, and the difference is usually in places nobody modelled.
+AI solutions price badly because the demo is cheap and production is not, and the gap is not proportional. A system costing pennies in a pilot can cost six figures a month at contract volume, and the difference is usually in places nobody modeled.
 
 The question this answers: **what does one unit of work cost, and what happens to that number at scale?**
 
 ## Step 1: Define the unit
 
-Cost per token is an input, not an answer. Model cost per **unit of work the customer recognises** — per document processed, per query answered, per report generated, per case triaged.
+Cost per token is an input, not an answer. Model cost per **unit of work the customer recognizes** — per document processed, per query answered, per report generated, per case triaged.
 
 That is the number that supports a price, survives a review, and can be compared across architectures.
 
@@ -30,7 +30,7 @@ The count that surprises people. One user-visible unit of work is rarely one mod
 | Vector store | Storage and query cost, which scales with corpus rather than usage |
 | Surrounding compute | Preprocessing, orchestration, storage, egress |
 
-**Conversation and context growth** is the single most common modelling error. A multi-turn interaction resends accumulated context on every turn, so cost grows with the square of turn count rather than linearly. A ten-turn conversation is not ten times a one-turn cost.
+**Conversation and context growth** is the single most common modeling error. A multi-turn interaction resends accumulated context on every turn, so cost grows with the square of turn count rather than linearly. A ten-turn conversation is not ten times a one-turn cost.
 
 **Agentic step count has a tail.** Model the distribution, not the mean — the p95 task consuming five times the median is what determines whether a busy day is affordable.
 

@@ -399,7 +399,7 @@ Compatibility Requirements:
 Before proceeding to RFC generation:
 
 ```
-□ All existing RFCs catalogued with summaries
+□ All existing RFCs cataloged with summaries
 □ All relevant spec chapters summarized
 □ All schemas inventoried with key fields
 □ Integration points identified
@@ -532,7 +532,7 @@ RESEARCH DELIVERABLES:
 
   □ research-summary-[target]-[date].md
     └─ Complete research findings
-    └─ All sources catalogued
+    └─ All sources cataloged
     └─ Technical analysis complete
     
   □ gap-analysis-[target]-[date].md

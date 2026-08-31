@@ -1,24 +1,24 @@
 # TEMP outline
 
-Adapt to the programme and its oversight. The test that matters: could someone resource and run the programme's T&E from this document, and would they measure the right things?
+Adapt to the program and its oversight. The test that matters: could someone resource and run the program's T&E from this document, and would they measure the right things?
 
 ## 1. Introduction
 
-**Mission description** — what the system does, for whom, in what operational context. Every evaluation judgement traces back here.
+**Mission description** — what the system does, for whom, in what operational context. Every evaluation judgment traces back here.
 
 **System description** — configuration, key interfaces, what is government-furnished, what is inherited.
 
 **System threat assessment** — the validated threat the system must operate against. OT&E realism is judged against this.
 
-## 2. Test programme management and schedule
+## 2. Test program management and schedule
 
-Who runs what. Programme, operational test agency, oversight. Integration with the acquisition schedule and with `technical-reviews` gates.
+Who runs what. Program, operational test agency, oversight. Integration with the acquisition schedule and with `technical-reviews` gates.
 
 Name the decision each test event informs. An event that informs no decision is one to question.
 
 ## 3. Evaluation framework
 
-The section that determines whether the T&E programme is worth running.
+The section that determines whether the T&E program is worth running.
 
 - **Critical operational issues** — the small number of questions that decide whether the system should be fielded.
 - **MOEs, MOSs, MOPs** beneath each COI — from `measures-of-effectiveness`.
@@ -41,7 +41,7 @@ State explicitly what will be less than fully realistic and why. Every OT has li
 
 The six phases, when each occurs, who runs it, and what each produces. Link findings into the `rmf-ato` package as assessment evidence.
 
-## 7. Modelling and simulation
+## 7. Modeling and simulation
 
 Which models substitute for which live testing, their accreditation status, the intended use each is accredited for, and their stated limitations.
 

@@ -2,7 +2,7 @@
 
 | ID | Risk statement (if–then–because) | Category | Owner | Inherent L | Inherent C | Inherent score | Handling | Actions (owner, date) | Residual L | Residual C | Residual score | Trigger | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| R-001 | | | | 1-5 | 1-5 | | Avoid / Mitigate / Transfer / Accept | | 1-5 | 1-5 | | | Open / Closed / Realised |
+| R-001 | | | | 1-5 | 1-5 | | Avoid / Mitigate / Transfer / Accept | | 1-5 | 1-5 | | | Open / Closed / Realized |
 
 ## Column notes
 
@@ -22,10 +22,10 @@
 
 **Trigger** — the observable condition that means the risk is materialising. Must be checkable by someone other than the owner.
 
-**Status** — `Realised` is a distinct end state from `Closed`. Closed means it went away or was retired; realised means it happened and became an issue. Collapsing them loses the programme's actual track record, which is the only basis for calibrating future scoring.
+**Status** — `Realized` is a distinct end state from `Closed`. Closed means it went away or was retired; realized means it happened and became an issue. Collapsing them loses the program's actual track record, which is the only basis for calibrating future scoring.
 
 ## Review cadence
 
-Per period, report the four movement numbers rather than a total: opened, closed, realised, and re-scored. A register reviewed as a static list stops being read within three cycles.
+Per period, report the four movement numbers rather than a total: opened, closed, realized, and re-scored. A register reviewed as a static list stops being read within three cycles.
 
 Re-score on evidence, not on the calendar. A risk whose score changed with no stated reason has not been reviewed, it has been touched.

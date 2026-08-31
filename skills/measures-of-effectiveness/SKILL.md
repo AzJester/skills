@@ -5,7 +5,7 @@ description: Define and track the measures that say whether a system is meeting 
 
 # Measures of effectiveness
 
-Requirements say what the system must do. Measures say how well, and whether it is on track to get there. A programme with requirements and no measures discovers at verification that it met every shall and satisfied nobody.
+Requirements say what the system must do. Measures say how well, and whether it is on track to get there. A program with requirements and no measures discovers at verification that it met every shall and satisfied nobody.
 
 ## Four things, often confused
 
@@ -16,7 +16,7 @@ The distinctions matter because they answer different questions for different au
 | **MOE** — measure of effectiveness | Does it achieve the mission? | Stakeholder, operational | Time to restore service after a regional outage |
 | **MOP** — measure of performance | Does the system perform as designed? | Engineering, technical | Failover completes in under 90 seconds |
 | **KPP** — key performance parameter | Is it acceptable at all? | Contractual, gating | Availability ≥ 99.9% — below this, the system is not accepted |
-| **TPM** — technical performance measure | Are we on track, right now? | Programme management, tracked over time | Current measured failover time versus the planned profile at this date |
+| **TPM** — technical performance measure | Are we on track, right now? | Program management, tracked over time | Current measured failover time versus the planned profile at this date |
 
 The relationship: **MOEs are operational and stakeholder-facing; MOPs are the technical parameters that drive them; KPPs are the subset with a threshold that must not be breached; TPMs are whichever of these you track over time to see trouble early.**
 
@@ -28,8 +28,8 @@ Write MOEs before the design exists, and phrase them in the stakeholder's langua
 
 Test each candidate MOE against three questions:
 
-- **Would the stakeholder recognise this as what they care about?** If it needs translating, it is not an MOE.
-- **Is it independent of the solution?** A good MOE survives a complete redesign. "Requests per second on the enrolment API" dies if enrolment moves off HTTP; "enrolments completed per hour at peak" does not.
+- **Would the stakeholder recognize this as what they care about?** If it needs translating, it is not an MOE.
+- **Is it independent of the solution?** A good MOE survives a complete redesign. "Requests per second on the enrollment API" dies if enrollment moves off HTTP; "enrollments completed per hour at peak" does not.
 - **Can it be observed?** Not necessarily measured cheaply, but observed in principle. An MOE nobody can ever evaluate is an aspiration.
 
 ## Step 2: Set threshold and objective, and say which
@@ -47,7 +47,7 @@ Record where each value came from. A threshold with no provenance gets negotiate
 
 Not every measure is tracked over time. Track a TPM when the parameter is uncertain, matters, and can move — and when learning it late would be expensive.
 
-Six to ten TPMs is a working programme. Thirty is a spreadsheet nobody reads. Choose the ones where being wrong is expensive.
+Six to ten TPMs is a working program. Thirty is a spreadsheet nobody reads. Choose the ones where being wrong is expensive.
 
 For each TPM define:
 
@@ -64,13 +64,13 @@ Three failure patterns to watch, all of which make a tracking chart worse than n
 
 **The measure that only ever improves.** Real parameters oscillate. A perfectly monotone curve usually means the value is being estimated from the plan rather than measured from the system.
 
-**The measure that meets its target exactly at the gate.** Convergence timed to a review is a reporting artefact, not engineering.
+**The measure that meets its target exactly at the gate.** Convergence timed to a review is a reporting artifact, not engineering.
 
 **The measure quietly redefined.** When a parameter is hard to meet, the definition tends to soften — a percentile changes, a condition is excluded, a unit shifts. Version the definition alongside the value, so a change in definition cannot look like a change in performance.
 
 ## Step 5: Feed the gates
 
-Measures are what turns a review from a presentation into an assessment. At PDR, TPMs should have planned profiles and initial estimates; by CDR, measured or credibly analysed values; at verification, the evidence closing them.
+Measures are what turns a review from a presentation into an assessment. At PDR, TPMs should have planned profiles and initial estimates; by CDR, measured or credibly analyzed values; at verification, the evidence closing them.
 
 `technical-reviews` expects this, and `verification-validation` is where a measure's final value is proven rather than reported.
 

@@ -13,7 +13,7 @@ The failure this exists to prevent is treating capture as the waiting period bef
 
 ## Step 1: Qualify honestly, and early
 
-Most organisations bid too much. Every pursuit consumes bid and proposal money and the attention of the people who would otherwise be improving the pursuits worth winning.
+Most organizations bid too much. Every pursuit consumes bid and proposal money and the attention of the people who would otherwise be improving the pursuits worth winning.
 
 Five questions, answered with evidence rather than optimism:
 
@@ -27,7 +27,7 @@ Five questions, answered with evidence rather than optimism:
 
 **Score it and record the score.** A pWin assessment written down and revisited is a management instrument; one carried in someone's head is a mood. Re-score at every gate, and let it fall when the evidence says so.
 
-**A pursuit with no customer contact is not a pursuit.** If nobody in the organisation has spoken to the customer about this requirement, the honest pWin is low regardless of technical fit — someone else has been having those conversations.
+**A pursuit with no customer contact is not a pursuit.** If nobody in the organization has spoken to the customer about this requirement, the honest pWin is low regardless of technical fit — someone else has been having those conversations.
 
 ## Step 2: Gather intelligence, systematically
 
@@ -53,7 +53,7 @@ Pre-solicitation is when the customer's thinking is still forming, and when a co
 - **Comment on the draft RFP.** Ambiguities, unrealistic schedules and requirements that only one vendor can meet are all worth raising.
 - **Offer information the customer lacks**, including where their stated approach carries risk. This builds the relationship that a year of capability briefings does not.
 
-**Stay on the right side of the line.** Shaping means helping a customer understand the problem and the realistic solution space. It does not mean obtaining non-public procurement information, drafting the requirement for them in a way that excludes competitors improperly, or anything that creates an organisational conflict of interest. OCI in particular can disqualify you from the very competition you helped shape — check it early, and involve contracts and counsel when the answer is not obvious. See `teaming-and-subcontracts`.
+**Stay on the right side of the line.** Shaping means helping a customer understand the problem and the realistic solution space. It does not mean obtaining non-public procurement information, drafting the requirement for them in a way that excludes competitors improperly, or anything that creates an organizational conflict of interest. OCI in particular can disqualify you from the very competition you helped shape — check it early, and involve contracts and counsel when the answer is not obvious. See `teaming-and-subcontracts`.
 
 ## Step 4: Assess the competition adversarially
 
@@ -69,7 +69,7 @@ Feed this straight into `solution-shaping`, which tests discriminators against e
 
 - Build it from the customer's budget, the competition's likely cost structure, and the evaluation approach — LPTA and best-value trade-off produce very different targets. See `proposal-writing`.
 - Compare it against a real estimate from `cost-estimating-and-boe`, not a wish.
-- **Where the estimate exceeds the price-to-win, that is a decision, not an arithmetic problem.** Reduce scope, change the approach, accept lower fee, or no-bid — each made knowingly. Shaving hours quietly until it fits is how a programme is won and then executed at a loss.
+- **Where the estimate exceeds the price-to-win, that is a decision, not an arithmetic problem.** Reduce scope, change the approach, accept lower fee, or no-bid — each made knowingly. Shaving hours quietly until it fits is how a program is won and then executed at a loss.
 
 ## Step 6: Gate reviews and the bid decision
 

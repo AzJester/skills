@@ -22,7 +22,7 @@ One row per pillar. This table is usually the most useful artifact in a ZT engag
 
 ## The two pillars to check hardest
 
-**Data.** Attribute-based access to data is where zero trust delivers its actual value, and tagging is the work everyone defers. A programme claiming Target on Data with no classification scheme, no tagging mechanism, and no attribute-based policy has claimed a level it does not hold.
+**Data.** Attribute-based access to data is where zero trust delivers its actual value, and tagging is the work everyone defers. A program claiming Target on Data with no classification scheme, no tagging mechanism, and no attribute-based policy has claimed a level it does not hold.
 
 **Visibility & analytics.** Without it there is no evidence any other pillar works. A ZT design with strong enforcement and weak visibility cannot pass an assessment, because nothing demonstrates enforcement happening.
 

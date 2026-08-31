@@ -15,16 +15,16 @@ The confidence column matters. A shape built on low-confidence understanding is 
 
 ## 2. Evaluation crosswalk
 
-| Factor | Weight | What it actually rewards | Our approach | Evidence (artefact) | Strength / gap | Owner |
+| Factor | Weight | What it actually rewards | Our approach | Evidence (artifact) | Strength / gap | Owner |
 | --- | --- | --- | --- | --- | --- | --- |
 
 **What it actually rewards** is a re-reading, not a restatement. A factor titled "Technical Approach" may reward risk reduction, or speed to capability, or reuse. Getting this wrong means writing well against the wrong target.
 
-**Evidence** names an artefact. Where the cell is empty, that is a task for `engineering-to-proposal`, opened now rather than during writing.
+**Evidence** names an artifact. Where the cell is empty, that is a task for `engineering-to-proposal`, opened now rather than during writing.
 
 ## 3. Discriminator tests
 
-| Candidate | Customer values it? | We can prove it (artefact) | Competitors cannot easily claim it | Addresses the problem | Verdict |
+| Candidate | Customer values it? | We can prove it (artifact) | Competitors cannot easily claim it | Addresses the problem | Verdict |
 | --- | --- | --- | --- | --- | --- |
 
 Four yeses to survive. Most candidates fail column three — if every bidder can write the same sentence, it is a ticket to play.
@@ -55,7 +55,7 @@ Four yeses to survive. Most candidates fail column three — if every bidder can
 | Order | Scope | Saving | Evaluation factor affected | Acceptable? |
 | --- | --- | --- | --- | --- |
 
-Build this before you need it. Cuts made in the final week are made by whoever is awake, optimising for price rather than for score.
+Build this before you need it. Cuts made in the final week are made by whoever is awake, optimizing for price rather than for score.
 
 ## 6. Shape review
 

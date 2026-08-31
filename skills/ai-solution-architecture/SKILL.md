@@ -14,7 +14,7 @@ Before any approach is chosen:
 - **The task**, stated as an input and a desired output.
 - **Correctness** — what makes an output right, and who decides. If nobody can say, that is the first problem, not the model choice.
 - **Consequence of error**, separately for each error type.
-- **Volume and latency** — requests per period, acceptable response time, peak behaviour.
+- **Volume and latency** — requests per period, acceptable response time, peak behavior.
 - **The data** — what exists, where, how sensitive, how current it must be.
 - **The human position** — in, on, or out of the loop, from `ai-governance`.
 
@@ -28,7 +28,7 @@ Ascending order of cost and commitment. Escalate only when the simpler option de
 | --- | --- | --- | --- |
 | **Prompting** | Task expressible in instructions; base model has the knowledge | Lowest. Fast to change | Output quality insufficient on evaluation |
 | **Retrieval (RAG)** | Answers depend on your corpus, or must be current or cited | Retrieval quality becomes the bottleneck; corpus must be maintained | Model cannot use retrieved context well, or format is the problem |
-| **Fine-tuning** | Consistent format, tone, or a narrow specialised task; enough labelled examples | Data curation, training, re-training on model change; freezes behaviour | Behaviour must be reliably shaped, and prompting cannot |
+| **Fine-tuning** | Consistent format, tone, or a narrow specialized task; enough labeled examples | Data curation, training, re-training on model change; freezes behavior | Behavior must be reliably shaped, and prompting cannot |
 | **Agentic** | Task needs multi-step tool use, planning, or iteration | Failure modes multiply; cost and latency scale with steps; hardest to evaluate | The task genuinely requires acting, not answering |
 
 Two things worth stating plainly:
@@ -48,7 +48,7 @@ Practical points:
 - **Assume the model changes.** Providers deprecate and update. Build so a swap is an evaluation exercise rather than a rewrite, and keep the regression suite from `ai-evaluation` ready to run against a candidate.
 - **Where deployment is constrained** — classified, disconnected, on-premise — that constrains the model set before anything else does. Establish it first; it eliminates most options and changes the cost model entirely.
 
-## Step 4: Design the failure behaviour
+## Step 4: Design the failure behavior
 
 The part that separates a demo from a system.
 
@@ -66,7 +66,7 @@ The part that separates a demo from a system.
 | **Buy** | Commodity capability; speed matters more than differentiation | Lock-in, roadmap dependency, data handling terms |
 | **Partner** | Capability gap on a specific pursuit | Their obligations must flow down — see `supply-chain-security` |
 
-For federal work, ask three questions early because they eliminate options: where does the data go, what are the deployment constraints (classified, air-gapped, on-premise), and is there an authorisation path for the service in that environment. A capable service with no path to operate in the target environment is not a candidate.
+For federal work, ask three questions early because they eliminate options: where does the data go, what are the deployment constraints (classified, air-gapped, on-premise), and is there an authorization path for the service in that environment. A capable service with no path to operate in the target environment is not a candidate.
 
 ## Step 6: Write it down as an architecture
 
