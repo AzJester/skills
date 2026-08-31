@@ -62,7 +62,7 @@ If it will not fit on a page, one of these is true and worth diagnosing rather t
 
 - The background is written for the wrong reader.
 - There are too many options — narrow before writing, not in the memo.
-- The analysis belongs in an appendix or a linked artefact.
+- The analysis belongs in an appendix or a linked artifact.
 - The decision is actually several decisions, and should be several memos or one sequenced memo.
 
 ## When not to write one

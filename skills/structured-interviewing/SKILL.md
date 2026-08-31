@@ -26,13 +26,13 @@ Write it before the questions, and certainly before meeting anyone.
 | Attribute | What strong looks like | What weak looks like | Which interview assesses it | Evidence collected |
 | --- | --- | --- | --- | --- |
 
-**What strong looks like** is the hard column and the one that makes the scorecard work. Behavioural anchors — a described observable, not "excellent communication".
+**What strong looks like** is the hard column and the one that makes the scorecard work. Behavioral anchors — a described observable, not "excellent communication".
 
 **Two interviewers per attribute** where it matters. One assessment is one person's read.
 
 ## Step 3: Write questions that produce evidence
 
-**Behavioural** — past behaviour, a strong predictor of future behaviour: *"Tell me about a time you disagreed with a technical decision your team had already made. What did you do?"*
+**Behavioral** — past behavior, a strong predictor of future behavior: *"Tell me about a time you disagreed with a technical decision your team had already made. What did you do?"*
 
 Probe for specifics. A candidate describing what they *would* do is giving you a theory; press for what they *did*. "What was your specific contribution?" separates the person from the team.
 
@@ -49,7 +49,7 @@ Avoid: leading questions, questions with an obvious right answer, anything a wel
 - **Same questions, same order**, every candidate. Comparison requires it.
 - **Take notes during, not after.** Memory reconstructs toward the impression formed in the first minutes.
 - **Record what they said**, separately from what you concluded. Conclusions recorded without evidence cannot be reviewed by anyone else.
-- **Interviewers prepare.** An interviewer reading the résumé in the first two minutes wastes the slot and signals the organisation's seriousness to the candidate.
+- **Interviewers prepare.** An interviewer reading the résumé in the first two minutes wastes the slot and signals the organization's seriousness to the candidate.
 - **Leave time for their questions.** What a candidate asks is signal, and the interview is also them evaluating you.
 
 ## Step 5: Score independently, then debrief
@@ -67,7 +67,7 @@ In the debrief:
 
 ## Step 6: The biases that survive good process
 
-- **First impressions.** Assessments made in the first minutes, rationalised for the remaining fifty. Structure and note-taking blunt it.
+- **First impressions.** Assessments made in the first minutes, rationalized for the remaining fifty. Structure and note-taking blunt it.
 - **Similarity.** Warmth toward candidates who resemble us in background, school, or manner. This is the one that quietly shapes a team.
 - **Halo.** One strong attribute inflating everything else. Independent per-attribute scoring blunts it.
 - **Anchoring on the first candidate.** Whoever is seen first becomes the reference point.

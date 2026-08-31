@@ -1,11 +1,11 @@
 ---
 name: briefing-deck
-description: Build a briefing that works when presented. Use when preparing a decision brief, information brief or programme review for senior leadership or a government customer, structuring slides around BLUF, deciding what belongs in backup, preparing a read-ahead, cutting a deck to its time limit, or working out why a briefing keeps getting derailed. Distinct from executive-decision-memo, which is the written instrument, and data-storytelling, which covers analytics presentations.
+description: Build a briefing that works when presented. Use when preparing a decision brief, information brief or program review for senior leadership or a government customer, structuring slides around BLUF, deciding what belongs in backup, preparing a read-ahead, cutting a deck to its time limit, or working out why a briefing keeps getting derailed. Distinct from executive-decision-memo, which is the written instrument, and data-storytelling, which covers analytics presentations.
 ---
 
 # Briefing deck
 
-`executive-decision-memo` covers the case where a deck is the wrong instrument. This covers the case where a briefing is what has been scheduled — which, in defense programmes and executive reviews, is most of the time.
+`executive-decision-memo` covers the case where a deck is the wrong instrument. This covers the case where a briefing is what has been scheduled — which, in defense programs and executive reviews, is most of the time.
 
 The failure this exists to prevent is a deck built as a document. A deck that is complete enough to read alone is too dense to present, and a deck sparse enough to present cleanly is useless as a leave-behind. Deciding which one you are building, first, resolves most slide-design arguments before they start.
 
@@ -95,7 +95,7 @@ Almost every deck is too long, and the cut is where quality comes from.
 - **Date and version** on the title slide. Decks circulate and get quoted months later.
 - **Readable at the back of the room** — assume a projector worse than your monitor and an audience further away than you expect.
 - **Numbers with their units and their as-of date**, and a stated source for anything anyone might challenge.
-- **Acronyms expanded on first use**, including for the senior attendee who does not work in your programme daily.
+- **Acronyms expanded on first use**, including for the senior attendee who does not work in your program daily.
 
 ## Common failures
 

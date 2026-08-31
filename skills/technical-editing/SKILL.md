@@ -1,6 +1,6 @@
 ---
 name: technical-editing
-description: Edit someone else's technical writing. Use when reviewing a colleague's document, editing a report, paper, proposal section or specification for clarity and correctness, deciding how heavily to intervene, writing review comments that get accepted, applying plain-language principles, or rewriting engineering prose for a non-technical reader. Covers editing existing text rather than drafting it, and the judgement about how much to change.
+description: Edit someone else's technical writing. Use when reviewing a colleague's document, editing a report, paper, proposal section or specification for clarity and correctness, deciding how heavily to intervene, writing review comments that get accepted, applying plain-language principles, or rewriting engineering prose for a non-technical reader. Covers editing existing text rather than drafting it, and the judgment about how much to change.
 ---
 
 # Technical editing
@@ -41,7 +41,7 @@ Then ask, in order:
 
 Where technical prose actually goes wrong, in rough order of frequency:
 
-**Nominalisation.** Verbs turned into nouns: "perform an analysis of" → "analyse", "make a determination" → "decide". This single fix removes more words than any other.
+**Nominalisation.** Verbs turned into nouns: "perform an analysis of" → "analyze", "make a determination" → "decide". This single fix removes more words than any other.
 
 **Buried agency.** "It was determined that the interface would be modified" hides who decided and who acts. Passive voice is not banned — it is right when the actor is unknown, irrelevant, or when the object is genuinely the topic — but unintentional passive is how accountability disappears from an engineering document.
 
@@ -55,7 +55,7 @@ Where technical prose actually goes wrong, in rough order of frequency:
 
 ## Step 4: Plain language, when the reader is not an engineer
 
-Federal writing is subject to plain-language expectations, and defense work routinely puts engineering prose in front of contracting officers, programme staff and general officers who will not decode it.
+Federal writing is subject to plain-language expectations, and defense work routinely puts engineering prose in front of contracting officers, program staff and general officers who will not decode it.
 
 Plain language is **not** simplification of the content. It is removal of the barrier between the reader and the content:
 
@@ -73,7 +73,7 @@ An edit only counts if it lands. The mechanics of the comment matter as much as 
 
 - **Say why, briefly.** "Unclear" gets ignored. "Unclear whether *this* refers to the failure or the workaround" gets fixed.
 - **Distinguish must-fix from preference,** explicitly, and keep the must-fix list short. A review where every comment carries the same weight forces the author to triage on your behalf, and they will guess wrong.
-- **Query, do not overwrite, on anything substantive.** Suggest a change and ask; reserve direct edits for mechanical corrections. Rewritten paragraphs invite defence of the original rather than consideration of the point.
+- **Query, do not overwrite, on anything substantive.** Suggest a change and ask; reserve direct edits for mechanical corrections. Rewritten paragraphs invite defense of the original rather than consideration of the point.
 - **Preserve the author's voice.** Your job is that the document works, not that it sounds like you wrote it. If you cannot articulate why a change improves it beyond preference, drop the change.
 - **Comment on patterns once.** Twenty instances of the same nominalisation is one comment with a note that it recurs, not twenty comments.
 - **Say what works.** Not for morale — so the author knows what to preserve when they revise.

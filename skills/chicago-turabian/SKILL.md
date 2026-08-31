@@ -36,7 +36,7 @@ A superscript number in the text points to a note. Notes may sit at the foot of 
 2. Lastname, Short Title, 78.
 ```
 
-The shortened form is standard from the second citation onward. `Ibid.` has fallen out of favour in current Chicago and the shortened note is preferred — a document using `Ibid.` throughout reads as following an older edition.
+The shortened form is standard from the second citation onward. `Ibid.` has fallen out of favor in current Chicago and the shortened note is preferred — a document using `Ibid.` throughout reads as following an older edition.
 
 **Bibliography entry** — note the differences from the note form, which is where errors concentrate:
 ```

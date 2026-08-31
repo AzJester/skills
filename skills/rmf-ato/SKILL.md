@@ -38,7 +38,7 @@ Record the rationale per objective. An assessor will ask why, and "the previous 
 
 ## Step 3: Select and tailor
 
-Start from the baseline the categorization implies, then tailor deliberately. Tailoring is a documented engineering judgement, not a deletion.
+Start from the baseline the categorization implies, then tailor deliberately. Tailoring is a documented engineering judgment, not a deletion.
 
 For each control the baseline gives you, one of:
 
@@ -52,7 +52,7 @@ Overlays apply on top of the baseline — privacy, classified, space, cross-doma
 
 ## Step 4: Implement, and write the SSP as you go
 
-The system security plan describes how each control is satisfied **in this system**, not what the control says. A control description copied from the catalogue tells the assessor nothing and reads as a system nobody has examined.
+The system security plan describes how each control is satisfied **in this system**, not what the control says. A control description copied from the catalog tells the assessor nothing and reads as a system nobody has examined.
 
 Each control implementation statement answers: what mechanism satisfies this, where is it configured, who operates it, and what evidence would show it working. Write these while implementing. An SSP written retroactively describes what people remember, and the gaps between memory and configuration are what assessments find.
 
@@ -71,7 +71,7 @@ What determines how the assessment goes:
 
 ## Step 6: Authorize
 
-The package goes to the AO: SSP, SAR, POA&M, and a risk assessment summarising residual risk in terms the AO can decide on.
+The package goes to the AO: SSP, SAR, POA&M, and a risk assessment summarizing residual risk in terms the AO can decide on.
 
 Outcomes are ATO, ATO with conditions, IATT (test only, time-boxed, not operational), or denial. Write the risk summary for a decision-maker, not for an engineer: what could happen, how likely, what it would cost, and what is being done about it.
 

@@ -9,7 +9,7 @@ description: Prepare for and run a negotiation. Use when preparing for a contrac
 
 Two things distinguish negotiation in this environment from the general case, and both change the tactics:
 
-**You will work with these people for years.** A prime, a subcontractor, a programme office, a functional peer. Winning a negotiation and damaging the relationship is usually a bad trade, because the relationship is where the next five decisions get made — many of them informally, in your favour or not.
+**You will work with these people for years.** A prime, a subcontractor, a program office, a functional peer. Winning a negotiation and damaging the relationship is usually a bad trade, because the relationship is where the next five decisions get made — many of them informally, in your favor or not.
 
 **Much of the hardest negotiation is internal.** Resources, priorities, scope between business units, who absorbs a cost. It has no contract at the end and the same dynamics throughout.
 
@@ -21,7 +21,7 @@ The negotiation is largely decided before anyone sits down. Establish, in writin
 
 **Your interests, not your positions.** A position is what you are asking for; an interest is why. "We need twelve weeks" is a position. "We need enough time for qualification testing after the design freeze" is an interest — and it opens options the position closes, like starting qualification earlier or reducing the scope that needs qualifying.
 
-**Their interests, inferred honestly.** What is the person across the table measured on? A programme officer facing an obligation deadline, a prime protecting a margin, a functional manager protecting their people — each wants something different from what they are saying.
+**Their interests, inferred honestly.** What is the person across the table measured on? A program officer facing an obligation deadline, a prime protecting a margin, a functional manager protecting their people — each wants something different from what they are saying.
 
 **Your walk-away, decided in advance.** What you do if there is no agreement, and the point at which no deal beats this deal. Deciding it in the room, under pressure, having already invested effort, produces a worse answer every time.
 
@@ -69,7 +69,7 @@ It happens — you need the work, the alternative is bad, or you are late and as
 ## Step 6: Close it properly
 
 - **Write down what was agreed, the same day**, and send it. Memories diverge within a week and the divergence is never random — each side remembers the version favourable to them.
-- **Confirm ambiguities explicitly** rather than leaving them for goodwill. An ambiguity in a negotiation is an ambiguity in a contract, and `sow-and-pws` describes how that resolves later: in favour of whoever wrote it more carefully.
+- **Confirm ambiguities explicitly** rather than leaving them for goodwill. An ambiguity in a negotiation is an ambiguity in a contract, and `sow-and-pws` describes how that resolves later: in favor of whoever wrote it more carefully.
 - **Make sure it reaches the people who execute it.** An agreement the delivery team never hears about is not an agreement.
 - **Record what you learned about how the other side negotiates.** You will do this again with them — that is `lessons-learned` applied to a relationship.
 
@@ -86,4 +86,4 @@ It happens — you need the work, the alternative is bad, or you are late and as
 | Bluffing a weak position | Called, and credibility spent | Change the problem instead |
 | Nothing written down | Two versions of the agreement | Same-day confirmation, sent |
 
-The honest one is the fourth from the top, and it applies most inside your own organisation: the colleague you concede to without a trade will ask again, and they will be right to.
+The honest one is the fourth from the top, and it applies most inside your own organization: the colleague you concede to without a trade will ask again, and they will be right to.

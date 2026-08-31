@@ -37,7 +37,7 @@ Assume every path fails sometimes. Diversity is what turns that from an outage i
 
 | Path | Typical role | Fails when |
 | --- | --- | --- |
-| Terrestrial fibre / commercial | Bulk, fixed sites | Cut, contested, unavailable forward |
+| Terrestrial fiber / commercial | Bulk, fixed sites | Cut, contested, unavailable forward |
 | SATCOM (GEO) | Wide reach, beyond line of sight | Weather, jamming, terminal availability; latency limits interactive use |
 | SATCOM (LEO) | Lower latency, growing capacity | Coverage gaps, terminal cost, constellation dependency |
 | Line-of-sight radio | Local, high rate | Terrain, range, emissions concerns |
@@ -65,7 +65,7 @@ Connecting to the DoDIN carries process that dominates schedule if discovered la
 - Connection approval processes with their own lead times and artifacts.
 - Boundary protection at defined points, not wherever convenient.
 - The accreditation package — see `rmf-ato`. Network boundary and system boundary must be the same boundary.
-- IP addressing, DNS, and PKI governed centrally, not chosen by the programme.
+- IP addressing, DNS, and PKI governed centrally, not chosen by the program.
 - Spectrum, where RF is involved, with its own approval path.
 
 These are schedule items with dependencies, and they belong in the IMS from the start rather than being discovered at integration.

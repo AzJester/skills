@@ -28,7 +28,7 @@ Poor: *System sustainment.* That is a topic, not an issue.
 
 MOPs live in `measures-of-effectiveness` and are tracked as TPMs through development. The TEMP's job is committing to measure them under operational conditions, where they behave differently than on a bench.
 
-**Suitability is where programmes fail.** Reliability, maintainability, availability, logistics footprint, training burden, human factors, interoperability. A system that performs and cannot be sustained does not field. Give MOSs equal weight in the framework rather than treating them as secondary to effectiveness.
+**Suitability is where programs fail.** Reliability, maintainability, availability, logistics footprint, training burden, human factors, interoperability. A system that performs and cannot be sustained does not field. Give MOSs equal weight in the framework rather than treating them as secondary to effectiveness.
 
 ## Data requirements
 

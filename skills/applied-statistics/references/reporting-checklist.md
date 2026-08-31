@@ -19,7 +19,7 @@ Missing the interval is the most common omission and the most consequential, bec
 - [ ] Minimum effect worth detecting stated — the decision-relevant one, not the expected one
 - [ ] Sample size computed from that effect, with the calculation recorded
 - [ ] Analysis plan fixed before data collection
-- [ ] Randomisation and blocking decided
+- [ ] Randomization and blocking decided
 
 ## After, before reporting
 

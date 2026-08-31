@@ -1,8 +1,8 @@
 # Evidence inventory
 
-One row per claim you intend to make. A claim with an empty artefact column does not go in the proposal as past performance.
+One row per claim you intend to make. A claim with an empty artifact column does not go in the proposal as past performance.
 
-| # | Claim | Measurable outcome | Artefact (path, commit, doc, record) | Period | Relevance to pursuit | Gap |
+| # | Claim | Measurable outcome | Artifact (path, commit, doc, record) | Period | Relevance to pursuit | Gap |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | | | | | | |
 
@@ -12,7 +12,7 @@ One row per claim you intend to make. A claim with an empty artefact column does
 
 **Measurable outcome** — the number. Uptime, throughput, defect rate, schedule variance, users served, time to deliver. "Improved performance" is not an outcome; "p95 latency 840ms → 190ms" is. Where no number exists, write `no metric captured` rather than a qualitative substitute — that is a gap worth knowing about before the next project, not something to paper over.
 
-**Artefact** — where the proof lives, specifically enough that someone else could find it. A repository path and commit, a document with a date, a test report, an acceptance record, a customer sign-off. "Team knowledge" is not an artefact.
+**Artifact** — where the proof lives, specifically enough that someone else could find it. A repository path and commit, a document with a date, a test report, an acceptance record, a customer sign-off. "Team knowledge" is not an artifact.
 
 **Period** — when. Evaluators weight recency, and stale relevance is a common reason strong work scores badly.
 
@@ -22,7 +22,7 @@ One row per claim you intend to make. A claim with an empty artefact column does
 
 ## Before handing this on
 
-- Every row has an artefact, or is explicitly marked as an unsupported claim for a human to rule on.
-- Every number has a source, and estimates are labelled as estimates.
+- Every row has an artifact, or is explicitly marked as an unsupported claim for a human to rule on.
+- Every number has a source, and estimates are labeled as estimates.
 - Claims about a team's capability are separated from claims about this specific delivery. They are evaluated differently.
 - Anything covered by a non-disclosure obligation or a customer's release restriction is flagged before it leaves engineering.

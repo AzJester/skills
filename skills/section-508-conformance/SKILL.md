@@ -15,7 +15,7 @@ Section 508 of the Rehabilitation Act requires federal agencies to ensure that t
 
 The current standards incorporate the **WCAG success criteria at Level A and AA** as the technical requirement for web content, software and electronic documents. Which WCAG version applies is set by the standards as adopted and sometimes by agency-specific direction, so confirm the version from the solicitation rather than assuming the newest.
 
-**It applies more broadly than to web applications.** Software interfaces, electronic documents delivered under the contract, training material, video content and hardware with a user interface can all be in scope. A programme that makes its application accessible and delivers inaccessible PDF manuals has not met the requirement — see `procedural-documentation` and `dod-technical-report` for the deliverables this reaches.
+**It applies more broadly than to web applications.** Software interfaces, electronic documents delivered under the contract, training material, video content and hardware with a user interface can all be in scope. A program that makes its application accessible and delivers inaccessible PDF manuals has not met the requirement — see `procedural-documentation` and `dod-technical-report` for the deliverables this reaches.
 
 **Read the solicitation's own accessibility language.** Agencies vary in what they require, when they require evidence, and how heavily they weight it. Some require a conformance report with the proposal.
 
@@ -28,7 +28,7 @@ Nothing here is separable from ordinary design quality, which is why it belongs 
 - Contrast that meets the ratio requirements
 - Text alternatives for meaningful images, and none for decorative ones
 - Errors identified in text, with instructions for correcting them
-- No reliance on colour alone to convey meaning
+- No reliance on color alone to convey meaning
 - Captions and audio description for media
 - Content that reflows and remains usable when zoomed or resized
 
@@ -44,7 +44,7 @@ Nothing here is separable from ordinary design quality, which is why it belongs 
 | **Manual inspection** | Reading order, focus order, meaningful alternatives, correct semantics |
 | **Assistive technology testing** | Whether a real task can actually be completed with a screen reader, magnification or keyboard only |
 
-**Test the whole task, not the page.** Conformance is claimed per criterion, but usability is per workflow. A form where every field is labelled and the submit button is unreachable by keyboard passes several criteria and fails the user.
+**Test the whole task, not the page.** Conformance is claimed per criterion, but usability is per workflow. A form where every field is labeled and the submit button is unreachable by keyboard passes several criteria and fails the user.
 
 **Test the documents too**, with the same seriousness. Tagged structure, reading order, table headers, and alternative text in PDFs and office documents.
 
@@ -78,9 +78,9 @@ The standards allow limited exceptions — including for certain national securi
 Two things to understand about them:
 
 - **The agency determines whether an exception applies, not the contractor.** You propose and document; they decide.
-- **Undue burden means significant difficulty or expense assessed against the agency resources available to the program or component the ICT serves**, not against your programme's budget. It is a high bar, it must be documented in writing, and where it is claimed the agency still has an obligation to provide alternative access.
+- **Undue burden means significant difficulty or expense assessed against the agency resources available to the program or component the ICT serves**, not against your program's budget. It is a high bar, it must be documented in writing, and where it is claimed the agency still has an obligation to provide alternative access.
 
-**Do not use exceptions as a plan.** A programme intending to claim undue burden rather than build accessibly is making a bet on someone else's determination, usually late.
+**Do not use exceptions as a plan.** A program intending to claim undue burden rather than build accessibly is making a bet on someone else's determination, usually late.
 
 ## Step 6: Put it in the contract mechanics
 
@@ -95,7 +95,7 @@ Two things to understand about them:
 | --- | --- | --- |
 | Discovered at delivery | Expensive retrofit, poor result | Acceptance criterion from the first sprint |
 | Automated results only | Passes scans, unusable with a screen reader | Automated, manual, and assistive technology |
-| Criteria tested, tasks not | Every field labelled, workflow impossible | Test whole workflows |
+| Criteria tested, tasks not | Every field labeled, workflow impossible | Test whole workflows |
 | Documents excluded | Accessible app, inaccessible manuals | Include every delivered artifact |
 | "Supports" overstated | Report loses credibility entirely | Full support means everywhere |
 | Remarks left bare | Agency cannot evaluate the claim | Say what fails, where, and the user effect |

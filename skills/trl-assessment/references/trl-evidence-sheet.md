@@ -24,9 +24,9 @@ An element that is novel but not depended upon is not critical. One that is depe
 | **Stressors present** | |
 | **Stressors absent** | |
 | **Date demonstrated** | |
-| **Evidence artefact** | Report number, test record, data location |
+| **Evidence artifact** | Report number, test record, data location |
 
-The two stressor rows decide the level. A demonstration claiming a relevant environment with an empty "absent" row has not been examined; a demonstration whose threatening stressors are all in the "absent" row is a laboratory demonstration however it is labelled.
+The two stressor rows decide the level. A demonstration claiming a relevant environment with an empty "absent" row has not been examined; a demonstration whose threatening stressors are all in the "absent" row is a laboratory demonstration however it is labeled.
 
 ## Application check
 

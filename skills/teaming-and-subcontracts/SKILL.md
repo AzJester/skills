@@ -1,6 +1,6 @@
 ---
 name: teaming-and-subcontracts
-description: Decide who does the work and on what terms. Use when choosing to prime or sub, negotiating a teaming agreement, defining work share, making a make-or-buy decision, planning small business subcontracting, flowing down clauses to suppliers, checking for organisational conflicts of interest, or managing a subcontractor after award. Engineering and programme consequences of the arrangement, not legal advice.
+description: Decide who does the work and on what terms. Use when choosing to prime or sub, negotiating a teaming agreement, defining work share, making a make-or-buy decision, planning small business subcontracting, flowing down clauses to suppliers, checking for organizational conflicts of interest, or managing a subcontractor after award. Engineering and program consequences of the arrangement, not legal advice.
 ---
 
 # Teaming and subcontracts
@@ -9,7 +9,7 @@ Almost no defense work is performed by one company. The arrangement decided duri
 
 The failure this exists to prevent is a team assembled to win rather than to perform. Those are different optimisations and the difference surfaces after award, when the partner brought in for their past performance turns out to have committed 5% of the work and 100% of the credit.
 
-**This is not legal advice.** Teaming agreements, subcontracts and OCI determinations have real legal consequence and belong with contracts and counsel. What follows is what an engineering and programme leader needs to decide well and to know when to stop.
+**This is not legal advice.** Teaming agreements, subcontracts and OCI determinations have real legal consequence and belong with contracts and counsel. What follows is what an engineering and program leader needs to decide well and to know when to stop.
 
 ## Step 1: Prime or sub
 
@@ -55,13 +55,13 @@ Two habits worth keeping: **count the integration and management cost** — a su
 
 These are contractual obligations with reporting attached, not goodwill.
 
-- **Where a solicitation is set aside**, eligibility is determined by size standard and programme status, and there are limits on how much of the work may be performed by others. Getting this wrong is disqualifying and, in some circumstances, worse than that.
+- **Where a solicitation is set aside**, eligibility is determined by size standard and program status, and there are limits on how much of the work may be performed by others. Getting this wrong is disqualifying and, in some circumstances, worse than that.
 - **Where you are a large business on a contract above the applicable threshold**, a small business subcontracting plan with goals by category is normally required, and performance against it is reported and evaluated. Goals set to be approved rather than met produce a problem at the first report.
 - **Plan the subcontracting mix during capture**, not after award. Finding qualified small business partners in the categories you committed to takes longer than the reporting cycle allows.
 
 Confirm the specifics against the solicitation and with contracts. Thresholds, categories and rules change.
 
-## Step 5: Organisational conflicts of interest
+## Step 5: Organizational conflicts of interest
 
 OCI can disqualify you from a competition, including one you helped shape. The common shapes:
 

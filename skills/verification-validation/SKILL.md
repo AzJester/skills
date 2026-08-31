@@ -14,7 +14,7 @@ A requirement can verify clean and validate badly. That is not a paradox; it mea
 
 ## Where this sits
 
-`requirements-dev` produces the requirements and tags each with a nominal method. This skill turns those tags into a verification programme: what evidence, produced how, judged against what, closed by whom. Feed its output into `technical-reviews` — a TRR with no verification plan behind it is theatre.
+`requirements-dev` produces the requirements and tags each with a nominal method. This skill turns those tags into a verification program: what evidence, produced how, judged against what, closed by whom. Feed its output into `technical-reviews` — a TRR with no verification plan behind it is theater.
 
 ## Step 1: Choose the method, per requirement
 
@@ -23,7 +23,7 @@ Four methods, in ascending cost. Choose the cheapest one that actually produces 
 | Method | What it is | Fits | Evidence produced |
 | --- | --- | --- | --- |
 | **Inspection** | Look at it. Examine the item, drawing, or code without operating it. | Physical characteristics, markings, workmanship, presence of a feature | Inspection record, photograph, checklist |
-| **Analysis** | Reason about it. Modelling, simulation, calculation, or similarity to a qualified item. | Conditions you cannot practically create — lifetime, extremes, statistical margins | Analysis report with assumptions stated |
+| **Analysis** | Reason about it. Modeling, simulation, calculation, or similarity to a qualified item. | Conditions you cannot practically create — lifetime, extremes, statistical margins | Analysis report with assumptions stated |
 | **Demonstration** | Operate it and observe. No instrumentation, qualitative. | Operability, human interaction, does-the-thing-happen | Demonstration procedure and observed result |
 | **Test** | Operate it under controlled conditions and measure. | Anything with a number in the requirement | Test procedure, instrumented data, pass/fail against criteria |
 
@@ -31,13 +31,13 @@ Two rules that prevent most argument later:
 
 **A requirement whose method is "test" but whose text has no measurable criterion cannot be tested.** Send it back to `requirements-dev`. "The system shall be responsive" has no test; "shall respond within 200 ms at the 95th percentile under 500 concurrent users" does.
 
-**Analysis by similarity needs the similarity argued, not asserted.** Name the qualified item, state how the new application differs, and say why the differences do not matter. An unstated similarity claim is the most common way a verification programme quietly develops a hole.
+**Analysis by similarity needs the similarity argued, not asserted.** Name the qualified item, state how the new application differs, and say why the differences do not matter. An unstated similarity claim is the most common way a verification program quietly develops a hole.
 
 ## Step 2: Build the VCRM
 
 The verification cross-reference matrix is the spine. One row per requirement, and no requirement without a row.
 
-Columns: requirement ID, requirement text, method, the level it is verified at (component, subsystem, system), the verification event or procedure, success criteria, evidence artefact, status, and who closes it.
+Columns: requirement ID, requirement text, method, the level it is verified at (component, subsystem, system), the verification event or procedure, success criteria, evidence artifact, status, and who closes it.
 
 Use `references/vcrm-template.md`. Three checks on it, run before anyone agrees to it:
 
@@ -74,7 +74,7 @@ Validation asks the stakeholders whose need started this whether the delivered s
 
 Three things to look for specifically, because requirements rarely capture them:
 
-- **Emergent behaviour.** Properties of the assembled system that no component requirement mentions.
+- **Emergent behavior.** Properties of the assembled system that no component requirement mentions.
 - **The unstated need.** What stakeholders assumed so deeply they never said it. `grilling` is useful here.
 - **Fitness in the real environment**, as opposed to the specified one. The specified environment is always cleaner than the real one.
 

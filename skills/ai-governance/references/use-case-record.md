@@ -31,7 +31,7 @@ Asymmetry here drives threshold selection. A system tuned to a balanced metric w
 
 **Operating envelope** — populations, data types, conditions, volumes it was built and evaluated for. Everything outside is untested.
 
-**Out-of-scope uses** — explicit. This field prevents the neighbouring-use failure.
+**Out-of-scope uses** — explicit. This field prevents the neighboring-use failure.
 
 ## Impact determination
 

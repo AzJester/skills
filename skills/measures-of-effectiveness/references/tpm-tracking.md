@@ -1,6 +1,6 @@
 # TPM tracking
 
-One sheet per programme. Six to ten measures. Adding an eleventh should require removing one.
+One sheet per program. Six to ten measures. Adding an eleventh should require removing one.
 
 ## Definition table
 
@@ -16,9 +16,9 @@ One sheet per programme. Six to ten measures. Adding an eleventh should require 
 
 | TPM | Milestone | Planned | Tolerance band | Actual | Source | Variance | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| | SRR / PDR / CDR / TRR / Delivery | | ± | | measured / analysed / estimated | | On profile / In band / Breached |
+| | SRR / PDR / CDR / TRR / Delivery | | ± | | measured / analyzed / estimated | | On profile / In band / Breached |
 
-**Source** matters as much as the value. `measured` came from the system; `analysed` came from a model; `estimated` came from judgement. A sheet of estimates reported alongside measurements, undistinguished, tells the reader nothing.
+**Source** matters as much as the value. `measured` came from the system; `analyzed` came from a model; `estimated` came from judgment. A sheet of estimates reported alongside measurements, undistinguished, tells the reader nothing.
 
 **Status** is against the profile at this date, not against the endpoint. A parameter at 60% of target halfway through may be exactly on plan. Judging every measure against its final value makes early tracking useless and encourages the late convergence it is meant to catch.
 

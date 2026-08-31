@@ -15,10 +15,10 @@ For a publisher's template, that is not a limitation. The class encodes the venu
 
 - Do not redefine margins, spacing, or font sizes to fit more in. It is detectable, and it is a standard rejection reason.
 - Do not load packages that override the class's typography — `geometry`, `setspace`, `titlesec` and friends will break `acmart` and IEEE's classes in ways the venue checks for.
-- If the paper does not fit, cut content. Every experienced reviewer recognises a squeezed paper.
+- If the paper does not fit, cut content. Every experienced reviewer recognizes a squeezed paper.
 - Load the class options the venue specifies, not the ones you prefer.
 
-Read the class documentation before the first compile. `acmart`'s in particular is thorough, and most of the errors people hit are documented behaviours.
+Read the class documentation before the first compile. `acmart`'s in particular is thorough, and most of the errors people hit are documented behaviors.
 
 ## Structure
 
@@ -80,7 +80,7 @@ Use a consistent label convention — `sec:`, `fig:`, `tab:`, `eq:` — so a lab
 - **`\label` goes after `\caption`.** Before it, the reference resolves to the wrong number, silently.
 - Caption placement is a venue rule: IEEE puts figure captions below and table captions above; APA puts both above. The class usually handles it — check the output.
 
-## Errors worth recognising
+## Errors worth recognizing
 
 | Message | Usually means |
 | --- | --- |

@@ -1,6 +1,6 @@
 ---
 name: risk-management
-description: Run a programmatic risk register. Use when identifying, scoring, or tracking programme risks, building or reviewing a risk matrix, writing risk statements, deciding a handling strategy, tracking mitigation burn-down, or preparing the risk section of a review or proposal. Covers technical, schedule, cost, supplier and staffing risk. Distinct from FMEA, which analyses design failure modes rather than programme exposure.
+description: Run a programmatic risk register. Use when identifying, scoring, or tracking program risks, building or reviewing a risk matrix, writing risk statements, deciding a handling strategy, tracking mitigation burn-down, or preparing the risk section of a review or proposal. Covers technical, schedule, cost, supplier and staffing risk. Distinct from FMEA, which analyzes design failure modes rather than program exposure.
 ---
 
 # Risk management
@@ -9,7 +9,7 @@ A risk is a future event that has not happened, might not happen, and would hurt
 
 **A risk that has occurred is not a risk, it is an issue.** Issues get worked, not scored. A register full of issues is a status report wearing a risk register's clothes, and it hides the risks that still have time to be cheaply mitigated.
 
-**A risk with no uncertainty is not a risk, it is a plan.** "The integration will be difficult" is a fact about the work. "If the vendor SDK does not support batch enrolment, then integration slips by six weeks" is a risk.
+**A risk with no uncertainty is not a risk, it is a plan.** "The integration will be difficult" is a fact about the work. "If the vendor SDK does not support batch enrollment, then integration slips by six weeks" is a risk.
 
 ## Not FMEA
 
@@ -17,11 +17,11 @@ This repo has `fmea-analysis`, and the two get confused because both multiply tw
 
 | | FMEA | Risk register |
 | --- | --- | --- |
-| Object | A design's failure modes | The programme's exposure |
+| Object | A design's failure modes | The program's exposure |
 | Question | How can this part fail, and what happens downstream? | What could stop us delivering? |
-| Scope | Technical, within the artefact | Technical, schedule, cost, supplier, staffing, external |
-| Owner | Design engineer | Programme, with a named risk owner per item |
-| Horizon | Life of the design | Life of the programme |
+| Scope | Technical, within the artifact | Technical, schedule, cost, supplier, staffing, external |
+| Owner | Design engineer | Program, with a named risk owner per item |
+| Horizon | Life of the design | Life of the program |
 
 Use FMEA to find design weaknesses. Use this to track that the sole-source part has an eleven-month lead time and one supplier.
 
@@ -33,13 +33,13 @@ Use the **if–then** form, with a cause. Anything else scores badly because nob
 
 Bad: "Schedule risk." Bad: "The API might change."
 
-Good: "**If** the vendor deprecates the v2 authentication API before our migration completes, **then** the enrolment service loses production access and the launch slips by an estimated eight weeks, **because** their published sunset date falls inside our integration window."
+Good: "**If** the vendor deprecates the v2 authentication API before our migration completes, **then** the enrollment service loses production access and the launch slips by an estimated eight weeks, **because** their published sunset date falls inside our integration window."
 
 The `because` clause is what makes the risk arguable, and arguable risks are the ones that get managed. A risk nobody can dispute is usually a risk nobody has examined.
 
 ## Step 2: Score likelihood and consequence
 
-Score both on 1–5 against a published scale, not against intuition. `references/scoring-scales.md` carries scales for likelihood and for consequence across cost, schedule and performance — adapt the thresholds to the programme, but write them down first, because a scale invented per-risk produces a register that cannot be sorted.
+Score both on 1–5 against a published scale, not against intuition. `references/scoring-scales.md` carries scales for likelihood and for consequence across cost, schedule and performance — adapt the thresholds to the program, but write them down first, because a scale invented per-risk produces a register that cannot be sorted.
 
 Two disciplines:
 
@@ -62,7 +62,7 @@ Every handling action needs an owner, a date, and a stated effect on the score. 
 
 A register that only grows is not being managed. Track, per reporting period:
 
-- Risks opened, closed, and realised (became issues)
+- Risks opened, closed, and realized (became issues)
 - Total exposure, inherent and residual
 - Mitigation actions due, completed, and overdue
 - Risks whose score moved, and why
@@ -80,7 +80,7 @@ When a trigger fires, the risk becomes an issue. Move it, record the date, and s
 - `trade-study-analysis` — a trade study that ignores risk picks the option with the best nominal score and the worst exposure. Feed risk into the criteria.
 - `technical-reviews` — every gate should examine the register, and the interesting question at a gate is what moved since last time, not the count.
 - `engineering-to-proposal` — a proposal with no risks reads as one that has not thought about the work. The register is where honest, mitigated risk language comes from.
-- `incident-response` — a realised risk that caused an incident should already appear here, and if it does not, the postmortem should ask why it was never on the register.
+- `incident-response` — a realized risk that caused an incident should already appear here, and if it does not, the postmortem should ask why it was never on the register.
 
 ## Reference
 

@@ -10,7 +10,7 @@ Aliases are accepted: `aws`, `flat`, `neon`, `cyberpunk`, `fallout`, `dali`, `pi
 **aws-reinvent** — dark navy, AWS orange, accent bars. The default for anything cloud. Pairs
 with `aws:` icons for official service iconography in the .drawio.
 
-**corporate** — blue gradients on light grey, drop shadows. Survives any design review. Use
+**corporate** — blue gradients on light gray, drop shadows. Survives any design review. Use
 for executive audiences and anything that lands in a proposal.
 
 **material** — white cards, restrained purple accent, soft shadows. Good for product and
@@ -27,7 +27,7 @@ Excellent for physical systems, test architectures, and anything hardware-adjace
 
 ## Tech nostalgia
 
-**win95** — grey bevels, teal desktop, title bars on every node. Legacy modernization decks.
+**win95** — gray bevels, teal desktop, title bars on every node. Legacy modernization decks.
 Effective when you want the audience to feel the age of the current state.
 
 **aqua** — glossy gel surfaces, traffic-light dots. Dated on purpose.
@@ -44,11 +44,11 @@ edges to get the moving light-cycle trails.
 
 **art-nouveau** — cream, botanical curves, muted greens. Slow and decorative.
 
-**stained-glass** — heavy black leading, jewel colours. Striking as a single hero image,
+**stained-glass** — heavy black leading, jewel colors. Striking as a single hero image,
 illegible with more than about ten nodes.
 
 **noir** — high-contrast greyscale, venetian blind shadows, vignette. Good for incident
-retrospectives and threat modelling.
+retrospectives and threat modeling.
 
 ## Cultural heritage
 
@@ -74,7 +74,7 @@ honest, which suits a warts-and-all current-state diagram.
 
 ## Gaming and pop culture
 
-**minecraft** — pixel bevels on stone and grass. **lego** — studded bricks, primary colours.
+**minecraft** — pixel bevels on stone and grass. **lego** — studded bricks, primary colors.
 **pipboy** — green phosphor CRT with scanlines and vignette, surprisingly readable.
 **origami** — paper tones, sharp corners, dashed fold-line connectors, quiet and elegant.
 
@@ -106,7 +106,7 @@ For a customer, an executive, or anything that outlives the meeting: professiona
 only. For an internal working session: chalkboard, brutalist, blueprint, comic. For a
 conference talk or a title slide: anything, the weirder the more memorable. When the diagram
 will be printed in greyscale, check minimal-flat, swiss, newspaper, and noir first, since the
-rest depend on colour to carry the structure.
+rest depend on color to carry the structure.
 
 Rendering the same spec in several styles costs one command. When the user is undecided,
 generate three and send the gallery.

@@ -11,7 +11,7 @@ Applying all six threats to all four element types produces noise. This matrix i
 | **Denial of service** | | ✓ | ✓ | ✓ |
 | **Elevation of privilege** | | ✓ | | |
 
-Blank does not mean impossible, it means the threat is usually expressed against a neighbouring element instead. Cross a blank cell deliberately, not by accident.
+Blank does not mean impossible, it means the threat is usually expressed against a neighboring element instead. Cross a blank cell deliberately, not by accident.
 
 ## External entities
 
@@ -23,7 +23,7 @@ Blank does not mean impossible, it means the threat is usually expressed against
 
 **Spoofing** — Can something impersonate this service to its callers? Is service-to-service identity verified, or is network position treated as proof?
 
-**Tampering** — Can the running code or its configuration be modified? Who can deploy? Is the artefact signed and the signature checked?
+**Tampering** — Can the running code or its configuration be modified? Who can deploy? Is the artifact signed and the signature checked?
 
 **Repudiation** — Does this process log its security-relevant actions with enough detail to reconstruct who did what?
 
@@ -31,7 +31,7 @@ Blank does not mean impossible, it means the threat is usually expressed against
 
 **Denial of service** — What is the expensive path, and can an unauthenticated caller reach it? Are there rate limits, timeouts, and bounded concurrency?
 
-**Elevation of privilege** — Where is authorisation decided? Is it decided once at the edge and trusted thereafter? Can input reach an interpreter — SQL, shell, template, deserialiser?
+**Elevation of privilege** — Where is authorization decided? Is it decided once at the edge and trusted thereafter? Can input reach an interpreter — SQL, shell, template, deserialiser?
 
 ## Data stores
 

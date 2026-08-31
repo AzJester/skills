@@ -26,7 +26,7 @@ A reason has to name something checkable:
 - **Good** — "Setting breaks the flight-planning service, which requires the legacy cipher for the GCCS interface until it is upgraded in FY27. Compensating: the interface is confined to a dedicated segment with traffic inspection and per-session logging."
 - **Weak** — "Not applicable to our architecture."
 - **Weak** — "Causes operational impact."
-- **Weak** — "Risk accepted by the programme." Which person, on what date, for how long?
+- **Weak** — "Risk accepted by the program." Which person, on what date, for how long?
 
 ## Health measures
 

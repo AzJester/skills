@@ -28,7 +28,7 @@ That last question decides everything. A structural finding two days before a su
 - [ ] Unintentional passive given its actor back
 - [ ] Compound sentences split where they carry two obligations
 - [ ] Every *this*, *it* and *these* has an unmistakable referent
-- [ ] Vague quantities either given numbers or marked as judgement
+- [ ] Vague quantities either given numbers or marked as judgment
 - [ ] Paragraphs open with the sentence that carries their point
 - [ ] Transitions exist where the argument turns
 - [ ] Acronyms used fewer than three times spelled out instead
@@ -68,7 +68,7 @@ That last question decides everything. A structural finding two days before a su
 | Procedure | One action per step, warnings placed before the hazard | `procedural-documentation` |
 | Test report | Conclusions traceable to data, limitations stated | `test-report` |
 | Executive memo | The ask in the first line, options with a recommendation | `executive-decision-memo` |
-| Interface document | Both sides' assumptions stated, no unowned behaviour | `interface-control` |
+| Interface document | Both sides' assumptions stated, no unowned behavior | `interface-control` |
 
 ## Editing your own writing
 

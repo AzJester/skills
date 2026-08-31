@@ -1,6 +1,6 @@
 ---
 name: incident-response
-description: Run a live production incident and close it out properly. Use when something is broken in production right now, a service is down or degraded, an alert fired, users are reporting errors, a deploy needs rolling back, or afterwards when writing the postmortem or the runbook. Covers severity triage, stabilising before diagnosing, timeline reconstruction, blameless postmortem, and turning the fix into a runbook.
+description: Run a live production incident and close it out properly. Use when something is broken in production right now, a service is down or degraded, an alert fired, users are reporting errors, a deploy needs rolling back, or afterwards when writing the postmortem or the runbook. Covers severity triage, stabilizing before diagnosing, timeline reconstruction, blameless postmortem, and turning the fix into a runbook.
 ---
 
 # Incident response
@@ -31,7 +31,7 @@ Severity sets how much process the incident gets. Guessing high wastes people; g
 
 State the severity, the user-visible symptom, and the blast radius (who, how many, since when). If you cannot say since when, say that — an unknown start time is itself a finding.
 
-## Step 2: Stabilise before you diagnose
+## Step 2: Stabilize before you diagnose
 
 The instinct to understand first is the most expensive instinct in incident response. Mitigation and diagnosis are separate activities, and mitigation wins.
 
@@ -56,7 +56,7 @@ Hold one hypothesis at a time, name the observation that would disprove it, and 
 
 ## Step 4: Timeline, from evidence
 
-Build the timeline from artefacts with timestamps: alerts, deploy records, log entries, chat messages, graph inflection points. Not from recollection.
+Build the timeline from artifacts with timestamps: alerts, deploy records, log entries, chat messages, graph inflection points. Not from recollection.
 
 ```
 14:02  Deploy abc123 to prod (deploy log)
@@ -79,7 +79,7 @@ Write these sections:
 - **Impact** — users, requests, revenue, data. Numbers, or a stated estimate with its basis.
 - **Timeline** — from step 4.
 - **Root cause** — this is where the RCCA skills earn their place. Use `five-whys-analysis` for a linear causal chain, `fault-tree-analysis` when several conditions had to coincide, `kepner-tregoe-analysis` when it is unclear which of many changes was responsible.
-- **What went well** — genuinely. If detection was fast, say so; the next incident depends on knowing which defences worked.
+- **What went well** — genuinely. If detection was fast, say so; the next incident depends on knowing which defenses worked.
 - **Action items** — each with an owner and a date. An action item without an owner is a wish.
 
 Sort action items by whether they prevent recurrence, shorten detection, or shorten mitigation. All three are valid; conflating them hides that a "fix" only helps next time it happens.

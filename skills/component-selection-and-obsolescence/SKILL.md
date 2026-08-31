@@ -21,7 +21,7 @@ At selection time, for anything on the critical path:
 - **What grade is it?** Commercial, industrial, automotive and military temperature grades differ in rated range and in screening. Using a commercial-grade part across a military temperature range is a decision requiring analysis, not an oversight to discover at qualification.
 - **Does it have export or trade implications?** Classification and trade agreement compliance affect what you may ship and to whom — see `export-control-and-markings`.
 
-**Prefer parts with long-life or extended-availability programmes** where the performance permits, and accept that they cost more. The cost difference is almost always smaller than one unplanned redesign.
+**Prefer parts with long-life or extended-availability programs** where the performance permits, and accept that they cost more. The cost difference is almost always smaller than one unplanned redesign.
 
 **Concentrate the risk deliberately.** A design using four hundred unique parts has four hundred obsolescence exposures. Reducing unique part count — reuse across boards, standard values, a preferred parts list — is one of the cheapest reliability and sustainment decisions available.
 
@@ -44,7 +44,7 @@ When a part goes obsolete, the options are known. Choosing between them is the w
 | **Existing stock** | Use what is on hand | Nothing, until it runs out |
 | **Alternate source** | Qualify a drop-in equivalent | Qualification effort; may be quick if pre-identified |
 | **Lifetime or bridge buy** | Buy enough for the remaining life, or to bridge to a redesign | Capital, storage, shelf life, and the forecast being wrong |
-| **Aftermarket source** | Authorised aftermarket manufacturer | Cost premium; verify authorisation |
+| **Aftermarket source** | Authorized aftermarket manufacturer | Cost premium; verify authorization |
 | **Emulation** | A functionally equivalent part manufactured to the original spec | Expensive; used for genuinely irreplaceable parts |
 | **Redesign** | Change the design to use available parts | Most expensive; may trigger requalification |
 
@@ -62,19 +62,19 @@ Counterfeit electronic parts are a real and regulated concern in defense procure
 
 The practices that carry most of the weight:
 
-- **Buy from the original manufacturer or its authorised distributors.** This is the single most effective control by a wide margin. The overwhelming majority of counterfeit parts enter through the open market.
+- **Buy from the original manufacturer or its authorized distributors.** This is the single most effective control by a wide margin. The overwhelming majority of counterfeit parts enter through the open market.
 - **Where the open market is unavoidable** — which happens for obsolete parts — treat it as a risk-managed exception: qualified brokers, documented traceability back toward the manufacturer, and inspection and test proportionate to the criticality.
-- **Inspect and test to a recognised standard.** Visual inspection, marking permanency, X-ray, decapsulation and electrical test each catch different things, and the level applied should follow criticality.
+- **Inspect and test to a recognized standard.** Visual inspection, marking permanency, X-ray, decapsulation and electrical test each catch different things, and the level applied should follow criticality.
 - **Keep traceability records.** Where a part came from, through whom, with what documentation. This is what lets you answer the question after a failure, and answering it is the point.
 - **Flow the requirement to suppliers**, including your contract manufacturer — see `teaming-and-subcontracts` and `manufacturing-and-npi`.
 - **Report suspect parts** through the required channels. The obligation is real, and the reporting is what protects everyone else.
 
 **Obsolescence and counterfeiting are the same problem viewed twice.** Parts become counterfeit targets precisely because they are obsolete and still in demand. Good obsolescence management is therefore the most effective counterfeit avoidance available.
 
-## Step 5: Plan it as programme work
+## Step 5: Plan it as program work
 
 - **Assign an owner.** Obsolescence management with no owner does not happen; it surfaces as an emergency instead.
-- **Prioritise by criticality, not by part count.** Concentrate effort on parts that are single-sourced, hard to replace, or expensive to requalify.
+- **Prioritize by criticality, not by part count.** Concentrate effort on parts that are single-sourced, hard to replace, or expensive to requalify.
 - **Cost it into the estimate.** Monitoring, alternates qualification, lifetime buys and storage are real costs that estimates routinely omit — put them in, per `cost-estimating-and-boe`.
 - **Feed the product roadmap.** A technology refresh planned every few years is far cheaper than a series of unplanned redesigns, and it can be aligned with capability improvements rather than forced by a notice — see `technology-roadmapping` and `product-management`.
 
@@ -87,7 +87,7 @@ The practices that carry most of the weight:
 | Notices unmonitored | Last-time-buy window missed | Continuous monitoring with an engineering owner |
 | Lifetime buy from a hopeful forecast | Runs out, or capital wasted | Real projection, plus attrition; plan storage |
 | Requalification cost ignored | Substitution costs more than expected | Assess what a change invalidates |
-| Open market as routine sourcing | Counterfeit exposure | Manufacturer and authorised distribution first |
+| Open market as routine sourcing | Counterfeit exposure | Manufacturer and authorized distribution first |
 | High unique part count | Hundreds of obsolescence exposures | Preferred parts list; reuse across the product |
 | Obsolescence unowned and uncosted | Emergencies, unbudgeted | Named owner, priority by criticality, in the estimate |
 

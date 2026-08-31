@@ -2,16 +2,16 @@
 
 Publish the scale before scoring anything. A scale invented per risk produces a register that cannot be sorted, and sorting is the whole point.
 
-Adjust the thresholds to the programme's size — the shape matters more than the numbers.
+Adjust the thresholds to the program's size — the shape matters more than the numbers.
 
 ## Likelihood
 
 | Score | Label | Meaning |
 | --- | --- | --- |
-| 1 | Very low | Would be surprising. No precedent on this programme or comparable ones. |
-| 2 | Low | Possible. Has happened on comparable programmes, conditions here are unfavourable to it. |
+| 1 | Very low | Would be surprising. No precedent on this program or comparable ones. |
+| 2 | Low | Possible. Has happened on comparable programs, conditions here are unfavourable to it. |
 | 3 | Moderate | As likely as not. Genuine uncertainty either way. |
-| 4 | High | Expected unless something changes. Precedent exists and conditions favour it. |
+| 4 | High | Expected unless something changes. Precedent exists and conditions favor it. |
 | 5 | Very high | Near certain absent intervention. Effectively a planning assumption. |
 
 A 5 is usually not a risk. If it is near certain, plan for it and move the consequence into the baseline.
@@ -40,8 +40,8 @@ Score against whichever dimension is worst, and record which one drove the score
 
 **Thresholds.** High requires an active handling plan with dated actions and reports at every gate. Medium requires a named owner and a trigger. Low is recorded and reviewed periodically, not worked.
 
-Note the asymmetry: consequence 5 is never Low regardless of likelihood. A low-probability event that ends the programme still needs a plan, and a symmetric matrix hides exactly that case.
+Note the asymmetry: consequence 5 is never Low regardless of likelihood. A low-probability event that ends the program still needs a plan, and a symmetric matrix hides exactly that case.
 
 ## Calibration
 
-Compare realised risks against their original scores each period. If risks that materialised were consistently scored 2, the scale is optimistic and the register is decorative. This is the only way scoring improves, and it depends on `Realised` being tracked separately from `Closed`.
+Compare realized risks against their original scores each period. If risks that materialised were consistently scored 2, the scale is optimistic and the register is decorative. This is the only way scoring improves, and it depends on `Realized` being tracked separately from `Closed`.

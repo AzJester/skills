@@ -19,7 +19,7 @@ APA 7 also distinguishes **student papers** from **professional papers**. They d
 | Abstract | If required | Usually required |
 | Author note | No | Yes — ORCID, disclosures, funding, contact |
 
-Then: introduction (not labelled "Introduction" — the title serves), method, results, discussion, references, appendices. Empirical papers follow that arc; theoretical and review papers vary and use descriptive headings.
+Then: introduction (not labeled "Introduction" — the title serves), method, results, discussion, references, appendices. Empirical papers follow that arc; theoretical and review papers vary and use descriptive headings.
 
 **General format:** double-spaced throughout including references, 1-inch margins, first line of each paragraph indented 0.5 inch, a readable font used consistently (APA 7 permits several — 12-pt Times New Roman, 11-pt Calibri, 11-pt Arial, 11-pt Georgia among them).
 

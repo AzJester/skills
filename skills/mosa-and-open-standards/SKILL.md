@@ -5,7 +5,7 @@ description: Design and defend a modular open systems approach. Use when a solic
 
 # MOSA and open standards
 
-A modular open systems approach is a statutory expectation on major defense acquisition programmes, not a design preference. For tactical edge compute and sensor processing it is also the framing customers now specify directly — a solicitation is as likely to name SOSA alignment as it is to name a performance requirement.
+A modular open systems approach is a statutory expectation on major defense acquisition programs, not a design preference. For tactical edge compute and sensor processing it is also the framing customers now specify directly — a solicitation is as likely to name SOSA alignment as it is to name a performance requirement.
 
 The failure this exists to prevent is a MOSA claim that does not survive examination: a system described as open, built around one proprietary interface that everything has to pass through. That interface is what an evaluator looks for, and finding it discredits the whole claim.
 
@@ -15,7 +15,7 @@ The approach rests on a few principles, and the useful thing is that they are te
 
 | Principle | The question an evaluator asks |
 | --- | --- |
-| **Modular design** | Can a module be replaced without redesigning its neighbours? |
+| **Modular design** | Can a module be replaced without redesigning its neighbors? |
 | **Key interfaces designated** | Which interfaces are declared key, and are they the ones that matter? |
 | **Open standards at those interfaces** | Are they widely available standards, or a specification you published? |
 | **Conformance demonstrated** | Is there evidence, or an assertion? |
@@ -27,7 +27,7 @@ The approach rests on a few principles, and the useful thing is that they are te
 
 ## Step 2: Decide where the module boundaries actually go
 
-This is the real engineering decision, and it is a judgement about the future, not about the present design.
+This is the real engineering decision, and it is a judgment about the future, not about the present design.
 
 **Put boundaries where change is expected.** The parts of a tactical edge system that turn over fastest — processing, radios and waveforms, sensors, mission software — are where modularity pays. Boundaries drawn where nothing changes cost interface overhead and buy nothing.
 
@@ -46,7 +46,7 @@ For tactical edge compute, sensor processing and vehicle-mounted systems, these 
 | **OpenVPX / VITA** | The backplane ecosystem: VPX form factors and profiles, mechanical and cooling conventions, and the connector standards for RF and optical |
 | **SOSA aligned** | A sensor open systems architecture built on OpenVPX with defined slot and module profiles, plus software and management conventions |
 | **CMOSS** | The Army's suite bringing together modular C5ISR standards for ground platforms, including vehicle integration and modular RF |
-| **FACE** | Airborne software: a reference architecture and segment model with a conformance programme |
+| **FACE** | Airborne software: a reference architecture and segment model with a conformance program |
 | **VICTORY** | Ground vehicle integration — shared data bus and services across vehicle systems |
 
 Two practical notes:
@@ -64,7 +64,7 @@ For each key interface, establish:
 - **The standard it uses**, at a specific version.
 - **What crosses it** — mechanical, electrical, thermal, data, timing, power, control, and the state each side assumes about the other. `interface-control` is the discipline for writing this down, and a key interface deserves a real ICD rather than a reference to a standard.
 - **The data rights position**, so the interface definition can actually be given to a competing supplier.
-- **The conformance evidence** — test, inspection, or a conformance programme result.
+- **The conformance evidence** — test, inspection, or a conformance program result.
 - **Who controls change to it**, and how. An interface one party can change unilaterally is not open in any useful sense.
 
 **Where an interface must be proprietary, say so and justify it.** An honest architecture with two declared proprietary interfaces and a stated reason is more credible than one claiming to be entirely open. Evaluators find the proprietary interface either way; the difference is whether you told them.

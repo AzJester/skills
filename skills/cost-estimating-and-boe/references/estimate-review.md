@@ -4,8 +4,8 @@
 
 Run this against every estimate. The omissions are consistent enough to be predictable.
 
-**Direct labour**
-- [ ] Every labour category mapped to the solicitation's, with qualifications met
+**Direct labor**
+- [ ] Every labor category mapped to the solicitation's, with qualifications met
 - [ ] Hours by WBS element, traceable to a scope statement
 - [ ] Rates from the approved structure, escalated across the period of performance
 - [ ] Staffing profile realistic — ramp-up, clearance lead time, attrition backfill
@@ -16,18 +16,18 @@ Run this against every estimate. The omissions are consistent enough to be predi
 - [ ] Correct pools applied to the correct bases
 - [ ] Cost of money where applicable
 
-**Non-labour**
+**Non-labor**
 - [ ] Materials with quotes or a documented basis, plus lead times
 - [ ] Equipment, including spares and the test articles nobody counted
 - [ ] Subcontracts with their own basis — see `teaming-and-subcontracts`
-- [ ] Travel: trips, travellers, duration, destination, at realistic frequency
-- [ ] Licences and cloud consumption at production volume — see `ai-cost-modeling` for AI workloads
+- [ ] Travel: trips, travelers, duration, destination, at realistic frequency
+- [ ] Licenses and cloud consumption at production volume — see `ai-cost-modeling` for AI workloads
 - [ ] Test facility, range or lab time, including queue and rework runs
 - [ ] Certification, accreditation and independent assessment costs
 - [ ] Shipping, packaging, storage
 
-**Programme costs that get omitted**
-- [ ] Programme and project management
+**Program costs that get omitted**
+- [ ] Program and project management
 - [ ] Systems engineering and integration
 - [ ] Documentation and every CDRL, at its stated frequency
 - [ ] Security: clearances, facility, RMF or accreditation effort

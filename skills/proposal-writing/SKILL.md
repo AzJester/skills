@@ -68,7 +68,7 @@ Three habits that decide the score more than prose quality:
 
 **Graphics carry argument, with action captions.** A caption that reads "Figure 3-2. System Architecture" wastes the highest-attention element on the page. `Figure 3-2. Three independent transport paths keep the mission running through a 72-hour SATCOM outage.` states the claim; the figure proves it. Many evaluators read the headings, the graphics, and the captions before anything else — write those three assuming they are all that is read.
 
-## Step 4: Review in colours, and know what each one checks
+## Step 4: Review in colors, and know what each one checks
 
 Each review answers a different question. Running them out of order, or collapsing them, is how a proposal reaches submission with a structural defect nobody was assigned to catch.
 
@@ -82,7 +82,7 @@ Each review answers a different question. Running them out of order, or collapsi
 
 **Red team must be scored, not discussed.** Hand reviewers the actual Section M factors and have them assign findings — strengths, weaknesses, deficiencies — as an evaluator would. A red team that produces general commentary rather than scores has told you nothing about how the proposal will fare.
 
-**Recovery time is the constraint.** A red team two days before submission is theatre; nothing structural can be fixed. Schedule it where the findings can still be acted on, and protect that gap when the schedule slips.
+**Recovery time is the constraint.** A red team two days before submission is theater; nothing structural can be fixed. Schedule it where the findings can still be acted on, and protect that gap when the schedule slips.
 
 ## Step 5: The pre-submission pass
 
@@ -90,7 +90,7 @@ Each review answers a different question. Running them out of order, or collapsi
 - Page limits, font, margins and file format match Section L exactly — a non-compliant submission can be rejected without evaluation.
 - Every cross-reference points where it claims to.
 - Every acronym is expanded at first use in each volume, since volumes are often read by different people.
-- Nothing claims capability the evidence does not support. Where a claim has no artefact behind it, a human decides knowingly whether to make it anyway — see `engineering-to-proposal`.
+- Nothing claims capability the evidence does not support. Where a claim has no artifact behind it, a human decides knowingly whether to make it anyway — see `engineering-to-proposal`.
 - Markings and export control reviewed — see `export-control-and-markings`.
 - Submission mechanics rehearsed before the deadline, not at it. Portal upload failures are a routine cause of non-submission and they always happen in the last hour.
 
@@ -99,7 +99,7 @@ Each review answers a different question. Running them out of order, or collapsi
 | Failure | Symptom | Fix |
 | --- | --- | --- |
 | Writing before the matrix | Content that answers no requirement | Matrix first, always |
-| Optimising for reading, not scoring | Elegant prose, mediocre score | Write to Section M's words and structure |
+| Optimizing for reading, not scoring | Elegant prose, mediocre score | Write to Section M's words and structure |
 | Adjectives instead of evidence | Robust, proven, world-class | Nouns and numbers from `engineering-to-proposal` |
 | Unweighted page allocation | Half the volume on 15% of the score | Pages follow evaluation weight |
 | Decorative captions | "Figure 4-1. Network Diagram" | Action captions that state the claim |

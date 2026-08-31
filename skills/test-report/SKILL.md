@@ -1,11 +1,11 @@
 ---
 name: test-report
-description: Write the report that delivers test results. Use when documenting the outcome of a test event, writing a test report or CDRL test deliverable, presenting results traced to a test plan or VCRM, categorising deficiencies by operational impact, writing the limitations section, or turning raw test data into conclusions a customer can act on. Sits after test-and-evaluation plans the event and verification-validation judges the evidence.
+description: Write the report that delivers test results. Use when documenting the outcome of a test event, writing a test report or CDRL test deliverable, presenting results traced to a test plan or VCRM, categorizing deficiencies by operational impact, writing the limitations section, or turning raw test data into conclusions a customer can act on. Sits after test-and-evaluation plans the event and verification-validation judges the evidence.
 ---
 
 # Test report
 
-Two skills bracket this one. `test-and-evaluation` plans the event and covers reporting *posture* — negative results are results, deficiencies reported by operational impact. `verification-validation` judges whether evidence closes a requirement. Neither writes the document that delivers the results, which is usually the contract deliverable and often the only artefact that outlives the event.
+Two skills bracket this one. `test-and-evaluation` plans the event and covers reporting *posture* — negative results are results, deficiencies reported by operational impact. `verification-validation` judges whether evidence closes a requirement. Neither writes the document that delivers the results, which is usually the contract deliverable and often the only artifact that outlives the event.
 
 The failure this exists to prevent is a report that presents data instead of findings. A customer receiving 200 pages of plots and no stated conclusion has received the test team's raw material, not its work.
 
@@ -29,9 +29,9 @@ Whatever the governing template or DID calls the sections, a usable test report 
 | Objectives and scope | What this event set out to determine, and what it did not | Scope inflated to match what was actually run |
 | Article configuration | The exact as-tested configuration | Vague, so results cannot be tied to a baseline |
 | Method | Procedure, instrumentation, environment, deviations | Deviations omitted because they "did not matter" |
-| Results | The data, organised by objective | Organised by test event rather than by question |
+| Results | The data, organized by objective | Organized by test event rather than by question |
 | Analysis | What the data means, with uncertainty | Skipped; the reader is left to infer |
-| Deficiencies | Findings, categorised, with impact | Categorised by component instead of by consequence |
+| Deficiencies | Findings, categorized, with impact | Categorized by component instead of by consequence |
 | Limitations | What this report does not establish | Missing — the defect that most damages credibility |
 | Conclusions | Answers to the objectives, and only those | Recommendations creeping past the evidence |
 | Recommendations | What should happen next, separated from conclusions | Merged with conclusions so the reader cannot tell them apart |
@@ -40,7 +40,7 @@ Whatever the governing template or DID calls the sections, a usable test report 
 
 ## Step 3: Present results so they answer questions
 
-**Organise by objective, not by chronology.** The reader wants to know whether the system meets its requirement, not what happened on Tuesday. Test-by-test narration forces them to assemble the answer themselves.
+**Organize by objective, not by chronology.** The reader wants to know whether the system meets its requirement, not what happened on Tuesday. Test-by-test narration forces them to assemble the answer themselves.
 
 **Every result traces to its objective and its requirement.** A results table with a traceability column feeds straight into the VCRM — see `verification-validation`.
 
@@ -52,11 +52,11 @@ Whatever the governing template or DID calls the sections, a usable test report 
 
 **Include the failures at the same fidelity as the successes.** A report where passing tests get tables and failing tests get a sentence has told the reader what the author wanted to be true.
 
-## Step 4: Deficiencies, categorised by consequence
+## Step 4: Deficiencies, categorized by consequence
 
-The single most useful thing a test report does is tell the programme which findings matter.
+The single most useful thing a test report does is tell the program which findings matter.
 
-**Categorise by operational impact, not by the component involved.** A finding that stops the mission and one that annoys the operator are different findings even if both are in the same subsystem. Where the programme has a defined deficiency classification, use it; where it does not, state the scheme you used in the report.
+**Categorize by operational impact, not by the component involved.** A finding that stops the mission and one that annoys the operator are different findings even if both are in the same subsystem. Where the program has a defined deficiency classification, use it; where it does not, state the scheme you used in the report.
 
 Each deficiency carries: what was observed, the conditions that produce it, how often it occurred out of how many attempts, the operational consequence, and any workaround. Reproducibility is part of the finding — a defect seen once in forty runs and one seen every time are different problems, and "intermittent" without the ratio is not a description.
 
@@ -69,7 +69,7 @@ The section that decides whether the report survives scrutiny. State what this e
 - Conditions not tested — environments, loads, configurations, threat conditions
 - Objectives not met, and why
 - Instrumentation or fidelity constraints that bound the result
-- Sample sizes too small to generalise from
+- Sample sizes too small to generalize from
 - Deviations from the plan and what they cost
 - Anything tested in a surrogate, simulated or laboratory environment that has not been shown to represent the operational one
 
@@ -81,21 +81,21 @@ A reader who finds a limitation the report did not disclose discounts the whole 
 
 **Conclusions answer the objectives. Nothing else.** One conclusion per objective, each traceable to results in the report. A conclusion that requires information not in the report is an opinion.
 
-**Recommendations are separate and labelled.** They are judgement, they may be outside the test team's authority, and mixing them into conclusions lets a reader treat an opinion as a measured finding.
+**Recommendations are separate and labeled.** They are judgment, they may be outside the test team's authority, and mixing them into conclusions lets a reader treat an opinion as a measured finding.
 
-**Do not soften a finding to protect a schedule.** The decision about what to do with a bad result belongs to the programme, and it can only be made with the result stated plainly. A hedged conclusion moves that decision to the author, silently.
+**Do not soften a finding to protect a schedule.** The decision about what to do with a bad result belongs to the program, and it can only be made with the result stated plainly. A hedged conclusion moves that decision to the author, silently.
 
 ## Common failures
 
 | Failure | Symptom | Fix |
 | --- | --- | --- |
 | Data instead of findings | Plots with no stated conclusion | One conclusion per objective, in the summary |
-| Chronological organisation | Reader assembles the answer themselves | Organise by objective |
+| Chronological organization | Reader assembles the answer themselves | Organize by objective |
 | Vague article configuration | Results cannot support a fielding decision | Exact versions and baseline reference |
 | Missing limitations | Credibility collapses when one is found | Write the limitations section deliberately |
-| Deficiencies by component | Programme cannot triage | Categorise by operational impact |
+| Deficiencies by component | Program cannot triage | Categorize by operational impact |
 | Intermittent without a ratio | Nobody can size the problem | Occurrences out of attempts, with conditions |
 | Success and failure at different fidelity | Reads as advocacy | Same detail for both |
-| Recommendations as conclusions | Opinion read as measurement | Separate sections, labelled |
+| Recommendations as conclusions | Opinion read as measurement | Separate sections, labeled |
 
 The honest one: a test report's value is set by whether a reader can tell what it does not prove. Everything else is presentation.

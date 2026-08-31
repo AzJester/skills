@@ -20,7 +20,7 @@ The most valuable step, because the answer is often no.
 | It is a fixed sequence of steps | A pipeline with model calls in it — deterministic, cheap, debuggable |
 | The steps depend on what earlier steps found | **An agent** |
 
-**A fixed workflow with model calls is not an agent, and is usually better.** It is cheaper, faster, testable and its failures are localised. Reach for an agent when the path genuinely cannot be known in advance — when what to do next depends on what was just discovered.
+**A fixed workflow with model calls is not an agent, and is usually better.** It is cheaper, faster, testable and its failures are localized. Reach for an agent when the path genuinely cannot be known in advance — when what to do next depends on what was just discovered.
 
 **"Agentic" is frequently applied to a pipeline for the wrong reasons.** It costs more, fails in more ways, and is harder to explain to an accreditor. Where a pipeline suffices, that is the answer.
 
@@ -45,7 +45,7 @@ The most valuable step, because the answer is often no.
 
 ## Step 3: Prefer one loop until it demonstrably fails
 
-**Multi-agent is usually premature.** Splitting into specialised agents adds coordination, message passing, context duplication and a new class of failure where two agents disagree or each assumes the other did something. The cost is real and immediate; the benefit is usually theoretical.
+**Multi-agent is usually premature.** Splitting into specialized agents adds coordination, message passing, context duplication and a new class of failure where two agents disagree or each assumes the other did something. The cost is real and immediate; the benefit is usually theoretical.
 
 Reach for more than one loop when there is a genuine reason: genuinely parallel independent work, a context that cannot fit in one window, or a hard isolation boundary — different credentials, different trust levels, different data classifications.
 
@@ -53,7 +53,7 @@ Reach for more than one loop when there is a genuine reason: genuinely parallel 
 
 ## Step 4: Manage context, cost and stopping
 
-**Context is a budget.** Every step adds to it — tool outputs, intermediate reasoning, retrieved material. Long-running agents fill the window and then lose the earliest content, which is frequently the original instruction. Decide deliberately what is retained, what is summarised, and what is dropped.
+**Context is a budget.** Every step adds to it — tool outputs, intermediate reasoning, retrieved material. Long-running agents fill the window and then lose the earliest content, which is frequently the original instruction. Decide deliberately what is retained, what is summarized, and what is dropped.
 
 **Errors compound multiplicatively.** A 95% per-step success rate over twenty steps is not 95%; it is about 36%. This single arithmetic fact explains most disappointing agentic systems, and it argues for fewer steps, more reliable steps, and checkpoints where a bad trajectory can be caught before it propagates.
 
@@ -66,17 +66,17 @@ Reach for more than one loop when there is a genuine reason: genuinely parallel 
 The genuinely hard part, and where most agentic projects are weakest.
 
 - **A correct answer reached by a bad path is a latent failure.** It got lucky, and it will not next time. Evaluating only end state hides this entirely.
-- **Evaluate at three levels**: did it reach the right outcome; did it take a reasonable path; and did each tool call do what it should have. The middle one is the one that gets skipped and the one that predicts production behaviour.
+- **Evaluate at three levels**: did it reach the right outcome; did it take a reasonable path; and did each tool call do what it should have. The middle one is the one that gets skipped and the one that predicts production behavior.
 - **Build the evaluation set from real trajectories**, including failures. `ai-evaluation` covers evaluation sets representative of deployment rather than of training — for agents that means real tasks with their real messiness, not clean examples.
-- **Regression-diff trajectories between versions.** A prompt or tool change can alter behaviour on cases nobody tested; comparing trajectories case by case is how that gets caught.
+- **Regression-diff trajectories between versions.** A prompt or tool change can alter behavior on cases nobody tested; comparing trajectories case by case is how that gets caught.
 - **Build the failure taxonomy explicitly.** The recurring modes are specific: looping, drift off the original task, tool misuse, confidently selecting the wrong tool, cascading from a bad early step, and premature success declaration. Naming them lets you count them.
 
 ## Step 6: Operate it
 
 - **Log the whole trajectory**, not the result — every step, tool call, argument and return. Without it an agent failure cannot be diagnosed, only observed.
-- **The human in the loop must be able to disagree.** A confirmation prompt showing a summary the reviewer cannot verify is accountability theatre — `ai-governance` and `human-systems-integration` both make this point.
+- **The human in the loop must be able to disagree.** A confirmation prompt showing a summary the reviewer cannot verify is accountability theater — `ai-governance` and `human-systems-integration` both make this point.
 - **Watch for silent degradation.** Agents fail gradually — slightly longer trajectories, slightly more retries — long before they fail visibly. Track steps per task and cost per task as leading indicators.
-- **Where it runs unattended, be explicit about what it may do alone.** The gap between what a system is permitted to do and what anyone realised it was permitted to do is where the incidents live.
+- **Where it runs unattended, be explicit about what it may do alone.** The gap between what a system is permitted to do and what anyone realized it was permitted to do is where the incidents live.
 
 ## Common failures
 

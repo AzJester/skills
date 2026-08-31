@@ -23,14 +23,14 @@ Understated cost is the most common defect, and it is usually omission rather th
 | Category | Frequently missed |
 | --- | --- |
 | Acquisition | Integration, data migration, one-time licensing |
-| Implementation | Internal labour at loaded rates, not just vendor cost |
+| Implementation | Internal labor at loaded rates, not just vendor cost |
 | Transition | Parallel running, dual maintenance during changeover |
-| Sustainment | Support, licences, hosting, refresh over the horizon |
+| Sustainment | Support, licenses, hosting, refresh over the horizon |
 | Training and adoption | Time lost during ramp, not just course cost |
 | Opportunity cost | What those people would otherwise deliver |
 | Exit | What it costs to stop or replace later |
 
-**Internal labour is a real cost**, whether or not it appears in a budget line. A case that treats the team as free because they are already employed will be challenged by anyone who thinks in terms of capacity.
+**Internal labor is a real cost**, whether or not it appears in a budget line. A case that treats the team as free because they are already employed will be challenged by anyone who thinks in terms of capacity.
 
 ## Step 3: Quantify benefits, and label what you cannot
 
@@ -84,7 +84,7 @@ Lead with the recommendation and the number — `executive-decision-memo` carrie
 | --- | --- |
 | Do-nothing baseline omitted or strawmanned | Advocacy |
 | Soft benefits converted to cash without stating the assumption | Optimism |
-| Internal labour treated as free | Not costed |
+| Internal labor treated as free | Not costed |
 | Horizon chosen to make the answer work | Arithmetic |
 | Discount rate unstated | Unevaluable |
 | No sensitivity analysis | Untested |

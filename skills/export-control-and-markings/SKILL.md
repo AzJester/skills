@@ -9,7 +9,7 @@ Two separate regimes get conflated, and the practical consequence of getting eit
 
 **Export control** governs who may receive certain technical information, regardless of classification. **CUI** governs how sensitive-but-unclassified information is marked, stored and shared. A document can be subject to both, one, or neither, and the determinations are made by different people on different criteria.
 
-This skill covers recognising when a determination is needed and applying markings correctly. **It is not legal advice, and it does not make determinations.** Your export control officer, security officer and contracting officer own those. What it prevents is the common engineering failure: handling something incorrectly because nobody thought to ask.
+This skill covers recognizing when a determination is needed and applying markings correctly. **It is not legal advice, and it does not make determinations.** Your export control officer, security officer and contracting officer own those. What it prevents is the common engineering failure: handling something incorrectly because nobody thought to ask.
 
 ## The rule that governs everything here
 
@@ -30,7 +30,7 @@ That asymmetry is the whole reason this skill exists.
 
 - **Deemed export** — disclosing controlled technical data to a foreign person **inside the United States** is an export to their country of nationality. A conversation, a screen share, a repository grant, a colleague reading over a shoulder.
 - **Electronic transmission** — email, file share, cloud storage. Where the data physically resides matters, and so does who administers the system.
-- **Cloud services** — storing controlled technical data in a service without appropriate controls, or one administered by foreign persons, can constitute an export. This is why FedRAMP authorisation status and personnel screening for a service are engineering-relevant facts rather than procurement trivia.
+- **Cloud services** — storing controlled technical data in a service without appropriate controls, or one administered by foreign persons, can constitute an export. This is why FedRAMP authorization status and personnel screening for a service are engineering-relevant facts rather than procurement trivia.
 - **Publication and conferences** — presenting, publishing, or posting to a public repository.
 
 Fundamental research and information already in the public domain are treated differently, but **the exclusion is narrower than people assume** and does not survive contractual publication restrictions. Do not self-determine that something qualifies.
@@ -70,11 +70,11 @@ The failure is rarely a deliberate decision. It is a default action taken withou
 
 **Before a document leaves your hands**, ask: what is in it, who is receiving it, and what does it need on it? Deliverables inherit their marking requirements from the contract and its CDRLs — see `contract-vehicles-and-clauses`.
 
-**Before granting repository or drive access**, ask whether the recipient is authorised, including nationality where export control applies. Access grants are disclosures.
+**Before granting repository or drive access**, ask whether the recipient is authorized, including nationality where export control applies. Access grants are disclosures.
 
 **Before using a tool or service** with controlled data — a cloud IDE, an AI service, a diagramming tool, a translation service — ask whether the data may go there. Pasting controlled technical data into an external service is a transmission, and this is now among the most common ways it happens.
 
-**Before publishing or presenting**, obtain the release review. `ieee-publishing`, `dod-technical-report` and `manuscript-submission` all produce material that leaves the organisation, and the review precedes submission, not publication.
+**Before publishing or presenting**, obtain the release review. `ieee-publishing`, `dod-technical-report` and `manuscript-submission` all produce material that leaves the organization, and the review precedes submission, not publication.
 
 **Before a meeting with foreign nationals**, know what may be discussed. This includes colleagues and partners, and it includes the whiteboard.
 

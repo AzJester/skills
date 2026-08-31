@@ -11,9 +11,9 @@ It is a measure of *demonstrated evidence*, not of confidence, effort, or how we
 
 ## The two words that decide every level
 
-Nearly every TRL judgement comes down to two questions, and disagreement almost always traces to one of them.
+Nearly every TRL judgment comes down to two questions, and disagreement almost always traces to one of them.
 
-**What was demonstrated?** A component, a breadboard, a prototype, or the actual system? Analysis and simulation cap out at TRL 3 — modelling something is not demonstrating it.
+**What was demonstrated?** A component, a breadboard, a prototype, or the actual system? Analysis and simulation cap out at TRL 3 — modeling something is not demonstrating it.
 
 **In what environment?** Laboratory, relevant, or operational?
 
@@ -79,7 +79,7 @@ The fallback is not optional. A CTE whose maturation plan has no alternative is 
 
 - **`risk-management`** — every CTE below its required level at the gate it is needed is a risk, with the maturation plan as the handling strategy and the fallback as the contingency.
 - **`technical-reviews`** — gates check technology maturity. SRR should not accept a requirement resting on a TRL 2 element without a funded maturation plan; PDR expects the critical elements at TRL 6 for most programs.
-- **`trade-study-analysis`** — TRL belongs in the criteria. An alternative that scores best on performance and worst on maturity is a different proposition from one that scores well on both, and trade studies that omit maturity systematically favour the least proven option.
+- **`trade-study-analysis`** — TRL belongs in the criteria. An alternative that scores best on performance and worst on maturity is a different proposition from one that scores well on both, and trade studies that omit maturity systematically favor the least proven option.
 - **`engineering-to-proposal`** — solicitations frequently require a technology readiness assessment, and evaluators check TRL claims against the evidence offered. An assessment built on real evidence is directly reusable; one built on optimism is a liability in a document you sign.
 
 ## MRL and IRL

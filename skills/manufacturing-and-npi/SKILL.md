@@ -29,7 +29,7 @@ The three disciplines, and what each actually asks:
 
 ## Step 2: Choose and qualify the manufacturer deliberately
 
-- **Match capability to the product**, not to price. Fine-pitch, high layer count, press-fit, conformal coating, potting and specialised finishes are not universal capabilities.
+- **Match capability to the product**, not to price. Fine-pitch, high layer count, press-fit, conformal coating, potting and specialized finishes are not universal capabilities.
 - **Check the quality system.** For defense and aerospace work, the relevant aerospace quality standard is usually expected, and it is a meaningful filter.
 - **Agree the workmanship class explicitly.** Electronics assembly acceptability standards define classes with genuinely different requirements, and high-reliability class costs more and takes longer. Agreeing it after the quote is a dispute.
 - **Understand who owns what** — consigned versus turnkey parts, tooling ownership, test fixture ownership, and what happens to all of it if you change manufacturers. Tooling you do not own is a switching cost you discover later. See `teaming-and-subcontracts`.
@@ -78,7 +78,7 @@ Three decisions:
 ## Step 6: Documentation and configuration, because production runs on it
 
 - **The manufacturing data package is a deliverable**: drawings, bill of materials, assembly instructions, test procedures, acceptance criteria, and the approved parts and sources.
-- **Every change goes through change control** — see `configuration-management`. A production line running to a revision nobody recorded produces units nobody can characterise later.
+- **Every change goes through change control** — see `configuration-management`. A production line running to a revision nobody recorded produces units nobody can characterize later.
 - **Know what a change requalifies.** A part substitution or a process change can invalidate environmental or EMC qualification.
 - **Record what was actually built.** Serial number, revision, part lots, test results, firmware version. When a field failure arrives, this record is what tells you the scope of the problem — and without it every unit is suspect.
 

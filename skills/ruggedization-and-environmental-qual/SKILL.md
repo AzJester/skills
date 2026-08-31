@@ -7,7 +7,7 @@ description: Design equipment to survive its environment and prove that it does.
 
 **MIL-STD-810 is a tailoring framework, not a pass/fail specification.** This single misunderstanding causes more wasted money in this discipline than anything else. There is no such thing as "810 certified". The standard provides methods and guidance for deriving environmental requirements from a specific platform and life cycle, and then testing against those derived requirements.
 
-A supplier claiming compliance without naming methods, procedures and levels has said nothing. A programme requiring "MIL-STD-810 compliance" without tailoring has specified nothing, and will get either an over-designed product or an argument.
+A supplier claiming compliance without naming methods, procedures and levels has said nothing. A program requiring "MIL-STD-810 compliance" without tailoring has specified nothing, and will get either an over-designed product or an argument.
 
 The failure this exists to prevent is qualification testing that begins after the design is frozen. Margin cannot be added at that point, and a chamber failure then costs a redesign, a new test article and a new booking.
 

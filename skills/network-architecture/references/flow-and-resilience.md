@@ -35,12 +35,12 @@ A derived number with visible assumptions survives review. A number with no deri
 
 The table that separates a real design from a nominal one.
 
-| Capability | Full connectivity | Degraded (reduced bandwidth) | Intermittent | Fully disconnected | Reconnection behaviour |
+| Capability | Full connectivity | Degraded (reduced bandwidth) | Intermittent | Fully disconnected | Reconnection behavior |
 | --- | --- | --- | --- | --- | --- |
 
 Fill every cell. "Not available" is a legitimate answer where the mission accepts it; a blank means the case was not considered.
 
-**Reconnection behaviour** is the column most often left empty and the one that causes integration problems. When two sides have diverged, what happens? Last-write-wins, merge, queue and replay, operator adjudication? Each has consequences the operator will experience, and choosing by default means choosing badly.
+**Reconnection behavior** is the column most often left empty and the one that causes integration problems. When two sides have diverged, what happens? Last-write-wins, merge, queue and replay, operator adjudication? Each has consequences the operator will experience, and choosing by default means choosing badly.
 
 ## Path diversity
 

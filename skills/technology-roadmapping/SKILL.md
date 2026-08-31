@@ -1,6 +1,6 @@
 ---
 name: technology-roadmapping
-description: Decide what capability to build, when, and for whom across a portfolio. Use when building a technology or capability roadmap, allocating internal research and development investment, deciding what to build once and share across business units, sequencing technology maturation against programme need dates, setting kill criteria for an investment, or reconciling roadmaps that several units maintain separately. `product-management` runs a single product's roadmap, which feeds this.
+description: Decide what capability to build, when, and for whom across a portfolio. Use when building a technology or capability roadmap, allocating internal research and development investment, deciding what to build once and share across business units, sequencing technology maturation against program need dates, setting kill criteria for an investment, or reconciling roadmaps that several units maintain separately. `product-management` runs a single product's roadmap, which feeds this.
 ---
 
 # Technology roadmapping
@@ -15,7 +15,7 @@ The failure this exists to prevent is a roadmap built by collecting what each un
 
 Three questions, in this order. Reversing them produces a roadmap of interesting technology with no customer.
 
-1. **What capability will be needed, by whom, and when?** From pursuit pipelines, customer roadmaps, published strategy and budget documents, and programmes already running. `capture-management` is the demand signal for the pursuit side.
+1. **What capability will be needed, by whom, and when?** From pursuit pipelines, customer roadmaps, published strategy and budget documents, and programs already running. `capture-management` is the demand signal for the pursuit side.
 2. **What do we have today, honestly?** Present maturity, not intended maturity. `trl-assessment` is the instrument, and using it here rather than at proposal time is what makes the roadmap credible.
 3. **What is the gap, and what would close it?** The distance between the two, expressed as work.
 
@@ -27,7 +27,7 @@ This is the specific value of looking across units rather than within one.
 
 **Duplication.** Two or three units independently building similar capability is the most common finding, and it is rarely visible from inside any one of them. Not all of it should be consolidated — a shared component with three unwilling customers is worse than three purpose-built ones. The test is whether the units would genuinely adopt a shared version, which is a question to ask them before deciding, not after.
 
-**Gaps.** Capability several units need and none is funding, usually because it is nobody's programme and therefore nobody's budget. These are the highest-value items a portfolio view finds and the hardest to fund, because the cost is concentrated and the benefit is distributed.
+**Gaps.** Capability several units need and none is funding, usually because it is nobody's program and therefore nobody's budget. These are the highest-value items a portfolio view finds and the hardest to fund, because the cost is concentrated and the benefit is distributed.
 
 **Build once, share deliberately.** Shared capability needs a named owner, a funding line, and consumers who have agreed to use it. Without all three it becomes an orphan that each unit works around. `interface-control` applies — the seam between a shared component and its consumers is an interface with two parties.
 
@@ -39,7 +39,7 @@ Separating the portfolio by horizon keeps near-term delivery from consuming ever
 
 | Horizon | Character | Judged by |
 | --- | --- | --- |
-| **Near** | Committed, funded, needed by a known pursuit or programme | Delivery against the need date |
+| **Near** | Committed, funded, needed by a known pursuit or program | Delivery against the need date |
 | **Mid** | Probable demand, maturation underway | Progress against maturation milestones |
 | **Far** | Exploratory, may not pay off | Whether the uncertainty is being reduced |
 
@@ -51,7 +51,7 @@ Internal research and development, and bid and proposal money, are finite and th
 
 **Every investment states, before it starts:**
 
-- The capability it produces and which pursuits or programmes need it.
+- The capability it produces and which pursuits or programs need it.
 - The maturity target — a TRL, with the evidence that would demonstrate it.
 - The decision it is buying: what will be known at the end that is not known now.
 - **The kill criteria.** What would have to be true to stop.

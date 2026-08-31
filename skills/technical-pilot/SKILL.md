@@ -14,7 +14,7 @@ That is the failure this skill exists to prevent, and the fix is almost entirely
 A pilot is an experiment that buys a decision. Name the decision first.
 
 - **Whose decision, and when will they make it?** A pilot with no decision-maker waiting on it is a demonstration.
-- **What would make the answer yes, and what would make it no?** Both, in advance, in writing. A pilot that cannot fail proves nothing, and a pilot whose criteria are settled afterwards is settled in favour of whoever is most invested.
+- **What would make the answer yes, and what would make it no?** Both, in advance, in writing. A pilot that cannot fail proves nothing, and a pilot whose criteria are settled afterwards is settled in favor of whoever is most invested.
 - **What happens next if it succeeds?** This is the question that separates pilots that transition from pilots that do not. See Step 2.
 
 **Write success criteria that are measurable and that the customer agrees to before it starts.** "Users found it valuable" is not a criterion. "Analysts complete the triage task in under four minutes with fewer than 5% escalation errors, on real data, across three weeks" is one — and it tells everyone what to instrument.
@@ -41,7 +41,7 @@ Pilots are rarely killed by technology. They are killed by access.
 
 | Item | Typical lead time |
 | --- | --- |
-| **Data access** — agreements, sanitisation, transfer approvals | Weeks to months, and the most common blocker |
+| **Data access** — agreements, sanitization, transfer approvals | Weeks to months, and the most common blocker |
 | **Network access** — getting on the network at all, accounts, boundary approvals | Weeks to months |
 | **Accreditation** — even an interim or limited authority to test | Months; see `rmf-ato` |
 | **Security** — clearances, facility access, visit requests | Months; see `industrial-security` |
@@ -49,7 +49,7 @@ Pilots are rarely killed by technology. They are killed by access.
 
 **Start all of them at kickoff, in parallel with the build.** A pilot whose software is ready in week four and whose data access arrives in week fourteen has a ten-week hole in it, and that hole is where sponsor attention is lost.
 
-**Where the data cannot be obtained in time, change the pilot rather than the timeline.** A pilot on synthetic or sanitised data proves much less, and it is better to know that and scope the claim accordingly than to present a lab result as an operational one.
+**Where the data cannot be obtained in time, change the pilot rather than the timeline.** A pilot on synthetic or sanitized data proves much less, and it is better to know that and scope the claim accordingly than to present a lab result as an operational one.
 
 ## Step 4: Run it in conditions that resemble reality
 

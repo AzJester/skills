@@ -5,13 +5,13 @@ description: Apply and evidence security configuration hardening. Use when imple
 
 # Hardening and STIGs
 
-A benchmark is a set of configuration settings someone else decided are safe defaults. Applying one is easy; the work is deciding which settings genuinely do not apply to your system, evidencing that judgement, and keeping the configuration from drifting back.
+A benchmark is a set of configuration settings someone else decided are safe defaults. Applying one is easy; the work is deciding which settings genuinely do not apply to your system, evidencing that judgment, and keeping the configuration from drifting back.
 
 ## Sources
 
 - **STIGs** — DISA Security Technical Implementation Guides. Product-specific, DoD-authoritative, tied to 800-53 controls. Where a STIG exists for your product, it is the expected baseline.
 - **SRGs** — Security Requirements Guides. Technology-class rather than product-specific. Where no STIG exists for a product, the applicable SRG is what you tailor against, and you say so.
-- **CIS Benchmarks** — community consensus, often broader product coverage, two hardening profiles (Level 1 baseline with minimal operational impact, Level 2 defence-in-depth that may cost functionality). Useful where no STIG or SRG fits, with the gap stated.
+- **CIS Benchmarks** — community consensus, often broader product coverage, two hardening profiles (Level 1 baseline with minimal operational impact, Level 2 defense-in-depth that may cost functionality). Useful where no STIG or SRG fits, with the gap stated.
 - **Vendor guidance** — sometimes conflicts with the STIG. When it does, that conflict is a documented decision, not something to resolve silently.
 
 ## Severity
@@ -22,7 +22,7 @@ STIG findings carry categories, and they are not a to-do ordering — they descr
 | --- | --- |
 | **CAT I** | Directly and immediately results in loss of confidentiality, availability or integrity |
 | **CAT II** | May result in loss, or provides significant opportunity for it |
-| **CAT III** | Degrades measures toward defence in depth |
+| **CAT III** | Degrades measures toward defense in depth |
 
 An open CAT I is an authorization problem, not a backlog item. Treat the category as what it is — a statement about consequence, not about effort.
 
@@ -49,10 +49,10 @@ Reasons that hold:
 - The setting breaks a documented mission function, with the function named and a compensating control described.
 - A more restrictive setting is applied instead, and here it is.
 
-Reasons that do not hold, and are recognised on sight:
+Reasons that do not hold, and are recognized on sight:
 - "Not applicable to our environment" with nothing after it.
 - "Operational impact" with no named function.
-- "Accepted by the programme" with no named accepter.
+- "Accepted by the program" with no named accepter.
 
 A finding marked *not applicable* that an assessor determines *is* applicable becomes an open finding plus a credibility problem affecting everything else you marked.
 

@@ -29,7 +29,7 @@ Schema or message definitions. For every field: name, type, **units**, precision
 
 Units and precision are stated for every quantity without exception. This section is where most integration defects are prevented.
 
-## 6. Behaviour
+## 6. Behavior
 
 Which side initiates. Request/response or event. Sequencing and ordering guarantees. Idempotency, and what a duplicate means. State held on either side, and by whom.
 
@@ -39,13 +39,13 @@ Rate, latency budget, timeout, retry policy including backoff and maximum attemp
 
 ## 8. Error handling
 
-The error taxonomy: every condition, its code, and its meaning. Which side retries and which side gives up. Behaviour on partial failure. How each side degrades when the other is unavailable.
+The error taxonomy: every condition, its code, and its meaning. Which side retries and which side gives up. Behavior on partial failure. How each side degrades when the other is unavailable.
 
 Specified at the same level of detail as the happy path. If this section is shorter than section 5, it is not finished.
 
 ## 9. Security
 
-Authentication and authorisation mechanism, credential issuance and rotation, transport protection, audit expectations on each side. Cross-check against `threat-modeling` — an interface is a trust boundary, and its threats belong in the model.
+Authentication and authorization mechanism, credential issuance and rotation, transport protection, audit expectations on each side. Cross-check against `threat-modeling` — an interface is a trust boundary, and its threats belong in the model.
 
 ## 10. Lifecycle and versioning
 

@@ -1,13 +1,13 @@
 ---
 name: quality-management-system
-description: Build and run a quality management system people actually use. Use when establishing or improving a QMS, preparing for an ISO 9001, AS9100 or CMMI appraisal, writing or tailoring process assets, running internal audits and management review, handling nonconformances and corrective action, or diagnosing why a certified organisation keeps producing the same defects.
+description: Build and run a quality management system people actually use. Use when establishing or improving a QMS, preparing for an ISO 9001, AS9100 or CMMI appraisal, writing or tailoring process assets, running internal audits and management review, handling nonconformances and corrective action, or diagnosing why a certified organization keeps producing the same defects.
 ---
 
 # Quality management system
 
-A QMS is a claim: that the organisation produces good outcomes because of how it works, not because of who happened to be on the job. Certification is evidence for the claim; it is not the claim.
+A QMS is a claim: that the organization produces good outcomes because of how it works, not because of who happened to be on the job. Certification is evidence for the claim; it is not the claim.
 
-The failure this exists to prevent is a certified organisation whose people work around the documented process because following it is slower than the deadline allows. That organisation has the audit finding it deserves waiting for it, and in the meantime it has all the cost of the system and none of the benefit.
+The failure this exists to prevent is a certified organization whose people work around the documented process because following it is slower than the deadline allows. That organization has the audit finding it deserves waiting for it, and in the meantime it has all the cost of the system and none of the benefit.
 
 ## Step 1: Know which standard, and why
 
@@ -20,15 +20,15 @@ The failure this exists to prevent is a certified organisation whose people work
 
 **Certification is often a market entry requirement rather than a choice**, and where that is true the decision is which scope to certify, not whether. Scope matters: certifying an entire enterprise where one business unit needs it is a large and recurring cost.
 
-**CMMI and ISO answer different questions** and are frequently both required. ISO asks whether you have a management system that works; CMMI asks how capably specific process areas are performed. An organisation can hold one and be weak at the other.
+**CMMI and ISO answer different questions** and are frequently both required. ISO asks whether you have a management system that works; CMMI asks how capably specific process areas are performed. An organization can hold one and be weak at the other.
 
-**Maturity levels are not a scoreboard.** A level achieved and not sustained is worse than one not pursued, because it has taught the organisation that the appraisal is the goal.
+**Maturity levels are not a scoreboard.** A level achieved and not sustained is worse than one not pursued, because it has taught the organization that the appraisal is the goal.
 
 ## Step 2: Write processes people will follow
 
 The central tension: a process detailed enough to guarantee consistency is usually too heavy to be followed under pressure.
 
-- **Document what actually happens**, then improve it. Documenting an idealised process creates an immediate gap between the QMS and reality, and the QMS is what loses.
+- **Document what actually happens**, then improve it. Documenting an idealized process creates an immediate gap between the QMS and reality, and the QMS is what loses.
 - **Write for the practitioner, not the auditor.** A process nobody can follow without a training course will not be followed. `procedural-documentation` applies: one action per step, clear entry and exit criteria, and a stated purpose.
 - **Tailoring is a feature, not a loophole** — but it must be governed. Different business units and different contract types genuinely need different processes. Define what may be tailored, by whom, with what approval, and record each tailoring decision. Ungoverned tailoring becomes "we don't do that here", which is a finding.
 - **Make the process assets easy to find and use.** Templates, checklists and examples get used; a policy document in a portal does not. The best evidence of a healthy QMS is that people reach for its templates because they are the fastest way to do the work.
@@ -38,7 +38,7 @@ The central tension: a process detailed enough to guarantee consistency is usual
 
 Where a QMS either earns its keep or becomes paperwork.
 
-**Nonconformance is a fact, recorded without blame.** An organisation where raising one is uncomfortable has fewer records and the same number of problems.
+**Nonconformance is a fact, recorded without blame.** An organization where raising one is uncomfortable has fewer records and the same number of problems.
 
 **Corrective action addresses cause, not symptom.** This is where the RCCA family belongs — `rcca-master` runs 8D and routes the analysis methods, and a corrective action that does not name a cause is a repair with a form attached.
 
@@ -54,9 +54,9 @@ Three tests for a corrective action worth the effort:
 
 ## Step 4: Audit to find problems, not to pass
 
-**Internal audits exist to find things before an external auditor does.** An internal audit programme that consistently finds nothing while external audits find issues is not auditing.
+**Internal audits exist to find things before an external auditor does.** An internal audit program that consistently finds nothing while external audits find issues is not auditing.
 
-- **Audit against what the process says**, and separately ask whether the process is what the organisation should be doing. Conformance and effectiveness are different questions and both matter.
+- **Audit against what the process says**, and separately ask whether the process is what the organization should be doing. Conformance and effectiveness are different questions and both matter.
 - **Auditors independent of the work.** Someone auditing their own area finds less, however honest they are.
 - **Findings need owners and dates**, and closure needs verification — the same discipline as corrective action.
 - **Sample where risk is**, not uniformly. Uniform sampling spends audit effort where nothing was going to be found.
@@ -77,10 +77,10 @@ Certification status is not a measure of quality. Useful measures point at outco
 
 ## Step 6: Across business units
 
-The cross-unit question is where to standardise and where not to.
+The cross-unit question is where to standardize and where not to.
 
-- **Standardise what is genuinely common** — nonconformance handling, corrective action, audit, document control, records. These benefit from being identical everywhere and cost little to share.
-- **Let engineering and delivery processes differ** where the work genuinely differs. Forcing a hardware programme and a software programme through one process produces something that fits neither and is followed by neither.
+- **Standardize what is genuinely common** — nonconformance handling, corrective action, audit, document control, records. These benefit from being identical everywhere and cost little to share.
+- **Let engineering and delivery processes differ** where the work genuinely differs. Forcing a hardware program and a software program through one process produces something that fits neither and is followed by neither.
 - **Share the process assets, not the mandate.** Templates and examples spread by being useful. A mandated process that does not fit gets tailored into meaninglessness or ignored.
 - **One nonconformance and corrective action system across units**, because recurrence across unit boundaries is invisible otherwise, and it is exactly the pattern a portfolio view exists to find.
 
@@ -89,12 +89,12 @@ The cross-unit question is where to standardise and where not to.
 | Failure | Symptom | Fix |
 | --- | --- | --- |
 | Certification as the goal | Passes audits, same defects | Measure outcomes, not certification status |
-| Idealised documented process | Everyone works around it | Document reality, then improve it |
+| Idealized documented process | Everyone works around it | Document reality, then improve it |
 | Ungoverned tailoring | "We don't do that here" | Define what may be tailored, by whom |
 | Corrective action without cause | Same issue recurs under new numbers | Use the RCCA methods; track recurrence |
 | Effectiveness never verified | Closed actions, unchanged outcomes | Verify after, before closing |
 | Internal audits find nothing | External auditors find plenty | Independent auditors, risk-based sampling |
 | Management review as a report-out | No decisions, no resources | Treat it as a decision meeting |
-| One process for every unit | Fits nobody, followed by nobody | Standardise the common, vary the delivery |
+| One process for every unit | Fits nobody, followed by nobody | Standardize the common, vary the delivery |
 
 The honest one: the fastest way to tell whether a QMS is real is to ask a working engineer where they find the template they use. If they do not know, the system exists for the auditor.

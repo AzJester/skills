@@ -5,7 +5,7 @@ description: Run a technical session that reaches a decision. Use when facilitat
 
 # Technical workshop facilitation
 
-Getting a group of technical people with different interests to a decision they will honour afterwards. For anyone working across business units this is a large share of the actual job, and it is treated as a soft skill by people who have not watched a badly run session cost a programme three months.
+Getting a group of technical people with different interests to a decision they will honor afterwards. For anyone working across business units this is a large share of the actual job, and it is treated as a soft skill by people who have not watched a badly run session cost a program three months.
 
 The failure this exists to prevent is the recurring meeting: the same participants, the same disagreement, no decision, scheduled again. Meetings recur because the thing blocking the decision is never named — and it is usually not technical.
 
@@ -21,7 +21,7 @@ The failure this exists to prevent is the recurring meeting: the same participan
 | **Review** | Findings against defined criteria | Criteria not agreed beforehand — see `technical-reviews` |
 | **Working session** | An artifact — a model, a plan, a document | No artifact ends up in anyone's hands |
 
-**Write the outcome as a sentence before scheduling.** "By the end we will have decided X" or "we will have a prioritised list of Y". If you cannot write it, the session is not ready, and the meeting that results will be the first of several.
+**Write the outcome as a sentence before scheduling.** "By the end we will have decided X" or "we will have a prioritized list of Y". If you cannot write it, the session is not ready, and the meeting that results will be the first of several.
 
 ## Step 2: Prepare, because the outcome is mostly decided here
 
@@ -29,7 +29,7 @@ The failure this exists to prevent is the recurring meeting: the same participan
 
 **Pre-work, distributed early enough to be read.** Options, data, the proposal, the current state. Sessions that begin with a forty-minute briefing spend their best hour on transmission rather than resolution.
 
-**Pre-socialise the contentious parts.** Discovering a fundamental objection in the room, in front of an audience, produces defensive positions. Finding it beforehand, one to one, means the session works the disagreement rather than discovering it.
+**Pre-socialize the contentious parts.** Discovering a fundamental objection in the room, in front of an audience, produces defensive positions. Finding it beforehand, one to one, means the session works the disagreement rather than discovering it.
 
 **Decide the decision rule in advance and say it.** Consensus, consent, the decision-maker decides after hearing input, or a vote. Most frustration in technical sessions comes from participants believing they were deciding when they were advising. Naming it at the start prevents that entirely.
 

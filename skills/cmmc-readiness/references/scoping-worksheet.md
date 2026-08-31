@@ -10,7 +10,7 @@ You cannot draw a boundary around information you have not located. Work through
 | --- | --- | --- | --- | --- | --- |
 | Email | | | | | |
 | File shares | | | | | |
-| Engineering / CAD / modelling tools | | | | | |
+| Engineering / CAD / modeling tools | | | | | |
 | Requirements and PLM tools | | | | | |
 | Source control | | | | | |
 | Laptops and endpoints | | | | | |
@@ -22,7 +22,7 @@ You cannot draw a boundary around information you have not located. Work through
 
 The last row is the one that breaks scopes. Somebody has a contract folder synced to a personal drive because it was convenient. Find it during scoping rather than during assessment.
 
-## Stage 2: Categorise assets
+## Stage 2: Categorize assets
 
 | Asset | Category | Justification | Separation mechanism | Assessed? |
 | --- | --- | --- | --- | --- |

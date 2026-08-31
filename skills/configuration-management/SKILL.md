@@ -7,7 +7,7 @@ description: Control what the system is, so changes are deliberate rather than a
 
 Configuration management answers one question at any moment: **what, exactly, is the system?** Not what was designed, not what was intended — what it currently is, what it was when tested, and what was delivered.
 
-Programmes without it do not notice they lack it until a verification result cannot be tied to a configuration, and nobody can say whether the tested article resembles the delivered one. At that point the verification evidence is worth much less than it appears, which is the expensive version of this failure.
+Programs without it do not notice they lack it until a verification result cannot be tied to a configuration, and nobody can say whether the tested article resembles the delivered one. At that point the verification evidence is worth much less than it appears, which is the expensive version of this failure.
 
 ## Where this sits
 
@@ -31,7 +31,7 @@ A baseline is an agreed reference point. Its purpose is not the snapshot — it 
 | **Allocated** | PDR | How requirements are allocated to items, and the interfaces between them |
 | **Product** | CDR | The detailed design, as built and as documented |
 
-Baselines are established at gates, so `technical-reviews` and this skill are two views of the same event. **A gate that establishes no baseline has not established anything** — the package was reviewed and the programme carried on able to change everything it just agreed.
+Baselines are established at gates, so `technical-reviews` and this skill are two views of the same event. **A gate that establishes no baseline has not established anything** — the package was reviewed and the program carried on able to change everything it just agreed.
 
 Record for each baseline: what it contains by CI and version, when it was established, and which gate established it.
 
@@ -43,7 +43,7 @@ Once baselined, change goes through a request, an assessment, and a decision.
 
 **Impact assessment** — the step most often skipped, and the reason most change control fails. Assess against: requirements, interfaces (both sides — see `interface-control`), verification already completed, cost, schedule, and risk. *Verification impact is the one that surprises people.* A change to a CI whose requirements were already verified invalidates that evidence, and rows in the VCRM go back to open. If the assessment does not say which, it is not an assessment.
 
-**Decision.** A change board, sized to the programme — one person for a small one, a standing board for a large one. What matters is that the deciders are not only the people who want the change. Record: approved, rejected, or deferred, with reasons.
+**Decision.** A change board, sized to the program — one person for a small one, a standing board for a large one. What matters is that the deciders are not only the people who want the change. Record: approved, rejected, or deferred, with reasons.
 
 Classify changes so the process is proportionate. A **Class I** change affects form, fit, function, interfaces, cost, or schedule and needs full board approval, often the customer's. A **Class II** change is editorial or internal with no external effect and can be delegated. Classifying by who is inconvenienced rather than by effect is how Class I changes get processed as Class II.
 
@@ -56,7 +56,7 @@ Two words used interchangeably and meaning different things.
 
 Both are decisions, both need a named approver, a scope, and an expiry or a quantity. Neither changes the baseline — that is the point. An accumulation of waivers against a baseline nobody has updated means the baseline has quietly stopped describing the system, and the honest response is a baseline change rather than another waiver.
 
-Track them together and report the count at every gate. A rising waiver count is one of the better early indicators that a programme is drifting from its own design.
+Track them together and report the count at every gate. A rising waiver count is one of the better early indicators that a program is drifting from its own design.
 
 ## Step 5: Audit
 

@@ -5,7 +5,7 @@ description: Fit a system inside a size, weight, power and cooling envelope. Use
 
 # SWaP and thermal budgeting
 
-Size, weight, power and cooling — the constraint set that decides whether a tactical edge product is installable. It is a single optimisation because the four are coupled: more compute means more power, which means more heat, which means more mass to remove it, which means more volume.
+Size, weight, power and cooling — the constraint set that decides whether a tactical edge product is installable. It is a single optimization because the four are coupled: more compute means more power, which means more heat, which means more mass to remove it, which means more volume.
 
 **Cooling is the binding constraint far more often than people expect.** Modern compute is thermally limited long before it is electrically limited: the silicon can draw the power, and the box cannot get rid of it. A design that meets its power budget and cannot dissipate the heat has not met its budget.
 
@@ -30,7 +30,7 @@ Every number comes from the installation. Get them before designing:
 
 ## Step 2: Budget power against the platform's real electrical characteristics
 
-Platform power is not a clean supply. Military vehicle, aircraft and shipboard electrical systems each have their own defined characteristics — nominal voltage, transient and surge behaviour, ripple, and interruption durations — and the input stage has to survive all of it. Confirm which standard applies to the platform and design the front end to it.
+Platform power is not a clean supply. Military vehicle, aircraft and shipboard electrical systems each have their own defined characteristics — nominal voltage, transient and surge behavior, ripple, and interruption durations — and the input stage has to survive all of it. Confirm which standard applies to the platform and design the front end to it.
 
 Four things that get missed:
 

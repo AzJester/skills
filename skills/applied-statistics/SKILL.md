@@ -67,8 +67,8 @@ When comparing more than one factor, one-at-a-time testing misses interactions a
 
 The design principles that matter more than the design choice:
 
-- **Randomise assignment.** Non-random assignment lets an unmeasured difference explain your result.
-- **Block what you cannot randomise.** Batch, day, operator, machine — remove known nuisance variation rather than letting it become noise.
+- **Randomize assignment.** Non-random assignment lets an unmeasured difference explain your result.
+- **Block what you cannot randomize.** Batch, day, operator, machine — remove known nuisance variation rather than letting it become noise.
 - **Replicate.** Repeated measurements on one unit estimate measurement error; independent units estimate the variation you care about. Confusing them is a common and consequential error.
 - **Control what you can, record what you cannot.**
 

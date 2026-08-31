@@ -11,7 +11,7 @@ A POA&M is a commitment schedule, not a list of known problems. The difference s
 
 **Source** — self-identified, assessment finding, scan, incident, or audit. Track this: a POA&M composed entirely of assessor findings means self-assessment is not happening.
 
-**Severity** — from the SAR, or from your own assessment on the same scale. Severity drives sequence; a POA&M worked in the order items were opened is not being prioritised.
+**Severity** — from the SAR, or from your own assessment on the same scale. Severity drives sequence; a POA&M worked in the order items were opened is not being prioritized.
 
 **Owner** — one named person with the authority to fix it. Not a team.
 
@@ -27,7 +27,7 @@ A POA&M is a commitment schedule, not a list of known problems. The difference s
 
 **Closure requires evidence.** An item closes when the weakness is fixed and something demonstrates it — a rescan, a configuration export, a test result. "Complete" with no evidence reopens at the next assessment.
 
-**Report movement, not count.** Per period: opened, closed, re-dated, overdue. The total tells you nothing; the movement tells you whether the programme is working the list or accumulating it.
+**Report movement, not count.** Per period: opened, closed, re-dated, overdue. The total tells you nothing; the movement tells you whether the program is working the list or accumulating it.
 
 ## What an assessor reads into it
 

@@ -10,7 +10,7 @@ Set `icon` on a node. Two paths:
 - **SVG, PNG, HTML output** — every icon maps to a generic vector glyph drawn by the
   renderer. The AWS, Azure, and GCP shape libraries live inside draw.io and cannot be
   embedded in a standalone SVG without shipping licensed artwork, so `aws:lambda` renders as
-  the generic function glyph outside draw.io. This is the intended behaviour, not a
+  the generic function glyph outside draw.io. This is the intended behavior, not a
   degradation. If the user needs official icons in a PNG, open the `.drawio` in draw.io and
   export from there.
 
@@ -73,4 +73,4 @@ no-icon nodes in one tier looks inconsistent, so pick one and stay with it per t
 
 `scripts/glyphs.py` holds 24x24 SVG fragments. Add a function, then register it plus any
 aliases in the `GLYPHS` dict. Keep to stroked paths with `fill="none"` so the glyph inherits
-the style accent colour and reads on both light and dark backgrounds.
+the style accent color and reads on both light and dark backgrounds.

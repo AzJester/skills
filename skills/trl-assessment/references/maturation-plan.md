@@ -29,7 +29,7 @@ Two rows deserve extra scrutiny whenever they appear:
 
 ## Fallback
 
-Not optional. An element with no alternative is a single point of programme failure.
+Not optional. An element with no alternative is a single point of program failure.
 
 | | |
 | --- | --- |

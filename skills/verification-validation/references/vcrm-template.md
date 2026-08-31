@@ -2,7 +2,7 @@
 
 One row per requirement. No requirement without a row, no verification event without a requirement behind it.
 
-| Req ID | Requirement text | Method | Level | Verification event | Success criteria | Evidence artefact | Status | Closed by |
+| Req ID | Requirement text | Method | Level | Verification event | Success criteria | Evidence artifact | Status | Closed by |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | | | I / A / D / T | comp / subsys / system | | | | Open / In work / Passed / Failed / Waived | |
 
@@ -14,11 +14,11 @@ One row per requirement. No requirement without a row, no verification event wit
 
 **Success criteria** — the numeric or observable threshold that decides pass or fail, written before the event runs. Criteria written after seeing the data are not criteria.
 
-**Evidence artefact** — a retrievable pointer: report number, data file, procedure run record, photograph. "Team observed" is not evidence.
+**Evidence artifact** — a retrievable pointer: report number, data file, procedure run record, photograph. "Team observed" is not evidence.
 
 **Status** — `Waived` and `Failed` are legitimate end states. A matrix with no reds usually means reds were relabelled, not that none occurred.
 
-**Closed by** — the person accountable for the judgement that the evidence supports the claim. Not the person who ran the test.
+**Closed by** — the person accountable for the judgment that the evidence supports the claim. Not the person who ran the test.
 
 ## Completeness checks
 
@@ -39,4 +39,4 @@ Report these four numbers, not a percentage:
 - Requirements not started
 - Requirements failed, waived, or carrying a deviation
 
-A single percentage hides the fourth number, which is the one anyone reviewing the programme actually needs.
+A single percentage hides the fourth number, which is the one anyone reviewing the program actually needs.

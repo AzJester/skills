@@ -14,7 +14,7 @@ The most consequential 200 words in the report. It is what appears in search res
 
 - Self-contained. No reference to "this report" doing things; state the findings.
 - Unclassified and releasable at the abstract's own classification level, which may differ from the report's.
-- Expand acronyms, or avoid them. A searcher who does not know your programme's acronyms is exactly the reader you want to reach.
+- Expand acronyms, or avoid them. A searcher who does not know your program's acronyms is exactly the reader you want to reach.
 - Include the numbers. "Performance improved substantially" is not retrievable or useful; "reduced mean detection latency from 4.2 s to 0.9 s" is.
 - No citations, no figures, no equations.
 
@@ -22,7 +22,7 @@ The most consequential 200 words in the report. It is what appears in search res
 
 The field most often left thin, and the one that determines whether anyone finds the report.
 
-Choose terms a person searching would type, not the ones your programme uses internally. Include: the technology, the application domain, the method, the platform or system class, and the problem addressed. Use the customer's vocabulary rather than your own where they differ.
+Choose terms a person searching would type, not the ones your program uses internally. Include: the technology, the application domain, the method, the platform or system class, and the problem addressed. Use the customer's vocabulary rather than your own where they differ.
 
 Ten to fifteen terms is typical. A report with three subject terms is effectively unindexed.
 
@@ -32,7 +32,7 @@ Three separate fields — report, abstract, and this page — and they can diffe
 
 ## Contract and funding blocks
 
-Contract number, grant number, programme element, project, task, and work unit. These come from the contract and are how expenditure is traced to output. Partial or wrong entries are a routine cause of rejected submissions. Get them from the contracting officer's documentation rather than from memory or a prior report.
+Contract number, grant number, program element, project, task, and work unit. These come from the contract and are how expenditure is traced to output. Partial or wrong entries are a routine cause of rejected submissions. Get them from the contracting officer's documentation rather than from memory or a prior report.
 
 ## Cover page pattern
 

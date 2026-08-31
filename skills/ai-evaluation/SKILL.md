@@ -5,11 +5,11 @@ description: Prove an AI system is good enough to field. Use when designing an e
 
 # AI evaluation
 
-Deterministic verification asks whether output equals expected. That question does not apply here: the same input can produce different output, "correct" is often a judgement, and the system will be wrong sometimes by construction.
+Deterministic verification asks whether output equals expected. That question does not apply here: the same input can produce different output, "correct" is often a judgment, and the system will be wrong sometimes by construction.
 
 So the closure argument changes. `verification-validation` closes a requirement when evidence shows the criterion met. AI evaluation closes one when **performance on a representative sample is good enough, with stated confidence, and the failures are understood and acceptable.**
 
-That last clause carries the weight. A system at 94% with unexamined failures is less trustworthy than one at 89% whose failures are characterised, bounded, and caught by something downstream.
+That last clause carries the weight. A system at 94% with unexamined failures is less trustworthy than one at 89% whose failures are characterized, bounded, and caught by something downstream.
 
 ## Step 1: Define good enough before measuring
 
@@ -46,7 +46,7 @@ The evaluation set determines what your numbers mean, and most weak evaluations 
 
 Two notes that matter more than the table:
 
-**Generation has no single correct answer, so a reference-similarity metric measures the wrong thing.** Score against a rubric that encodes what actually matters for the task, and validate the rubric against human judgement before trusting it.
+**Generation has no single correct answer, so a reference-similarity metric measures the wrong thing.** Score against a rubric that encodes what actually matters for the task, and validate the rubric against human judgment before trusting it.
 
 **Agentic systems need step-level measurement.** A trajectory that reaches the right answer through three wrong turns and a lucky recovery scores identically to a clean one on outcome alone, and behaves very differently under distribution shift.
 
@@ -54,7 +54,7 @@ Two notes that matter more than the table:
 
 ## Step 4: Human review, designed as measurement
 
-Where humans are the ground truth, they are an instrument and need the same rigour as one.
+Where humans are the ground truth, they are an instrument and need the same rigor as one.
 
 - **Written guidelines**, developed on examples before the real annotation starts.
 - **Inter-rater agreement measured** and reported. Where humans agree 70% of the time, no model can be meaningfully scored above that ceiling, and knowing the ceiling reframes the whole evaluation.
@@ -63,7 +63,7 @@ Where humans are the ground truth, they are an instrument and need the same rigo
 
 ## Step 5: Regression evals, run on every change
 
-An AI system changes when the model changes, the prompt changes, a parameter changes, a tool changes, or the retrieval corpus changes. Any of these can move behaviour in ways nobody predicts.
+An AI system changes when the model changes, the prompt changes, a parameter changes, a tool changes, or the retrieval corpus changes. Any of these can move behavior in ways nobody predicts.
 
 Run the suite on every change and diff against the previous run. Track **per-case** movement, not just the aggregate: an unchanged average can hide twenty regressions offset by twenty improvements, and the regressions may be in the cases that matter.
 
@@ -73,12 +73,12 @@ Treat a prompt change with the seriousness of a code change — it goes through 
 
 - **Confidence intervals, not point estimates.** "87%" from 200 examples has a wide interval, and stating it prevents a decision the evidence does not support.
 - **Disaggregated results.** Aggregate plus per-subgroup.
-- **The failure taxonomy.** Categorise what went wrong and how often, and say which categories are caught downstream and which reach the user. This is usually the most valuable page of an evaluation report.
+- **The failure taxonomy.** Categorize what went wrong and how often, and say which categories are caught downstream and which reach the user. This is usually the most valuable page of an evaluation report.
 - **What was not tested.** Every eval has an envelope. Naming it is credibility; having it discovered is not.
 
 ## AI TEVV
 
-For defense programmes this is AI test, evaluation, verification and validation, and it sits inside `test-and-evaluation` rather than beside it: evaluation results are DT&E evidence, operational evaluation with real users is OT&E, and adversarial testing of the AI is part of cybersecurity T&E. Results feed `ai-governance` as the Measure function, and limitations flow into the model card.
+For defense programs this is AI test, evaluation, verification and validation, and it sits inside `test-and-evaluation` rather than beside it: evaluation results are DT&E evidence, operational evaluation with real users is OT&E, and adversarial testing of the AI is part of cybersecurity T&E. Results feed `ai-governance` as the Measure function, and limitations flow into the model card.
 
 ## Reference
 

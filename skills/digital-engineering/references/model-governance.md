@@ -14,7 +14,7 @@ Every part of the model has one owner. Unowned regions are where quality decays 
 Rules checked by eye are not checked. Automate these and fail the check rather than filing a comment:
 
 - **Naming** — conventions applied consistently. Inconsistent naming is the first sign of an ungoverned model and makes every search unreliable.
-- **Required properties** — each element type carries the properties the programme needs. An element missing its ID or owner is incomplete.
+- **Required properties** — each element type carries the properties the program needs. An element missing its ID or owner is incomplete.
 - **No orphans** — no element unconnected to anything. An orphan is either unfinished work or something deleted halfway.
 - **No dangling allocations** — every allocation points at something that exists.
 - **Requirement coverage** — every requirement allocated; every design element traceable up.
@@ -39,10 +39,10 @@ Track these and report at gates. A model whose health is not measured is one who
 | Time since last curation pass | Model rot |
 | Derived-artifact divergence | Someone is hand-editing outputs |
 
-That last one is the leading indicator. When people start hand-editing generated documents, the model has stopped being authoritative and the programme has not noticed yet.
+That last one is the leading indicator. When people start hand-editing generated documents, the model has stopped being authoritative and the program has not noticed yet.
 
 ## Curation as a role
 
 Model curation is a job. Someone owns model health, runs the quality checks, works the orphan list, and has standing to refuse a change that would degrade the model.
 
-Programmes that treat curation as a residual duty spread across a team get a model that nobody owns and everybody works around. The cost of the role is small next to the cost of losing trust in the model, which is paid in reverting to documents while still paying for the tooling.
+Programs that treat curation as a residual duty spread across a team get a model that nobody owns and everybody works around. The cost of the role is small next to the cost of losing trust in the model, which is paid in reverting to documents while still paying for the tooling.
