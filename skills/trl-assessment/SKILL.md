@@ -37,7 +37,7 @@ Nearly every TRL judgement comes down to two questions, and disagreement almost 
 | **8** | Actual system completed and qualified through test and demonstration | Operational |
 | **9** | Actual system proven through successful mission operations | Operational |
 
-Two transitions carry most of the programme risk, and both are environment changes rather than technical ones:
+Two transitions carry most of the program risk, and both are environment changes rather than technical ones:
 
 **4 → 5** is where laboratory success meets real stressors, and where a surprising amount of promising technology stops.
 
@@ -49,7 +49,7 @@ TRL applies to a **technology element**, not to a system. "The platform is TRL 6
 
 Identify the **critical technology elements**: the parts that are new or novel, *and* whose failure would prevent the system meeting a requirement. Both conditions. A novel component nothing depends on is not critical; a mature component everything depends on is not a technology risk.
 
-For each CTE, assess separately. Where an overall figure is required, **the system's TRL is that of its least mature critical element**, not an average. Averaging is how a programme reports TRL 7 while resting on a TRL 4 dependency.
+For each CTE, assess separately. Where an overall figure is required, **the system's TRL is that of its least mature critical element**, not an average. Averaging is how a program reports TRL 7 while resting on a TRL 4 dependency.
 
 ## Step 2: Assess against evidence
 
@@ -73,22 +73,22 @@ For each CTE below its target, state: current level with evidence, target level 
 
 **Levels advance one at a time.** A plan that jumps 4 → 7 is usually hiding the environment step, and the environment step is the expensive one. If a plan genuinely skips a level, say which demonstration covers both and why.
 
-The fallback is not optional. A CTE whose maturation plan has no alternative is a single point of programme failure, and belongs in `risk-management` as a High risk with that framing.
+The fallback is not optional. A CTE whose maturation plan has no alternative is a single point of program failure, and belongs in `risk-management` as a High risk with that framing.
 
-## Step 4: Feed the rest of the programme
+## Step 4: Feed the rest of the program
 
 - **`risk-management`** — every CTE below its required level at the gate it is needed is a risk, with the maturation plan as the handling strategy and the fallback as the contingency.
-- **`technical-reviews`** — gates check technology maturity. SRR should not accept a requirement resting on a TRL 2 element without a funded maturation plan; PDR expects the critical elements at TRL 6 for most programmes.
+- **`technical-reviews`** — gates check technology maturity. SRR should not accept a requirement resting on a TRL 2 element without a funded maturation plan; PDR expects the critical elements at TRL 6 for most programs.
 - **`trade-study-analysis`** — TRL belongs in the criteria. An alternative that scores best on performance and worst on maturity is a different proposition from one that scores well on both, and trade studies that omit maturity systematically favour the least proven option.
 - **`engineering-to-proposal`** — solicitations frequently require a technology readiness assessment, and evaluators check TRL claims against the evidence offered. An assessment built on real evidence is directly reusable; one built on optimism is a liability in a document you sign.
 
 ## MRL and IRL
 
-Two companions, used where the programme requires them.
+Two companions, used where the program requires them.
 
 **MRL — manufacturing readiness level**, 1–10. Asks whether it can be *produced* at rate, at cost, at quality. A technology can be TRL 9 and MRL 4: it works, and you cannot make more than one. Where production is in scope, TRL alone understates the risk.
 
-**IRL — integration readiness level**, 1–9. Asks how mature the *interfaces between* elements are. Two TRL 8 components with an unproven interface between them constitute an immature system, and TRL has no way to say so. Where a programme's risk is integration rather than technology, IRL is the more informative measure — and it pairs directly with `interface-control`.
+**IRL — integration readiness level**, 1–9. Asks how mature the *interfaces between* elements are. Two TRL 8 components with an unproven interface between them constitute an immature system, and TRL has no way to say so. Where a program's risk is integration rather than technology, IRL is the more informative measure — and it pairs directly with `interface-control`.
 
 ## Reference
 
