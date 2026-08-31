@@ -266,7 +266,7 @@ Developing a physical product — tactical edge compute, networking and sensor p
 | [executive-decision-memo](skills/executive-decision-memo/) | The one-page memo that gets a decision from someone who will read it without you: the ask in the first line, why now, options with a recommendation, and what executives actually check — total cost, the do-nothing case, the real risk, and who disagrees. |
 | [business-case](skills/business-case/) | Argue for a course of action against doing nothing: complete costing including internal labor and opportunity cost, benefits separated into hard, soft and strategic rather than converted optimistically, payback and NPV with a stated discount rate, and sensitivity that names what would have to be true for this to be a bad decision. |
 | [applied-statistics](skills/applied-statistics/) | Statistics on real decisions: sizing the sample before collecting, choosing the test by question and data, reporting effect sizes with intervals rather than p-values alone, experiment design that isolates what you are testing, and the seven questions that find most defects in someone else's analysis. |
-| [structured-interviewing](skills/structured-interviewing/) | Interviews that predict performance: attributes with described evidence, a scorecard written before anyone is seen, behavioural and work-sample questions, and independent scoring before debrief — the single highest-leverage rule in the process. |
+| [structured-interviewing](skills/structured-interviewing/) | Interviews that predict performance: attributes with described evidence, a scorecard written before anyone is seen, behavioral and work-sample questions, and independent scoring before debrief — the single highest-leverage rule in the process. |
 | [performance-feedback](skills/performance-feedback/) | Feedback that changes behavior: behavior, effect, and ask; one-to-ones that belong to the other person; reviews where nothing is a surprise; and performance conversations where the person leaves knowing they had one. |
 | [manuscript-submission](skills/manuscript-submission/) | Get a paper through peer review: venue choice before finishing, submission preparation, reading a decision properly, the response-to-reviewers document that is frequently done badly, handling rejection, and reviewing others' work. |
 | [technology-roadmapping](skills/technology-roadmapping/) | Decide what capability to build, when, and for whom across a portfolio: demand and need dates first rather than collecting what each unit already intended, finding duplication and the gaps nobody owns, horizons funded separately so the near term does not consume the pipeline, and kill criteria written before an investment starts. |
@@ -291,13 +291,17 @@ Developing a physical product — tactical edge compute, networking and sensor p
 
 ## Attribution
 
-Most skills here are vendored unmodified from their upstream repositories, each redistributed under the MIT License (a copy is included in every skill directory). Skills written for this repository are listed under [Original skills](#original-skills) and carry no third-party license.
+Most skills here are vendored from their upstream repositories, each redistributed under the MIT License (a copy is included in every skill directory). Skills written for this repository are listed under [Original skills](#original-skills) and carry no third-party license.
+
+One repo-wide edit is applied on top of every vendored copy: British spellings in prose are converted to US English, so the whole collection reads in one dialect. Nothing else is touched — no logic, no structure, no code identifiers, and no data files, since font names, icon names, CSS keywords and lookup keys are not prose. The 17 vendored skills this affected are named in the sections below; every other vendored skill was already US English and remains byte-identical to upstream.
 
 ### ddunnock/claude-plugins
 
 The [Systems engineering](#systems-engineering), [RCCA](#root-cause--quality-analysis-rcca), and [Documentation, research & tooling](#documentation-research--tooling) skills come from [ddunnock/claude-plugins](https://github.com/ddunnock/claude-plugins) at commit [`e22db30`](https://github.com/ddunnock/claude-plugins/tree/e22db30ce9da9ff3686cda59edd8855443451ba0/skills), authored by David Dunnock.
 
-Omitted from the copy: the upstream author's internal planning history (`system-dev/.planning/`) and a committed code-index artifact (`concept-dev/.codegraph/`). All functional content (SKILL.md files, commands, agents, schemas, scripts, templates, tests, references, data, plugin manifests) is included unmodified.
+Omitted from the copy: the upstream author's internal planning history (`system-dev/.planning/`) and a committed code-index artifact (`concept-dev/.codegraph/`). All functional content (SKILL.md files, commands, agents, schemas, scripts, templates, tests, references, data, plugin manifests) is included.
+
+Modified from upstream: the US English spelling conversion described above, in `documentation-architect` (1 line) and `research-opportunity-investigator` (8 lines). The rest of this collection is unmodified.
 
 Known upstream test-suite quirks at this commit (vendored as-is): 6 ReqIF-export tests fail in `requirements-dev` and one stale test module (`test_report_gen.py`) in `skill-tester` imports a function its script no longer exports; both reproduce identically in the upstream repository. The upstream repo also hosts MCP servers (`session-memory`, `knowledge-mcp`) that are not part of this skills collection.
 
@@ -305,7 +309,9 @@ Known upstream test-suite quirks at this commit (vendored as-is): 6 ReqIF-export
 
 The [Engineering workflow](#engineering-workflow), [Productivity](#productivity), [Misc tooling](#misc-tooling), and [In progress](#in-progress-beta) skills come from [mattpocock/skills](https://github.com/mattpocock/skills) at commit [`6654f6b`](https://github.com/mattpocock/skills/tree/6654f6b60cd9d5be8b54c6fafe44346dabeb3b76/skills), authored by Matt Pocock.
 
-Upstream groups its skills into `skills/engineering/`, `skills/productivity/`, `skills/misc/`, and `skills/in-progress/`. Those buckets are flattened here to match this repo's one-directory-per-skill layout, and are preserved as the section headings above. Skill directory contents are byte-identical to upstream, including each skill's supporting reference files, `scripts/`, and `agents/openai.yaml`.
+Upstream groups its skills into `skills/engineering/`, `skills/productivity/`, `skills/misc/`, and `skills/in-progress/`. Those buckets are flattened here to match this repo's one-directory-per-skill layout, and are preserved as the section headings above. Skill directory contents are otherwise byte-identical to upstream, including each skill's supporting reference files, `scripts/`, and `agents/openai.yaml`.
+
+Modified from upstream: the US English spelling conversion described above, in `ask-matt`, `code-review`, `codebase-design`, `diagnosing-bugs`, `handoff`, `improve-codebase-architecture`, `prototype`, `resolving-merge-conflicts`, `setup-matt-pocock-skills`, `setup-ts-deep-modules`, `teach`, `to-tickets`, `triage`, `wayfinder` and `writing-for-agents` — 55 lines across the 15. The rest of this collection is byte-identical.
 
 Omitted from the copy: upstream repo infrastructure that is not skill content (`docs/` marketing pages, `.agents/`, `.changeset/`, `.github/`, `CHANGELOG.md`, `CLAUDE.md`, `CONTEXT.md`, `package.json`, `scripts/`) and the root `.claude-plugin/` manifests, which describe the upstream plugin rather than these vendored copies. The upstream `skills/deprecated/` bucket is empty and was not copied.
 

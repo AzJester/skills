@@ -329,7 +329,7 @@ This document summarizes the current state of the ACP protocol for the purpose
 of RFC development and integration planning.
 
 VERIFICATION:
-  □ All existing RFCs catalogued
+  □ All existing RFCs cataloged
   □ All relevant spec chapters summarized
   □ All schemas inventoried
   □ Integration points identified

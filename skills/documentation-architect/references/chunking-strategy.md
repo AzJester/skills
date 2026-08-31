@@ -252,7 +252,7 @@ Track decisions without re-explaining rationale:
 
 ```
 Outputs:
-├── master-index.md (all sources catalogued)
+├── master-index.md (all sources cataloged)
 ├── terminology.md (initial definitions)
 ├── structure-plan.md (target documentation structure)
 └── wbs.md (work breakdown with chunk assignments)
